@@ -69,7 +69,6 @@ Una colección curada de prompts de IA Generativa probados y estructurados, dise
 
 ### 📅 Información General
 
-**Fecha de Inicio:** Lunes, 17 de noviembre de 2025  
 **Duración Total:** 27 horas cronológicas  
 **Formato:** 9 sesiones de 3 horas cada una  
 **Ritmo:** 3 sesiones por semana (completo en 3 semanas)
@@ -83,7 +82,7 @@ Dominar el "mapa" completo del trading algorítmico, establecer expectativas rea
 
 - Expectativas Realistas (El "Anti-Hype")
 - Las Fases del Trading Algorítmico
-- Prompt Engineering Fundamental (Framework ROL-CONTEXTO-TAREA-FORMATO)
+- Prompt Engineering Fundamental (Framework)
 - Ecosistema de Herramientas
 - **Entregable:** Mapa Mental + Ambiente configurado + Dataset SPY descargado
 
@@ -191,6 +190,7 @@ Consolidar todo en un proyecto final con documentación de nivel institucional.
 - **Google Colab** - Notebooks sin instalación local
 - **TradingView** - Desarrollo visual y ejecución
 - **Alpaca** - Paper trading y live trading
+- **Interactive Broker** - Paper trading
 
 ### IA Generativa
 - **Claude (Anthropic)** - Recomendado para código
@@ -210,7 +210,7 @@ Consolidar todo en un proyecto final con documentación de nivel institucional.
 
 ### 📅 Próxima Cohorte
 
-**Inicio:** A Confirmar 
+**Inicio:** A Confirmar
 **Formato:** Virtual (Google Meet)  
 **Cupo:** Limitados
 
@@ -264,7 +264,7 @@ Aumenta cada componente en 4 dimensiones: Ideación, Debugging, Traducción, Doc
 
 ### ✅ Contenido Público (Este Repo)
 
-- Documentación completa del workshop
+- Documentación del workshop
 - Templates profesionales (Strategy Memo, Backtest Report)
 - Scripts auxiliares (open source)
 - Biblioteca de prompts básicos
