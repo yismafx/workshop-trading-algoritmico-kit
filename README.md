@@ -35,20 +35,31 @@
 - Disposición a adoptar enfoque 100% sistemático
 - Basado en reglas y validación estadística
 
-### ❌ Lo Que NO Necesitas (Enseñamos Desde Cero)
+### ❌ Lo Que NO Necesitas
 
-- ❌ Experiencia en Programación (Python, Pine Script, MQL5)
-- ❌ Experiencia en IA Generativa (Prompt Engineering)
-- ❌ Conocimientos de backtesting riguroso
+**NO necesitas ser programador**
+- Te damos **código ya funcionando** listo para usar
+- Aprenderás a **adaptar herramientas** con ayuda de GenAI
+- Enfoque: usuario avanzado de sistemas, no desarrollador
+
+**NO necesitas experiencia en IA Generativa**
+- Te damos biblioteca de **35+ prompts probados**
+- Aprenderás prompt engineering aplicado al trading
+- GenAI será tu "copiloto" para adaptar código
+
+**NO necesitas conocimientos técnicos avanzados**
+- Todo viene en **Colab Notebooks ejecutables**
+- Sin instalaciones locales complejas
+- Enfoque en **usar y adaptar**, no programar desde cero
 
 ---
 
 ## El Kit Completo
 
 ### 📓 Colab Notebook Maestro
-- Todo el código del workshop en un solo notebook
-- Sistema end-to-end: descarga → limpieza → backtesting → WFO → riesgo
-- Listo para adaptar a tus estrategias
+- Código **ya funcionando** listo para ejecutar
+- Sistema completo: descarga → limpieza → backtesting → WFO → riesgo
+- **Tú lo adaptas** a tus estrategias con ayuda de GenAI
 
 ### 📦 Template Pack Profesional
 - Strategy Memo (nivel institucional)
@@ -56,10 +67,10 @@
 - README técnico para repositorios
 
 ### 🤖 Prompts Library (35+ Prompts)
-- Generar hipótesis de estrategias
-- Depurar código (Python, Pine, MQL5)
-- Traducir entre lenguajes
-- Refactorizar código legacy
+- Adaptar código a tu estrategia
+- Depurar errores automáticamente
+- Traducir lógica entre plataformas
+- Refactorizar y documentar
 
 ---
 
@@ -73,21 +84,21 @@
 
 **S1: Fundamentos y Mapa del Trading Algorítmico**
 - Expectativas realistas (El "Anti-Hype")
-- Fases del trading algorítmico
+- IA Generativa como "Copiloto" (no piloto automático)
 - Prompt Engineering (Framework ROL-CONTEXTO-TAREA-FORMATO)
 - Ecosistema de herramientas
 - **Entregable:** Mapa Mental + Ambiente configurado + Dataset SPY
 
 **S2: Datos - La Base de Todo Sistema**
 - Mantra: "Garbage In, Garbage Out" (Chan, 2013)
-- APIs: yfinance (gratis) vs Alpaca (pro)
+- Pipeline de datos **ya implementado** (adaptar a tus activos)
 - Validación y limpieza (Data Sins)
-- **Entregable:** Script `data_pipeline.py` + Dataset limpio validado
+- **Entregable:** Script `data_pipeline.py` adaptado + Dataset limpio
 
 **S3: Ideación de Estrategias con GenAI**
 - Framework de 5 Pasos (Observación → Hipótesis → Traducción → Validación → Viabilidad)
-- Fuentes de "Alpha": Reversión a la Media vs Momentum
-- GenAI como copiloto de investigación
+- Usar GenAI para traducir **tu estrategia manual** a reglas sistemáticas
+- De la intuición al código
 - **Entregable:** "Idea Log" con 3 hipótesis + Especificación Técnica
 
 ---
@@ -95,43 +106,43 @@
 ### 🟨 Semana 2: Implementación (9h)
 
 **S4: Implementación Práctica Guiada**
-- Arquitectura modular (main.py, data_handler.py, indicators.py, strategy.py)
-- GenAI como acelerador de código
-- Pruebas unitarias con pytest
-- **Entregable:** Código completo + 3 tests + Visualización de señales
+- Código modular **ya construido** (entender estructura)
+- **Adaptar** indicadores y lógica con GenAI
+- Validar que el código hace lo que esperas
+- **Entregable:** Código adaptado a tu estrategia + 3 tests + Visualización
 
 **S5: Validación Rigurosa - Backtesting Profesional**
-- Trampas: Look-ahead bias, Survivorship bias, Data snooping
-- Anti-Overfitting: Walk-Forward Optimization (WFO), Deflated Sharpe Ratio
-- Simulación Monte Carlo
+- Motor de backtesting **ya implementado**
+- Ejecutar Walk-Forward Optimization (WFO)
+- Interpretar resultados Monte Carlo
 - **Entregable:** Reporte WFO + Análisis Monte Carlo + Veredicto robustez
 
 **S6: Gestión Avanzada de Riesgo**
-- Position Sizing: Fijo, Volatilidad, Kelly Criterion
-- Circuit Breaker (Interruptor de Circuito)
-- Playbook de Crisis
-- **Entregable:** Función `get_position_size()` + Backtest comparativo + Playbook
+- Funciones de position sizing **ya implementadas**
+- Adaptar parámetros a tu tolerancia al riesgo
+- Crear tu Playbook de Crisis
+- **Entregable:** Función `get_position_size()` configurada + Playbook
 
 ---
 
 ### 🟩 Semana 3: Producción (9h)
 
 **S7: Multi-Plataforma - Del Código a la Ejecución**
-- Python (desarrollo) vs Pine Script (ejecución)
-- Conversión con GenAI (Python → Pine Script)
-- Arquitectura: TradingView → Webhook → FastAPI → Alpaca
-- **Entregable:** Estrategia en Pine + Servidor Webhook + Conector API
+- Traducir tu estrategia Python → Pine Script con GenAI
+- Arquitectura Webhook **ya configurada**
+- Conectar a Alpaca o Interactive Brokers
+- **Entregable:** Estrategia en Pine + Webhook funcionando + API conectada
 
 **S8: Deployment Real - Paper Trading y Monitoreo**
-- Infraestructura: VPS, Docker
-- Health Checks (monitoreo 24/7)
-- Checklist Pre-Live (8 semanas paper, P&L coincide, Playbook listo)
-- **Entregable:** Sistema en VPS + Health Checks + Reporte Paper Trading
+- Scripts de deployment **listos para usar**
+- Configurar alertas y health checks
+- Paper trading supervisado (mínimo 8 semanas)
+- **Entregable:** Sistema en VPS + Monitoreo activo + Reporte semanal
 
 **S9: Proyecto Final y Documentación Profesional**
-- Strategy Document (Hipótesis, Datos, Backtesting, Riesgo, Ejecución)
-- Framework de Mejora Continua
-- Peer Review
+- Template de documentación **ya creado**
+- Completar con los resultados de tu estrategia
+- Peer review con otros participantes
 - **Entregable:** Documento profesional + Repositorio completo + Presentación
 
 ---
@@ -154,14 +165,39 @@
 
 ---
 
+## Tu Rol en el Workshop
+
+**NO te convertirás en programador profesional**
+- Serás **usuario avanzado** de herramientas sistemáticas
+- Aprenderás a **adaptar** código existente a tus necesidades
+- GenAI será tu "traductor" entre tu lógica de trading y código
+
+**LO QUE SÍ lograrás:**
+- ✅ Ejecutar backtesting riguroso de tus estrategias
+- ✅ Implementar gestión de riesgo profesional
+- ✅ Desplegar bots de trading supervisados
+- ✅ Documentar tus sistemas a nivel institucional
+
+**LO QUE NO lograrás:**
+- ❌ Convertirte en desarrollador Python senior
+- ❌ Crear frameworks de trading desde cero
+- ❌ Competir con quants con PhD en matemáticas
+
+---
+
 ## Stack Tecnológico
 
-**Lenguajes:** Python 3.10+, Pine Script, MQL5  
-**Datos:** yfinance, alpaca-trade-api  
-**Backtesting:** backtrader, vectorbt  
-**Visualización:** matplotlib, seaborn  
-**Plataformas:** Google Colab, TradingView, Alpaca, Interactive Brokers  
-**IA Generativa:** Claude (recomendado), ChatGPT, GitHub Copilot
+**Lenguajes (Usarás, No Programarás Desde Cero):**  
+Python 3.10+, Pine Script, MQL5
+
+**Todo Preconfigurado en Colab Notebooks:**  
+yfinance, alpaca-trade-api, backtrader, vectorbt, matplotlib, seaborn
+
+**Plataformas:**  
+Google Colab (sin instalación local), TradingView, Alpaca, Interactive Brokers
+
+**IA Generativa (Tu Copiloto):**  
+Claude (recomendado), ChatGPT, GitHub Copilot
 
 ---
 
@@ -175,7 +211,7 @@
 ### 📅 Próxima Cohorte
 - **Inicio:** A confirmar
 - **Formato:** Virtual (Google Meet)
-- **Cupo:** Limitado
+- **Cupo:** Limitado (máximo 6 participantes)
 
 ### 📞 Contacto
 📧 [yismaryme@gmail.com](mailto:yismaryme@gmail.com)  
@@ -214,7 +250,7 @@
 ⚙️ **EXECUTION** - Trading en vivo (Webhooks, APIs)
 
 🤖 **IA Generativa (Capa Transversal)**  
-Aumenta cada componente en 4 dimensiones: Ideación, Debugging, Traducción, Documentación
+Aumenta cada componente: Adaptar código, Depurar errores, Traducir plataformas, Documentar sistemas
 
 **[Ver Diagrama Completo →](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)**
 
@@ -223,20 +259,20 @@ Aumenta cada componente en 4 dimensiones: Ideación, Debugging, Traducción, Doc
 ## Contenido Premium vs Público
 
 ### ✅ Público (Este Repo)
-- Documentación del workshop
+- Documentación completa del workshop
 - Templates profesionales
 - Scripts auxiliares (open source)
 - Prompts básicos
 - Mapa mental interactivo
 
 ### 🔒 Premium (Participantes del Workshop)
-- Colab Notebook Maestro (código completo 9 sesiones)
-- Videos grabados de todas las sesiones
-- Estrategias backtestadas (código + resultados WFO)
-- Biblioteca 35+ prompts avanzados
-- Soporte directo (Telegram privado)
-- Casos de estudio reales
-- Playbook de Crisis Management
+- **Colab Notebook Maestro** (código completo ejecutable)
+- **Videos grabados** de todas las sesiones
+- **Estrategias backtestadas** (código + resultados WFO)
+- **Biblioteca 35+ prompts avanzados**
+- **Soporte directo** (Telegram privado)
+- **Casos de estudio reales**
+- **Playbook de Crisis Management**
 
 ---
 
