@@ -85,7 +85,7 @@
 **S1: Fundamentos y Mapa del Trading Algorítmico**
 - Expectativas realistas (El "Anti-Hype")
 - IA Generativa como "Copiloto" (no piloto automático)
-- Prompt Engineering (Framework ROL-CONTEXTO-TAREA-FORMATO)
+- Prompt Engineering (Framework RCTF)
 - Ecosistema de herramientas
 - **Entregable:** Mapa Mental + Ambiente configurado + Dataset SPY
 
