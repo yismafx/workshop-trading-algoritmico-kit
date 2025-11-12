@@ -8,7 +8,7 @@
 
 Este workshop está diseñado para **traders manuales con experiencia** que quieren:
 
-✅ Sistematizar su edge con algoritmos
+✅ Sistematizar su edge con algoritmos  
 ✅ Escalar sin limitaciones de tiempo  
 ✅ Aumentar capacidades con IA Generativa
 
@@ -38,10 +38,10 @@ Este workshop está diseñado para **traders manuales con experiencia** que quie
 
 El sistema tiene **5 componentes principales** aumentados por IA:
 
-**🗄️ DATA PIPELINE** - Descarga y limpia datos históricos
-**🧠 ESTRATEGIA** - Genera señales de trading
-**🛡️ RISK MANAGEMENT** - Protección de capital
-**🔬 BACKTESTING** - Validación histórica
+**🗄️ DATA PIPELINE** - Descarga y limpia datos históricos  
+**🧠 ESTRATEGIA** - Genera señales de trading  
+**🛡️ RISK MANAGEMENT** - Protección de capital  
+**🔬 BACKTESTING** - Validación histórica  
 **⚙️ EXECUTION** - Trading en vivo
 
 **[Ver Diagrama Completo →](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)**
@@ -52,20 +52,20 @@ El sistema tiene **5 componentes principales** aumentados por IA:
 
 ### Semana 1: Fundamentos
 
-**S1:** Fundamentos y Expectativas Realistas ✅
-**S2:** Data Pipeline y Quality Forensics ✅
+**S1:** Fundamentos y Expectativas Realistas ✅  
+**S2:** Data Pipeline y Quality Forensics ✅  
 **S3:** Ideación con GenAI 🔄
 
 ### Semana 2: Implementación
 
-**S4:** Implementación de Estrategias
-**S5:** Backtesting Riguroso
+**S4:** Implementación de Estrategias  
+**S5:** Backtesting Riguroso  
 **S6:** Risk Management
 
 ### Semana 3: Producción
 
-**S7:** Multi-Plataforma
-**S8:** Deployment
+**S7:** Multi-Plataforma  
+**S8:** Deployment  
 **S9:** Mantenimiento
 
 **Total:** 9 sesiones • 27 horas • 3 semanas
@@ -99,10 +99,10 @@ El sistema tiene **5 componentes principales** aumentados por IA:
 
 **Objetivos realistas:**
 
-- **Sharpe Ratio:** 1.0 - 1.5 (no 3.0+)
-- **Max Drawdown:** 20% - 30% (no menos de 5%)
-- **Tasa de éxito:** 2 de cada 10 estrategias funcionan
-- **Tiempo:** 3-6 meses hasta primera estrategia rentable (no 1 semana)
+📊 **Sharpe Ratio:** 1.0 - 1.5 (no 3.0+)  
+📉 **Max Drawdown:** 20% - 30% (no menos de 5%)  
+🎯 **Tasa de éxito:** 2 de cada 10 estrategias funcionan  
+⏰ **Tiempo:** 3-6 meses hasta primera estrategia rentable (no 1 semana)
 
 ---
 
@@ -126,7 +126,6 @@ El sistema tiene **5 componentes principales** aumentados por IA:
 - Google Colab - Notebooks sin instalación
 - TradingView - Desarrollo visual
 - Alpaca - Paper y live trading
-- Interactive Broker
 
 ### IA Generativa
 
@@ -140,26 +139,26 @@ El sistema tiene **5 componentes principales** aumentados por IA:
 
 ### Inversión
 
-- **Precio:** Solicitar informacion
-- **Incluye:** 27 horas + materiales premium
-- **Pago:** Solicitar informacion
+💰 **Precio:** Solicitar información  
+📦 **Incluye:** 27 horas + materiales premium  
+💳 **Pago:** Solicitar información
 
 ### Próxima Cohorte
 
-- **Formato:** Virtual (Google Meet)
-- **Cupo:** Limitado
-- **Inicio:** A confirmar
+🎥 **Formato:** Virtual (Google Meet)  
+👥 **Cupo:** Limitados  
+📅 **Inicio:** A confirmar
 
 ### Contacto
 
-- 📧 **Email:** [yismaryme@gmail.com](mailto:yismaryme@gmail.com)
-- 💬 **Telegram:** [@yismary](https://t.me/yismary)
+📧 **Email:** [yismaryme@gmail.com](mailto:yismaryme@gmail.com)  
+💬 **Telegram:** [@yismary](https://t.me/yismary)
 
 ---
 
 ## Contribuciones
 
-Este repositorio es **parcialmente open-source**:
+Este repositorio es **parcialmente open-source**.
 
 **Puedes:**
 - Reportar bugs (Issues)
@@ -182,7 +181,7 @@ Este repositorio es **parcialmente open-source**:
 
 ### Comunidades
 
-- Fractals Market
+- Fractals Market Algoritmico
 
 ---
 
@@ -190,10 +189,10 @@ Este repositorio es **parcialmente open-source**:
 
 ⚠️ **Material para fines educativos únicamente**
 
-- NO constituye asesoría de inversión
-- Trading implica riesgo de pérdida de capital
-- Resultados pasados NO garantizan resultados futuros
-- Nunca operes con dinero que no puedas perder
+❌ NO constituye asesoría de inversión  
+⚠️ Trading implica riesgo de pérdida de capital  
+📊 Resultados pasados NO garantizan resultados futuros  
+💰 Nunca operes con dinero que no puedas perder
 
 ---
 
