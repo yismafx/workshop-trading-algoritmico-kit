@@ -78,73 +78,22 @@
 
 **Duración:** 27 horas • **Formato:** 9 sesiones de 3h • **Ritmo:** 3 sesiones/semana
 
----
-
 ### 🟦 Semana 1: Fundamentos (9h)
-
-**S1: Fundamentos y Mapa del Trading Algorítmico**
-- Expectativas realistas (El "Anti-Hype")
-- IA Generativa como "Copiloto" (no piloto automático)
-- Prompt Engineering (Framework RCTF)
-- Ecosistema de herramientas
-- **Entregable:** Mapa Mental + Ambiente configurado + Dataset SPY
-
-**S2: Datos - La Base de Todo Sistema**
-- Mantra: "Garbage In, Garbage Out" (Chan, 2013)
-- Pipeline de datos **ya implementado** (adaptar a tus activos)
-- Validación y limpieza (Data Sins)
-- **Entregable:** Script `data_pipeline.py` adaptado + Dataset limpio
-
-**S3: Ideación de Estrategias con GenAI**
-- Framework de 5 Pasos (Observación → Hipótesis → Traducción → Validación → Viabilidad)
-- Usar GenAI para traducir **tu estrategia manual** a reglas sistemáticas
-- De la intuición al código
-- **Entregable:** "Idea Log" con 3 hipótesis + Especificación Técnica
-
----
+- **S1:** Fundamentos y Mapa del Trading Algorítmico
+- **S2:** Datos - La Base de Todo Sistema
+- **S3:** Ideación de Estrategias con GenAI
 
 ### 🟨 Semana 2: Implementación (9h)
-
-**S4: Implementación Práctica Guiada**
-- Código modular **ya construido** (entender estructura)
-- **Adaptar** indicadores y lógica con GenAI
-- Validar que el código hace lo que esperas
-- **Entregable:** Código adaptado a tu estrategia + 3 tests + Visualización
-
-**S5: Validación Rigurosa - Backtesting Profesional**
-- Motor de backtesting **ya implementado**
-- Ejecutar Walk-Forward Optimization (WFO)
-- Interpretar resultados Monte Carlo
-- **Entregable:** Reporte WFO + Análisis Monte Carlo + Veredicto robustez
-
-**S6: Gestión Avanzada de Riesgo**
-- Funciones de position sizing **ya implementadas**
-- Adaptar parámetros a tu tolerancia al riesgo
-- Crear tu Playbook de Crisis
-- **Entregable:** Función `get_position_size()` configurada + Playbook
-
----
+- **S4:** Implementación Práctica Guiada
+- **S5:** Validación Rigurosa - Backtesting Profesional
+- **S6:** Gestión Avanzada de Riesgo
 
 ### 🟩 Semana 3: Producción (9h)
+- **S7:** Multi-Plataforma - Del Código a la Ejecución
+- **S8:** Deployment Real - Paper Trading y Monitoreo
+- **S9:** Proyecto Final y Documentación Profesional
 
-**S7: Multi-Plataforma - Del Código a la Ejecución**
-- Traducir tu estrategia Python → Pine Script con GenAI
-- Arquitectura Webhook **ya configurada**
-- Conectar a Alpaca o Interactive Brokers
-- **Entregable:** Estrategia en Pine + Webhook funcionando + API conectada
-
-**S8: Deployment Real - Paper Trading y Monitoreo**
-- Scripts de deployment **listos para usar**
-- Configurar alertas y health checks
-- Paper trading supervisado (mínimo 8 semanas)
-- **Entregable:** Sistema en VPS + Monitoreo activo + Reporte semanal
-
-**S9: Proyecto Final y Documentación Profesional**
-- Template de documentación **ya creado**
-- Completar con los resultados de tu estrategia
-- Peer review con otros participantes
-- **Entregable:** Documento profesional + Repositorio completo + Presentación
-
+**[📋 Ver estructura completa del workshop →](00_GUIA_DE_USO/ESTRUCTURA_COMPLETA.md)**
 ---
 
 ## Expectativas Realistas
@@ -204,12 +153,12 @@ Claude (recomendado), ChatGPT, GitHub Copilot
 ## Inscripciones
 
 ### 💰 Inversión
-- **Precio:** Solicitar información
+- **Precio:** $950 (Descuento especial para miembros de la comunidad Fractals Market)
 - **Incluye:** 27h formación + Colab Notebook + Templates + Prompts Library
 - **Pago:** Consultar opciones disponibles
 
 ### 📅 Próxima Cohorte
-- **Inicio:** A confirmar
+- **Inicio:** Consultar fechas disponibles
 - **Formato:** Virtual (Google Meet)
 - **Cupo:** Limitado (máximo 6 participantes)
 
@@ -317,6 +266,6 @@ Aumenta cada componente: Adaptar código, Depurar errores, Traducir plataformas,
 
 ---
 
-**Última actualización:** Noviembre 2025 • **Versión:** 1.0 (S1-S2 completas)
+**Última actualización:** Noviembre 2025 • **Versión:** 1.0
 
 **Mantenido por:** [@yismafx](https://github.com/yismafx) | **Comunidad:** Fractals Market
