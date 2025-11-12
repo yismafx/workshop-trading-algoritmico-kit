@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Trading Algorítmico</title>
+    <!-- 1. Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. Configuración de Tailwind y Fuentes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Paleta de colores de tu script de Python
+                        header: '#1e3a8a',
+                        component: '#3b82f6',
+                        genai: '#10b981',
+                        warning: '#f59e0b',
+                        textDark: '#1f2937',
+                        textLight: '#6b7280',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    
+    <!-- 3. Estilos CSS adicionales -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Fondo gris claro */
+        }
+        /* Clase para las flechas conectoras */
+        .flow-arrow {
+            color: #9ca3af; /* color-component-light */
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: -10px;
+            margin-bottom: -10px;
+        }
+        /* Estilo para las cajas principales de los componentes */
+        .component-box {
+            background-color: white;
+            border: 2px solid #e5e7eb; /* Borde gris claro */
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 900px;
+            overflow: hidden; /* Para que los bordes redondeados afecten al header */
+        }
+        /* Header de cada componente */
+        .component-header {
+            padding: 1rem 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+            background-color: var(--color-bg); /* Variable para el color */
+        }
+        /* Contenido de cada componente */
+        .component-content {
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 columnas por defecto */
+            gap: 1.5rem;
+        }
+        /* Media query para móviles */
+        @media (max-width: 768px) {
+            .component-content {
+                grid-template-columns: 1fr; /* 1 columna en móviles */
+            }
+        }
+        .component-content h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 0.25rem;
+        }
+        .component-content ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            padding-left: 0.5rem;
+        }
+        .component-content li {
+            margin-bottom: 0.25rem;
+            color: #374151; /* Gris oscuro */
+        }
+        /* Footer de cada componente (Conceptos Clave) */
+        .component-footer {
+            background-color: #f9fafb; /* Gris muy claro */
+            padding: 1rem 1.5rem;
+            border-top: 1px solid #e5e7eb;
+            font-style: italic;
+            color: #6b7280; /* textLight */
+        }
+    </style>
+</head>
+<body class="text-textDark">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <!-- Contenedor principal del flujo -->
+        <div class="flex flex-col items-center space-y-4">
+
+            <!-- TÍTULO PRINCIPAL -->
+            <header class="text-center mb-4">
+                <h1 class="text-3xl md:text-4xl font-bold text-header">
+                    SISTEMA DE TRADING ALGORÍTMICO
+                </h1>
+                <p class="text-xl md:text-2xl font-light text-header">
+                    AUMENTADO CON IA GENERATIVA
+                </p>
+            </header>
+
+            <!-- OBJETIVO FINAL -->
+            <div class="component-box max-w-lg text-center border-2 border-header shadow-lg">
+                <div class="component-header" style="--color-bg: #1e3a8a;"> <!-- header -->
+                    🎯 OBJETIVO FINAL
+                </div>
+                <div class="p-6 text-xl text-textDark">
+                    Estrategia Rentable y Robusta en Producción
+                </div>
+            </div>
+
+            <div class="flow-arrow">▲</div>
+
+            <!-- TRADICIONAL VS AUMENTADO -->
+            <div class="w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4">
+                <div class="border-2 border-gray-400 rounded-lg p-4 text-center bg-white shadow-md">
+                    <h2 class="text-lg font-bold text-gray-600">TRADING TRADICIONAL</h2>
+                    <p class="text-gray-500">(Manual / Lento)</p>
+                </div>
+                <div class="border-2 border-green-600 rounded-lg p-4 text-center bg-white shadow-lg border-dashed">
+                    <h2 class="text-lg font-bold text-genai">TRADING AUMENTADO</h2>
+                    <p class="text-genai">(Con GenAI / Rápido)</p>
+                </div>
+            </div>
+
+            <div class="flow-arrow">▼</div>
+
+            <!-- TÍTULO DE ARQUITECTURA -->
+            <div class="text-center my-4">
+                <h2 class="text-2xl font-bold text-header uppercase tracking-wider">
+                    Arquitectura de 5 Componentes
+                </h2>
+            </div>
+
+            <!-- COMPONENTE 1: DATA PIPELINE -->
+            <div class="component-box">
+                <div class="component-header" style="--color-bg: #3b82f6;"> <!-- component -->
+                    1️⃣ DATA PIPELINE (Fundación)
+                </div>
+                <div class="component-content">
+                    <!-- Columna 1 -->
+                    <div>
+                        <h3 class="text-textDark">📥 INPUTS</h3>
+                        <ul>
+                            <li>yfinance / Alpaca</li>
+                            <li>Polygon.io</li>
+                            <li>Bloomberg (institucional)</li>
+                        </ul>
+                        
+                        <h3 class="text-textDark mt-6">🔧 PROCESOS</h3>
+                        <ul>
+                            <li>Descarga histórica</li>
+                            <li>Limpieza (gaps, outliers)</li>
+                            <li>Ajustes (splits, dividendos)</li>
+                            <li>Validación OHLCV</li>
+                        </ul>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div>
+                        <h3 class="text-genai">🤖 GENAI AUMENTA</h3>
+                        <ul class="text-genai">
+                            <li>Sugiere fuentes de datos</li>
+                            <li>Detecta gaps automáticamente</li>
+                            <li>Genera código de limpieza</li>
+                        </ul>
+
+                        <h3 class="text-textDark mt-6">⚙️ OUTPUTS</h3>
+                        <ul>
+                            <li>DataFrame limpio</li>
+                            <li>Metadata JSON</li>
+                            <li>Parquet/CSV optimizado</li>
+                            <li>Log de calidad</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component-footer">
+                    📚 <b>CONCEPTOS CLAVE:</b> OHLCV • Adjusted vs Raw • Gaps • Outliers • Data Quality
+                </div>
+            </div>
+
+            <div class="flow-arrow">▼</div>
+
+            <!-- COMPONENTE 2: ESTRATEGIA -->
+            <div class="component-box">
+                <div class="component-header" style="--color-bg: #3b82f6;"> <!-- component -->
+                    2️⃣ ESTRATEGIA (Cerebro)
+                </div>
+                <div class="component-content">
+                    <!-- Columna 1 -->
+                    <div>
+                        <h3 class="text-textDark">📊 INPUTS</h3>
+                        <ul>
+                            <li>Datos limpios (de #1)</li>
+                            <li>Indicadores técnicos</li>
+                            <li>Fundamentals (opcional)</li>
+                        </ul>
+                        
+                        <h3 class="text-textDark mt-6">🔧 PROCESOS</h3>
+                        <ul>
+                            <li>Cálculo de indicadores
+                                <ul class="ml-4 list-['-_']">
+                                    <li>Bollinger Bands</li>
+                                    <li>RSI, MACD, ATR</li>
+                                </ul>
+                            </li>
+                            <li>Lógica de entrada/salida</li>
+                            <li>Filtros (volumen, horario)</li>
+                        </ul>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div>
+                        <h3 class="text-genai">🤖 GENAI AUMENTA</h3>
+                        <ul class="text-genai">
+                            <li>Genera hipótesis de estrategias</li>
+                            <li>Implementa indicadores en código</li>
+                            <li>Analiza sentimiento de noticias</li>
+                            <li>Sugiere optimizaciones</li>
+                        </ul>
+
+                        <h3 class="text-textDark mt-6">⚙️ OUTPUTS</h3>
+                        <ul>
+                            <li>Señales de entrada (1/0/-1)</li>
+                            <li>Señales de salida</li>
+                            <li>Filtros aplicados</li>
+                            <li>Log de decisiones</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component-footer">
+                    📚 <b>CONCEPTOS CLAVE:</b> Edge • Mean Reversion • Momentum • Indicators • Signals
+                </div>
+            </div>
+            
+            <div class="flow-arrow">▼</div>
+
+            <!-- COMPONENTE 3: RISK MANAGEMENT -->
+            <div class="component-box">
+                <div class="component-header" style="--color-bg: #f59e0b;"> <!-- warning -->
+                    3️⃣ RISK MANAGEMENT (Frenos)
+                </div>
+                <div class="component-content">
+                    <!-- Columna 1 -->
+                    <div>
+                        <h3 class="text-textDark">📊 INPUTS</h3>
+                        <ul>
+                            <li>Señales (de #2)</li>
+                            <li>Capital actual</li>
+                            <li>Parámetros de riesgo</li>
+                        </ul>
+                        
+                        <h3 class="text-textDark mt-6">🔧 PROCESOS</h3>
+                        <ul>
+                            <li>Position Sizing
+                                <ul class="ml-4 list-['-_']">
+                                    <li>Fixed</li>
+                                    <li>Volatility-based (ATR)</li>
+                                    <li>Kelly Criterion</li>
+                                </ul>
+                            </li>
+                            <li>Stop Loss / Take Profit</li>
+                            <li>Circuit Breaker</li>
+                            <li>Portfolio Heat</li>
+                        </ul>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div>
+                        <h3 class="text-genai">🤖 GENAI AUMENTA</h3>
+                        <ul class="text-genai">
+                            <li>Calcula position sizing óptimo</li>
+                            <li>Sugiere niveles de stop loss</li>
+                            <li>Genera playbooks de crisis</li>
+                            <li>Simula escenarios de estrés</li>
+                        </ul>
+
+                        <h3 class="text-textDark mt-6">⚙️ OUTPUTS</h3>
+                        <ul>
+                            <li>Tamaño de posición ($)</li>
+                            <li>Stop Loss (precio)</li>
+                            <li>Take Profit (precio)</li>
+                            <li>Circuit breaker status</li>
+                            <li>Alertas de riesgo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component-footer">
+                    📚 <b>CONCEPTOS CLAVE:</b> Position Sizing • Drawdown • Sharpe Ratio • Circuit Breaker
+                </div>
+            </div>
+
+            <div class="flow-arrow">▼</div>
+
+            <!-- COMPONENTE 4: BACKTESTING -->
+            <div class="component-box">
+                <div class="component-header" style="--color-bg: #3b82f6;"> <!-- component -->
+                    4️⃣ BACKTESTING (Máquina del Tiempo)
+                </div>
+                <div class="component-content">
+                    <!-- Columna 1 -->
+                    <div>
+                        <h3 class="text-textDark">📊 INPUTS</h3>
+                        <ul>
+                            <li>Estrategia completa (#2+#3)</li>
+                            <li>Datos históricos (#1)</li>
+                            <li>Configuración de costos</li>
+                        </ul>
+                        
+                        <h3 class="text-textDark mt-6">🔧 PROCESOS</h3>
+                        <ul>
+                            <li>Simulación histórica</li>
+                            <li>Walk-Forward Optimization</li>
+                            <li>Monte Carlo (1000 runs)</li>
+                            <li>Cálculo de métricas</li>
+                            <li>Análisis de degradación</li>
+                        </ul>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div>
+                        <h3 class="text-genai">🤖 GENAI AUMENTA</h3>
+                        <ul class="text-genai">
+                            <li>Implementa backtester en código</li>
+                            <li>Genera reportes automáticos</li>
+                            <li>Detecta overfitting</li>
+                            <li>Sugiere métricas alternativas</li>
+                        </ul>
+
+                        <h3 class="text-textDark mt-6">⚙️ OUTPUTS</h3>
+                        <ul>
+                            <li>Equity curve</li>
+                            <li>Sharpe Ratio: [X.XX]</li>
+                            <li>Max Drawdown: [XX%]</li>
+                            <li>Win Rate: [XX%]</li>
+                            <li>Backtest Report (PDF)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component-footer">
+                    📚 <b>CONCEPTOS CLAVE:</b> Overfitting • Walk-Forward • Monte Carlo • Look-ahead Bias
+                </div>
+            </div>
+
+            <div class="flow-arrow">▼</div>
+
+            <!-- COMPONENTE 5: EXECUTION -->
+            <div class="component-box">
+                <div class="component-header" style="--color-bg: #3b82f6;"> <!-- component -->
+                    5️⃣ EXECUTION (Volante y Pedales)
+                </div>
+                <div class="component-content">
+                    <!-- Columna 1 -->
+                    <div>
+                        <h3 class="text-textDark">📊 INPUTS</h3>
+                        <ul>
+                            <li>Señales aprobadas</li>
+                            <li>Datos en tiempo real</li>
+                            <li>API credentials</li>
+                        </ul>
+                        
+                        <h3 class="text-textDark mt-6">🔧 PROCESOS</h3>
+                        <ul>
+                            <li>Paper Trading (30 días)</li>
+                            <li>Live Trading (gradual)</li>
+                            <li>Monitoreo 24/7</li>
+                            <li>Logging & Alertas</li>
+                            <li>Reconciliación diaria</li>
+                        </ul>
+                        
+                        <h3 class="text-textDark mt-6">🛠️ PLATAFORMAS</h3>
+                        <ul>
+                            <li>TradingView (Pine Script)</li>
+                            <li>Alpaca API (Python)</li>
+                            <li>Webhook Server (Flask)</li>
+                        </ul>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div>
+                        <h3 class="text-genai">🤖 GENAI AUMENTA</h3>
+                        <ul class="text-genai">
+                            <li>Traduce Python → Pine Script</li>
+                            <li>Genera webhook servers</li>
+                            <li>Debuggea errores de ejecución</li>
+                            <li>Monitorea performance live</li>
+                        </ul>
+
+                        <h3 class="text-textDark mt-6">⚙️ OUTPUTS</h3>
+                        <ul>
+                            <li>Órdenes ejecutadas</li>
+                            <li>Fill confirmations</li>
+                            <li>Live performance dashboard</li>
+                            <li>Alertas (email/Slack)</li>
+                            <li>Daily reports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component-footer">
+                    📚 <b>CONCEPTOS CLAVE:</b> Paper Trading • Slippage • Commission • API Rate Limits
+                </div>
+            </div>
+
+            <!-- CAPA TRANSVERSAL -->
+            <div class="component-box mt-12 border-2 border-dashed border-genai">
+                <div class="component-header" style="--color-bg: #10b981;"> <!-- genai -->
+                    🤖 CAPA DE IA GENERATIVA (TRANSVERSAL)
+                </div>
+                <div class="component-content grid-cols-1 md:grid-cols-4">
+                    <div>
+                        <h3 class="text-genai">💡 IDEACIÓN</h3>
+                        <ul>
+                            <li>Hipótesis</li>
+                            <li>Análisis de Papers</li>
+                            <li>Análisis de Sentimiento</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-genai">🐛 DEBUGGING</h3>
+                        <ul>
+                            <li>Encuentra bugs</li>
+                            <li>Look-ahead bias</li>
+                            <li>Optimización</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-genai">🔄 TRADUCCIÓN</h3>
+                        <ul>
+                            <li>Python → Pine Script</li>
+                            <li>Pine Script → MQL5</li>
+                            <li>Pseudo → Code</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-genai">📝 DOCUMENTACIÓN</h3>
+                        <ul>
+                            <li>Strategy Memo</li>
+                            <li>Backtest Report</li>
+                            <li>README.md</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RUTA DE APRENDIZAJE -->
+            <div class="component-box mt-12">
+                <div class="component-header" style="--color-bg: #1e3a8a;"> <!-- header -->
+                    🎓 RUTA DE APRENDIZAJE
+                </div>
+                <div class="p-6">
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <!-- Usamos flex-wrap para que se ajuste en móviles -->
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S1: Fundamentos</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S2: Datos</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S3: Ideación</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S4: Implementación</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S5: Backtesting</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S6: Risk</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S7: Multi-Plat</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S8: Deployment</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-gray-200 rounded-lg shadow-sm">S9: Documentación</span>
+                        <span class="font-bold text-gray-400 mx-1">→</span>
+                        <span class="p-2 bg-green-600 text-white rounded-lg shadow-sm">🎯 Producción</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BALANCE CRÍTICO -->
+            <div class="component-box mt-12 border-2 border-warning">
+                <div class="component-header" style="--color-bg: #f59e0b;"> <!-- warning -->
+                    ⚖️ BALANCE CRÍTICO
+                </div>
+                <div class="component-content">
+                    <div>
+                        <h3 class="text-genai">🤖 GENAI = COPILOTO</h3>
+                        <ul>
+                            <li>Acelera 10x</li>
+                            <li>Genera código</li>
+                            <li>Encuentra patrones</li>
+                            <li>Sugiere mejoras</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-header">👨‍💻 HUMANO = PILOTO</h3>
+                        <ul>
+                            <li>Decide estrategia</li>
+                            <li>Valida resultados</li>
+                            <li>Detecta overfitting</li>
+                            <li>Toma decisiones finales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component-footer bg-amber-50 text-warning font-semibold">
+                    <p>⚠️ NUNCA uses código de GenAI sin entenderlo.</p>
+                    <p>⚠️ SIEMPRE valida con backtesting riguroso.</p>
+                    <p>⚠️ GenAI puede alucinar → TÚ eres el filtro crítico.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
