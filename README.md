@@ -8,9 +8,9 @@
 
 Este workshop está diseñado para **traders manuales con experiencia** que quieren:
 
-- ✅ Sistematizar su edge con algoritmos
-- ✅ Escalar sin limitaciones de tiempo  
-- ✅ Aumentar capacidades con IA Generativa
+✅ Sistematizar su edge con algoritmos
+✅ Escalar sin limitaciones de tiempo  
+✅ Aumentar capacidades con IA Generativa
 
 ---
 
@@ -38,11 +38,11 @@ Este workshop está diseñado para **traders manuales con experiencia** que quie
 
 El sistema tiene **5 componentes principales** aumentados por IA:
 
-- **🗄️ DATA PIPELINE** - Descarga y limpia datos históricos
-- **🧠 ESTRATEGIA** - Genera señales de trading
-- **🛡️ RISK MANAGEMENT** - Protección de capital
-- **🔬 BACKTESTING** - Validación histórica
-- **⚙️ EXECUTION** - Trading en vivo
+**🗄️ DATA PIPELINE** - Descarga y limpia datos históricos
+**🧠 ESTRATEGIA** - Genera señales de trading
+**🛡️ RISK MANAGEMENT** - Protección de capital
+**🔬 BACKTESTING** - Validación histórica
+**⚙️ EXECUTION** - Trading en vivo
 
 **[Ver Diagrama Completo →](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)**
 
@@ -52,21 +52,21 @@ El sistema tiene **5 componentes principales** aumentados por IA:
 
 ### Semana 1: Fundamentos
 
-- **S1:** Fundamentos y Expectativas Realistas ✅
-- **S2:** Data Pipeline y Quality Forensics ✅
-- **S3:** Ideación con GenAI 🔄
+**S1:** Fundamentos y Expectativas Realistas ✅
+**S2:** Data Pipeline y Quality Forensics ✅
+**S3:** Ideación con GenAI 🔄
 
 ### Semana 2: Implementación
 
-- **S4:** Implementación de Estrategias
-- **S5:** Backtesting Riguroso
-- **S6:** Risk Management
+**S4:** Implementación de Estrategias
+**S5:** Backtesting Riguroso
+**S6:** Risk Management
 
 ### Semana 3: Producción
 
-- **S7:** Multi-Plataforma
-- **S8:** Deployment
-- **S9:** Mantenimiento
+**S7:** Multi-Plataforma
+**S8:** Deployment
+**S9:** Mantenimiento
 
 **Total:** 9 sesiones • 27 horas • 3 semanas
 
