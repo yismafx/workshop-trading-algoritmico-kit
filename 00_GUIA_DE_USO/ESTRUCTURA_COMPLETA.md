@@ -1,6 +1,4 @@
-# Estructura Completa del Workshop
-
-## Trading Algorítmico Aumentado con IA Generativa
+# Trading Algorítmico Aumentado con IA Generativa
 
 ---
 
