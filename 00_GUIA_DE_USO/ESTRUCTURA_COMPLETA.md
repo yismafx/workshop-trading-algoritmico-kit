@@ -1,4 +1,4 @@
-# Trading Algorítmico Aumentado con IA Generativa
+# Workshop: Trading Algorítmico Aumentado con IA Generativa
 
 ---
 
