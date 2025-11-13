@@ -163,6 +163,60 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 ---
 
+## 📅 Tu Journey Completo (Timeline)
+
+**De la idea al sistema en producción:**
+
+```
+🎯 DÍA 1
+│
+├─ ⚙️  Setup ambiente (30-45 min)
+├─ 📖 S1: Fundamentos (3h)
+└─ ✅ Checkpoint: Ambiente funcionando + Dataset SPY
+    │
+    │
+🟦 SEMANA 1 (9h totales)
+│
+├─ 📊 S2: Data Pipeline (3h)
+├─ 🧠 S3: Ideación con GenAI (3h)
+└─ ✅ Checkpoint: Dataset limpio + 3 hipótesis documentadas
+    │
+    │
+🟨 SEMANA 2 (9h totales)
+│
+├─ 💻 S4: Implementación (3h)
+├─ 🔬 S5: Backtesting + WFO (3h) ← VALIDACIÓN CRÍTICA
+├─ 🛡️  S6: Risk Management (3h)
+└─ ✅ Checkpoint: ¿Estrategia sobrevivió WFO?
+    │         ├─ SÍ → Continúa a S7
+    │         └─ NO → Vuelta a S3 (es NORMAL)
+    │
+🟩 SEMANA 3 (9h totales)
+│
+├─ 🔄 S7: Multi-Plataforma (3h)
+├─ 🚀 S8: Deployment Paper Trading (3h)
+├─ 📄 S9: Documentación Profesional (3h)
+└─ ✅ Checkpoint: Bot en paper trading activo
+    │
+    │
+📈 POST-WORKSHOP (8-12 semanas)
+│
+├─ 📊 Semanas 1-4: Monitoreo diario + ajustes
+├─ 📊 Semanas 5-8: Validación de consistencia
+├─ 📊 Semanas 9-12: Análisis de performance real
+└─ 🎯 DECISIÓN: ¿Live trading con capital mínimo?
+          │
+          ├─ ✅ Sharpe >1.0 + Max DD <25% + Sin drift → SÍ (1-5% capital)
+          └─ ❌ Performance decae o alta volatilidad → Vuelta a optimización
+```
+
+**⏱️ Tiempo total del journey completo:**
+- Workshop: 27h (3 semanas)
+- Paper trading: 8-12 semanas
+- **Total hasta live:** 3-4 meses mínimo
+
+---
+
 ## ⚖️ Expectativas Realistas (El "Anti-Hype")
 
 > **Advertencia Crítica:** Este workshop NO te hará millonario. Te dará un PROCESO robusto y repetible.
@@ -241,6 +295,41 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 |--------|--------------|------------|------------------|
 | **⚡ Setup Rápido** | Google Colab + Alpaca (paper) | ⭐⭐ | Principiantes, inicio rápido |
 | **🔬 Setup Avanzado** | Python local + IDE + broker API | ⭐⭐⭐⭐ | Usuarios técnicos, control total |
+
+---
+
+### 🧭 ¿Qué Setup es Para Ti?
+
+**Usa este diagrama de decisión:**
+
+```
+                    ┌─────────────────────────────────┐
+                    │  ¿Primera vez con Python?       │
+                    └─────────────────────────────────┘
+                                   │
+                        ┌──────────┴──────────┐
+                        │                     │
+                       SÍ                    NO
+                        │                     │
+                        ↓                     ↓
+              ⚡ SETUP RÁPIDO        ┌─────────────────────┐
+              (Google Colab)         │ ¿Necesitas control  │
+              ✅ Recomendado         │ total del ambiente? │
+                                     └─────────────────────┘
+                                                │
+                                     ┌──────────┴──────────┐
+                                     │                     │
+                                    SÍ                    NO
+                                     │                     │
+                                     ↓                     ↓
+                          🔬 SETUP AVANZADO      ⚡ SETUP RÁPIDO
+                          (Python local)         (Más fácil)
+                          • Control total        • Menos fricción
+                          • Sin límites          • Enfócate en trading
+                          • Más complejo         • Siempre funciona
+```
+
+**💡 Consejo:** El 80% de participantes usa Setup Rápido y es suficiente para todo el workshop.
 
 **✅ Checklist del Setup:**
 
