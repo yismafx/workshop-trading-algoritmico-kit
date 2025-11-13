@@ -267,31 +267,77 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 ### 🧭 ¿Qué Setup es Para Ti?
 
-**Responde estas 2 preguntas:**
+#### **PASO 1: Decisión Rápida (30 segundos)**
 
-| # | Pregunta | Respuesta | Recomendación |
-|:-:|----------|:---------:|---------------|
-| **1** | **¿Primera vez con Python?** | **SÍ** | ⚡ **SETUP RÁPIDO** ← 80% participantes |
-| | | **NO** | ↓ Ve a pregunta 2 |
-| **2** | **¿Necesitas control total del ambiente?**<br>(instalar versiones específicas, usar IDE local, sin límites de tiempo) | **SÍ** | 🔬 **SETUP AVANZADO** |
-| | | **NO** | ⚡ **SETUP RÁPIDO** ← Recomendado |
+**Sigue este flujo:**
+
+```
+┌──────────────────────────────────────┐
+│  ¿Primera vez con Python?            │
+└──────────────────────────────────────┘
+           │
+    ┌──────┴──────┐
+    │             │
+   SÍ            NO
+    │             │
+    ↓             ↓
+    
+⚡ SETUP RÁPIDO   ┌──────────────────────────────────┐
+✅ RECOMENDADO    │ ¿Necesitas control total del     │
+(80% usa este)   │ ambiente? (IDE local, versiones  │
+                 │ específicas, sin límites)        │
+                 └──────────────────────────────────┘
+                              │
+                       ┌──────┴──────┐
+                       │             │
+                      SÍ            NO
+                       │             │
+                       ↓             ↓
+                       
+              🔬 SETUP AVANZADO    ⚡ SETUP RÁPIDO
+              (Python local)       ✅ RECOMENDADO
+```
+
+**🎯 Resultado:** La mayoría termina aquí → **⚡ SETUP RÁPIDO**
 
 ---
 
-**📊 Comparación Rápida:**
+#### **PASO 2: Confirma tu Decisión (Comparación Detallada)**
+
+**Revisa esta tabla para estar seguro:**
 
 | Característica | ⚡ Setup Rápido | 🔬 Setup Avanzado |
 |----------------|-----------------|-------------------|
-| **Tiempo setup** | 30-45 min | 1-2 horas |
-| **Complejidad** | ⭐⭐ Fácil | ⭐⭐⭐⭐ Avanzado |
-| **Dónde corre** | Navegador (Colab) | Tu computadora |
-| **Instalación Python** | ❌ No necesaria | ✅ Requerida |
-| **Control versiones** | ❌ Limitado | ✅ Total |
-| **Límite tiempo sesión** | ⚠️ 12h Colab | ✅ Sin límites |
-| **Para el workshop** | ✅ Suficiente | ✅ Suficiente |
-| **Para producción** | ⚠️ No ideal | ✅ Ideal |
+| **Tiempo setup inicial** | 30-45 min | 1-2 horas |
+| **Complejidad técnica** | ⭐⭐ Fácil | ⭐⭐⭐⭐ Avanzado |
+| **¿Dónde corre el código?** | ☁️ Navegador (Google Colab) | 💻 Tu computadora |
+| **¿Instalar Python?** | ❌ No necesario | ✅ Sí (Python 3.10+) |
+| **¿Instalar librerías?** | ❌ Ya están instaladas | ✅ Manual (pip install) |
+| **Control de versiones** | ⚠️ Limitado a lo que Colab tiene | ✅ Total (eliges versiones) |
+| **Límite de tiempo** | ⚠️ 12h por sesión (luego reinicia) | ✅ Sin límites |
+| **Persistencia de datos** | ⚠️ Se borra al cerrar (salvo Drive) | ✅ Todo se guarda local |
+| **¿Suficiente para workshop?** | ✅ 100% Suficiente | ✅ 100% Suficiente |
+| **¿Ideal para producción?** | ⚠️ No (pero funciona para paper) | ✅ Sí (control total) |
+| **Si falla algo** | 🔄 Reinicia notebook (fácil) | 🔧 Debug manual (complejo) |
+| **Migración posterior** | ✅ Puedes migrar a local después | N/A Ya estás local |
 
-**💡 Consejo:** El 80% de participantes usa Setup Rápido y completa el workshop exitosamente. Puedes migrar a Setup Avanzado después si lo necesitas.
+---
+
+#### **💡 RECOMENDACIÓN FINAL**
+
+**Elige ⚡ SETUP RÁPIDO si:**
+- ✅ Primera vez con Python
+- ✅ Quieres enfocarte en trading, no en instalaciones
+- ✅ Prefieres que "simplemente funcione"
+- ✅ El 80% de participantes está aquí contigo
+
+**Elige 🔬 SETUP AVANZADO solo si:**
+- ✅ Ya tienes Python instalado y sabes usarlo
+- ✅ Necesitas control total (IDEs, debuggers, versiones)
+- ✅ Planeas escalar a producción pronto
+- ✅ No te intimida troubleshooting técnico
+
+**🎓 Nota del Instructor:** El workshop fue diseñado para funcionar 100% con Setup Rápido. Puedes migrar a Setup Avanzado después de S9 si decides escalar a producción.
 
 **✅ Checklist del Setup:**
 
