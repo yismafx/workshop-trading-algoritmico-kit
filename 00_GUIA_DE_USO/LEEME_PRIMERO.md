@@ -1,6 +1,6 @@
 # 🎯 BIENVENIDO AL KIT DE TRADING ALGORÍTMICO AUMENTADO CON IA GENERATIVA
 
-![Version](https://img.shields.io/badge/version-1.2-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Language](https://img.shields.io/badge/language-ES-yellow)
+![Version](https://img.shields.io/badge/version-2.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Language](https://img.shields.io/badge/language-ES-yellow)
 
 ---
 
@@ -65,6 +65,10 @@ Este kit es para ti **SOLO SI**:
 
 **🕐 ¿Tienes más tiempo?**  
 📖 [Lee la guía completa](#-tabla-de-contenidos) para entender el roadmap de 9 sesiones y el proceso completo.
+
+**💡 Recomendado leer:**
+- [⚖️ Expectativas Realistas](#️-expectativas-realistas-el-anti-hype) antes de empezar (5 min)
+- [🤔 FAQ](#-faq---preguntas-frecuentes) si tienes dudas específicas
 
 ---
 
@@ -160,6 +164,9 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 | **S9** | Proyecto Final y Documentación Profesional | Documento profesional + Repositorio + Presentación | ⭐⭐⭐ |
 
 **Checkpoint S7-S9:** ¿Está tu bot en paper trading por al menos 8 semanas antes de live? ✅
+
+**📖 Para detalles completos de cada sesión:**  
+Ver [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y tiempos detallados.
 
 ---
 
@@ -276,6 +283,10 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 5. ✅ **Escala tu tiempo** → Bots trabajan 24/7, tú no
 
 **El objetivo:** Transformarte de trader discrecional a **operador sistemático** que toma decisiones basadas en datos, no en "feeling".
+
+**Ver también:**
+- [💰 FAQ Financiero](#-preguntas-financieras) para expectativas de retorno y capital necesario
+- [📅 Tu Journey Completo](#-tu-journey-completo-timeline) para timeline realista de desarrollo
 
 ---
 
@@ -476,6 +487,8 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 **💡 Tip:** Todos los prompts usan el framework **ROL-CONTEXTO-TAREA-FORMATO** para maximizar calidad de respuestas de GenAI.
 
+**📂 Ver prompts completos:** Carpeta `03_PROMPTS_LIBRARY/` en el kit
+
 ---
 
 ### 📄 PASO 7: Documentar Tu Sistema
@@ -504,6 +517,8 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
     ├── backtest.py
     └── risk_management.py
 ```
+
+**📂 Ver templates completos:** Carpeta `02_TEMPLATE_PACK/` en el kit
 
 ---
 
@@ -593,6 +608,10 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 | **VSCode** | ⚠️ Opcional | Editor de código (setup avanzado) |
 | **Git/GitHub** | ⚠️ Opcional | Control de versiones |
 | **Telegram** | ⚠️ Opcional | Alertas de trading |
+
+**Ver también:**
+- [⚙️ Configurar Ambiente](#️-paso-3-configurar-ambiente) para instrucciones de setup
+- [🚨 Troubleshooting](#-troubleshooting-común) si tienes problemas de instalación
 
 ---
 
@@ -854,6 +873,13 @@ R: **El riesgo es tuyo**. El workshop enseña el proceso, no garantiza rentabili
 
 ---
 
+**🔍 ¿No encontraste tu pregunta?**
+- Revisa [Troubleshooting Común](#-troubleshooting-común) para errores técnicos
+- Consulta el [Stack Tecnológico](#️-stack-tecnológico-del-workshop) para dudas de herramientas
+- Contacta: yismaryme@gmail.com o grupo Telegram (🔒 Premium)
+
+---
+
 ## 🚨 Troubleshooting Común
 
 ### **Error: "No module named 'yfinance'"**
@@ -975,7 +1001,7 @@ pip install yfinance
 | ☐ | **Leer esta guía completa** (acabas de hacerlo) |
 | ☐ | **Revisar el** [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) |
 | ☐ | **Configurar ambiente** siguiendo: `Instrucciones_Setup_Ambiente.md` |
-| ☐ | **Completar el checklist** "Tu Primer Día" |
+| ☐ | **Completar el** [checklist "Tu Primer Día"](#-checklist-tu-primer-día) |
 | ☐ | **Abrir el Colab Notebook Maestro** (🔒 Premium) |
 | ☐ | **Revisar** `ESTRUCTURA_COMPLETA.md` para entender el roadmap |
 
