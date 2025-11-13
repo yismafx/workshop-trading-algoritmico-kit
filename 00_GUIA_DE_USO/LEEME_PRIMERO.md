@@ -167,53 +167,20 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 **De la idea al sistema en producción:**
 
-```
-🎯 DÍA 1
-│
-├─ ⚙️  Setup ambiente (30-45 min)
-├─ 📖 S1: Fundamentos (3h)
-└─ ✅ Checkpoint: Ambiente funcionando + Dataset SPY
-    │
-    │
-🟦 SEMANA 1 (9h totales)
-│
-├─ 📊 S2: Data Pipeline (3h)
-├─ 🧠 S3: Ideación con GenAI (3h)
-└─ ✅ Checkpoint: Dataset limpio + 3 hipótesis documentadas
-    │
-    │
-🟨 SEMANA 2 (9h totales)
-│
-├─ 💻 S4: Implementación (3h)
-├─ 🔬 S5: Backtesting + WFO (3h) ← VALIDACIÓN CRÍTICA
-├─ 🛡️  S6: Risk Management (3h)
-└─ ✅ Checkpoint: ¿Estrategia sobrevivió WFO?
-    │         ├─ SÍ → Continúa a S7
-    │         └─ NO → Vuelta a S3 (es NORMAL)
-    │
-🟩 SEMANA 3 (9h totales)
-│
-├─ 🔄 S7: Multi-Plataforma (3h)
-├─ 🚀 S8: Deployment Paper Trading (3h)
-├─ 📄 S9: Documentación Profesional (3h)
-└─ ✅ Checkpoint: Bot en paper trading activo
-    │
-    │
-📈 POST-WORKSHOP (8-12 semanas)
-│
-├─ 📊 Semanas 1-4: Monitoreo diario + ajustes
-├─ 📊 Semanas 5-8: Validación de consistencia
-├─ 📊 Semanas 9-12: Análisis de performance real
-└─ 🎯 DECISIÓN: ¿Live trading con capital mínimo?
-          │
-          ├─ ✅ Sharpe >1.0 + Max DD <25% + Sin drift → SÍ (1-5% capital)
-          └─ ❌ Performance decae o alta volatilidad → Vuelta a optimización
-```
+| Fase | Duración | Actividades | Checkpoint |
+|------|----------|-------------|------------|
+| **🎯 DÍA 1** | 3.5-4h | • Setup ambiente (30-45 min)<br>• S1: Fundamentos (3h) | ✅ Ambiente + Dataset SPY |
+| **🟦 SEMANA 1** | 9h | • S2: Data Pipeline (3h)<br>• S3: Ideación con GenAI (3h) | ✅ Dataset limpio + 3 hipótesis |
+| **🟨 SEMANA 2** | 9h | • S4: Implementación (3h)<br>• S5: Backtesting + WFO (3h) ⚠️<br>• S6: Risk Management (3h) | ✅ ¿Estrategia sobrevivió WFO?<br>• SÍ → Continúa S7<br>• NO → Vuelta S3 (NORMAL) |
+| **🟩 SEMANA 3** | 9h | • S7: Multi-Plataforma (3h)<br>• S8: Deployment (3h)<br>• S9: Documentación (3h) | ✅ Bot en paper trading activo |
+| **📈 POST-WORKSHOP** | 8-12 sem | **Semanas 1-4:** Monitoreo + ajustes<br>**Semanas 5-8:** Validación consistencia<br>**Semanas 9-12:** Análisis performance | 🎯 **DECISIÓN LIVE TRADING**<br>✅ Sharpe >1.0 + DD <25% → SÍ (1-5%)<br>❌ Performance decae → Reoptimizar |
 
-**⏱️ Tiempo total del journey completo:**
-- Workshop: 27h (3 semanas)
-- Paper trading: 8-12 semanas
+**⏱️ Tiempo total del journey:**
+- **Workshop:** 27 horas (3 semanas)
+- **Paper trading:** 8-12 semanas  
 - **Total hasta live:** 3-4 meses mínimo
+
+> **⚠️ Nota Crítica:** El 80% de participantes necesita reoptimizar al menos 1 estrategia (vuelta a S3). Esto es NORMAL y parte del proceso.
 
 ---
 
@@ -300,36 +267,31 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 ### 🧭 ¿Qué Setup es Para Ti?
 
-**Usa este diagrama de decisión:**
+**Responde estas 2 preguntas:**
 
-```
-                    ┌─────────────────────────────────┐
-                    │  ¿Primera vez con Python?       │
-                    └─────────────────────────────────┘
-                                   │
-                        ┌──────────┴──────────┐
-                        │                     │
-                       SÍ                    NO
-                        │                     │
-                        ↓                     ↓
-              ⚡ SETUP RÁPIDO        ┌─────────────────────┐
-              (Google Colab)         │ ¿Necesitas control  │
-              ✅ Recomendado         │ total del ambiente? │
-                                     └─────────────────────┘
-                                                │
-                                     ┌──────────┴──────────┐
-                                     │                     │
-                                    SÍ                    NO
-                                     │                     │
-                                     ↓                     ↓
-                          🔬 SETUP AVANZADO      ⚡ SETUP RÁPIDO
-                          (Python local)         (Más fácil)
-                          • Control total        • Menos fricción
-                          • Sin límites          • Enfócate en trading
-                          • Más complejo         • Siempre funciona
-```
+| # | Pregunta | Respuesta | Recomendación |
+|:-:|----------|:---------:|---------------|
+| **1** | **¿Primera vez con Python?** | **SÍ** | ⚡ **SETUP RÁPIDO** ← 80% participantes |
+| | | **NO** | ↓ Ve a pregunta 2 |
+| **2** | **¿Necesitas control total del ambiente?**<br>(instalar versiones específicas, usar IDE local, sin límites de tiempo) | **SÍ** | 🔬 **SETUP AVANZADO** |
+| | | **NO** | ⚡ **SETUP RÁPIDO** ← Recomendado |
 
-**💡 Consejo:** El 80% de participantes usa Setup Rápido y es suficiente para todo el workshop.
+---
+
+**📊 Comparación Rápida:**
+
+| Característica | ⚡ Setup Rápido | 🔬 Setup Avanzado |
+|----------------|-----------------|-------------------|
+| **Tiempo setup** | 30-45 min | 1-2 horas |
+| **Complejidad** | ⭐⭐ Fácil | ⭐⭐⭐⭐ Avanzado |
+| **Dónde corre** | Navegador (Colab) | Tu computadora |
+| **Instalación Python** | ❌ No necesaria | ✅ Requerida |
+| **Control versiones** | ❌ Limitado | ✅ Total |
+| **Límite tiempo sesión** | ⚠️ 12h Colab | ✅ Sin límites |
+| **Para el workshop** | ✅ Suficiente | ✅ Suficiente |
+| **Para producción** | ⚠️ No ideal | ✅ Ideal |
+
+**💡 Consejo:** El 80% de participantes usa Setup Rápido y completa el workshop exitosamente. Puedes migrar a Setup Avanzado después si lo necesitas.
 
 **✅ Checklist del Setup:**
 
