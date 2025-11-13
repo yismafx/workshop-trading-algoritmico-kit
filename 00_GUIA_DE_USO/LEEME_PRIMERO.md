@@ -188,7 +188,7 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 > **Advertencia Crítica:** Este workshop NO te hará millonario. Te dará un PROCESO robusto y repetible.
 
-**Estadísticas Reales del Trading Algorítmico:**
+### 📊 Estadísticas Reales del Trading Algorítmico
 
 | Métrica | Objetivo Realista | ❌ Expectativa Irreal |
 |---------|------------------|----------------------|
@@ -198,26 +198,84 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 | **Tiempo desarrollo** | 3-6 meses desde ideación hasta producción | 1 semana |
 | **Fallo de estrategias** | 90% fallan en validación rigurosa (nuestro objetivo: ser el 10%) | "Gané dinero en backtest = Ganaré en live" |
 
-**Citas de Expertos:**
+---
 
-> "El overfitting es el enemigo número uno del trading algorítmico porque transforma el backtesting en una 'máquina de crear historias falsas'." — López de Prado (2018)
+### 🎭 Expectativas vs Realidad Expandida
 
-> "El backtesting es tan bueno como los datos que usas. Garbage In, Garbage Out." — Chan (2013)
+**Tabla comparativa de creencias comunes:**
 
-**Lo que SÍ lograrás:**
+| Aspecto | ❌ Mito | ✅ Realidad | 📚 Fuente |
+|---------|---------|-------------|-----------|
+| **Tiempo a rentabilidad** | 1-2 semanas | 3-6 meses | Chan (2013) |
+| **Tasa éxito estrategias** | 90% funcionan | 10% pasan validación | López de Prado (2018) |
+| **Capital inicial** | $100 USD es suficiente | $1,000+ recomendado para gestión riesgo | Carver (2015) |
+| **Drawdowns normales** | < 5% | 20-30% son esperables | Chan (2013) |
+| **Retorno anual realista** | 100%+ anual | 10-30% anual es excelente | Carver (2015) |
+| **Trabajo después de deployment** | "Set and forget" | Monitoreo diario + ajustes mensuales | Chan (2013) |
+| **Complejidad código** | "Más complejo = mejor" | Simple + robusto > complejo + frágil | López de Prado (2018) |
+| **Número de indicadores** | Cuantos más, mejor | 2-3 indicadores bien elegidos | Chan (2013) |
+| **Overfitting** | "No me pasará" | Pasa a todos, hay que detectarlo | López de Prado (2018) |
+| **Slippage en live** | Insignificante | Puede comer 10-20% del P&L | Chan (2013) |
+| **Paper vs Live** | Resultados idénticos | Live es 20-30% peor que paper | Experiencia |
+| **Bots autónomos** | "Nunca requieren intervención" | Crisis y eventos raros necesitan override manual | Workshop S6 |
 
-- ✅ Proceso profesional de validación de estrategias
-- ✅ Capacidad de ejecutar backtesting riguroso (WFO, Monte Carlo)
-- ✅ Implementar gestión de riesgo a nivel institucional
-- ✅ Desplegar bots supervisados en paper trading (primer paso)
-- ✅ Documentar sistemas con estándares profesionales
+---
 
-**Lo que NO lograrás:**
+### 📈 Citas de Expertos
 
-- ❌ Convertirte en desarrollador Python senior
-- ❌ Crear frameworks de trading desde cero
-- ❌ Competir con quants con PhD en matemáticas
-- ❌ Evitar drawdowns (son parte del juego)
+> "El overfitting es el enemigo número uno del trading algorítmico porque transforma el backtesting en una 'máquina de crear historias falsas'."  
+> — **López de Prado (2018), Advances in Financial ML**
+
+> "El backtesting es tan bueno como los datos que usas. Garbage In, Garbage Out."  
+> — **Chan (2013), Algorithmic Trading**
+
+> "La mayoría de estrategias rentables en papel pierden dinero en producción debido a costos de transacción subestimados."  
+> — **Carver (2015), Systematic Trading**
+
+> "Si algo parece demasiado bueno para ser verdad en backtesting, probablemente lo es."  
+> — **López de Prado (2018)**
+
+---
+
+### ✅ Lo que SÍ Lograrás
+
+| # | Habilidad | Nivel Post-Workshop |
+|:-:|-----------|---------------------|
+| 1 | **Proceso profesional de validación** | ⭐⭐⭐⭐⭐ Nivel institucional |
+| 2 | **Backtesting riguroso (WFO, Monte Carlo)** | ⭐⭐⭐⭐ Avanzado |
+| 3 | **Gestión de riesgo (Kelly, position sizing)** | ⭐⭐⭐⭐ Avanzado |
+| 4 | **Deployment supervisado en paper trading** | ⭐⭐⭐⭐ Avanzado |
+| 5 | **Documentación con estándares profesionales** | ⭐⭐⭐⭐ Avanzado |
+| 6 | **Uso efectivo de GenAI como copiloto** | ⭐⭐⭐⭐⭐ Experto |
+| 7 | **Detección de overfitting y sesgos** | ⭐⭐⭐⭐ Avanzado |
+| 8 | **Adaptación de código existente** | ⭐⭐⭐⭐ Avanzado |
+
+---
+
+### ❌ Lo que NO Lograrás
+
+| # | Falsa expectativa | Por qué no |
+|:-:|-------------------|-----------|
+| 1 | **Convertirte en desarrollador Python senior** | No es el objetivo - aprendes a USAR código |
+| 2 | **Crear frameworks de trading desde cero** | Usas frameworks existentes (backtrader, vectorbt) |
+| 3 | **Competir con quants con PhD** | Ellos tienen 5-10 años más de matemáticas avanzadas |
+| 4 | **Evitar drawdowns completamente** | Drawdowns son parte inherente del trading |
+| 5 | **Garantizar rentabilidad** | Ningún sistema garantiza ganancias - gestionas riesgo |
+| 6 | **"Hacerte rico rápido"** | Si buscas esto, este workshop NO es para ti |
+
+---
+
+### 🎯 El Verdadero Valor del Workshop
+
+**No es una "estrategia mágica"** - Es un **PROCESO SISTEMÁTICO** que:
+
+1. ✅ **Elimina emociones** → Reglas claras > decisiones impulsivas
+2. ✅ **Valida rigurosamente** → WFO + Monte Carlo > backtesting simple
+3. ✅ **Gestiona riesgo** → Kelly Criterion + position sizing > YOLO
+4. ✅ **Documenta todo** → Auditable y reproducible
+5. ✅ **Escala tu tiempo** → Bots trabajan 24/7, tú no
+
+**El objetivo:** Transformarte de trader discrecional a **operador sistemático** que toma decisiones basadas en datos, no en "feeling".
 
 ---
 
@@ -540,7 +598,11 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 ## 🤔 FAQ - Preguntas Frecuentes
 
-### **Técnicas**
+> **💡 Tip:** Usa Ctrl+F para buscar palabras clave en esta sección.
+
+---
+
+### 🔧 Preguntas Técnicas
 
 **P1: ¿Necesito saber programar para el workshop?**  
 R: **NO**. El código ya está escrito y funcionando. Tu trabajo es:
@@ -562,101 +624,233 @@ El setup rápido (Google Colab) corre 100% en el navegador.
 
 ---
 
-**P3: ¿Puedo usar criptomonedas en vez de acciones?**  
-R: **Sí, pero empezamos con acciones** (SPY) porque:
-- Datos históricos confiables (yfinance)
-- Sin gaps de fin de semana (menos complejidad inicial)
-- Slippage predecible
-
-Para adaptar a crypto/Forex:
-- Cambia la fuente de datos (ej: Binance API para crypto)
-- Ajusta reglas de trading (mercados 24/7)
-- Revisa spreads y comisiones específicas
+**P3: ¿Qué versión de Python necesito?**  
+R: **Python 3.10+** para setup avanzado. Para setup rápido (Google Colab), no necesitas instalar nada - Colab ya tiene Python 3.10+ preinstalado.
 
 ---
 
-**P4: ¿Puedo usar MetaTrader en vez de TradingView?**  
+**P4: ¿Necesito pagar por Claude o ChatGPT?**  
+R: **NO**. Las versiones gratuitas son suficientes. Los planes pagos (Claude Pro / ChatGPT Plus) dan más mensajes/día y respuestas más rápidas, pero NO son obligatorios.
+
+---
+
+**P5: ¿Puedo usar MetaTrader en vez de TradingView?**  
 R: Sí. S7 cubre traducción Python → Pine Script, pero puedes adaptar a MQL5 con ayuda de GenAI. El Notebook Maestro tiene ejemplos de integración con MT5.
 
 ---
 
-**P5: ¿Necesito pagar por Claude o ChatGPT?**  
-R: NO. Las versiones gratuitas son suficientes para el workshop. Los planes pagos (Claude Pro / ChatGPT Plus) dan:
-- Más mensajes por día
-- Respuestas más rápidas
-- Pero NO son obligatorios
+**P6: ¿Funciona en computadoras lentas/antiguas?**  
+R: **Setup Rápido (Colab): SÍ** - el código corre en servidores de Google, no en tu PC.  
+**Setup Avanzado: Depende** - necesitas al menos 4GB RAM. Backtesting de estrategias complejas puede ser lento.
 
 ---
 
-### **Conceptuales**
+**P7: ¿Necesito saber inglés?**  
+R: **NO es indispensable**, pero ayuda porque:
+- Librerías de Python tienen documentación en inglés
+- Claude/ChatGPT entienden español perfectamente
+- El workshop es 100% en español
+- Errores técnicos suelen estar en inglés (pero GenAI te los traduce)
 
-**P6: ¿Cuánto tiempo toma desarrollar una estrategia rentable?**  
-R: **3-6 meses** desde ideación hasta producción. Esto incluye:
+---
+
+**P8: ¿Puedo usar mis propios datos/datasets?**  
+R: **SÍ**. Después de S2, aprenderás a cargar cualquier dataset CSV. Solo necesitas formato OHLCV (Open, High, Low, Close, Volume) con fechas.
+
+---
+
+**P9: ¿El código es open source?**  
+R: **Contenido público: Sí** (templates, prompts básicos, scripts auxiliares) - Licencia MIT.  
+**Contenido premium: No** (Notebook Maestro, estrategias, videos) - Uso personal solamente.
+
+---
+
+**P10: ¿Hay límites de uso en Colab?**  
+R: Sí, sesiones de ~12h máximo. Después se reinicia. **Solución:** Guarda tu trabajo en Google Drive frecuentemente (instrucciones en S1).
+
+---
+
+### 💡 Preguntas Conceptuales
+
+**P11: ¿Cuánto tiempo toma desarrollar una estrategia rentable?**  
+R: **3-6 meses** desde ideación hasta producción:
 - 2-4 semanas: Ideación y prototipado
 - 4-8 semanas: Backtesting y optimización
-- 8-12 semanas: Paper trading (validación en "tiempo real")
+- 8-12 semanas: Paper trading
 - Solo después: Considerar live trading
 
 ---
 
-**P7: ¿Cuántas estrategias debo desarrollar en el workshop?**  
+**P12: ¿Cuántas estrategias debo desarrollar en el workshop?**  
 R: **Calidad > Cantidad**. Objetivo: 1-2 estrategias que sobrevivan validación rigurosa. La mayoría de participantes prueban 5-10 ideas y solo 1-2 pasan.
 
 ---
 
-**P8: ¿Qué pasa si ninguna de mis estrategias funciona?**  
-R: Es NORMAL. Aprenderás más de las fallas que de los éxitos. El workshop te enseña el PROCESO, no una "estrategia mágica".
+**P13: ¿Qué pasa si ninguna de mis estrategias funciona?**  
+R: Es **NORMAL**. El 80% de estrategias fallan en validación. Aprenderás más de las fallas que de los éxitos. El workshop te enseña el **PROCESO**, no una "estrategia mágica".
 
 ---
 
-**P9: ¿Puedo usar datos de otros activos (no SPY)?**  
-R: Sí, pero recomendamos empezar con SPY porque:
-- Liquidez alta (menos slippage)
-- Datos limpios y gratuitos
-- Comportamiento predecible
-
-Después de dominar el proceso con SPY, adapta a otros activos.
+**P14: ¿Puedo usar criptomonedas en vez de acciones?**  
+R: **Sí**, pero empezamos con acciones (SPY) porque son más simples. Para adaptar a crypto:
+- Cambia fuente de datos (Binance API)
+- Ajusta para mercados 24/7
+- Revisa spreads y comisiones (más altos en crypto)
 
 ---
 
-**P10: ¿El workshop cubre machine learning / deep learning?**  
-R: NO en profundidad. Nos enfocamos en estrategias tradicionales (mean reversion, momentum, breakout) aumentadas con GenAI. ML/DL son temas avanzados que requieren workshops dedicados.
+**P15: ¿Puedo usar datos de otros activos (no SPY)?**  
+R: Sí, después de dominar el proceso con SPY. Recomendamos SPY inicial porque tiene liquidez alta, datos limpios y comportamiento predecible.
 
 ---
 
-### **Operativas**
-
-**P11: ¿Cuándo puedo empezar a operar con dinero real?**  
-R: **NO durante el workshop.** Secuencia recomendada:
-1. S1-S9: Desarrollo y backtesting
-2. Después de S9: Paper trading (8-12 semanas mínimo)
-3. Solo si el paper trading es exitoso: Live con capital mínimo (1-5% de portafolio)
+**P16: ¿El workshop cubre machine learning / deep learning?**  
+R: **NO en profundidad**. Nos enfocamos en estrategias tradicionales (mean reversion, momentum, breakout) aumentadas con GenAI. ML/DL requieren workshops dedicados.
 
 ---
 
-**P12: ¿Qué broker debo usar?**  
+**P17: ¿Qué diferencia este workshop de otros cursos de trading algorítmico?**  
 R: 
-- **Acciones US**: Alpaca (API gratuita, fácil integración)
-- **Multi-asset profesional**: Interactive Brokers (más complejo)
-- **Forex/CFDs**: MetaTrader con brokers regulados (verifica regulación local)
+- ✅ **Enfoque anti-hype:** Expectativas realistas desde día 1
+- ✅ **IA como copiloto:** No reemplaza fundamentos, los aumenta
+- ✅ **Todo el código incluido:** No programas desde cero
+- ✅ **Validación rigurosa:** WFO, Monte Carlo, no solo backtesting simple
+- ✅ **Para traders, no programadores:** Enfoque pedagógico único
 
 ---
 
-**P13: ¿Puedo usar este kit después del workshop?**  
-R: Sí, **todos los materiales son tuyos para siempre**. El contenido público (templates, prompts básicos, scripts) es open source. El contenido premium (Notebook, videos, estrategias) es de uso personal.
+**P18: ¿Hay examen final?**  
+R: **NO hay examen**. El "examen" real es: ¿Tu estrategia sobrevivió WFO en S5? Si sí, aprobaste. Si no, iteras (y eso también es aprender).
 
 ---
 
-**P14: ¿Hay soporte post-workshop?**  
+**P19: ¿Puedo trabajar en equipo durante el workshop?**  
+R: **SÍ, recomendado**. Formar equipos de 2-3 personas ayuda a:
+- Compartir debugging
+- Dividir investigación
+- Motivación mutua  
+**Pero:** Cada uno debe hacer sus propias estrategias.
+
+---
+
+**P20: ¿Qué es "walk-forward optimization" (WFO)?**  
+R: Técnica anti-overfitting donde validas tu estrategia en períodos que NO viste durante desarrollo. Es la diferencia entre "funcionó en backtest" y "podría funcionar en live". Se cubre a fondo en S5.
+
+---
+
+### 💼 Preguntas Operativas
+
+**P21: ¿Cuándo puedo empezar a operar con dinero real?**  
+R: **NO durante el workshop**. Secuencia:
+1. S1-S9: Desarrollo y backtesting
+2. Post-S9: Paper trading (8-12 semanas mínimo)
+3. Solo si paper exitoso: Live con capital mínimo (1-5% portafolio)
+
+---
+
+**P22: ¿Qué broker debo usar?**  
+R: 
+- **Acciones US:** Alpaca (API gratuita, fácil integración)
+- **Multi-asset profesional:** Interactive Brokers (más complejo)
+- **Forex/CFDs:** MetaTrader con brokers regulados (verifica regulación local)
+
+---
+
+**P23: ¿Puedo usar este kit después del workshop?**  
+R: **SÍ, para siempre**. Contenido público es open source. Contenido premium es de uso personal permanente.
+
+---
+
+**P24: ¿Hay soporte post-workshop?**  
 R: Sí:
-- 📧 Email: yismaryme@gmail.com (respuesta en 24-48h)
-- 💬 Grupo Telegram privado (🔒 Premium): Soporte comunitario + instructor
-- 📺 Actualizaciones de contenido (cuando aplique)
+- 📧 Email: yismaryme@gmail.com (24-48h)
+- 💬 Grupo Telegram privado (🔒 Premium)
+- 📺 Actualizaciones de contenido
 
 ---
 
-**P15: ¿Qué pasa si no completo las 9 sesiones en 3 semanas?**  
-R: Sin problema. Las sesiones grabadas (🔒 Premium) están disponibles permanentemente. Avanza a tu ritmo, pero recomendamos completar al menos 1 sesión/semana para mantener momentum.
+**P25: ¿Qué pasa si no completo las 9 sesiones en 3 semanas?**  
+R: Sin problema. Videos grabados (🔒 Premium) disponibles permanentemente. Avanza a tu ritmo, pero recomendamos mínimo 1 sesión/semana para mantener momentum.
+
+---
+
+**P26: ¿Qué pasa si me atraso en las sesiones?**  
+R: **No hay problema**. El workshop es auto-paced con sesiones grabadas. Puedes pausar y retomar cuando quieras. No hay "fechas límite" de entrega.
+
+---
+
+**P27: ¿Puedo acceder al material después de terminarlo?**  
+R: **SÍ, acceso permanente** a:
+- Videos grabados
+- Colab Notebook
+- Grupo Telegram privado
+- Actualizaciones futuras del material
+
+---
+
+**P28: ¿Hay certificado al completar el workshop?**  
+R: **NO hay certificado oficial**. El verdadero "certificado" es tu estrategia funcionando en paper trading. Los reclutadores valoran más un repositorio GitHub con backtests documentados que un PDF.
+
+---
+
+**P29: ¿Puedo usar el workshop para desarrollar bots para clientes/empresa?**  
+R: **SÍ para uso comercial** del conocimiento. **NO** para revender el material del workshop (videos, notebook). Puedes ofrecer servicios de desarrollo de bots usando lo aprendido.
+
+---
+
+**P30: ¿Qué pasa si tengo problemas técnicos durante el workshop?**  
+R: **Soporte multi-canal:**
+1. Revisa sección [Troubleshooting](#-troubleshooting-común)
+2. Pregunta en Grupo Telegram (🔒 Premium) - respuesta en minutos
+3. Email a yismaryme@gmail.com - respuesta en 24-48h
+
+---
+
+### 💰 Preguntas Financieras
+
+**P31: ¿Cuánto capital necesito para empezar a operar?**  
+R: 
+- **Durante workshop:** $0 (todo es paper trading)
+- **Paper trading post-workshop:** $0 (simulado)
+- **Live trading (solo si paper exitoso):** Mínimo $1,000-$2,000 USD recomendado para gestión de riesgo adecuada
+
+---
+
+**P32: ¿Cuáles son los costos ocultos del trading algorítmico?**  
+R: 
+- ✅ **Incluido en workshop:** Todo el software (Colab, Alpaca paper, GenAI gratis)
+- ⚠️ **Costos reales en live:**
+  - Comisiones de broker ($0.001-$0.005 por acción)
+  - Slippage (1-5% del P&L)
+  - VPS si quieres 24/7 ($5-20/mes)
+  - Datos en tiempo real premium ($10-50/mes, opcional)
+
+---
+
+**P33: ¿Hay descuentos para grupos o empresas?**  
+R: **SÍ**. Descuentos disponibles para:
+- Grupos de 5+ personas: 15% descuento
+- Empresas/instituciones: Cotización personalizada
+- Contacto: yismaryme@gmail.com
+
+---
+
+**P34: ¿Qué retorno puedo esperar de mi estrategia?**  
+R: **Expectativas realistas:**
+- Sharpe 1.0-1.5 es excelente para retail
+- 20-30% drawdown es normal
+- Retorno anual: 10-30% es realista (NO 100%+)
+> "Si alguien promete returns consistentes de 50%+, corre." - Chan (2013)
+
+---
+
+**P35: ¿Qué pasa si pierdo dinero en live trading después del workshop?**  
+R: **El riesgo es tuyo**. El workshop enseña el proceso, no garantiza rentabilidad. Por eso insistimos en:
+1. Paper trading mínimo 8-12 semanas
+2. Empezar con 1-5% capital máximo
+3. Nunca operar con dinero que no puedas perder
+
+**Disclaimer:** Material educativo, no asesoría de inversión.
 
 ---
 
