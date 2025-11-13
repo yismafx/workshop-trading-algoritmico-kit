@@ -243,10 +243,13 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 | **🔬 Setup Avanzado** | Python local + IDE + broker API | ⭐⭐⭐⭐ | Usuarios técnicos, control total |
 
 **✅ Checklist del Setup:**
-- [ ] Cuenta Google activa
-- [ ] Acceso a Claude o ChatGPT
-- [ ] Cuenta Alpaca (gratuita, paper trading)
-- [ ] Navegador actualizado
+
+| Requisito |
+|-----------|
+| ☐ Cuenta Google activa |
+| ☐ Acceso a Claude o ChatGPT |
+| ☐ Cuenta Alpaca (gratuita, paper trading) |
+| ☐ Navegador actualizado |
 
 ---
 
@@ -355,28 +358,36 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 ### 🎯 Configuración Inicial
 
-- [ ] 📖 Leer esta guía completa (15 min)
-- [ ] 🗺️ Explorar [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) (10 min)
-- [ ] 📋 Revisar [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md) (10 min)
+| Estado | Tarea | Tiempo |
+|:------:|-------|:------:|
+| ☐ | **Leer esta guía completa** | 15 min |
+| ☐ | **Explorar** [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) | 10 min |
+| ☐ | **Revisar** [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md) | 10 min |
 
 ### ⚙️ Setup de Herramientas
 
-- [ ] ✅ Crear cuenta Google (si no tienes)
-- [ ] ✅ Registrarse en Alpaca ([alpaca.markets](https://alpaca.markets)) - Paper Trading
-- [ ] ✅ Configurar acceso a Claude o ChatGPT (versión gratuita OK)
-- [ ] ✅ Probar acceso al Colab Notebook Maestro (🔒 Premium)
+| Estado | Tarea |
+|:------:|-------|
+| ☐ | **Crear cuenta Google** (si no tienes) |
+| ☐ | **Registrarse en Alpaca** ([alpaca.markets](https://alpaca.markets)) - Paper Trading |
+| ☐ | **Configurar acceso a Claude o ChatGPT** (versión gratuita OK) |
+| ☐ | **Probar acceso al Colab Notebook Maestro** (🔒 Premium) |
 
 ### 📚 Familiarización con Recursos
 
-- [ ] 📁 Explorar carpeta `03_PROMPTS_LIBRARY/`
-- [ ] 📁 Explorar carpeta `02_TEMPLATE_PACK/`
-- [ ] 📁 Revisar scripts en `04_SCRIPTS_AUXILIARES/`
+| Estado | Tarea |
+|:------:|-------|
+| ☐ | **Explorar carpeta** `03_PROMPTS_LIBRARY/` |
+| ☐ | **Explorar carpeta** `02_TEMPLATE_PACK/` |
+| ☐ | **Revisar scripts en** `04_SCRIPTS_AUXILIARES/` |
 
 ### 🎬 Validación Final
 
-- [ ] 🔥 Ejecutar celda "Setup y Validación" en Colab
-- [ ] ✅ Verificar: `✅ Ambiente configurado correctamente`
-- [ ] 🎉 Celebrar: ¡Estás listo para S1!
+| Estado | Tarea |
+|:------:|-------|
+| ☐ | **Ejecutar celda "Setup y Validación"** en Colab |
+| ☐ | **Verificar:** `✅ Ambiente configurado correctamente` |
+| ☐ | **Celebrar:** ¡Estás listo para S1! 🎉 |
 
 ---
 
@@ -668,12 +679,14 @@ pip install yfinance
 
 **Tu checklist de acción:**
 
-- [ ] ✅ Leer esta guía completa (acabas de hacerlo)
-- [ ] 🗺️ Revisar el [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)
-- [ ] ⚙️ Configurar ambiente siguiendo: `Instrucciones_Setup_Ambiente.md`
-- [ ] 📋 Completar el checklist "Tu Primer Día"
-- [ ] 🚀 Abrir el Colab Notebook Maestro (🔒 Premium)
-- [ ] 📖 Revisar `ESTRUCTURA_COMPLETA.md` para entender el roadmap
+| Estado | Acción |
+|:------:|--------|
+| ☐ | **Leer esta guía completa** (acabas de hacerlo) |
+| ☐ | **Revisar el** [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) |
+| ☐ | **Configurar ambiente** siguiendo: `Instrucciones_Setup_Ambiente.md` |
+| ☐ | **Completar el checklist** "Tu Primer Día" |
+| ☐ | **Abrir el Colab Notebook Maestro** (🔒 Premium) |
+| ☐ | **Revisar** `ESTRUCTURA_COMPLETA.md` para entender el roadmap |
 
 ---
 
