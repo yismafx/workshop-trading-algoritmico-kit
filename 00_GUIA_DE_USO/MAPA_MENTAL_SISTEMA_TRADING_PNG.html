@@ -98,9 +98,49 @@
             font-style: italic;
             color: #6b7280; /* textLight */
         }
+        /* Botón de navegación flotante */
+        .nav-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #1e40af;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        @media (max-width: 768px) {
+            .nav-button {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.875rem;
+            }
+        }
     </style>
 </head>
 <body class="text-textDark">
+
+    <!-- Botón de navegación flotante -->
+    <a href="https://github.com/yismafx/workshop-trading-algoritmico-kit/blob/main/00_GUIA_DE_USO/LEEME_PRIMERO.md" 
+       class="nav-button"
+       target="_blank"
+       title="Volver a LÉEME PRIMERO">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span>LÉEME PRIMERO</span>
+    </a>
 
     <div class="container mx-auto p-4 md:p-8">
         
