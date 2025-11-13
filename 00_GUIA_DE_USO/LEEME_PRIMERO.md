@@ -156,48 +156,153 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 ## 🚀 Flujo de Trabajo Recomendado
 
+### 📍 PASO 1: Leer esta Guía Completamente
+
+> 📖 **Acción:** Lee este documento de inicio a fin  
+> ⏱️ **Tiempo:** 15 minutos  
+> ✅ **Resultado:** Entenderás la estructura completa del kit y el workshop
+
+**¿Estás aquí?** ← ¡Perfecto! Continúa leyendo.
+
+---
+
+### 🗺️ PASO 2: Revisar el Mapa Mental Interactivo
+
+> 🎨 **Acción:** Explora la arquitectura visual del sistema  
+> ⏱️ **Tiempo:** 10 minutos  
+> 🔗 **Link:** [Ver Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)
+
+**Por qué es importante:** Verás cómo los 5 componentes principales se conectan y cómo la IA Generativa aumenta cada uno.
+
+**🎯 Componentes que verás:**
+- 🗄️ Data Pipeline (Fundación)
+- 🧠 Estrategia (Motor)
+- 🛡️ Risk Management (Cinturón de Seguridad)
+- 🔬 Backtesting (Máquina del Tiempo)
+- ⚙️ Execution (Volante y Pedales)
+
+---
+
+### ⚙️ PASO 3: Configurar Ambiente
+
+> 🔧 **Acción:** Configura tu entorno de trabajo  
+> ⏱️ **Tiempo:** 30-45 min (setup rápido) / 1-2h (setup avanzado)  
+> 📄 **Guía:** [Instrucciones_Setup_Ambiente.md](Instrucciones_Setup_Ambiente.md)
+
+**Dos opciones disponibles:**
+
+| Opción | Herramientas | Dificultad | Recomendado Para |
+|--------|--------------|------------|------------------|
+| **⚡ Setup Rápido** | Google Colab + Alpaca (paper) | ⭐⭐ | Principiantes, inicio rápido |
+| **🔬 Setup Avanzado** | Python local + IDE + broker API | ⭐⭐⭐⭐ | Usuarios técnicos, control total |
+
+**✅ Checklist del Setup:**
+- [ ] Cuenta Google activa
+- [ ] Acceso a Claude o ChatGPT
+- [ ] Cuenta Alpaca (gratuita, paper trading)
+- [ ] Navegador actualizado
+
+---
+
+### 🔥 PASO 4: Abrir Colab Notebook Maestro
+
+> 💻 **Acción:** Ejecuta las células de "Setup y Validación"  
+> ⏱️ **Tiempo:** 15 minutos  
+> 🔒 **Acceso:** Premium (participantes pagos)
+
+**Lo que harás:**
+1. Cargar el Notebook Maestro en Google Colab
+2. Ejecutar células de validación del ambiente
+3. Descargar dataset de prueba (SPY)
+4. Verificar que todas las librerías funcionan
+
+**🎯 Resultado esperado:**
+```python
+✅ Ambiente configurado correctamente
+✅ Dataset SPY descargado (2020-2024)
+✅ Librerías verificadas: pandas, yfinance, backtrader
+✅ Listo para la Sesión 1
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  PASO 1: Leer esta guía completamente (estás aquí)          │
-│  Tiempo: 15 min                                              │
-└─────────────────────────────────────────────────────────────┘
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  PASO 2: Revisar el Mapa Mental Interactivo                 │
-│  Link: https://yismafx.github.io/.../MAPA_MENTAL...html     │
-│  Tiempo: 10 min                                              │
-└─────────────────────────────────────────────────────────────┘
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  PASO 3: Configurar ambiente                                │
-│  → Leer: Instrucciones_Setup_Ambiente.md                    │
-│  Tiempo: 30-45 min (setup rápido) / 1-2h (setup avanzado)   │
-└─────────────────────────────────────────────────────────────┘
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  PASO 4: Abrir Colab Notebook Maestro (🔒 Premium)          │
-│  → Ejecutar células de "Setup y Validación"                 │
-│  Tiempo: 15 min                                              │
-└─────────────────────────────────────────────────────────────┘
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  PASO 5: Seguir sesiones S1 → S9 (27 horas)                 │
-│  → Balance: 40% teoría / 60% práctica                        │
-│  → Ritmo: 3 sesiones/semana                                  │
-└─────────────────────────────────────────────────────────────┘
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  PASO 6: Usar Prompts Library cuando necesites GenAI        │
-│  → Carpeta: 03_PROMPTS_LIBRARY/                             │
-│  → Casos: Adaptar código, depurar, traducir plataformas     │
-└─────────────────────────────────────────────────────────────┘
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  PASO 7: Documentar con Templates (al finalizar S9)         │
-│  → Carpeta: 02_TEMPLATE_PACK/                               │
-│  → Outputs: Strategy Memo + Backtest Report + README        │
-└─────────────────────────────────────────────────────────────┘
+
+---
+
+### 🎓 PASO 5: Seguir Sesiones S1 → S9
+
+> 📚 **Acción:** Completa las 9 sesiones del workshop  
+> ⏱️ **Tiempo:** 27 horas totales (3 semanas)  
+> 📊 **Balance:** 40% teoría / 60% práctica  
+> 🏃 **Ritmo:** 3 sesiones por semana
+
+**Roadmap visual:**
+
 ```
+🟦 SEMANA 1: Fundamentos (9h)
+├─ S1: Fundamentos y Mapa (⭐⭐)
+├─ S2: Pipeline de Datos (⭐⭐⭐)
+└─ S3: Ideación con GenAI (⭐⭐)
+
+🟨 SEMANA 2: Implementación (9h)
+├─ S4: Implementación Práctica (⭐⭐⭐)
+├─ S5: Backtesting Profesional (⭐⭐⭐⭐)
+└─ S6: Gestión de Riesgo (⭐⭐⭐)
+
+🟩 SEMANA 3: Producción (9h)
+├─ S7: Multi-Plataforma (⭐⭐⭐⭐)
+├─ S8: Deployment Real (⭐⭐⭐⭐⭐)
+└─ S9: Documentación Profesional (⭐⭐⭐)
+```
+
+**🔗 Ver detalles:** [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md)
+
+---
+
+### 🤖 PASO 6: Usar Prompts Library cuando Necesites GenAI
+
+> 🧩 **Acción:** Consulta los prompts probados para tareas específicas  
+> ⏱️ **Tiempo:** Variable (según necesidad)  
+> 📁 **Carpeta:** `03_PROMPTS_LIBRARY/`
+
+**Casos de uso principales:**
+
+| Necesidad | Prompt File | Ejemplo |
+|-----------|-------------|---------|
+| 🔧 **Adaptar código** | `01_Adaptacion_Codigo.md` | Modificar indicadores en estrategia |
+| 🐛 **Depurar errores** | `02_Debugging.md` | Encontrar look-ahead bias |
+| 🔄 **Traducir plataformas** | `03_Traduccion_Plataformas.md` | Python → Pine Script |
+| 📝 **Documentar sistemas** | `04_Documentacion.md` | Generar Strategy Memo |
+
+**💡 Tip:** Estos prompts están optimizados con el framework **ROL-CONTEXTO-TAREA-FORMATO** para máxima efectividad.
+
+---
+
+### 📄 PASO 7: Documentar con Templates (al Finalizar S9)
+
+> 📋 **Acción:** Completa la documentación profesional de tu estrategia  
+> ⏱️ **Tiempo:** 2-3 horas  
+> 📁 **Carpeta:** `02_TEMPLATE_PACK/`
+
+**Templates disponibles:**
+
+| Template | Propósito | Formato |
+|----------|-----------|---------|
+| 📊 **Strategy Memo** | Documento nivel institucional de tu estrategia | Markdown |
+| 📈 **Backtest Report** | Reporte de resultados con métricas clave | Markdown |
+| 🔧 **README Technical** | Documentación técnica para repositorio | Markdown |
+
+**🎯 Resultado final:**
+```
+📦 tu-estrategia/
+├── 📄 Strategy_Memo.md        ← Hipótesis y lógica
+├── 📊 Backtest_Report.md      ← Resultados WFO
+├── 🔧 README.md                ← Setup y uso
+└── 💻 codigo/                  ← Scripts organizados
+```
+
+---
+
+### 🎉 ¡Completaste el Flujo!
+
+**Siguiente paso:** Ir a la sección [✅ Checklist: "Tu Primer Día"](#checklist-tu-primer-día-pre-sesión-1) para prepararte antes de la Sesión 1.
 
 ---
 
