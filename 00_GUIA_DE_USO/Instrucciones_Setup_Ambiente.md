@@ -1,28 +1,32 @@
 # 🛠️ INSTRUCCIONES DE SETUP DEL AMBIENTE
 
 **Workshop: Trading Algorítmico Aumentado con IA Generativa**  
-**Versión:** 1.0 (Noviembre 2025)  
-**Tiempo estimado:** 30 min (Rápido) a 3h (Avanzado)
+**Versión:** 2.1 (Noviembre 2025)  
+**Tiempo estimado:** 30 min a 3h (según opción elegida)
 
 ---
 
 ## 📑 Tabla de Contenidos
 
 - [⚡ Quick Start - Elige Tu Camino](#-quick-start---elige-tu-camino)
-- [🚀 OPCIÓN A: Setup Rápido (Google Colab)](#-opción-a-setup-rápido-google-colab---30-45-min)
-- [💻 OPCIÓN B: Setup Avanzado (Python Local)](#-opción-b-setup-avanzado-python-local---2-3h)
-- [📊 OPCIÓN C: MetaTrader 5 Setup](#-opción-c-metatrader-5-setup---1-2h)
-- [🏦 OPCIÓN D: Interactive Brokers Setup](#-opción-d-interactive-brokers-setup---2-3h)
-- [📦 Librerías y Dependencias](#-librerías-y-dependencias-actualizadas-2025)
-- [🚨 Troubleshooting](#-troubleshooting)
-- [✅ Validación Final](#-validación-final)
+- [📊 Tabla Comparativa Detallada](#-tabla-comparativa-detallada)
+- [🚀 Guías de Setup por Opción](#-guías-de-setup-por-opción)
+- [📚 Recursos Complementarios](#-recursos-complementarios)
+- [✅ Validación Final](#-validación-final-después-del-setup)
+- [🎯 Próximos Pasos](#-próximos-pasos)
 - [📞 Soporte](#-soporte)
 
 ---
 
 ## ⚡ Quick Start - Elige Tu Camino
 
-**¿Qué setup es mejor para ti?** Usa este diagrama de decisión:
+**🎯 Objetivo:** Encontrar tu setup ideal en menos de 2 minutos
+
+Responde estas preguntas para ser dirigido al setup correcto:
+
+---
+
+### 🤔 Pregunta 1: ¿Tienes experiencia con Python?
 
 ```
                     ┌─────────────────────────────────────┐
@@ -35,1811 +39,291 @@
                          │                     │
                          ↓                     ↓
               ┌──────────────────┐   ┌──────────────────┐
-              │ Setup RÁPIDO     │   │ ¿Vas a deployar  │
-              │ (Google Colab)   │   │ bots 24/7?       │
-              │ → 30 min         │   └──────────────────┘
-              └──────────────────┘            │
+              │ Setup A: Colab   │   │ ¿Vas a deployar  │
+              │ → 30 min         │   │ bots 24/7?       │
+              └──────────────────┘   └──────────────────┘
+                                              │
                                     ┌─────────┴─────────┐
                                     │                   │
                                  ❌ NO                ✅ SÍ
                                     │                   │
                                     ↓                   ↓
                          ┌──────────────────┐  ┌──────────────────┐
-                         │ Setup RÁPIDO     │  │ Setup AVANZADO   │
-                         │ (Google Colab)   │  │ (Python Local)   │
-                         │ → 30 min         │  │ → 2-3h           │
+                         │ Setup A: Colab   │  │ Setup B: Python  │
+                         │ → 30 min         │  │ Local → 2-3h     │
                          └──────────────────┘  └──────────────────┘
 ```
 
-### 📋 Tabla Comparativa
+**Respuestas directas:**
 
-| Característica | 🚀 Rápido (Colab) | 💻 Avanzado (Local) | 📊 MetaTrader 5 | 🏦 Interactive Brokers |
-|----------------|-------------------|---------------------|-----------------|----------------------|
-| **Tiempo setup** | 30 min | 2-3h | 1-2h | 2-3h |
-| **Experiencia Python** | No necesaria | Intermedia | Básica | Avanzada |
-| **Deployment 24/7** | ❌ No | ✅ Sí (con VPS) | ✅ Sí | ✅ Sí |
-| **Costo** | Gratis | Gratis | Gratis | Gratis (paper) |
-| **Mercados** | Multi-asset | Multi-asset | Forex/CFDs | Multi-asset global |
-| **Dificultad** | ⭐ Fácil | ⭐⭐⭐ Media | ⭐⭐ Media-fácil | ⭐⭐⭐⭐ Alta |
-| **Recomendado para** | Principiantes | Desarrollo serio | Traders Forex | Traders profesionales |
+- **❌ NO tengo experiencia con Python** → [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md) ⭐ **Recomendado**
+- **✅ SÍ tengo experiencia** → Continúa a Pregunta 2
 
 ---
 
-## 🚀 OPCIÓN A: Setup Rápido (Google Colab) - 30-45 min
+### 🤔 Pregunta 2: ¿Planeas deployar bots 24/7?
+
+**Solo si respondiste SÍ en Pregunta 1:**
+
+- **❌ NO** → [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md)
+- **✅ SÍ** → [Setup B: Python Local](Setup_B_Python_Local.md)
+
+---
+
+### 🤔 Pregunta 3: ¿Usas principalmente Forex/CFDs con MetaTrader?
+
+**Independiente de preguntas anteriores:**
+
+- **✅ SÍ** → [Setup C: MetaTrader 5](Setup_C_MetaTrader5.md)
+- **❌ NO** → Continúa
+
+---
+
+### 🤔 Pregunta 4: ¿Necesitas acceso a mercados globales profesional?
+
+**Solo si no elegiste MT5:**
+
+- **✅ SÍ** → [Setup D: Interactive Brokers](Setup_D_Interactive_Brokers.md)
+- **❌ NO** → [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md)
+
+---
+
+## 📊 Tabla Comparativa Detallada
+
+**Compara todas las opciones lado a lado:**
+
+| Característica | [Setup A: Colab](Setup_A_Colab_Rapido.md) | [Setup B: Python Local](Setup_B_Python_Local.md) | [Setup C: MT5](Setup_C_MetaTrader5.md) | [Setup D: IB](Setup_D_Interactive_Brokers.md) |
+|----------------|-------------------|---------------------|-----------------|----------------------|
+| **⏱️ Tiempo setup** | 30-45 min | 2-3h | 1-2h | 2-3h |
+| **💻 Experiencia Python** | No necesaria | Intermedia | Básica | Avanzada |
+| **🚀 Deployment 24/7** | ❌ No | ✅ Sí (con VPS) | ✅ Sí | ✅ Sí |
+| **💰 Costo** | Gratis | Gratis | Gratis | Gratis (paper) |
+| **🌎 Mercados** | Multi-asset global | Multi-asset global | Forex/CFDs | Multi-asset global |
+| **📈 Dificultad** | ⭐ Fácil | ⭐⭐⭐ Media | ⭐⭐ Media-fácil | ⭐⭐⭐⭐ Alta |
+| **👥 Ideal para** | 👨‍🎓 Principiantes | 👨‍💻 Desarrolladores | 📈 Traders Forex | 🏦 Profesionales |
+| **🛠️ Instalación local** | No requiere | Python + librerías | MT5 + Python | IB Gateway + Python |
+| **📦 Gestión de dependencias** | Automática | Manual | Semi-automática | Manual |
+| **🔧 Mantenimiento** | Bajo | Alto | Medio | Alto |
+
+---
+
+## 🚀 Guías de Setup por Opción
+
+**Elige la guía que corresponde a tu setup:**
+
+### ⭐ Opción A: Setup Rápido (Google Colab) - 30-45 min
 
 **✅ Ideal para:** 80% de los participantes - No requiere instalar nada localmente
 
-### 📋 Paso 1: Cuenta Google (2 min)
+**Lo que incluye:**
+- ✅ Creación de cuenta Google (si no tienes)
+- ✅ Registro en Alpaca Paper Trading (gratis)
+- ✅ Configuración de Google Colab
+- ✅ Instalación automática de librerías
+- ✅ Validación completa del ambiente
+- ✅ Guía de uso del Colab Notebook Maestro
 
-**¿Ya tienes cuenta Gmail?**  
-✅ Sí → Pasa al Paso 2  
-❌ No → Crear cuenta en [google.com/gmail](https://google.com/gmail)
+**Requisitos:**
+- Cuenta Google (Gmail)
+- Navegador web moderno
+- Conexión a internet
 
-**Validación:**
-
-☐ Puedo acceder a [colab.research.google.com](https://colab.research.google.com)  
-☐ Puedo crear un nuevo notebook
-
----
-
-### 📋 Paso 2: Cuenta Alpaca Paper Trading (5 min)
-
-Alpaca es el broker que usaremos para paper trading (gratis, sin riesgo).
-
-**Pasos:**
-
-1. **Ir a:** [alpaca.markets](https://alpaca.markets)
-
-2. **Registrarse:**
-   - Click en "Sign Up"
-   - Completar formulario
-   - Verificar email
-
-3. **Generar API Keys:**
-   - Ir a Dashboard → API Keys
-   - Click en "Generate New Keys"
-   - **IMPORTANTE:** Seleccionar **"Paper Trading"** (no "Live Trading")
-   - Copiar y guardar:
-     - `API_KEY` (comienza con "PK...")
-     - `SECRET_KEY` (string largo)
-
-**⚠️ CRÍTICO:** Guarda las keys en un lugar seguro. Las necesitarás en el Paso 4.
-
-**Validación:**
-☐ Tengo API_KEY copiada
-☐ Tengo SECRET_KEY copiada
-☐ Las keys son de **Paper Trading** (no Live)
+**🔵 [IR A SETUP A: COLAB RÁPIDO →](Setup_A_Colab_Rapido.md)**
 
 ---
 
-### 📋 Paso 3: Abrir Colab Notebook Maestro (2 min)
+### 💻 Opción B: Setup Avanzado (Python Local) - 2-3h
 
-**Pasos:**
+**✅ Ideal para:** Desarrollo serio, deployment 24/7, control total
 
-1. **Acceder al notebook:**
-   - Si eres participante pago, descarga `Colab_Notebook_Maestro.ipynb` del repositorio premium
-   - Sube el archivo a tu Google Drive
+**Lo que incluye:**
+- ✅ Instalación de Python 3.11+ (Anaconda o directo)
+- ✅ Creación de ambiente virtual
+- ✅ Instalación completa de librerías 2025
+- ✅ Configuración de Jupyter Lab
+- ✅ Setup de brokers (Alpaca, MT5, IB)
+- ✅ Scripts de validación
 
-2. **Abrir en Colab:**
-   - Click derecho en el archivo `.ipynb` en Drive
-   - "Abrir con" → "Google Colaboratory"
+**Requisitos:**
+- Windows/macOS/Linux
+- 5 GB espacio en disco
+- Conocimientos básicos de terminal
 
-**Alternativa (si no tienes el notebook aún):**
-Crear uno nuevo en [colab.research.google.com](https://colab.research.google.com)
-
-**Validación:**
-☐ Notebook abierto en Colab
-☐ Puedo ejecutar celdas (Shift + Enter)
-
-
-### 📚 GUÍA COMPLETA: Cómo Usar el Colab Notebook Maestro
-
-**⏱️ Tiempo:** 10-15 minutos (lectura + práctica)
-
-> **🎯 Objetivo:** Que entiendas perfectamente cómo navegar y usar el notebook maestro, incluso si nunca has programado.
+**🔵 [IR A SETUP B: PYTHON LOCAL →](Setup_B_Python_Local.md)**
 
 ---
 
-#### 🤔 ¿Qué es el Colab Notebook Maestro?
+### 📊 Opción C: MetaTrader 5 Setup - 1-2h
 
-Es un **documento interactivo** que contiene:
-- ✅ **Todo el código del workshop** (Sesiones 1-9)
-- ✅ **Explicaciones paso a paso** en cada celda
-- ✅ **Código ejecutable** que funciona con un click
-- ✅ **Validaciones automáticas** para verificar que todo va bien
+**✅ Ideal para:** Traders de Forex/CFDs que usan o quieren usar MetaTrader
 
-**Analogía:** Es como un "libro de recetas ejecutable" - lees la receta Y la puedes cocinar en el mismo lugar.
+**Lo que incluye:**
+- ✅ Instalación de MetaTrader 5
+- ✅ Creación de cuenta demo
+- ✅ Instalación de Python MT5 API
+- ✅ Conexión Python ↔ MT5
+- ✅ Scripts de ejemplo y validación
 
----
+**Requisitos:**
+- Windows (nativo) o macOS/Linux (Wine)
+- Python 3.11+ instalado
+- Broker compatible con MT5
 
-#### 🚀 Paso a Paso: Primera Vez en Colab
-
-##### **1️⃣ Accediendo al Notebook (3 formas)**
-
-**Opción A - Desde Google Drive (Recomendado):**
-
-1. Descarga `Colab_Notebook_Maestro.ipynb` del repositorio premium
-2. Sube el archivo a tu Google Drive (arrastra y suelta)
-3. **Doble click** en el archivo
-4. Si pregunta "¿Abrir con?", selecciona **"Google Colaboratory"**
-
-**Opción B - Desde enlace directo:**
-
-1. Click en el enlace compartido del notebook
-2. Automáticamente se abre en Colab
-3. **IMPORTANTE:** Click en **"Copiar a Drive"** (arriba a la izquierda)
-   - Esto crea tu copia personal donde puedes editar sin miedo
-
-**Opción C - Crear desde cero (solo si no tienes el notebook):**
-
-1. Ve a [colab.research.google.com](https://colab.research.google.com)
-2. Click en **"Nuevo notebook"**
-3. Puedes copiar/pegar el código de cada sesión manualmente
+**🔵 [IR A SETUP C: METATRADER 5 →](Setup_C_MetaTrader5.md)**
 
 ---
 
-##### **2️⃣ Entendiendo la Interfaz de Colab**
+### 🏦 Opción D: Interactive Brokers Setup - 2-3h
 
-Cuando abras el notebook verás:
+**✅ Ideal para:** Traders profesionales con necesidad de acceso multi-mercado global
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  📁 Archivo  ✏️ Editar  ⚙️ Ver  ▶️ Entorno de ejecución    │  ← Menú principal
-├─────────────────────────────────────────────────────────────┤
-│  [▶️ + Código]  [+ Texto]  📁 Archivos  🔗 Conectar        │  ← Barra de herramientas
-├─────────────────────────────────────────────────────────────┤
-│                                                               │
-│  # 🎯 WORKSHOP: Trading Algorítmico con IA Generativa       │  ← Título
-│                                                               │
-│  ## 📚 Tabla de Contenidos                                   │
-│  - [Sesión 1: Fundamentos](#s1)                             │
-│  - [Sesión 2: Data Pipeline](#s2)                           │
-│  - ...                                                       │
-│                                                               │
-│  ┌─────────────────────────────────────────┐                │
-│  │ # === SESIÓN 1: FUNDAMENTOS ===         │  ← Celda de texto
-│  │ Bienvenido a la primera sesión...       │
-│  └─────────────────────────────────────────┘                │
-│                                                               │
-│  ┌─────────────────────────────────────────┐                │
-│  │ [▶️] import pandas as pd               │  ← Celda de código
-│  │      print("Hola Workshop!")            │     (Click ▶️ para ejecutar)
-│  └─────────────────────────────────────────┘                │
-│       └─ Salida: Hola Workshop!             │  ← Resultado
-│                                                               │
-└─────────────────────────────────────────────────────────────┘
-```
+**Lo que incluye:**
+- ✅ Registro en Interactive Brokers Paper Trading
+- ✅ Instalación de IB Gateway
+- ✅ Instalación de ib_insync
+- ✅ Conexión Python ↔ IB
+- ✅ Scripts de ejemplo y validación
 
-**Elementos clave:**
+**Requisitos:**
+- Registro en IB (aprobación 24-48h)
+- Python 3.11+ instalado
+- Windows/macOS/Linux
 
-1. **Celdas de Texto (Markdown):**
-   - Fondo blanco
-   - Contienen explicaciones, títulos, instrucciones
-   - NO se ejecutan, solo se leen
-
-2. **Celdas de Código (Python):**
-   - Fondo gris claro
-   - Tienen botón ▶️ (play) a la izquierda
-   - Estas SÍ se ejecutan
-   - Muestran resultados debajo
-
-3. **Barra lateral izquierda:**
-   - 📁 **Archivos:** Ver archivos subidos
-   - 🔍 **Buscar:** Encontrar texto en el notebook
-   - 📋 **Tabla de contenidos:** Navegar rápido
+**🔵 [IR A SETUP D: INTERACTIVE BROKERS →](Setup_D_Interactive_Brokers.md)**
 
 ---
 
-##### **3️⃣ Navegando por las Sesiones (S1-S9)**
+## 📚 Recursos Complementarios
 
-El notebook está organizado así:
+**Estos documentos complementan tu setup principal:**
 
-```
-📦 Colab_Notebook_Maestro.ipynb
-│
-├── 🟦 SESIÓN 1: Fundamentos (Líneas 1-150)
-│   ├── 1.1 Setup y Validación
-│   ├── 1.2 Primer Dataset
-│   └── 1.3 Visualización Básica
-│
-├── 🟦 SESIÓN 2: Data Pipeline (Líneas 151-300)
-│   ├── 2.1 Descarga de Datos
-│   ├── 2.2 Limpieza
-│   └── 2.3 Validación Forensic
-│
-├── 🟨 SESIÓN 3: Ideación con GenAI (Líneas 301-450)
-│   └── ...
-│
-├── 🟨 SESIÓN 4: Implementación (Líneas 451-600)
-│   └── ...
-│
-... (S5-S9)
-```
+### 📦 Librerías y Dependencias 2025
 
-**Cómo navegar:**
+**Referencia completa de todas las librerías del workshop:**
+- Core: pandas, numpy, scipy
+- Datos: yfinance, alpaca-py, ib-insync, MetaTrader5
+- Backtesting: vectorbt, backtrader, zipline-reloaded
+- Análisis técnico: ta, pandas-ta, TA-Lib
+- Y más...
 
-**Método 1 - Tabla de Contenidos (Recomendado):**
-1. Click en el icono **📋** (barra lateral izquierda)
-2. Click en **"Sesión 2"**, **"Sesión 3"**, etc.
-3. El notebook hace scroll automáticamente
-
-**Método 2 - Scroll manual:**
-1. Usa la rueda del mouse o barra de scroll
-2. Busca los títulos grandes: **"## 🟦 SESIÓN X"**
-
-**Método 3 - Buscar (Ctrl + F):**
-1. Presiona `Ctrl + F` (o `Cmd + F` en Mac)
-2. Escribe: "SESIÓN 3" o "S3"
-3. Enter para ir al resultado
+**📖 [Ver Librerías y Dependencias 2025](Librerias_Dependencias_2025.md)**
 
 ---
 
-##### **4️⃣ Ejecutando el Código (¡Lo Más Importante!)**
+### 📚 Guía de Uso del Colab Notebook Maestro
 
-**🎯 Regla de Oro: Ejecuta las celdas EN ORDEN (de arriba hacia abajo)**
+**Guía completa para usar el notebook del workshop:**
+- Cómo navegar por las Sesiones 1-9
+- Ejecutar celdas correctamente
+- Troubleshooting de Colab
+- Atajos de teclado
 
-**Cómo ejecutar una celda:**
+**📖 [Ver Guía de Uso de Colab](Guia_Uso_Colab_Notebook.md)**
 
-**Opción 1 - Click en ▶️:**
-1. Click en el botón ▶️ a la izquierda de la celda
-2. Espera a que termine (aparece ✅ verde)
-3. Revisa el resultado debajo
-
-**Opción 2 - Atajo de teclado:**
-1. Click dentro de la celda (para seleccionarla)
-2. Presiona **`Shift + Enter`**
-3. Automáticamente pasa a la siguiente celda
-
-**Opción 3 - Ejecutar múltiples celdas:**
-1. Menú: **"Entorno de ejecución"** → **"Ejecutar todo"**
-2. ⚠️ **CUIDADO:** Esto ejecuta TODO el notebook (puede tardar)
+**⚠️ Nota:** Obligatorio leer si elegiste Setup A (Colab)
 
 ---
 
-**Ejemplo práctico - Primera ejecución:**
+### 🚨 Troubleshooting Común
 
-```python
-# Celda 1: Importar librerías
-import pandas as pd
-import numpy as np
-print("✅ Librerías importadas")
-```
-👆 **Ejecuta esta primero** (Shift + Enter)
+**Errores comunes cross-platform y sus soluciones:**
+- "No module named 'yfinance'"
+- "Alpaca API authentication failed"
+- "IndexError: list index out of range"
+- "Session crashed" / "Out of Memory"
+- Y más...
 
-```python
-# Celda 2: Cargar datos (DEPENDE de Celda 1)
-data = pd.DataFrame({'precio': [100, 102, 101]})
-print(data)
-```
-👆 **Ejecuta esta segunda** (Shift + Enter)
-
-❌ **ERROR COMÚN:**
-Si ejecutas Celda 2 ANTES de Celda 1 → Error: `NameError: name 'pd' is not defined`
-
-**Solución:** Ejecutar Celda 1, luego Celda 2.
+**📖 [Ver Troubleshooting Común](Troubleshooting_Comun.md)**
 
 ---
 
-##### **5️⃣ ¿Qué Hacer en Cada Sesión?**
+## ✅ Validación Final (Después del Setup)
 
-Cada sesión sigue este patrón:
+**Independientemente de la opción que elegiste, verifica estos puntos antes de continuar:**
 
-```
-┌──────────────────────────────────────────┐
-│ ## 🟦 SESIÓN X: [NOMBRE]                │
-├──────────────────────────────────────────┤
-│                                          │
-│ ### 🎓 Teoría (Texto)                   │  ← Lee esto primero
-│ Explicación de conceptos...             │
-│                                          │
-│ ### 💻 Código (Ejecutable)              │
-│ [▶️] # Código de ejemplo               │  ← Ejecuta esto
-│      import ...                          │
-│                                          │
-│ ### ✅ Validación                       │
-│ [▶️] # Test automático                 │  ← Verifica que funcione
-│      assert ...                          │
-│      print("✅ Test pasado")            │
-│                                          │
-│ ### 🔑 Checkpoints                      │  ← Confirma que entendiste
-│ ☐ Ejecuté todo el código sin errores   │
-│ ☐ Entiendo qué hace cada línea          │
-│                                          │
-└──────────────────────────────────────────┘
-```
+### 🎯 Ambiente de Desarrollo
 
-**Tu flujo de trabajo:**
+☐ Puedo ejecutar código Python (Colab, Jupyter, o terminal)  
+☐ Librerías core instaladas: pandas, numpy, yfinance  
+☐ No hay errores de importación al ejecutar `import pandas as pd`
 
-1. ✅ **Lee** la sección 🎓 Teoría
-2. ✅ **Ejecuta** el 💻 Código (celda por celda)
-3. ✅ **Verifica** con ✅ Validación (debe mostrar "✅ Test pasado")
-4. ✅ **Confirma** los 🔑 Checkpoints (¿entendiste todo?)
+### 🔌 Conexión con Broker
+
+☐ Tengo API keys configuradas (Alpaca, MT5, o IB)  
+☐ Conexión con broker exitosa  
+☐ Puedo obtener información de mi cuenta (balance, etc.)
+
+### 📊 Descarga de Datos
+
+☐ Puedo descargar datos históricos (ej: SPY últimos 5 días)  
+☐ Datos tienen formato correcto (OHLCV)  
+☐ No hay gaps o valores nulos inesperados
+
+### ✅ Validación Automatizada
+
+☐ Ejecuté el script de validación de mi setup  
+☐ Todas las verificaciones pasaron (✅ verde)  
+☐ Vi el mensaje: **"✅ Setup completado exitosamente"**
 
 ---
 
-##### **6️⃣ Guardando Tu Trabajo**
+**Si algún punto NO está marcado:**
 
-**Guardado automático:**
-- Colab guarda automáticamente cada 2-3 minutos
-- Verás "Todos los cambios guardados" (arriba a la derecha)
-
-**Guardado manual:**
-- `Ctrl + S` (o `Cmd + S` en Mac)
-- O: **Archivo** → **Guardar**
-
-**Descargar tu trabajo:**
-1. **Archivo** → **Descargar** → **Descargar .ipynb**
-2. Guárdalo como backup en tu computadora
-
-**⚠️ IMPORTANTE - Evitar pérdida de trabajo:**
-
-Si Colab se desconecta (después de ~12h inactivas):
-1. ✅ Tu código NO se pierde (está en Drive)
-2. ❌ Las **variables en memoria** SÍ se pierden
-3. Solución: Vuelve a ejecutar las celdas de setup
+1. Revisa la sección de troubleshooting de tu setup específico
+2. Consulta [Troubleshooting Común](Troubleshooting_Comun.md)
+3. Contacta soporte (ver abajo)
 
 ---
 
-##### **7️⃣ Troubleshooting - Problemas Comunes**
+## 🎯 Próximos Pasos
 
-| Problema | Causa | Solución |
-|----------|-------|----------|
-| **"NameError: name 'pd' is not defined"** | No ejecutaste la celda de imports | Ejecuta la primera celda con `import pandas as pd` |
-| **Celda tarda mucho (spinning)** | Código pesado o conexión lenta | Espera 30-60 seg. Si no termina, **"Interrumpir ejecución"** |
-| **"Session crashed"** | Memoria RAM llena | **Entorno de ejecución** → **Reiniciar entorno** |
-| **No veo el botón ▶️** | Celda de texto, no de código | Solo celdas de código tienen ▶️ |
-| **Código da error después de funcionar** | Variables se perdieron | Re-ejecuta celdas anteriores |
+**¡Felicidades! Has completado el setup. 🎉**
 
----
+**Tu journey continúa:**
 
-##### **8️⃣ Atajos de Teclado Útiles**
+### 1️⃣ Volver al Documento Principal
 
-| Atajo | Acción |
-|-------|--------|
-| `Shift + Enter` | Ejecutar celda y pasar a la siguiente |
-| `Ctrl + Enter` | Ejecutar celda sin pasar a la siguiente |
-| `Ctrl + S` | Guardar |
-| `Ctrl + F` | Buscar texto |
-| `Ctrl + M B` | Insertar celda debajo |
-| `Ctrl + M A` | Insertar celda arriba |
-| `Ctrl + M D` | Eliminar celda |
+📖 [Volver a LEEME_PRIMERO.md](LEEME_PRIMERO.md)
+
+Lee el roadmap completo del workshop (9 sesiones, 27 horas)
 
 ---
 
-##### **9️⃣ Checklist Final - ¿Estás Listo?**
+### 2️⃣ Completar el Checklist "Tu Primer Día"
 
-Antes de empezar la Sesión 1, verifica:
+📋 [Ver Checklist "Tu Primer Día"](LEEME_PRIMERO.md#-checklist-tu-primer-día)
 
-**Navegación:**
-☐ Entiendo dónde están las Sesiones 1-9 en el notebook  
-☐ Sé cómo navegar usando Tabla de Contenidos  
-☐ Puedo hacer scroll y encontrar secciones
-
-**Ejecución:**
-☐ Sé cómo ejecutar una celda (▶️ o Shift + Enter)  
-☐ Entiendo que debo ejecutar EN ORDEN (arriba → abajo)  
-☐ Sé cómo ver si una celda terminó (✅ verde)
-
-**Validación:**
-☐ Ejecuté la celda de "Setup y Validación"  
-☐ Vi el mensaje "✅ Ambiente configurado correctamente"  
-☐ Entiendo qué hacer si algo falla (Troubleshooting)
-
-**Guardado:**
-☐ Mi trabajo se guarda automáticamente en Drive  
-☐ Sé cómo descargar backup (.ipynb)
+Valida que tienes todo listo para empezar
 
 ---
 
-##### **🎯 ¿Listo para Empezar?**
+### 3️⃣ Revisar el Programa Detallado
 
-**Siguiente paso:**
+📚 [Ver Programa Detallado (ESTRUCTURA_COMPLETA.md)](ESTRUCTURA_COMPLETA.md)
 
-1. ✅ Navega a **"🟦 SESIÓN 1: FUNDAMENTOS"** en el notebook
-2. ✅ Lee la sección de teoría
-3. ✅ Ejecuta las celdas una por una
-4. ✅ Completa los ejercicios
-
-**Si algo no funciona:**
-- Revisa la sección de [Troubleshooting](#-troubleshooting-común) más abajo
-- Pregunta en el grupo de Telegram (🔒 Premium)
-- Email: yismaryme@gmail.com
+Entiende qué aprenderás en cada sesión
 
 ---
 
-**💡 Consejo Pro:**
-
-> "No necesitas entender cada línea de código al 100%. El objetivo es que USES el código, lo ADAPTES a tus estrategias, y VALIDES los resultados. La comprensión profunda viene con la práctica."
-
-**¡Éxito en tu primer día de workshop!** 🚀
-
----
----
-
-### 📋 Paso 4: Configurar API Keys (5 min)
-
-**En la primera celda del notebook, ejecuta:**
-
-```python
-# === CONFIGURACIÓN DE AMBIENTE ===
-import os
-from getpass import getpass
-
-# Solicitar API keys de forma segura (no se guardan en el notebook)
-ALPACA_API_KEY = getpass("Ingresa tu Alpaca API Key: ")
-ALPACA_API_SECRET = getpass("Ingresa tu Alpaca API Secret: ")
-
-# Configurar como variables de entorno
-os.environ['ALPACA_API_KEY'] = ALPACA_API_KEY
-os.environ['ALPACA_API_SECRET'] = ALPACA_API_SECRET
-os.environ['ALPACA_PAPER'] = 'true'
-
-print("✅ API Keys configuradas correctamente")
-```
-
-**Ejecuta la celda (Shift + Enter)** y pega tus keys cuando te las pida.
-
-**⚠️ Seguridad:** Nunca pegues las keys directamente en el código. Usa `getpass()`.
-
----
-
-### 📋 Paso 5: Instalar Librerías (10 min)
-
-**Ejecuta esta celda para instalar todas las dependencias:**
-
-```python
-# === INSTALACIÓN DE LIBRERÍAS (2024-2025 Updated) ===
-
-# Core
-!pip install --upgrade pip
-
-# Manejo de datos
-!pip install pandas==2.2.0 numpy==1.26.3
-
-# Obtención de datos
-!pip install yfinance==0.2.36 alpaca-py==0.25.0
-
-# Backtesting
-!pip install vectorbt==0.26.1 backtrader==1.9.78.123
-
-# Análisis técnico
-!pip install ta==0.11.0 pandas-ta==0.3.14b
-
-# Visualización
-!pip install matplotlib==3.8.2 seaborn==0.13.1 plotly==5.18.0
-
-# Machine Learning (opcional)
-!pip install scikit-learn==1.4.0
-
-# Utilities
-!pip install python-dotenv==1.0.0 requests==2.31.0
-
-print("✅ Todas las librerías instaladas correctamente")
-```
-
-**Tiempo de ejecución:** ~5-8 minutos (Colab descarga e instala todo)
-
-**Validación:**
-☐ La celda ejecutó sin errores
-☐ Veo "✅ Todas las librerías instaladas correctamente"
-
----
-
-### 📋 Paso 6: Validación de Setup (5 min)
-
-**Ejecuta esta celda para validar que todo funciona:**
-
-```python
-# === CELDA DE VALIDACIÓN COMPLETA ===
-
-import sys
-print("🔍 Validando setup...\n")
-
-# 1. Verificar Python
-python_version = sys.version.split()[0]
-print(f"✅ Python {python_version}")
-
-# 2. Verificar librerías core
-try:
-    import pandas as pd
-    import numpy as np
-    import yfinance as yf
-    import vectorbt as vbt
-    from alpaca.trading.client import TradingClient
-    import ta
-    import matplotlib.pyplot as plt
-    print("✅ Todas las librerías importadas correctamente")
-except ImportError as e:
-    print(f"❌ Error importando librerías: {e}")
-    sys.exit(1)
-
-# 3. Verificar conexión con Alpaca
-try:
-    client = TradingClient(
-        api_key=os.environ['ALPACA_API_KEY'],
-        secret_key=os.environ['ALPACA_API_SECRET'],
-        paper=True
-    )
-    account = client.get_account()
-    print(f"✅ Conexión con Alpaca exitosa")
-    print(f"   Balance: ${float(account.cash):,.2f} (paper)")
-except Exception as e:
-    print(f"❌ Error conectando con Alpaca: {e}")
-    print("   Verifica tus API keys en el Paso 4")
-    sys.exit(1)
-
-# 4. Verificar descarga de datos
-try:
-    data = yf.download('SPY', period='5d', progress=False)
-    print(f"✅ Descarga de datos funcionando")
-    print(f"   Datos obtenidos: {len(data)} días")
-except Exception as e:
-    print(f"❌ Error descargando datos: {e}")
-    sys.exit(1)
-
-# 5. Test de indicadores técnicos
-try:
-    data['SMA_20'] = ta.trend.sma_indicator(data['Close'], window=20)
-    data['RSI_14'] = ta.momentum.rsi(data['Close'], window=14)
-    print("✅ Cálculo de indicadores técnicos funcionando")
-except Exception as e:
-    print(f"❌ Error calculando indicadores: {e}")
-    sys.exit(1)
-
-print("\n" + "="*50)
-print("🎉 ¡SETUP COMPLETADO EXITOSAMENTE!")
-print("="*50)
-print("\nEstás listo para empezar la Sesión 1.")
-print("Guarda este notebook en tu Google Drive.")
-```
-
-**Resultado esperado:**
-
-```
-✅ Python 3.10.12
-✅ Todas las librerías importadas correctamente
-✅ Conexión con Alpaca exitosa
-   Balance: $100,000.00 (paper)
-✅ Descarga de datos funcionando
-   Datos obtenidos: 5 días
-✅ Cálculo de indicadores técnicos funcionando
-
-==================================================
-🎉 ¡SETUP COMPLETADO EXITOSAMENTE!
-==================================================
-
-Estás listo para empezar la Sesión 1.
-Guarda este notebook en tu Google Drive.
-```
-
-**Validación final:**
-☐ Todos los ✅ aparecen (no hay ❌)
-☐ Veo el mensaje "¡SETUP COMPLETADO EXITOSAMENTE!"
-☐ Balance de Alpaca aparece (debería ser $100,000 paper)
-
----
-
-### 📋 Paso 7: Guardar Notebook en Drive (2 min)
-
-**Para no perder tu trabajo:**
-
-1. `File` → `Save a copy in Drive`
-2. Renombrar como: `Workshop_TradingAlgo_[TuNombre].ipynb`
-3. Guardar en carpeta `00_Workshop_Trading_Algo/`
-
-**✅ Setup Rápido Completo** - Total: ~30 minutos
-
----
-
-## 💻 OPCIÓN B: Setup Avanzado (Python Local) - 2-3h
-
-**✅ Ideal para:** Traders con experiencia técnica que quieren desarrollo local y deployment 24/7
-
-### 📋 Paso 1: Instalar Python 3.11+ (15 min)
-
-#### **Opción A: Anaconda (Recomendado para principiantes)**
-
-**Windows:**
-1. Descargar: [anaconda.com/download](https://www.anaconda.com/download)
-2. Ejecutar instalador (`.exe`)
-3. Opciones:
-   - ✅ "Add Anaconda to PATH" (importante)
-   - ✅ "Register Anaconda as default Python"
-4. Reiniciar terminal
-
-**macOS:**
-```bash
-# Instalar con Homebrew
-brew install --cask anaconda
-
-# Agregar al PATH
-echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-**Linux (Ubuntu/Debian):**
-```bash
-# Descargar instalador
-wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
-
-# Instalar
-bash Anaconda3-2024.02-1-Linux-x86_64.sh
-
-# Seguir instrucciones y agregar al PATH
-```
-
-#### **Opción B: Python Directo (Para usuarios avanzados)**
-
-**Windows:**
-1. Descargar: [python.org/downloads](https://www.python.org/downloads/)
-2. Instalar Python 3.11.x
-3. ✅ Marcar "Add Python to PATH"
-
-**macOS:**
-```bash
-brew install python@3.11
-```
-
-**Linux:**
-```bash
-sudo apt update
-sudo apt install python3.11 python3.11-venv python3-pip
-```
-
-**Validación:**
-```bash
-python --version
-# Debe mostrar: Python 3.11.x o superior
-```
-
----
-
-### 📋 Paso 2: Crear Ambiente Virtual (10 min)
-
-**¿Por qué un ambiente virtual?**  
-Aísla las dependencias del workshop de otros proyectos Python.
-
-#### **Con Anaconda:**
-
-```bash
-# Crear ambiente
-conda create -n trading-algo python=3.11
-
-# Activar
-conda activate trading-algo
-
-# Verificar
-python --version  # Debe mostrar 3.11.x
-```
-
-#### **Con venv (Python vanilla):**
-
-```bash
-# Crear ambiente
-python3.11 -m venv ~/envs/trading-algo
-
-# Activar
-# Windows:
-~/envs/trading-algo/Scripts/activate
-
-# macOS/Linux:
-source ~/envs/trading-algo/bin/activate
-
-# Verificar
-python --version
-```
-
-**Validación:**
-☐ Ambiente activado (ves `(trading-algo)` en el prompt)
-☐ Python 3.11+ funcionando
-
----
-
-### 📋 Paso 3: Instalar Librerías (30 min)
-
-**Crear archivo `requirements.txt`:**
-
-```txt
-# requirements.txt - Librerías Trading Algorítmico 2025
-# ========================================================
-
-# === Core ===
-numpy==1.26.3
-pandas==2.2.0
-scipy==1.12.0
-
-# === Datos ===
-yfinance==0.2.36
-alpaca-py==0.25.0
-ib-insync==0.9.86
-MetaTrader5==5.0.45
-
-# === Backtesting ===
-vectorbt==0.26.1
-backtrader==1.9.78.123
-zipline-reloaded==3.0.4
-
-# === Análisis Técnico ===
-ta==0.11.0
-pandas-ta==0.3.14b
-TA-Lib==0.4.28
-
-# === Visualización ===
-matplotlib==3.8.2
-seaborn==0.13.1
-plotly==5.18.0
-mplfinance==0.12.10
-
-# === Machine Learning ===
-scikit-learn==1.4.0
-xgboost==2.0.3
-
-# === APIs y Web ===
-requests==2.31.0
-websocket-client==1.7.0
-fastapi==0.109.0
-uvicorn==0.27.0
-
-# === Utilities ===
-python-dotenv==1.0.0
-pyyaml==6.0.1
-click==8.1.7
-loguru==0.7.2
-
-# === Jupyter (opcional) ===
-jupyter==1.0.0
-notebook==7.0.7
-ipykernel==6.29.0
-```
-
-**Instalar:**
-
-```bash
-# Actualizar pip primero
-pip install --upgrade pip
-
-# Instalar todas las dependencias
-pip install -r requirements.txt
-```
-
-**Tiempo:** ~20-30 minutos (descarga y compilación)
-
-**⚠️ Nota sobre TA-Lib:**
-TA-Lib requiere compilación en algunos sistemas:
-
-**Windows:**
-```bash
-# Descargar wheel pre-compilado
-# De: https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
-pip install TA_Lib‑0.4.28‑cp311‑cp311‑win_amd64.whl
-```
-
-**macOS:**
-```bash
-brew install ta-lib
-pip install TA-Lib
-```
-
-**Linux:**
-```bash
-sudo apt-get install libta-lib-dev
-pip install TA-Lib
-```
-
-**Validación:**
-```bash
-pip list | grep -E "pandas|numpy|yfinance|vectorbt|alpaca"
-# Deberías ver todas las librerías instaladas
-```
-
----
-
-### 📋 Paso 4: Configurar Jupyter (10 min)
-
-**Instalar Jupyter Lab:**
-
-```bash
-pip install jupyterlab==4.0.11
-```
-
-**Registrar el kernel:**
-
-```bash
-python -m ipykernel install --user --name=trading-algo --display-name="Python (Trading Algo)"
-```
-
-**Iniciar Jupyter:**
-
-```bash
-jupyter lab
-```
-
-Se abrirá en tu navegador: `http://localhost:8888`
-
-**Validación:**
-☐ Jupyter Lab abre correctamente
-☐ Puedes crear un nuevo notebook
-☐ El kernel "Python (Trading Algo)" aparece en la lista
-
----
-
-### 📋 Paso 5: Configurar Brokers y APIs (15 min)
-
-#### **Alpaca (Recomendado para multi-asset)**
-
-1. **Crear archivo `.env` en tu directorio de trabajo:**
-
-```bash
-# .env - Variables de entorno
-
-# Alpaca API (Paper Trading)
-ALPACA_API_KEY=PKxxxxxxxxxxxxxxxxxx
-ALPACA_API_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-ALPACA_PAPER=true
-
-# TradingView Webhook (opcional, para S7)
-WEBHOOK_SECRET=tu_secreto_super_seguro
-
-# Telegram Bot (opcional, para alertas)
-TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-TELEGRAM_CHAT_ID=123456789
-```
-
-2. **Test de conexión:**
-
-```python
-# test_alpaca.py
-import os
-from dotenv import load_dotenv
-from alpaca.trading.client import TradingClient
-
-load_dotenv()
-
-client = TradingClient(
-    api_key=os.getenv('ALPACA_API_KEY'),
-    secret_key=os.getenv('ALPACA_API_SECRET'),
-    paper=True
-)
-
-account = client.get_account()
-print(f"✅ Conexión exitosa")
-print(f"Balance: ${float(account.cash):,.2f}")
-```
-
-```bash
-python test_alpaca.py
-```
-
-**Validación:**
-☐ Test ejecuta sin errores
-☐ Veo mi balance de paper trading
-
----
-
-### 📋 Paso 6: Validación Final (10 min)
-
-**Script de validación completo:**
-
-```python
-# validate_setup.py
-import sys
-
-print("🔍 Validando setup completo...\n")
-
-# 1. Python version
-python_version = sys.version.split()[0]
-print(f"✅ Python {python_version}")
-assert python_version >= "3.11", "❌ Necesitas Python 3.11+"
-
-# 2. Core libraries
-try:
-    import pandas as pd
-    import numpy as np
-    import yfinance as yf
-    import vectorbt as vbt
-    import backtrader as bt
-    import ta
-    print("✅ Librerías core importadas")
-except ImportError as e:
-    print(f"❌ Error: {e}")
-    sys.exit(1)
-
-# 3. Broker APIs
-try:
-    from alpaca.trading.client import TradingClient
-    import MetaTrader5 as mt5
-    from ib_insync import IB
-    print("✅ APIs de brokers disponibles")
-except ImportError as e:
-    print(f"⚠️ Advertencia: {e}")
-    print("   (Opcional si no usas ese broker)")
-
-# 4. Jupyter
-try:
-    import notebook
-    import ipykernel
-    print("✅ Jupyter configurado")
-except ImportError:
-    print("⚠️ Jupyter no instalado (opcional)")
-
-# 5. Test de datos
-try:
-    data = yf.download('SPY', period='5d', progress=False)
-    assert len(data) > 0
-    print(f"✅ Descarga de datos funcionando ({len(data)} días)")
-except Exception as e:
-    print(f"❌ Error en descarga: {e}")
-    sys.exit(1)
-
-print("\n" + "="*50)
-print("🎉 SETUP AVANZADO COMPLETADO")
-print("="*50)
-print("\nPróximos pasos:")
-print("1. Configurar tu broker preferido")
-print("2. Abrir Jupyter Lab")
-print("3. Empezar Sesión 1")
-```
-
-```bash
-python validate_setup.py
-```
-
-**✅ Setup Avanzado Completo** - Total: ~2-3 horas
-
----
-
-## 📊 OPCIÓN C: MetaTrader 5 Setup - 1-2h
-
-**✅ Ideal para:** Traders de Forex/CFDs que usan MetaTrader
-
-### 📋 Paso 1: Instalar MetaTrader 5 (15 min)
-
-**Windows:**
-1. Descargar: [metatrader5.com](https://www.metatrader5.com/en/download)
-2. Instalar MT5
-3. Crear cuenta demo con tu broker preferido
-
-**macOS:**
-```bash
-# MT5 no es nativo en macOS, usar alternativas:
-# Opción A: Wine + PlayOnMac
-# Opción B: Virtual Machine con Windows
-# Opción C: Broker con WebTrader (IG, FXCM)
-```
-
-**Linux:**
-```bash
-# Instalar Wine
-sudo apt install wine
-
-# Descargar MT5
-wget https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5setup.exe
-
-# Instalar
-wine mt5setup.exe
-```
-
-**Validación:**
-☐ MT5 instalado y abierto
-☐ Cuenta demo configurada
-☐ Puedo ver gráficos y hacer operaciones demo
-
----
-
-### 📋 Paso 2: Instalar Python MT5 API (10 min)
-
-**En tu ambiente Python:**
-
-```bash
-# Activar ambiente
-conda activate trading-algo  # o tu ambiente
-
-# Instalar MetaTrader5 para Python
-pip install MetaTrader5==5.0.45
-```
-
-**Validación:**
-```python
-import MetaTrader5 as mt5
-
-# Verificar versión
-print(f"MetaTrader5 package version: {mt5.__version__}")
-```
-
----
-
-### 📋 Paso 3: Conectar Python con MT5 (15 min)
-
-**Script de conexión:**
-
-```python
-# connect_mt5.py
-import MetaTrader5 as mt5
-from datetime import datetime
-
-# Inicializar conexión
-if not mt5.initialize():
-    print("❌ Error: MT5 no inicializado")
-    print(f"Error: {mt5.last_error()}")
-    quit()
-
-print("✅ Conexión con MT5 exitosa")
-
-# Obtener información de la cuenta
-account_info = mt5.account_info()
-if account_info is not None:
-    print(f"\nCuenta: {account_info.login}")
-    print(f"Balance: ${account_info.balance:,.2f}")
-    print(f"Equity: ${account_info.equity:,.2f}")
-    print(f"Broker: {account_info.company}")
-else:
-    print("❌ No se pudo obtener info de cuenta")
-
-# Listar símbolos disponibles
-symbols = mt5.symbols_get()
-print(f"\nSímbolos disponibles: {len(symbols)}")
-print("Primeros 5:", [s.name for s in symbols[:5]])
-
-# Test de datos históricos
-symbol = "EURUSD"
-rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_D1, 0, 10)
-
-if rates is not None:
-    print(f"\n✅ Descarga de datos históricos funcionando")
-    print(f"Símbolo: {symbol}")
-    print(f"Últimos 10 días obtenidos")
-else:
-    print(f"❌ Error obteniendo datos de {symbol}")
-
-# Cerrar conexión
-mt5.shutdown()
-print("\n✅ MT5 Setup completo")
-```
-
-```bash
-python connect_mt5.py
-```
-
-**Resultado esperado:**
-```
-✅ Conexión con MT5 exitosa
-
-Cuenta: 12345678
-Balance: $10,000.00
-Equity: $10,000.00
-Broker: Tu Broker
-
-Símbolos disponibles: 200
-Primeros 5: ['EURUSD', 'GBPUSD', 'USDJPY', 'AUDUSD', 'USDCAD']
-
-✅ Descarga de datos históricos funcionando
-Símbolo: EURUSD
-Últimos 10 días obtenidos
-
-✅ MT5 Setup completo
-```
-
-**Validación:**
-☐ Conexión exitosa con MT5
-☐ Veo información de mi cuenta demo
-☐ Puedo descargar datos históricos
-
----
-
-### 📋 Paso 4: Integración con Python (20 min)
-
-**Ejemplo de estrategia simple:**
-
-```python
-# strategy_mt5_example.py
-import MetaTrader5 as mt5
-import pandas as pd
-import numpy as np
-
-# Inicializar
-mt5.initialize()
-
-# Parámetros
-symbol = "EURUSD"
-timeframe = mt5.TIMEFRAME_H1
-periods = 100
-
-# Obtener datos
-rates = mt5.copy_rates_from_pos(symbol, timeframe, 0, periods)
-df = pd.DataFrame(rates)
-df['time'] = pd.to_datetime(df['time'], unit='s')
-
-# Calcular indicadores
-df['SMA_20'] = df['close'].rolling(window=20).mean()
-df['SMA_50'] = df['close'].rolling(window=50).mean()
-
-# Generar señales
-df['signal'] = 0
-df.loc[df['SMA_20'] > df['SMA_50'], 'signal'] = 1  # Buy
-df.loc[df['SMA_20'] < df['SMA_50'], 'signal'] = -1  # Sell
-
-# Última señal
-last_signal = df['signal'].iloc[-1]
-
-print(f"Símbolo: {symbol}")
-print(f"Precio actual: {df['close'].iloc[-1]:.5f}")
-print(f"SMA 20: {df['SMA_20'].iloc[-1]:.5f}")
-print(f"SMA 50: {df['SMA_50'].iloc[-1]:.5f}")
-print(f"Señal: {'BUY' if last_signal == 1 else 'SELL' if last_signal == -1 else 'NEUTRAL'}")
-
-mt5.shutdown()
-```
-
-**Validación:**
-☐ El script ejecuta sin errores
-☐ Veo señales generadas
-
-**✅ MetaTrader 5 Setup Completo**
-
----
-
-## 🏦 OPCIÓN D: Interactive Brokers Setup - 2-3h
-
-**✅ Ideal para:** Traders profesionales con acceso a mercados globales
-
-### 📋 Paso 1: Crear Cuenta IB Paper Trading (20 min)
-
-**Pasos:**
-
-1. **Ir a:** [interactivebrokers.com](https://www.interactivebrokers.com)
-
-2. **Registrarse:**
-   - Click en "Register"
-   - Seleccionar "Individual Account"
-   - Completar formulario
-
-3. **Solicitar Paper Trading:**
-   - En el portal, ir a "Account Management"
-   - "Settings" → "Paper Trading Account"
-   - Solicitar activación (aprueban en 24h)
-
-4. **Descargar TWS (Trader Workstation):**
-   - [Portal → Downloads](https://www.interactivebrokers.com/en/trading/tws.php)
-   - Instalar TWS para tu sistema operativo
-
-**Validación:**
-☐ Cuenta paper trading aprobada
-☐ TWS instalado y funcional
-☐ Puedo hacer login a paper trading
-
----
-
-### 📋 Paso 2: Instalar IB Gateway (30 min)
-
-**IB Gateway es más ligero que TWS para conexiones API.**
-
-**Windows/macOS/Linux:**
-1. Descargar IB Gateway: [ibkr.com/gateway](https://www.interactivebrokers.com/en/trading/ibgateway-stable.php)
-2. Instalar
-3. Configurar:
-   - Puerto API: `4002` (paper) o `4001` (live)
-   - ✅ Habilitar "Enable ActiveX and Socket Clients"
-   - ✅ Desmarcar "Read-Only API"
-   - Socket Port: `7497`
-
-**Validación:**
-☐ IB Gateway instalado
-☐ Puedo hacer login
-☐ API habilitada (puerto 4002 o 7497)
-
----
-
-### 📋 Paso 3: Instalar ib_insync (15 min)
-
-**En tu ambiente Python:**
-
-```bash
-# Activar ambiente
-conda activate trading-algo
-
-# Instalar ib_insync (la mejor librería para IB en Python)
-pip install ib-insync==0.9.86
-```
-
-**Validación:**
-```python
-from ib_insync import *
-
-print(f"ib_insync version: {util.__version__}")
-```
-
----
-
-### 📋 Paso 4: Conectar Python con IB (20 min)
-
-**Script de conexión:**
-
-```python
-# connect_ib.py
-from ib_insync import *
-
-# Conectar a IB Gateway
-ib = IB()
-
-try:
-    # Puerto 4002 = Paper Trading, 4001 = Live Trading
-    ib.connect('127.0.0.1', 4002, clientId=1)
-    print("✅ Conexión con Interactive Brokers exitosa")
-    
-    # Obtener información de cuenta
-    account_summary = ib.accountSummary()
-    
-    print("\nResumen de Cuenta:")
-    for item in account_summary:
-        if item.tag in ['TotalCashValue', 'NetLiquidation', 'BuyingPower']:
-            print(f"{item.tag}: {item.currency} {item.value}")
-    
-    # Obtener posiciones
-    positions = ib.positions()
-    print(f"\nPosiciones abiertas: {len(positions)}")
-    
-    if positions:
-        for pos in positions:
-            print(f"- {pos.contract.symbol}: {pos.position} @ ${pos.avgCost:.2f}")
-    
-    # Test de datos de mercado
-    contract = Stock('AAPL', 'SMART', 'USD')
-    ib.qualifyContracts(contract)
-    
-    bars = ib.reqHistoricalData(
-        contract,
-        endDateTime='',
-        durationStr='5 D',
-        barSizeSetting='1 day',
-        whatToShow='TRADES',
-        useRTH=True
-    )
-    
-    print(f"\n✅ Descarga de datos funcionando")
-    print(f"Símbolo: {contract.symbol}")
-    print(f"Datos obtenidos: {len(bars)} días")
-    
-    # Último precio
-    ticker = ib.reqTickers(contract)[0]
-    print(f"Último precio: ${ticker.marketPrice():.2f}")
-    
-except Exception as e:
-    print(f"❌ Error: {e}")
-    print("\nAsegúrate de:")
-    print("1. IB Gateway está corriendo")
-    print("2. Has hecho login")
-    print("3. API está habilitada (puerto 4002)")
-
-finally:
-    ib.disconnect()
-    print("\n✅ Desconectado de IB")
-```
-
-```bash
-# IMPORTANTE: Primero inicia IB Gateway
-# Luego ejecuta el script
-python connect_ib.py
-```
-
-**Resultado esperado:**
-```
-✅ Conexión con Interactive Brokers exitosa
-
-Resumen de Cuenta:
-TotalCashValue: USD 1000000.00
-NetLiquidation: USD 1000000.00
-BuyingPower: USD 4000000.00
-
-Posiciones abiertas: 0
-
-✅ Descarga de datos funcionando
-Símbolo: AAPL
-Datos obtenidos: 5 días
-Último precio: $189.50
-
-✅ Desconectado de IB
-```
-
-**Validación:**
-☐ Conexión exitosa con IB
-☐ Veo información de mi cuenta paper
-☐ Puedo descargar datos históricos
-
----
-
-### 📋 Paso 5: Integración Avanzada (30 min)
-
-**Ejemplo de estrategia con IB:**
-
-```python
-# strategy_ib_example.py
-from ib_insync import *
-import pandas as pd
-
-# Conectar
-ib = IB()
-ib.connect('127.0.0.1', 4002, clientId=1)
-
-# Definir contrato
-contract = Stock('SPY', 'SMART', 'USD')
-ib.qualifyContracts(contract)
-
-# Obtener datos históricos
-bars = ib.reqHistoricalData(
-    contract,
-    endDateTime='',
-    durationStr='30 D',
-    barSizeSetting='1 hour',
-    whatToShow='TRADES',
-    useRTH=True
-)
-
-# Convertir a DataFrame
-df = util.df(bars)
-df['time'] = pd.to_datetime(df['date'])
-df.set_index('time', inplace=True)
-
-# Calcular indicadores
-df['SMA_20'] = df['close'].rolling(window=20).mean()
-df['RSI'] = ta.momentum.rsi(df['close'], window=14)
-
-# Generar señales
-df['signal'] = 0
-df.loc[(df['close'] > df['SMA_20']) & (df['RSI'] < 70), 'signal'] = 1
-df.loc[(df['close'] < df['SMA_20']) | (df['RSI'] > 70), 'signal'] = -1
-
-# Última señal
-last_signal = df['signal'].iloc[-1]
-
-print(f"Símbolo: {contract.symbol}")
-print(f"Precio actual: ${df['close'].iloc[-1]:.2f}")
-print(f"SMA 20: ${df['SMA_20'].iloc[-1]:.2f}")
-print(f"RSI: {df['RSI'].iloc[-1]:.2f}")
-print(f"Señal: {'BUY' if last_signal == 1 else 'SELL' if last_signal == -1 else 'NEUTRAL'}")
-
-ib.disconnect()
-```
-
-**Validación:**
-☐ Estrategia ejecuta sin errores
-☐ Veo señales generadas
-☐ Puedo analizar datos en DataFrame
-
-**✅ Interactive Brokers Setup Completo**
-
-**📚 Recursos IB:**
-- [ib_insync Documentation](https://ib-insync.readthedocs.io/)
-- [IB API Reference](https://www.interactivebrokers.com/en/trading/ib-api.php)
-
----
-
-## 📦 Librerías y Dependencias (Actualizadas 2025)
-
-### 🔵 Librerías Core (Obligatorias)
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **pandas** | 2.2.0 | Manejo de datos (DataFrame) | `pip install pandas==2.2.0` |
-| **numpy** | 1.26.3 | Cálculos numéricos | `pip install numpy==1.26.3` |
-| **scipy** | 1.12.0 | Estadística avanzada | `pip install scipy==1.12.0` |
-
----
-
-### 📊 Obtención de Datos
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **yfinance** | 0.2.36 | Datos Yahoo Finance (gratis) | `pip install yfinance==0.2.36` |
-| **alpaca-py** | 0.25.0 | API Alpaca (moderna, 2024) | `pip install alpaca-py==0.25.0` |
-| **ib-insync** | 0.9.86 | Interactive Brokers | `pip install ib-insync==0.9.86` |
-| **MetaTrader5** | 5.0.45 | MetaTrader 5 API | `pip install MetaTrader5==5.0.45` |
-
-**⚠️ Nota:** `alpaca-py` es la librería oficial nueva de Alpaca (reemplaza `alpaca-trade-api`).
-
----
-
-### 📈 Backtesting
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **vectorbt** | 0.26.1 | Backtesting vectorizado (rápido) | `pip install vectorbt==0.26.1` |
-| **backtrader** | 1.9.78.123 | Backtesting event-driven (flexible) | `pip install backtrader==1.9.78.123` |
-| **zipline-reloaded** | 3.0.4 | Backtesting institucional | `pip install zipline-reloaded==3.0.4` |
-
-**Comparación:**
-- **vectorbt**: Mejor para optimización de parámetros (10-100x más rápido)
-- **backtrader**: Mejor para lógica compleja de estrategias
-- **zipline-reloaded**: Mejor para análisis estilo hedge fund
-
----
-
-### 📉 Análisis Técnico
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **ta** | 0.11.0 | 130+ indicadores técnicos | `pip install ta==0.11.0` |
-| **pandas-ta** | 0.3.14b | Integración pandas | `pip install pandas-ta==0.3.14b` |
-| **TA-Lib** | 0.4.28 | Librería C (más rápida) | Ver instalación especial abajo |
-
-**Instalación TA-Lib (requiere compilación):**
-
-**Windows:**
-```bash
-# Descargar wheel de: https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
-pip install TA_Lib-0.4.28-cp311-cp311-win_amd64.whl
-```
-
-**macOS:**
-```bash
-brew install ta-lib
-pip install TA-Lib
-```
-
-**Linux:**
-```bash
-sudo apt-get install libta-lib-dev
-pip install TA-Lib
-```
-
----
-
-### 📊 Visualización
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **matplotlib** | 3.8.2 | Gráficos estáticos | `pip install matplotlib==3.8.2` |
-| **seaborn** | 0.13.1 | Gráficos estadísticos | `pip install seaborn==0.13.1` |
-| **plotly** | 5.18.0 | Gráficos interactivos | `pip install plotly==5.18.0` |
-| **mplfinance** | 0.12.10 | Gráficos de velas (candlesticks) | `pip install mplfinance==0.12.10` |
-
----
-
-### 🤖 Machine Learning (Opcional)
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **scikit-learn** | 1.4.0 | ML clásico | `pip install scikit-learn==1.4.0` |
-| **xgboost** | 2.0.3 | Gradient boosting | `pip install xgboost==2.0.3` |
-| **tensorflow** | 2.15.0 | Deep Learning | `pip install tensorflow==2.15.0` |
-
----
-
-### 🔧 Utilities
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **python-dotenv** | 1.0.0 | Variables de entorno (.env) | `pip install python-dotenv==1.0.0` |
-| **loguru** | 0.7.2 | Logging mejorado | `pip install loguru==0.7.2` |
-| **click** | 8.1.7 | CLI apps | `pip install click==8.1.7` |
-| **requests** | 2.31.0 | HTTP requests | `pip install requests==2.31.0` |
-
----
-
-### 📝 Jupyter (Opcional)
-
-| Librería | Versión | Propósito | Instalación |
-|----------|---------|-----------|-------------|
-| **jupyter** | 1.0.0 | Jupyter Notebook | `pip install jupyter==1.0.0` |
-| **jupyterlab** | 4.0.11 | Jupyter Lab (IDE) | `pip install jupyterlab==4.0.11` |
-| **ipykernel** | 6.29.0 | Kernel Python | `pip install ipykernel==6.29.0` |
-
----
-
-## 🚨 Troubleshooting
-
-### ❌ Error: "No module named 'yfinance'"
-
-**Causa:** Librería no instalada o instalada en ambiente incorrecto.
-
-**Solución (Colab):**
-```python
-!pip install yfinance
-```
-
-**Solución (Local):**
-```bash
-# Verifica que el ambiente esté activado
-conda activate trading-algo  # o tu ambiente
-
-# Instala
-pip install yfinance
-
-# Verifica
-python -c "import yfinance; print('OK')"
-```
-
----
-
-### ❌ Error: "Alpaca API authentication failed"
-
-**Causa:** API keys incorrectas, no configuradas, o usando keys de Live en Paper.
-
-**Solución:**
-
-1. **Verifica las keys:**
-   - ✅ `API_KEY` debe empezar con "PK..."
-   - ✅ `SECRET_KEY` es un string largo
-   - ✅ Las keys son de **Paper Trading** (no Live)
-
-2. **Regenera las keys:**
-   - Ir a Alpaca Dashboard
-   - API Keys → "Regenerate"
-   - Copiar y reemplazar en tu código
-
-3. **Verifica el código:**
-```python
-# Debe tener paper=True
-client = TradingClient(
-    api_key="tu_key",
-    secret_key="tu_secret",
-    paper=True  # ← IMPORTANTE
-)
-```
-
----
-
-### ❌ Error: "IndexError: list index out of range" en backtesting
-
-**Causa:** Datos insuficientes o mal formateados.
-
-**Solución:**
-
-1. **Verifica cantidad de datos:**
-```python
-print(f"Datos disponibles: {len(df)} días")
-# Mínimo recomendado: 252 días (1 año)
-```
-
-2. **Verifica formato:**
-```python
-print(df.head())
-# Columnas requeridas: ['Open', 'High', 'Low', 'Close', 'Volume']
-```
-
-3. **Descarga más datos:**
-```python
-data = yf.download('SPY', period='2y')  # 2 años en vez de 5 días
-```
-
----
-
-### ❌ Error: "TA-Lib not found" o "ImportError: DLL load failed"
-
-**Causa:** TA-Lib no está instalada correctamente (requiere compilación).
-
-**Solución Windows:**
-```bash
-# Descargar wheel pre-compilado de:
-# https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
-
-# Instalar wheel
-pip install TA_Lib-0.4.28-cp311-cp311-win_amd64.whl
-```
-
-**Solución macOS:**
-```bash
-brew install ta-lib
-pip install TA-Lib
-```
-
-**Solución Linux:**
-```bash
-sudo apt-get install libta-lib-dev
-pip install TA-Lib
-```
-
-**Alternativa (sin TA-Lib):**
-Usa `ta` o `pandas-ta` en su lugar (más fáciles de instalar):
-```bash
-pip install ta pandas-ta
-```
-
----
-
-### ❌ "Colab se desconecta y pierdo mi trabajo"
-
-**Causa:** Sesiones de Colab expiran después de ~12h de inactividad.
-
-**Solución:**
-
-1. **Guardar frecuentemente:**
-   - `Ctrl + S` o `File → Save`
-
-2. **Descargar notebook:**
-   - `File → Download → .ipynb`
-
-3. **Usar Google Drive:**
-```python
-# Montar Drive (ejecutar celda)
-from google.colab import drive
-drive.mount('/content/drive')
-
-# Guardar notebook en Drive automáticamente
-# File → Save a copy in Drive
-```
-
-4. **Mantener sesión activa (hack):**
-```python
-# NO recomendado, pero funciona
-# Ejecutar esta celda para mantener conexión
-import time
-for i in range(100):
-    print(f"Manteniendo sesión activa... {i}/100")
-    time.sleep(600)  # 10 minutos
-```
-
----
-
-### ❌ MetaTrader5: "initialize() failed"
-
-**Causa:** MT5 no está corriendo o no se puede conectar.
-
-**Solución:**
-
-1. **Verificar que MT5 está abierto:**
-   - Abrir MetaTrader 5 desktop app
-   - Hacer login con cuenta demo
-
-2. **Verificar ruta de instalación:**
-```python
-import MetaTrader5 as mt5
-
-# En Windows, especificar ruta si necesario
-mt5.initialize(
-    path="C:\\Program Files\\MetaTrader 5\\terminal64.exe"
-)
-```
-
-3. **Verificar que cuenta está activa:**
-   - En MT5: Tools → Options → Server
-   - Debe mostrar "Connected"
-
----
-
-### ❌ Interactive Brokers: "Connection refused"
-
-**Causa:** IB Gateway no está corriendo o puerto incorrecto.
-
-**Solución:**
-
-1. **Verificar que IB Gateway está corriendo:**
-   - Iniciar IB Gateway
-   - Hacer login
-
-2. **Verificar puerto:**
-```python
-# Paper Trading = puerto 4002
-# Live Trading = puerto 4001
-ib.connect('127.0.0.1', 4002, clientId=1)
-```
-
-3. **Verificar API habilitada:**
-   - En IB Gateway: Configure → Settings → API → Settings
-   - ✅ "Enable ActiveX and Socket Clients"
-   - Socket Port: 7497 (predeterminado)
-
-4. **Firewall:**
-   - Asegúrate de que el firewall permite conexiones al puerto 4002
-
----
-
-### ❌ "Kernel died" o "Out of Memory" en Jupyter
-
-**Causa:** Estrategia está usando demasiada memoria.
-
-**Solución:**
-
-1. **Reducir datos:**
-```python
-# Cargar menos datos
-data = yf.download('SPY', period='1y')  # En vez de '10y'
-```
-
-2. **Liberar memoria:**
-```python
-import gc
-
-# Después de backtests pesados
-del data, results
-gc.collect()
-```
-
-3. **Usar chunks:**
-```python
-# Para datasets muy grandes
-for chunk in pd.read_csv('huge_data.csv', chunksize=10000):
-    # Procesar chunk por chunk
-    pass
-```
-
----
-
-### ❌ "SSL Certificate Verify Failed"
-
-**Causa:** Problema con certificados SSL (común en redes corporativas).
-
-**Solución temporal (NO recomendado para producción):**
-```python
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
-```
-
-**Solución correcta:**
-```bash
-# Actualizar certifi
-pip install --upgrade certifi
-```
-
----
-
-### ❌ "ModuleNotFoundError" después de instalar
-
-**Causa:** Instalaste en un ambiente, pero estás ejecutando en otro.
-
-**Solución:**
-
-1. **Verificar ambiente activo:**
-```bash
-# Debería mostrar tu ambiente
-conda env list
-# O
-which python
-```
-
-2. **Reinstalar en ambiente correcto:**
-```bash
-conda activate trading-algo
-pip install [librería]
-```
-
-3. **En Jupyter, verificar kernel:**
-   - Kernel → Change Kernel → "Python (Trading Algo)"
-
----
-
-## ✅ Validación Final
-
-**Antes de empezar la Sesión 1, verifica:**
-
-### 🎯 Setup Rápido (Colab)
-
-☐ Puedo abrir Google Colab
-☐ Tengo API keys de Alpaca configuradas
-☐ Todas las librerías instaladas (celda ejecuta sin errores)
-☐ Validación completa pasó (todos los ✅)
-☐ Balance de Alpaca aparece ($100,000 paper)
-☐ Puedo descargar datos con yfinance
-
-### 🎯 Setup Avanzado (Local)
-
-☐ Python 3.11+ instalado
-☐ Ambiente virtual creado y activo
-☐ Todas las librerías instaladas (requirements.txt)
-☐ Jupyter Lab funciona
-☐ Puedo conectar con Alpaca API
-☐ Script de validación pasa (validate_setup.py)
-
-### 🎯 MetaTrader 5
-
-☐ MT5 instalado y funcional
-☐ Cuenta demo configurada
-☐ Python MT5 package instalado
-☐ Puedo conectar Python con MT5
-☐ Puedo descargar datos históricos de MT5
-
-### 🎯 Interactive Brokers
-
-☐ Cuenta paper trading aprobada
-☐ IB Gateway instalado
-☐ ib_insync instalado
-☐ Puedo conectar Python con IB
-☐ Puedo descargar datos históricos de IB
+### 4️⃣ ¡Empezar la Sesión 1!
+
+**Si usas Colab:**
+- Abre el [Colab Notebook Maestro](Guia_Uso_Colab_Notebook.md)
+- Navega a "🟦 SESIÓN 1: FUNDAMENTOS"
+- Ejecuta las celdas una por una
+
+**Si usas Python Local:**
+- Abre Jupyter Lab: `jupyter lab`
+- Carga el notebook del workshop
+- Navega a Sesión 1
+
+**🚀 ¡Estás listo para comenzar!**
 
 ---
 
 ## 📞 Soporte
 
-**Si algo no funciona después de seguir esta guía:**
+**Si algo no funciona después de seguir tu guía de setup:**
 
 ### 📧 Email
 **yismaryme@gmail.com**  
@@ -1847,45 +331,46 @@ Tiempo de respuesta: 24-48h
 
 **Incluye en tu email:**
 - Sistema operativo (Windows/macOS/Linux)
-- Setup que intentaste (Rápido/Avanzado/MT5/IB)
+- Setup que elegiste (A/B/C/D)
 - Paso exacto donde falló
 - Error completo (screenshot o texto)
 - Qué ya intentaste
+
+---
 
 ### 💬 Telegram
 **[@yismary](https://t.me/yismary)**  
 Para consultas rápidas pre-workshop
 
+---
+
 ### 🔒 Grupo Premium
 **Solo participantes pagos**  
-Soporte comunitario + sesiones de troubleshooting
+Soporte comunitario + sesiones de troubleshooting en vivo
 
 ---
 
-## 🎯 Próximos Pasos
+### 🚨 Troubleshooting Primero
 
-**Una vez completado tu setup:**
+Antes de contactar, revisa:
+1. Troubleshooting de tu setup específico
+2. [Troubleshooting Común](Troubleshooting_Comun.md)
+3. FAQ en [LEEME_PRIMERO.md](LEEME_PRIMERO.md#-faq---preguntas-frecuentes)
 
-1. ✅ **Guarda/bookmark este documento** para referencia futura
-
-2. ✅ **Vuelve a** [LEEME_PRIMERO.md](LEEME_PRIMERO.md)
-
-3. ✅ **Completa el** [Checklist "Tu Primer Día"](LEEME_PRIMERO.md#-checklist-tu-primer-día)
-
-4. ✅ **Revisa el** [Programa Detallado](ESTRUCTURA_COMPLETA.md) para entender las 9 sesiones
-
-5. ✅ **¡Estás listo para la Sesión 1!** 🎉
+En 80% de los casos, la solución ya está documentada.
 
 ---
 
 ## 🔖 Versión y Actualizaciones
 
-**Versión:** 1.0 (Noviembre 2025)  
+**Versión:** 2.1 (Noviembre 2025)  
 **Última actualización:** 13 de noviembre de 2025  
 **Mantenido por:** [@yismafx](https://github.com/yismafx)
 
 **Changelog:**
-- v1.0 (Nov 2025): Versión inicial con 4 opciones de setup + librerías 2025
+- v2.1 (Nov 2025): Arquitectura modular - 8 archivos separados
+- v2.0 (Nov 2025): Guía de uso de Colab agregada
+- v1.0 (Nov 2025): Versión inicial con 4 opciones de setup
 
 ---
 
@@ -1905,4 +390,4 @@ Soporte comunitario + sesiones de troubleshooting
 Recuerda: **GenAI = Copiloto, NO Piloto Automático.**  
 El setup es el primer paso de un viaje de 3-6 meses.
 
-¡Nos vemos en la Sesión 1! 🎓
+**Elige tu setup arriba y comienza tu journey.** 🎓
