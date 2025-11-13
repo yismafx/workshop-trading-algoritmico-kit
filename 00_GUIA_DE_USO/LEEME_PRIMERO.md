@@ -287,7 +287,7 @@ Ver [Programa Detallado](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y ti
 2. Configurar Google Colab con API keys
 3. Ejecutar celda de validación en Colab Notebook Maestro
 
-**Guía detallada:** Ver `00_GUIA_DE_USO/Instrucciones_Setup_Ambiente.md`
+**Guía detallada:** Ver [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md)
 
 **Resultado esperado:**  
 ✅ Ambiente listo, primera celda ejecuta sin errores
@@ -413,7 +413,7 @@ Ver `03_PROMPTS_LIBRARY/` para 4 prompts básicos optimizados
 | ☐ | **Instalar extensión Markdown viewer** en navegador (opcional) | 3 min |
 | ☐ | **Configurar cuentas GenAI:** ChatGPT (gratis) o Claude (gratis) | 5 min |
 
-**Guía completa:** `00_GUIA_DE_USO/Instrucciones_Setup_Ambiente.md`
+**Guía completa:** [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md)
 
 ### 📚 Lectura Esencial (30 min)
 
@@ -850,12 +850,12 @@ pip install yfinance
 |:------:|--------|
 | ☐ | **Leer esta guía completa** (acabas de hacerlo) |
 | ☐ | **Revisar el** [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) |
-| ☐ | **Configurar ambiente** siguiendo: `Instrucciones_Setup_Ambiente.md` |
+| ☐ | **Configurar ambiente** siguiendo: [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md) |
 | ☐ | **Completar el** [checklist "Tu Primer Día"](#-checklist-tu-primer-día) |
 | ☐ | **Abrir el Colab Notebook Maestro** (🔒 Premium) |
 | ☐ | **Revisar** [Programa Detallado](ESTRUCTURA_COMPLETA.md) para entender el roadmap |
 
-**👉 Siguiente paso:** Leer `00_GUIA_DE_USO/Instrucciones_Setup_Ambiente.md`
+**👉 Siguiente paso:** Leer [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md)
 
 ---
 
