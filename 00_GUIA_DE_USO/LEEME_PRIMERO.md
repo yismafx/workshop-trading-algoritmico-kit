@@ -94,7 +94,7 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 │
 ├── 📂 00_GUIA_DE_USO/           → 🔓 PÚBLICO (Este documento + setup)
 │   ├── LEEME_PRIMERO.md         ← Estás aquí
-│   ├── ESTRUCTURA_COMPLETA.md   → Roadmap detallado de 9 sesiones
+│   ├── ESTRUCTURA_COMPLETA.md   → Programa Detallado (9 sesiones)
 │   ├── Instrucciones_Setup_Ambiente.md → Configuración paso a paso
 │   └── MAPA_MENTAL_SISTEMA_TRADING_PNG.html → Arquitectura visual
 │
@@ -164,7 +164,7 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 **Checkpoint S7-S9:** ¿Está tu bot en paper trading por al menos 8 semanas antes de live? ✅
 
 **📖 Para detalles completos de cada sesión:**  
-Ver [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y tiempos detallados.
+Ver [Programa Detallado](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y tiempos detallados.
 
 **Ver también:**
 - [Timeline del Journey](#-tu-journey-completo-timeline) para visualizar el progreso completo
@@ -274,7 +274,7 @@ Ver [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md) con objetivos, entregables 
 **Tareas:**
 1. Leer este documento completo (15-20 min)
 2. Revisar el [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) (5 min)
-3. Leer `ESTRUCTURA_COMPLETA.md` para entender el roadmap (20 min)
+3. Leer [Programa Detallado](ESTRUCTURA_COMPLETA.md) para entender el roadmap (20 min)
 4. Completar [Checklist "Tu Primer Día"](#-checklist-tu-primer-día) (15 min)
 
 **Resultado esperado:**  
@@ -297,7 +297,7 @@ Ver [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md) con objetivos, entregables 
 **Patrón por sesión:**
 
 1. **Pre-trabajo (15 min):**
-   - Leer objetivos en `ESTRUCTURA_COMPLETA.md`
+   - Leer objetivos en [Programa Detallado](ESTRUCTURA_COMPLETA.md)
    - Preparar materiales y herramientas
 
 2. **Sesión en vivo (3h):**
@@ -420,7 +420,7 @@ Ver `03_PROMPTS_LIBRARY/` para 4 prompts básicos optimizados
 | Estado | Documento | Tiempo |
 |:------:|-----------|:------:|
 | ☐ | **Este documento completo** (LEEME_PRIMERO.md) | 15 min |
-| ☐ | **ESTRUCTURA_COMPLETA.md** (roadmap detallado) | 10 min |
+| ☐ | **[Programa Detallado](ESTRUCTURA_COMPLETA.md)** (roadmap sesiones) | 10 min |
 | ☐ | **Revisar FAQ** (sección siguiente) si tienes dudas | 5 min |
 
 ### ✅ Validación Pre-S1 (15 min)
@@ -853,7 +853,7 @@ pip install yfinance
 | ☐ | **Configurar ambiente** siguiendo: `Instrucciones_Setup_Ambiente.md` |
 | ☐ | **Completar el** [checklist "Tu Primer Día"](#-checklist-tu-primer-día) |
 | ☐ | **Abrir el Colab Notebook Maestro** (🔒 Premium) |
-| ☐ | **Revisar** `ESTRUCTURA_COMPLETA.md` para entender el roadmap |
+| ☐ | **Revisar** [Programa Detallado](ESTRUCTURA_COMPLETA.md) para entender el roadmap |
 
 **👉 Siguiente paso:** Leer `00_GUIA_DE_USO/Instrucciones_Setup_Ambiente.md`
 
