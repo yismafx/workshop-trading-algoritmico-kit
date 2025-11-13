@@ -1,5 +1,25 @@
 # 🎯 BIENVENIDO AL KIT DE TRADING ALGORÍTMICO AUMENTADO CON IA GENERATIVA
 
+![Version](https://img.shields.io/badge/version-1.2-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Language](https://img.shields.io/badge/language-ES-yellow)
+
+---
+
+## 📑 Tabla de Contenidos
+
+- [📌 ¿Estás en el Lugar Correcto?](#-estás-en-el-lugar-correcto)
+- [⚡ Quick Start (5 Minutos)](#-quick-start-5-minutos)
+- [🎓 ¿Qué es Este Kit?](#-qué-es-este-kit)
+- [📦 Contenido del Kit](#-contenido-del-kit-estructura-visual)
+- [🛤️ Roadmap del Workshop](#️-roadmap-del-workshop-9-sesiones-27-horas)
+- [⚖️ Expectativas Realistas](#️-expectativas-realistas-el-anti-hype)
+- [🚀 Flujo de Trabajo Recomendado](#-flujo-de-trabajo-recomendado)
+- [✅ Checklist "Tu Primer Día"](#-checklist-tu-primer-día)
+- [🛠️ Stack Tecnológico](#️-stack-tecnológico-del-workshop)
+- [🤔 FAQ - Preguntas Frecuentes](#-faq---preguntas-frecuentes)
+- [🚨 Troubleshooting Común](#-troubleshooting-común)
+- [📞 Soporte y Comunidad](#-soporte-y-comunidad)
+- [🎯 Próximos Pasos](#-próximos-pasos)
+
 ---
 
 ## 📌 ¿Estás en el Lugar Correcto?
@@ -19,6 +39,32 @@ Este kit es para ti **SOLO SI**:
 - No estás dispuesto a validar resultados rigurosamente
 
 > **Principio #1 del Workshop:** La IA Generativa NO reemplaza los fundamentos del trading algorítmico; los AUMENTA. GenAI = Copiloto, NO Piloto Automático.
+
+---
+
+## ⚡ Quick Start (5 Minutos)
+
+**¿Sin tiempo? Empieza aquí:**
+
+### 🚀 3 Pasos Para Comenzar YA
+
+1. **📊 Ver la Arquitectura (2 min)**  
+   → [Mapa Mental Interactivo del Sistema](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)  
+   Visualiza cómo los 5 componentes se conectan
+
+2. **⚙️ Setup Mínimo (2 min)**  
+   → Necesitas: Cuenta Google + Cuenta Alpaca (paper, gratuita)  
+   → [Guía de Setup Rápido](#️-paso-3-configurar-ambiente)
+
+3. **✅ Primera Validación (1 min)**  
+   → Abre el Colab Notebook Maestro (🔒 Premium)  
+   → Ejecuta la celda "Setup y Validación"  
+   → Verifica: `✅ Ambiente configurado correctamente`
+
+---
+
+**🕐 ¿Tienes más tiempo?**  
+📖 [Lee la guía completa](#-tabla-de-contenidos) para entender el roadmap de 9 sesiones y el proceso completo.
 
 ---
 
@@ -230,299 +276,186 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 > 📚 **Acción:** Completa las 9 sesiones del workshop  
 > ⏱️ **Tiempo:** 27 horas totales (3 semanas)  
-> 📊 **Balance:** 40% teoría / 60% práctica  
-> 🏃 **Ritmo:** 3 sesiones por semana
+> 🔒 **Acceso:** Premium (participantes pagos)
 
-**Roadmap visual:**
+**Progreso visual:**
 
 ```
 🟦 SEMANA 1: Fundamentos (9h)
-├─ S1: Fundamentos y Mapa (⭐⭐)
-├─ S2: Pipeline de Datos (⭐⭐⭐)
-└─ S3: Ideación con GenAI (⭐⭐)
+├─ S1: Fundamentos (⭐⭐)
+├─ S2: Datos (⭐⭐⭐)
+└─ S3: Ideación (⭐⭐)
 
 🟨 SEMANA 2: Implementación (9h)
-├─ S4: Implementación Práctica (⭐⭐⭐)
-├─ S5: Backtesting Profesional (⭐⭐⭐⭐)
-└─ S6: Gestión de Riesgo (⭐⭐⭐)
+├─ S4: Implementación (⭐⭐⭐)
+├─ S5: Backtesting (⭐⭐⭐⭐)
+└─ S6: Riesgo (⭐⭐⭐)
 
 🟩 SEMANA 3: Producción (9h)
 ├─ S7: Multi-Plataforma (⭐⭐⭐⭐)
-├─ S8: Deployment Real (⭐⭐⭐⭐⭐)
-└─ S9: Documentación Profesional (⭐⭐⭐)
+├─ S8: Deployment (⭐⭐⭐⭐⭐)
+└─ S9: Documentación (⭐⭐⭐)
 ```
 
-**🔗 Ver detalles:** [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md)
+**Ver roadmap detallado:** [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md)
 
 ---
 
-### 🤖 PASO 6: Usar Prompts Library cuando Necesites GenAI
+### 🤖 PASO 6: Usar Prompts Library
 
-> 🧩 **Acción:** Consulta los prompts probados para tareas específicas  
-> ⏱️ **Tiempo:** Variable (según necesidad)  
-> 📁 **Carpeta:** `03_PROMPTS_LIBRARY/`
+> 🧠 **Acción:** Aprende a "hablar" con GenAI para maximizar productividad  
+> ⏱️ **Tiempo:** Variable  
+> 📂 **Ubicación:** `03_PROMPTS_LIBRARY/`
 
-**Casos de uso principales:**
+**Casos de uso:**
 
 | Necesidad | Prompt File | Ejemplo |
 |-----------|-------------|---------|
-| 🔧 **Adaptar código** | `01_Adaptacion_Codigo.md` | Modificar indicadores en estrategia |
-| 🐛 **Depurar errores** | `02_Debugging.md` | Encontrar look-ahead bias |
-| 🔄 **Traducir plataformas** | `03_Traduccion_Plataformas.md` | Python → Pine Script |
-| 📝 **Documentar sistemas** | `04_Documentacion.md` | Generar Strategy Memo |
+| 🔧 Adaptar código | `01_Adaptacion_Codigo.md` | Modificar indicadores |
+| 🐛 Depurar errores | `02_Debugging.md` | Encontrar look-ahead bias |
+| 🔄 Traducir plataformas | `03_Traduccion_Plataformas.md` | Python → Pine Script |
+| 📄 Documentar | `04_Documentacion.md` | Generar README técnico |
 
-**💡 Tip:** Estos prompts están optimizados con el framework **ROL-CONTEXTO-TAREA-FORMATO** para máxima efectividad.
+**💡 Tip:** Todos los prompts usan el framework **ROL-CONTEXTO-TAREA-FORMATO** para maximizar calidad de respuestas de GenAI.
 
 ---
 
-### 📄 PASO 7: Documentar con Templates (al Finalizar S9)
+### 📄 PASO 7: Documentar Tu Sistema
 
-> 📋 **Acción:** Completa la documentación profesional de tu estrategia  
+> 📝 **Acción:** Documenta tu estrategia con estándares profesionales  
 > ⏱️ **Tiempo:** 2-3 horas  
-> 📁 **Carpeta:** `02_TEMPLATE_PACK/`
+> 📂 **Ubicación:** `02_TEMPLATE_PACK/`
 
 **Templates disponibles:**
 
-| Template | Propósito | Formato |
-|----------|-----------|---------|
-| 📊 **Strategy Memo** | Documento nivel institucional de tu estrategia | Markdown |
-| 📈 **Backtest Report** | Reporte de resultados con métricas clave | Markdown |
-| 🔧 **README Technical** | Documentación técnica para repositorio | Markdown |
+| Template | Propósito | Cuándo Usarlo |
+|----------|-----------|---------------|
+| `Strategy_Memo_Template.md` | Especificar la lógica de la estrategia | Antes de implementar (S3) |
+| `Backtest_Report_Template.md` | Reportar resultados de validación | Después de WFO (S5) |
+| `README_Technical_Template.md` | Documentar código y arquitectura | Antes de deployment (S9) |
 
-**🎯 Resultado final:**
+**Resultado final:** Un repositorio estructurado así:
+
 ```
 📦 tu-estrategia/
-├── 📄 Strategy_Memo.md        ← Hipótesis y lógica
-├── 📊 Backtest_Report.md      ← Resultados WFO
-├── 🔧 README.md                ← Setup y uso
-└── 💻 codigo/                  ← Scripts organizados
+├── 📄 Strategy_Memo.md          → Lógica completa
+├── 📊 Backtest_Report.md        → Resultados WFO
+├── 🔧 README.md                 → Cómo usar el código
+└── 💻 codigo/
+    ├── strategy.py
+    ├── backtest.py
+    └── risk_management.py
 ```
 
 ---
 
-### 🎉 ¡Completaste el Flujo!
+## ✅ Checklist "Tu Primer Día"
 
-**Siguiente paso:** Ir a la sección [✅ Checklist: "Tu Primer Día"](#checklist-tu-primer-día-pre-sesión-1) para prepararte antes de la Sesión 1.
+**Completa estos pasos para empezar bien:**
 
----
+### 🎯 Configuración Inicial
 
-## ✅ Checklist: "Tu Primer Día" (Pre-Sesión 1)
+- [ ] 📖 Leer esta guía completa (15 min)
+- [ ] 🗺️ Explorar [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) (10 min)
+- [ ] 📋 Revisar [ESTRUCTURA_COMPLETA.md](ESTRUCTURA_COMPLETA.md) (10 min)
 
-**Completa estos pasos ANTES de la primera sesión para maximizar el aprendizaje:**
+### ⚙️ Setup de Herramientas
 
-### 🔧 Setup Técnico
+- [ ] ✅ Crear cuenta Google (si no tienes)
+- [ ] ✅ Registrarse en Alpaca ([alpaca.markets](https://alpaca.markets)) - Paper Trading
+- [ ] ✅ Configurar acceso a Claude o ChatGPT (versión gratuita OK)
+- [ ] ✅ Probar acceso al Colab Notebook Maestro (🔒 Premium)
 
-- [ ] Cuenta de Google activa (para Colab)
-- [ ] Navegador actualizado (Chrome/Firefox recomendados)
-- [ ] Acceso a Claude o ChatGPT (cualquier plan gratuito sirve)
-- [ ] Crear cuenta gratuita en Alpaca (https://alpaca.markets) - NO depositar dinero aún
-- [ ] Descargar este repositorio completo (botón "Code" → "Download ZIP")
+### 📚 Familiarización con Recursos
 
-### 📚 Preparación Conceptual
+- [ ] 📁 Explorar carpeta `03_PROMPTS_LIBRARY/`
+- [ ] 📁 Explorar carpeta `02_TEMPLATE_PACK/`
+- [ ] 📁 Revisar scripts en `04_SCRIPTS_AUXILIARES/`
 
-- [ ] Leer el README.md completo del repositorio
-- [ ] Revisar ESTRUCTURA_COMPLETA.md (roadmap de 9 sesiones)
-- [ ] Explorar el Mapa Mental Interactivo (15 min)
-- [ ] Identificar 1-2 estrategias manuales que quieras sistematizar
-- [ ] Anotar las métricas de esas estrategias (si las tienes): Win rate, Avg Profit/Loss, etc.
+### 🎬 Validación Final
 
-### 🤔 Reflexión Pre-Workshop
-
-Responde honestamente (para ti mismo):
-
-1. ¿Cuál es mi ventaja competitiva (edge) en el trading manual?
-2. ¿Por qué creo que esa ventaja sobrevivirá al backtesting?
-3. ¿Estoy dispuesto a descartar estrategias que fallen la validación?
-4. ¿Qué porcentaje de mi capital estoy dispuesto a arriesgar (recomendado: 1-5%)?
+- [ ] 🔥 Ejecutar celda "Setup y Validación" en Colab
+- [ ] ✅ Verificar: `✅ Ambiente configurado correctamente`
+- [ ] 🎉 Celebrar: ¡Estás listo para S1!
 
 ---
 
-## 🛠️ Stack Tecnológico (Lo Que Usarás)
+## 🛠️ Stack Tecnológico del Workshop
 
-### **Lenguajes (Usarás, NO Programarás Desde Cero):**
+### 🐍 Python y Librerías
 
-- **Python 3.10+**: Backend de estrategias
-- **Pine Script**: TradingView (visual)
-- **MQL5**: MetaTrader (opcional, para Forex)
-
-### **Librerías Python (Preinstaladas en Colab):**
-
-- `yfinance` → Descarga de datos históricos
-- `alpaca-trade-api` → Conexión con broker
-- `backtrader` / `vectorbt` → Motores de backtesting
-- `matplotlib` / `seaborn` → Visualización
-- `pandas` / `numpy` → Manipulación de datos
-
-### **Plataformas:**
-
-- **Google Colab**: Entorno de ejecución (sin instalación local)
-- **TradingView**: Prototipado visual + alertas
-- **Alpaca**: Broker API para paper/live trading
-- **Interactive Brokers** (opcional): Broker profesional multi-asset
-
-### **IA Generativa (Tu Copiloto):**
-
-- **Claude** (recomendado): Mejor para código complejo y debugging
-- **ChatGPT**: Alternativa válida
-- **GitHub Copilot** (opcional): Autocompletado en tiempo real
-- **Gemini Pro** (opcional): Análisis de documentos largos
+| Herramienta | Versión | Propósito |
+|-------------|---------|-----------|
+| **Python** | 3.10+ | Lenguaje base |
+| **pandas** | Latest | Manipulación de datos |
+| **yfinance** | Latest | Descarga de datos históricos |
+| **backtrader** | Latest | Backtesting framework |
+| **vectorbt** | Latest | Análisis rápido de estrategias |
+| **matplotlib** | Latest | Visualización de resultados |
 
 ---
 
-## 📖 Navegación del Kit (Carpeta por Carpeta)
+### 📊 Plataformas de Trading
 
-### 📂 `00_GUIA_DE_USO/` (Documentación)
-
-**Contenido:**
-- `LEEME_PRIMERO.md` ← Estás aquí
-- `ESTRUCTURA_COMPLETA.md` → Roadmap detallado de 9 sesiones (27h)
-- `Instrucciones_Setup_Ambiente.md` → Configuración paso a paso
-- `MAPA_MENTAL_SISTEMA_TRADING_PNG.html` → Arquitectura visual interactiva
-
-**Cuándo usarla:** Siempre que necesites orientarte o entender la estructura del workshop.
+| Plataforma | Uso en Workshop | Ventajas |
+|------------|-----------------|----------|
+| **TradingView** | Prototipado visual de estrategias | Fácil, visual, cloud |
+| **Alpaca** | Paper trading (validación sin riesgo) | API gratuita, fácil integración |
+| **Interactive Brokers** | Multi-asset profesional (opcional) | Más activos, más complejo |
+| **MetaTrader** | Forex/CFDs (alternativa) | Popular en Latam |
 
 ---
 
-### 📂 `02_TEMPLATE_PACK/` (Templates Profesionales)
+### 🤖 IA Generativa
 
-**Contenido:**
-- `Strategy_Memo_Template.md` → Documento nivel institucional para describir tu estrategia
-- `Backtest_Report_Template.md` → Reporte de resultados con métricas clave
-- `README_Technical_Template.md` → Documentación técnica para repositorios
+| Herramienta | Nivel del Workshop | Propósito |
+|-------------|-------------------|-----------|
+| **Claude** (Anthropic) | Recomendado | Análisis de código, debugging, documentación |
+| **ChatGPT** (OpenAI) | Alternativa | Similar a Claude |
+| **GitHub Copilot** | Opcional | Autocompletado en tiempo real |
+| **Gemini Pro** (Google) | Opcional | Alternativa gratuita |
 
-**Cuándo usarla:** Al finalizar S9, para documentar tu sistema completo.
-
-**Ejemplo de uso:**
-```markdown
-# Strategy Memo Template
-
-## 1. Resumen Ejecutivo
-Estrategia: [Nombre]
-Tipo: [Mean Reversion / Momentum / Arbitrage]
-Activo: [SPY / BTC-USD / EUR/USD]
-Timeframe: [5min / 1h / Daily]
-
-## 2. Hipótesis Fundamental
-[Explica por qué esta estrategia debería funcionar]
-
-## 3. Reglas de Entrada/Salida
-[...]
-```
+**💡 Importante:** Versiones gratuitas son suficientes. Planes pagos (Claude Pro, ChatGPT Plus) dan más mensajes/día pero NO son obligatorios.
 
 ---
 
-### 📂 `03_PROMPTS_LIBRARY/` (Prompts para GenAI)
+### 🛠️ Herramientas de Desarrollo
 
-**Contenido:**
-- `01_Adaptacion_Codigo.md` → Prompts para modificar código existente
-- `02_Debugging.md` → Prompts para encontrar y corregir errores
-- `03_Traduccion_Plataformas.md` → Prompts para Python → Pine Script → MQL5
-- `04_Documentacion.md` → Prompts para generar documentación
-
-**Cuándo usarla:** Durante TODAS las sesiones, especialmente S4-S7.
-
-**Ejemplo de prompt:**
-```
-Contexto: Tengo una estrategia de reversión a la media en Python usando pandas.
-
-Tarea: Traduce esta función a Pine Script v5 para TradingView:
-
-[pegar código Python]
-
-Formato: Devuelve solo código Pine Script comentado, sin explicaciones adicionales.
-```
+| Herramienta | Requerido | Propósito |
+|-------------|-----------|-----------|
+| **Google Colab** | ✅ Sí | Ejecutar notebooks sin instalar Python |
+| **VSCode** | ⚠️ Opcional | Editor de código (setup avanzado) |
+| **Git/GitHub** | ⚠️ Opcional | Control de versiones |
+| **Telegram** | ⚠️ Opcional | Alertas de trading |
 
 ---
 
-### 📂 `04_SCRIPTS_AUXILIARES/` (Código Reutilizable)
-
-**Contenido:**
-- `data_pipeline.py` → Descarga, limpieza, validación de datos
-- `risk_management.py` → Cálculo de position sizing (Kelly, fixed %)
-- `backtesting_helpers.py` → Funciones auxiliares para backtesting
-
-**Cuándo usarla:** S2 (datos), S4 (implementación), S6 (riesgo).
-
-**Ejemplo de uso:**
-```python
-from data_pipeline import download_and_clean
-
-# Descargar y limpiar datos de SPY (2020-2024)
-df = download_and_clean(
-    ticker="SPY",
-    start_date="2020-01-01",
-    end_date="2024-12-31",
-    interval="1d"
-)
-```
-
----
-
-## 🔥 Setup Rápido vs Setup Avanzado
-
-### ⚡ Setup Rápido (Recomendado para Empezar)
-
-**Tiempo:** 30-45 minutos
-
-1. ✅ Crear cuenta Google (si no tienes)
-2. ✅ Abrir [Google Colab](https://colab.research.google.com)
-3. ✅ Cargar el Notebook Maestro (🔒 Premium)
-4. ✅ Ejecutar celda de "Setup y Validación"
-5. ✅ Crear cuenta gratuita en [Alpaca](https://alpaca.markets)
-6. ✅ Obtener API keys de Alpaca (Paper Trading)
-
-**Ventajas:**
-- Sin instalaciones locales
-- Funciona desde cualquier computadora
-- GPU gratuita disponible (si necesitas)
-
-**Desventajas:**
-- Sesiones de Colab se desconectan después de ~12h de inactividad
-- Dependes de conexión a internet
-
-👉 **Instrucciones detalladas:** `00_GUIA_DE_USO/Instrucciones_Setup_Ambiente.md`
-
----
-
-### 🔬 Setup Avanzado (Opcional, para Usuarios Técnicos)
-
-**Tiempo:** 1-2 horas
-
-Si prefieres trabajar localmente (Python instalado en tu PC):
-
-1. Instalar Python 3.10+ desde python.org
-2. Crear entorno virtual: `python -m venv venv_trading`
-3. Activar entorno: `source venv_trading/bin/activate` (Linux/Mac) o `venv_trading\Scripts\activate` (Windows)
-4. Instalar dependencias: `pip install -r requirements.txt`
-5. Configurar Jupyter Notebook localmente
-6. Clonar este repositorio: `git clone https://github.com/yismafx/workshop-trading-algoritmico-kit.git`
-
-**Ventajas:**
-- Control total del entorno
-- No dependes de Colab
-- Puedes usar IDEs como VSCode
-
-**Desventajas:**
-- Requiere conocimientos técnicos básicos
-- Posibles problemas de compatibilidad de librerías
-
----
-
-## 🤔 FAQ Expandido (15 Preguntas Reales)
+## 🤔 FAQ - Preguntas Frecuentes
 
 ### **Técnicas**
 
-**P1: ¿Debo instalar algo en mi computadora?**  
-R: NO para el workshop. Todo funciona en Google Colab (nube). El setup avanzado local es opcional.
+**P1: ¿Necesito saber programar para el workshop?**  
+R: **NO**. El código ya está escrito y funcionando. Tu trabajo es:
+- Entender la lógica (con ayuda de GenAI)
+- Modificar parámetros (con prompts guiados)
+- Adaptar a tus estrategias (copy-paste + ajustes)
 
-**P2: ¿Qué hago si me atasco en un ejercicio?**  
-R: 
-1. Usa la Biblioteca de Prompts (`03_PROMPTS_LIBRARY/`)
-2. Revisa los videos grabados (🔒 Premium)
-3. Pregunta en el grupo de Telegram privado (🔒 Premium)
+Piensa en esto como usar Excel con macros: no necesitas ser programador, pero sí entender qué hace cada fórmula.
 
-**P3: ¿Funcionará con criptomonedas/Forex/opciones?**  
-R: El código es adaptable. Los ejemplos del workshop usan **acciones US (SPY, AAPL)** porque:
+---
+
+**P2: ¿Qué sistema operativo necesito?**  
+R: **Cualquiera**. 
+- **Windows, Mac, Linux:** Todos funcionan
+- **Chromebook:** Sí, via Google Colab
+- **Tablets/iPads:** NO recomendado (interface limitado)
+
+El setup rápido (Google Colab) corre 100% en el navegador.
+
+---
+
+**P3: ¿Puedo usar criptomonedas en vez de acciones?**  
+R: **Sí, pero empezamos con acciones** (SPY) porque:
 - Datos históricos confiables (yfinance)
 - Sin gaps de fin de semana (menos complejidad inicial)
 - Slippage predecible
@@ -532,8 +465,12 @@ Para adaptar a crypto/Forex:
 - Ajusta reglas de trading (mercados 24/7)
 - Revisa spreads y comisiones específicas
 
+---
+
 **P4: ¿Puedo usar MetaTrader en vez de TradingView?**  
 R: Sí. S7 cubre traducción Python → Pine Script, pero puedes adaptar a MQL5 con ayuda de GenAI. El Notebook Maestro tiene ejemplos de integración con MT5.
+
+---
 
 **P5: ¿Necesito pagar por Claude o ChatGPT?**  
 R: NO. Las versiones gratuitas son suficientes para el workshop. Los planes pagos (Claude Pro / ChatGPT Plus) dan:
@@ -552,11 +489,17 @@ R: **3-6 meses** desde ideación hasta producción. Esto incluye:
 - 8-12 semanas: Paper trading (validación en "tiempo real")
 - Solo después: Considerar live trading
 
+---
+
 **P7: ¿Cuántas estrategias debo desarrollar en el workshop?**  
 R: **Calidad > Cantidad**. Objetivo: 1-2 estrategias que sobrevivan validación rigurosa. La mayoría de participantes prueban 5-10 ideas y solo 1-2 pasan.
 
+---
+
 **P8: ¿Qué pasa si ninguna de mis estrategias funciona?**  
 R: Es NORMAL. Aprenderás más de las fallas que de los éxitos. El workshop te enseña el PROCESO, no una "estrategia mágica".
+
+---
 
 **P9: ¿Puedo usar datos de otros activos (no SPY)?**  
 R: Sí, pero recomendamos empezar con SPY porque:
@@ -565,6 +508,8 @@ R: Sí, pero recomendamos empezar con SPY porque:
 - Comportamiento predecible
 
 Después de dominar el proceso con SPY, adapta a otros activos.
+
+---
 
 **P10: ¿El workshop cubre machine learning / deep learning?**  
 R: NO en profundidad. Nos enfocamos en estrategias tradicionales (mean reversion, momentum, breakout) aumentadas con GenAI. ML/DL son temas avanzados que requieren workshops dedicados.
@@ -579,20 +524,28 @@ R: **NO durante el workshop.** Secuencia recomendada:
 2. Después de S9: Paper trading (8-12 semanas mínimo)
 3. Solo si el paper trading es exitoso: Live con capital mínimo (1-5% de portafolio)
 
+---
+
 **P12: ¿Qué broker debo usar?**  
 R: 
 - **Acciones US**: Alpaca (API gratuita, fácil integración)
 - **Multi-asset profesional**: Interactive Brokers (más complejo)
 - **Forex/CFDs**: MetaTrader con brokers regulados (verifica regulación local)
 
+---
+
 **P13: ¿Puedo usar este kit después del workshop?**  
 R: Sí, **todos los materiales son tuyos para siempre**. El contenido público (templates, prompts básicos, scripts) es open source. El contenido premium (Notebook, videos, estrategias) es de uso personal.
+
+---
 
 **P14: ¿Hay soporte post-workshop?**  
 R: Sí:
 - 📧 Email: yismaryme@gmail.com (respuesta en 24-48h)
 - 💬 Grupo Telegram privado (🔒 Premium): Soporte comunitario + instructor
 - 📺 Actualizaciones de contenido (cuando aplique)
+
+---
 
 **P15: ¿Qué pasa si no completo las 9 sesiones en 3 semanas?**  
 R: Sin problema. Las sesiones grabadas (🔒 Premium) están disponibles permanentemente. Avanza a tu ritmo, pero recomendamos completar al menos 1 sesión/semana para mantener momentum.
@@ -730,7 +683,7 @@ pip install yfinance
 
 ## 🔖 Versión y Contacto
 
-**Versión del Kit:** 1.0 (Noviembre 2025)  
+**Versión del Kit:** 1.2 (Noviembre 2025)  
 **Mantenido por:** [@yismafx](https://github.com/yismafx)  
 **Comunidad:** Fractals Market
 
