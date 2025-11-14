@@ -6,81 +6,105 @@
 
 ---
 
-## 🎯 Elige Tu Camino de Setup
+## 🎯 Elige Tu Ruta de Setup
 
-**Tienes DOS opciones para completar el setup. Ambas funcionan perfectamente.**
+**Tienes DOS rutas para completar el setup. Ambas usan código ya funcionando.**
+
+⚠️ **IMPORTANTE:** En ambas rutas, **NO vas a programar**. Todo el código ya está escrito y listo para usar. Solo ejecutas y validas que funcione.
 
 ---
 
-### 📥 OPCIÓN A: Rápida - Notebook Pre-hecho (5 min)
+### ⚡ RUTA A: EXPRESS (5-10 min)
 
-**Descarga y listo**
+**Ejecución directa sin explicaciones**
 
-✅ **Ventajas:**
-- ⚡ **Más rápido** - Setup completo en 5-10 minutos
-- 🎯 **Sin errores** - Código ya estructurado correctamente
-- ✅ **Plug & Play** - Descargas → Subes → Ejecutas
+✅ **Para ti si:**
+- Tienes prisa antes del workshop
+- Ya usaste notebooks de Colab antes
+- Solo quieres validar que todo funcione
 
-⚠️ **Considera:**
-- Menos práctica con estructura de notebooks
-- Aprenderás la estructura durante el workshop
+✅ **Qué harás:**
+- Descargas notebook ya hecho
+- Lo subes a Colab
+- Ejecutas cada celda (código pre-escrito)
+- Validación automática
+
+❌ **NO harás:**
+- Programar o escribir código
+- Modificar nada (código ya correcto)
 
 📥 **[DESCARGAR: Setup_y_Practica_Trading.ipynb](Setup_y_Practica_Trading.ipynb)**
 
-**Instrucciones:**
-1. Click en el link de arriba
-2. Descarga el archivo `.ipynb`
-3. Ve a: https://colab.research.google.com
-4. File → Upload notebook → Selecciona el archivo descargado
-5. Ejecuta cada celda en orden (Shift+Enter)
+**Pasos:**
+1. Descarga el archivo `.ipynb`
+2. Ve a: https://colab.research.google.com
+3. File → Upload notebook
+4. Ejecuta cada celda (Shift+Enter)
 
-**Tiempo total:** ~5-10 minutos
+**Tiempo:** 5-10 minutos
 
 ---
 
-### 📋 OPCIÓN B: Educativa - Crea Tu Notebook (15-20 min)
+### 📖 RUTA B: GUIADA (15-20 min)
 
-**Construye paso a paso**
+**Ejecución con explicaciones paso a paso**
 
-✅ **Ventajas:**
-- 🎓 **Aprendes estructura** - Práctica valiosa para el workshop
-- 💪 **Autonomía** - Sabrás recrearlo si lo necesitas
-- 🧠 **Engagement** - Entiendes cada paso
+✅ **Para ti si:**
+- Es tu primera vez con notebooks de trading
+- Quieres entender QUÉ hace cada herramienta
+- Prefieres ver el flujo completo explicado
 
-⚠️ **Considera:**
-- Toma 10-15 min más
-- Requiere copiar/pegar código
+✅ **Qué harás:**
+- Lees explicaciones de cada paso
+- Ejecutas código pre-escrito (no lo escribes tú)
+- Entiendes QUÉ hace cada componente
+- Familiarización con el entorno
+
+❌ **NO harás:**
+- Programar o crear código desde cero
+- Aprender sintaxis de Python
+- Escribir scripts
 
 📋 **Sigue los pasos detallados en este documento** ⬇️
 
-**Tiempo total:** ~15-20 minutos
+**Tiempo:** 15-20 minutos
 
 ---
 
-### 💡 ¿Cuál Elegir?
+### 💡 ¿Cuál Ruta Elegir?
 
-**USA OPCIÓN A (Rápida) SI:**
-- ⏱️ Tienes poco tiempo antes del workshop
-- 🎯 Solo quieres que funcione (focus en trading, no en setup)
-- 💻 Tuviste problemas copiando/pegando código
-- ✅ Ya sabes usar notebooks de Jupyter/Colab
+**USA RUTA A (EXPRESS) SI:**
+- ⏱️ Tienes poco tiempo
+- ✅ Ya conoces notebooks
+- 🎯 Solo quieres validar y seguir
 
-**USA OPCIÓN B (Educativa) SI:**
-- 🎓 Quieres aprender estructura de notebooks
-- 📚 Es tu primer workshop de Python
-- 💪 Prefieres entender cada componente
-- 🔧 Te sientes cómodo con computadoras
+**USA RUTA B (GUIADA) SI:**
+- 📚 Primera vez con notebooks de trading
+- 🧠 Quieres entender el flujo
+- 📖 Prefieres explicaciones detalladas
 
 **¿AÚN CON DUDAS?**
-- 👉 Empieza con **Opción B** (aprendes más)
-- 💡 Si te atascas, usa **Opción A** como backup
+- 👉 Empieza con **Ruta B** (más contexto)
+- 💡 Si te atascas, cambia a **Ruta A**
 
 ---
 
-**📌 Recomendación personal (Mary):**
+### 🎯 Mensaje Clave del Workshop
 
-> Si es tu primer workshop de Python → **Opción B** (vale la pena la práctica)  
-> Si ya tienes experiencia con notebooks → **Opción A** (eficiencia)
+> ⚠️ **NO vas a convertirte en programador**  
+> ✅ Usarás herramientas **ya funcionando**  
+> ✅ En el workshop, IA te ayudará a **ADAPTAR** (no crear desde cero)  
+> ✅ Serás **usuario avanzado** de sistemas de trading
+
+**Setup = Instalar y validar herramientas pre-hechas**  
+**Workshop = Usar y adaptar con IA como copiloto**
+
+---
+
+**📌 Recomendación (Mary):**
+
+> Primera vez con notebooks → **Ruta B** (contexto valioso)  
+> Ya tienes experiencia → **Ruta A** (eficiencia)
 
 ---
 
