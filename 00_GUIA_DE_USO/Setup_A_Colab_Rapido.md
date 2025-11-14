@@ -6,8 +6,87 @@
 
 ---
 
+## 🎯 Elige Tu Camino de Setup
+
+**Tienes DOS opciones para completar el setup. Ambas funcionan perfectamente.**
+
+---
+
+### 📥 OPCIÓN A: Rápida - Notebook Pre-hecho (5 min)
+
+**Descarga y listo**
+
+✅ **Ventajas:**
+- ⚡ **Más rápido** - Setup completo en 5-10 minutos
+- 🎯 **Sin errores** - Código ya estructurado correctamente
+- ✅ **Plug & Play** - Descargas → Subes → Ejecutas
+
+⚠️ **Considera:**
+- Menos práctica con estructura de notebooks
+- Aprenderás la estructura durante el workshop
+
+📥 **[DESCARGAR: Setup_y_Practica_Trading.ipynb](Setup_y_Practica_Trading.ipynb)**
+
+**Instrucciones:**
+1. Click en el link de arriba
+2. Descarga el archivo `.ipynb`
+3. Ve a: https://colab.research.google.com
+4. File → Upload notebook → Selecciona el archivo descargado
+5. Ejecuta cada celda en orden (Shift+Enter)
+
+**Tiempo total:** ~5-10 minutos
+
+---
+
+### 📋 OPCIÓN B: Educativa - Crea Tu Notebook (15-20 min)
+
+**Construye paso a paso**
+
+✅ **Ventajas:**
+- 🎓 **Aprendes estructura** - Práctica valiosa para el workshop
+- 💪 **Autonomía** - Sabrás recrearlo si lo necesitas
+- 🧠 **Engagement** - Entiendes cada paso
+
+⚠️ **Considera:**
+- Toma 10-15 min más
+- Requiere copiar/pegar código
+
+📋 **Sigue los pasos detallados en este documento** ⬇️
+
+**Tiempo total:** ~15-20 minutos
+
+---
+
+### 💡 ¿Cuál Elegir?
+
+**USA OPCIÓN A (Rápida) SI:**
+- ⏱️ Tienes poco tiempo antes del workshop
+- 🎯 Solo quieres que funcione (focus en trading, no en setup)
+- 💻 Tuviste problemas copiando/pegando código
+- ✅ Ya sabes usar notebooks de Jupyter/Colab
+
+**USA OPCIÓN B (Educativa) SI:**
+- 🎓 Quieres aprender estructura de notebooks
+- 📚 Es tu primer workshop de Python
+- 💪 Prefieres entender cada componente
+- 🔧 Te sientes cómodo con computadoras
+
+**¿AÚN CON DUDAS?**
+- 👉 Empieza con **Opción B** (aprendes más)
+- 💡 Si te atascas, usa **Opción A** como backup
+
+---
+
+**📌 Recomendación personal (Mary):**
+
+> Si es tu primer workshop de Python → **Opción B** (vale la pena la práctica)  
+> Si ya tienes experiencia con notebooks → **Opción A** (eficiencia)
+
+---
+
 ## 📑 Tabla de Contenidos
 
+- [🎯 Elige Tu Camino de Setup](#-elige-tu-camino-de-setup)
 - [🎯 ¿Es Este Setup Para Ti?](#-es-este-setup-para-ti)
 - [🧭 El Camino de Aprendizaje: Python Primero](#-el-camino-de-aprendizaje-python-primero)
 - [✅ Requisitos Mínimos](#-requisitos-mínimos)
