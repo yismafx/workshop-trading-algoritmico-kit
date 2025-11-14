@@ -2,13 +2,14 @@
 
 **Workshop: Trading Algorítmico Aumentado con IA Generativa**  
 **Versión:** 2.1 (Noviembre 2025)  
-**Dificultad:** ⭐ Fácil (No requiere experiencia técnica)
+**Dificultad:** ⭐ Fácil (No requiere experiencia en programación)
 
 ---
 
 ## 📑 Tabla de Contenidos
 
 - [🎯 ¿Es Este Setup Para Ti?](#-es-este-setup-para-ti)
+- [🧭 El Camino de Aprendizaje: Python Primero](#-el-camino-de-aprendizaje-python-primero)
 - [✅ Requisitos Mínimos](#-requisitos-mínimos)
 - [🚀 Guía de Setup Paso a Paso](#-guía-de-setup-paso-a-paso)
 - [🔍 Validación del Setup](#-validación-del-setup)
@@ -22,144 +23,291 @@
 
 **✅ Este setup es PERFECTO si:**
 
-- ❌ **NO** tienes experiencia con Python
-- ❌ **NO** quieres instalar nada en tu computadora
-- ✅ Quieres empezar **YA** (en 30 minutos)
-- ✅ Te enfocas en **aprender primero, deployar después**
+- 📊 Eres **trader profesional** con años de experiencia
+- ❌ **NO** tienes experiencia programando (¡esto es normal!)
+- ❌ **NO** quieres instalar programas en tu computadora
+- ✅ Quieres empezar a practicar **HOY** (en 30 minutos)
+- ✅ Prefieres **aprender primero, automatizar después**
 - ✅ Tienes conexión a internet estable
-- ✅ Tienes cuenta Google (Gmail)
+- ✅ Tienes o puedes crear una cuenta Gmail
 
 **❌ Este setup NO es ideal si:**
 
-- 🚀 Necesitas deployar bots 24/7 (usa [Setup B: Python Local](Setup_B_Python_Local.md))
-- 🏦 Usas principalmente MetaTrader (usa [Setup C: MT5](Setup_C_MetaTrader5.md))
-- 💼 Necesitas Interactive Brokers (usa [Setup D: IB](Setup_D_Interactive_Brokers.md))
+- 🚀 Ya necesitas poner sistemas funcionando 24/7 (ve a [Setup B: Python Local](Setup_B_Python_Local.md))
+- 📊 Usas principalmente MetaTrader y quieres empezar ahí (ve a [Setup C: MT5](Setup_C_MetaTrader5.md))
+- 💼 Ya tienes cuenta en Interactive Brokers y quieres usarla (ve a [Setup D: IB](Setup_D_Interactive_Brokers.md))
 
-**📊 Estadística del Workshop:**
-> 🎯 **80% de participantes** usan este setup exitosamente
+**📊 Dato del Workshop:**
+> 🎯 **8 de cada 10 participantes** usan este setup exitosamente
+
+---
+
+## 🧭 El Camino de Aprendizaje: Python Primero
+
+**🤔 "¿Por qué voy a aprender Python si yo opero en TradingView/MetaTrader?"**
+
+Excelente pregunta. Aquí está la respuesta:
+
+### 📍 Python es el "Lenguaje Universal" del Trading Algorítmico
+
+**Piensa en Python como aprender inglés antes de otros idiomas:**
+
+```
+En Trading Manual:
+│
+├─ TradingView (Pine Script)     ← Limitado a gráficos de TV
+├─ MetaTrader (MQL5)              ← Limitado a brokers MT5
+└─ Interactive Brokers (TWS)      ← Limitado a IB
+│
+│
+En Trading Algorítmico con Python:
+│
+Python (Lenguaje Base)            ← Funciona con TODO
+│
+├─ Descarga datos de CUALQUIER fuente
+├─ Testea estrategias rigurosamente
+├─ Conecta con CUALQUIER broker
+└─ Y luego... (↓ Sesión 7 del workshop)
+    │
+    ├─→ Traduce a Pine Script (TradingView)
+    ├─→ Traduce a MQL5 (MetaTrader)
+    ├─→ Traduce a cualquier plataforma
+    │
+    └─ IA Generativa = Tu "Traductor Automático"
+```
+
+### 🎯 El Journey del Workshop (9 Sesiones)
+
+**Sesiones 1-6: Fundamentos en Python** (18 horas)
+- Aprendes a descargar datos
+- Diseñas estrategias con IA
+- Haces backtesting riguroso
+- Gestionas riesgo profesionalmente
+
+**→ Sesión 7: Multi-Plataforma** (3 horas) ⭐ **AQUÍ ES LA MAGIA**
+- Conviertes tu código Python a Pine Script (TradingView)
+- Conviertes tu código Python a MQL5 (MetaTrader)
+- IA Generativa hace la traducción automática
+
+**Sesiones 8-9: Producción** (6 horas)
+- Pones tu sistema en funcionamiento continuo 24/7
+- Documentas profesionalmente
+
+### 💡 Analogía del Trader
+
+**Es como aprender análisis técnico:**
+
+- Primero dominas **indicadores fundamentales** (RSI, MACD, Bandas de Bollinger)
+- Luego aplicas esos conceptos en **cualquier plataforma** (TradingView, MT5, ThinkOrSwim)
+
+**Python es tu "indicador fundamental"** del trading algorítmico:
+- Lo aprendes UNA VEZ
+- Lo usas en TODAS las plataformas
+- GenAI traduce por ti
+
+### ⚠️ ¿Y si solo quiero usar TradingView/MetaTrader?
+
+**Puedes, PERO:**
+
+❌ Pine Script y MQL5 son lenguajes "cerrados" (solo funcionan en su plataforma)  
+❌ Tienen limitaciones técnicas importantes  
+❌ No tienen las herramientas de validación profesional que Python ofrece
+
+✅ Con Python + GenAI, obtienes lo MEJOR de ambos mundos:
+- Desarrollo riguroso en Python
+- Ejecución en la plataforma que prefieras
+
+**Confía en el proceso. Miles de traders profesionales han seguido este camino.**
 
 ---
 
 ## ✅ Requisitos Mínimos
 
-**Hardware:**
-- 💻 Cualquier computadora con navegador web
-- 🌐 Conexión a internet (3 Mbps mínimo)
-- 🧠 4 GB RAM recomendado (2 GB mínimo)
+**Lo que necesitas para empezar HOY:**
 
-**Software:**
-- 🌐 Navegador moderno (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
-- 📧 Cuenta Google (Gmail) - [Crear cuenta](https://accounts.google.com/signup)
+### 💻 Hardware (Equipo)
 
-**Conocimientos:**
-- ❌ **NO** se requiere experiencia en programación
-- ✅ Saber usar navegador web y email
+- Cualquier computadora con internet (no importa si es Mac, Windows o Linux)
+- Conexión a internet: mínimo 3 Mbps (lo que usas para ver videos)
+- Memoria RAM: 4 GB recomendado (2 GB funciona, pero será más lento)
 
-**Tiempo:**
-- ⏱️ **Setup inicial:** 30-45 minutos
-- ⏱️ **Primera validación:** 10-15 minutos
-- ⏱️ **Total:** ~1 hora
+### 🌐 Software (Programas)
+
+- **Navegador web moderno:**
+  - Google Chrome 90 o superior ⭐ Recomendado
+  - Firefox 88 o superior
+  - Safari 14 o superior
+  - Edge 90 o superior
+  
+- **Cuenta Gmail:**
+  - Si ya tienes Gmail → ✅ Listo
+  - Si no tienes → La crearemos en Paso 1 (5 minutos)
+
+### 🧠 Conocimientos
+
+**Lo que SÍ necesitas saber:**
+- ✅ Cómo usar un navegador web
+- ✅ Cómo enviar y recibir emails
+- ✅ Fundamentos de trading (esto ya lo dominas)
+
+**Lo que NO necesitas saber:**
+- ❌ Programación (empiezas desde cero)
+- ❌ Matemáticas avanzadas (usaremos herramientas ya hechas)
+- ❌ Inglés técnico (todo está en español)
+
+### ⏱️ Tiempo
+
+- **Setup inicial:** 30-45 minutos (este documento)
+- **Primera validación:** 10-15 minutos
+- **Total hoy:** ~1 hora
 
 ---
 
 ## 🚀 Guía de Setup Paso a Paso
 
-Sigue estos 7 pasos en orden. Cada paso tiene verificación al final.
+Vamos a hacer esto juntos, paso por paso. Como cuando analizas un gráfico: un nivel a la vez.
 
 ---
 
 ### 📝 PASO 1: Crear/Verificar Cuenta Google (5 min)
 
-**🎓 ¿Por qué es necesario?**
+**🎓 ¿Por qué necesito esto?**
 
-Google Colab es un servicio gratuito de Google que te permite ejecutar código Python en la nube sin instalar nada localmente. Necesitas una cuenta Google (Gmail) para acceder.
+Google Colab es como tener una "oficina de trading en la nube" gratis. En lugar de instalar programas en tu computadora (que puede ser complicado y consume espacio), usas una computadora de Google que ya tiene todo instalado.
 
-**💻 Instrucciones:**
+**Analogía del trader:**  
+Es como usar TradingView en el navegador vs. descargar software pesado. Más simple, más rápido, siempre actualizado.
 
-**Si YA tienes cuenta Google:**
-1. Ve a [https://accounts.google.com](https://accounts.google.com)
-2. Inicia sesión con tu email y contraseña
-3. ✅ Verifica que puedes acceder → **Continúa a Paso 2**
+**💻 Lo que vamos a hacer:**
 
-**Si NO tienes cuenta Google:**
-1. Ve a [https://accounts.google.com/signup](https://accounts.google.com/signup)
-2. Completa el formulario:
-   - Nombre y apellido
-   - Nombre de usuario (será tu@gmail.com)
-   - Contraseña segura (mínimo 8 caracteres)
-3. Verifica tu número de teléfono (recibirás SMS)
-4. Acepta términos y condiciones
-5. ✅ Cuenta creada → **Continúa a Paso 2**
+#### **Si YA tienes cuenta Gmail:**
 
-**⚠️ Recomendación de Seguridad:**
-- Activa autenticación de 2 factores (2FA)
-- Guarda tu contraseña en un gestor seguro
-- NO compartas credenciales con nadie del workshop
+1. Abre tu navegador
+2. Ve a [https://gmail.com](https://gmail.com)
+3. Inicia sesión con tu email y contraseña
+4. ✅ Si puedes ver tu bandeja de entrada → **Continúa al Paso 2**
 
-**🔍 Verificación:**
-☐ Puedo iniciar sesión en Gmail  
-☐ Puedo acceder a [drive.google.com](https://drive.google.com)
+#### **Si NO tienes cuenta Gmail:**
+
+1. Abre tu navegador
+2. Ve a [https://accounts.google.com/signup](https://accounts.google.com/signup)
+3. Completa el formulario (5 minutos):
+   - **Nombre y apellido** (usa tu nombre real)
+   - **Nombre de usuario** → Será tu email: tuusuario@gmail.com
+   - **Contraseña** → Mínimo 8 caracteres, combina letras y números
+   
+4. **Verificación telefónica:**
+   - Google enviará un código SMS a tu celular
+   - Ingresa el código de 6 dígitos
+   - Esto protege tu cuenta (como autenticación de 2 factores en tu broker)
+
+5. Acepta términos y condiciones
+6. ✅ Cuenta creada → **Continúa al Paso 2**
+
+**⚠️ Consejo de Seguridad (como proteger tu cuenta de trading):**
+- Usa contraseña única y fuerte
+- NO uses la misma contraseña de tu broker
+- Activa autenticación de 2 factores (como en tu cuenta de trading)
+
+**🔍 Verificación rápida:**
+☐ Puedo entrar a Gmail  
+☐ Puedo acceder a [drive.google.com](https://drive.google.com)  
+☐ Veo mis archivos en Drive (aunque esté vacío)
 
 ---
 
 ### 🔐 PASO 2: Crear Cuenta en Alpaca Paper Trading (10 min)
 
-**🎓 ¿Por qué Alpaca?**
+**🎓 ¿Qué es Alpaca y por qué lo necesito?**
 
-Alpaca es un broker moderno con API gratuita para paper trading (trading simulado con datos reales). Es la fuente de datos y ejecución que usaremos en el workshop. La cuenta paper es 100% gratuita, sin límites de tiempo, y no requiere depositar dinero real.
+Alpaca es un broker moderno que te permite:
+1. **Practicar trading algorítmico SIN arriesgar dinero real** (cuenta paper = simulada)
+2. **Descargar datos históricos** de mercados (gratis)
+3. **Conectar tu código Python** con datos reales de mercado
 
-**💻 Instrucciones:**
+**Analogía del trader:**  
+Es como una cuenta demo en tu broker, pero específicamente diseñada para conectarla con programas de trading algorítmico. Los datos son 100% reales, el dinero es virtual ($100,000 de práctica).
 
-**2.1 Registro en Alpaca**
+**⚠️ Importante:** Usaremos la cuenta PAPER (simulada), NO la cuenta real. No necesitas depositar dinero real.
 
-1. Ve a [https://alpaca.markets/](https://alpaca.markets/)
-2. Click en **"Sign Up"** (arriba derecha)
-3. Completa el formulario:
-   - Email (puedes usar tu Gmail)
-   - Password seguro
-   - País (ej: Argentina, México, Colombia, etc.)
-4. Verifica tu email (revisa bandeja de entrada y spam)
-5. Click en el link de verificación que recibiste
+**💻 Lo que vamos a hacer:**
 
-**2.2 Crear Paper Trading Account**
+#### **2.1 Registrarte en Alpaca**
 
-1. Una vez dentro del dashboard, ve a **"Paper Trading"**
-2. Click en **"Generate API Keys"**
-3. Copia y guarda en un lugar seguro:
-   - 🔑 **API Key** (comienza con "PK...")
-   - 🔐 **Secret Key** (comienza con "...")
-   
-**⚠️ CRÍTICO: Guarda tus credenciales**
+1. Abre tu navegador
+2. Ve a [https://alpaca.markets/](https://alpaca.markets/)
+3. Click en **"Sign Up"** (botón arriba a la derecha)
+4. Completa el formulario:
+   - **Email:** Puedes usar tu Gmail del Paso 1
+   - **Password:** Usa una contraseña segura (diferente a Gmail)
+   - **País:** Selecciona tu país (Argentina, México, Colombia, etc.)
+   - **Acepta términos**
+
+5. **Verifica tu email:**
+   - Revisa tu bandeja de entrada (y carpeta spam)
+   - Abre el email de Alpaca
+   - Click en el enlace de verificación
+
+6. Te llevará al dashboard (panel de control) de Alpaca
+
+#### **2.2 Obtener tus "Llaves de Acceso"**
+
+Ahora necesitas tus **"llaves de acceso"** (API Keys). Piensa en estas llaves como las credenciales de tu broker online.
+
+**Analogía del trader:**  
+Como tus credenciales para entrar a tu broker online. Pero en vez de usuario/contraseña, son dos códigos largos que permiten a tu código Python "conversar" con Alpaca.
+
+**Paso a paso:**
+
+1. Dentro del dashboard de Alpaca, busca la sección **"Paper Trading"** (menú izquierdo)
+2. Click en **"Generate API Keys"** o **"View"** si ya están generadas
+3. Verás dos códigos importantes:
+   - 🔑 **API Key** (pública) → Comienza con "PK..."
+   - 🔐 **Secret Key** (privada) → Código largo y secreto
+
+4. **CRÍTICO: Guarda estos códigos de forma segura**
+
+**⚠️ Cómo guardar tus llaves de acceso (MUY IMPORTANTE):**
+
+Copia y pega esto en un archivo de texto en tu computadora:
 
 ```
-📋 MIS CREDENCIALES ALPACA (NO COMPARTIR)
+═══════════════════════════════════════════════════════════
+🔐 MIS CREDENCIALES ALPACA PAPER TRADING
+═══════════════════════════════════════════════════════════
 
-API Key (Public):
-PK...
+API Key (pública):
+PK... [pega aquí tu código]
 
-Secret Key (Private):
-...
+Secret Key (privada - NO COMPARTIR):
+[pega aquí tu código secreto]
 
-⚠️ Estas son tus credenciales PAPER (simuladas)
-⚠️ NUNCA las compartas con nadie
-⚠️ NUNCA las subas a GitHub u otro sitio público
+⚠️ RECORDATORIOS:
+- Esta es mi cuenta PAPER (simulación con $100,000 virtuales)
+- NUNCA compartir estas llaves con nadie
+- NUNCA subirlas a grupos de Telegram/WhatsApp
+- NUNCA publicarlas en capturas de pantalla
+
+Fecha de creación: [pon la fecha de hoy]
+═══════════════════════════════════════════════════════════
 ```
 
-**Guarda este texto en:**
-- 📄 Un archivo .txt local encriptado
-- 🔒 Un gestor de contraseñas (LastPass, 1Password, Bitwarden)
-- 📝 Escrito a mano en un lugar seguro
+**Guarda este archivo como:**
+- `Alpaca_Keys_Paper.txt` en tu computadora
+- En una ubicación que recuerdes (ej: Documentos/Trading)
+- Mejor aún: usa un gestor de contraseñas como LastPass o 1Password
 
-**⚠️ NUNCA:**
-- ❌ Las pongas en el chat de Telegram/WhatsApp
-- ❌ Las compartas con compañeros del workshop
-- ❌ Las publiques en capturas de pantalla
+**❌ NUNCA hagas esto:**
+- ❌ Compartir en chat de grupo del workshop
+- ❌ Poner en capturas de pantalla
+- ❌ Enviar por email sin encriptar
+- ❌ Publicar en redes sociales
 
-**🔍 Verificación:**
-☐ Tengo cuenta Alpaca creada  
-☐ Tengo API Key (comienza con "PK...")  
-☐ Tengo Secret Key guardada de forma segura  
-☐ Puedo ver mi balance paper ($100,000 virtual) en el dashboard
+**🔍 Verificación rápida:**
+☐ Tengo cuenta Alpaca creada y verificada  
+☐ Tengo mi API Key guardada (comienza con "PK...")  
+☐ Tengo mi Secret Key guardada de forma segura  
+☐ Puedo ver mi balance paper ($100,000 virtuales) en el dashboard
 
 ---
 
@@ -167,117 +315,165 @@ Secret Key (Private):
 
 **🎓 ¿Qué es Google Colab?**
 
-Google Colab (Colaboratory) es una plataforma gratuita que te permite escribir y ejecutar código Python en tu navegador, sin necesidad de instalar Python ni librerías en tu computadora. Piensa en Colab como un "Microsoft Word, pero para código Python".
+Google Colab (Colaboratory) es tu "oficina de trading algorítmico en la nube". Imagina un cuaderno de Excel, pero en vez de fórmulas y tablas, escribes instrucciones en Python y el programa las ejecuta.
 
-**💻 Instrucciones:**
+**Analogía del trader:**  
+Como TradingView, pero en vez de dibujar líneas en gráficos, escribes instrucciones que el programa sigue automáticamente. Y no tienes que instalar nada - todo funciona en tu navegador.
 
-**3.1 Primera vez en Colab**
+**Ventajas de Colab:**
+- ✅ No instalas nada en tu computadora
+- ✅ Todo se guarda automáticamente en tu Google Drive
+- ✅ Puedes acceder desde cualquier computadora
+- ✅ Ya tiene todas las herramientas instaladas
+- ✅ Es completamente GRATIS
 
-1. Ve a [https://colab.research.google.com](https://colab.research.google.com)
-2. Inicia sesión con tu cuenta Google (del Paso 1)
-3. Verás una pantalla de bienvenida: **Click en "Cancelar"** (o X)
-4. Click en **"File" → "New notebook"**
-5. ¡Se abrirá tu primer notebook vacío! 🎉
+**💻 Lo que vamos a hacer:**
 
-**3.2 Familiarízate con la interfaz**
+#### **3.1 Tu Primera Vez en Colab**
+
+1. Abre tu navegador
+2. Ve a [https://colab.research.google.com](https://colab.research.google.com)
+3. Inicia sesión con tu cuenta Gmail (del Paso 1)
+4. Verás una pantalla de bienvenida con ejemplos
+   - Click en **"Cancelar"** o la "X" para cerrarla
+5. Arriba a la izquierda: **File → New notebook**
+6. ¡Se abrirá tu primer "cuaderno" vacío! 🎉
+
+#### **3.2 Conoce tu Espacio de Trabajo**
+
+**Así se ve Colab (explicado para traders):**
 
 ```
-┌─────────────────────────────────────────────────────┐
-│ 📁 File  Edit  View  Insert  Runtime  Tools  Help  │ ← Menú principal
-├─────────────────────────────────────────────────────┤
-│ + Code    + Text                                    │ ← Agregar celdas
-├─────────────────────────────────────────────────────┤
-│ ┌─────────────────────────────────────────────┐    │
-│ │ # Esta es una CELDA de código               │    │
-│ │ print("Hola Workshop")                      │    │ ← Celda de código
-│ └─────────────────────────────────────────────┘    │
-│                                ▶️ Ejecutar          │ ← Botón play
-├─────────────────────────────────────────────────────┤
-│ 📤 Salida: Hola Workshop                           │ ← Resultado
-└─────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│ 📁 File  Edit  View  Insert  Runtime  Tools  Help      │ ← Menú principal
+├─────────────────────────────────────────────────────────┤
+│ + Code    + Text                                        │ ← Botones para agregar
+├─────────────────────────────────────────────────────────┤
+│ ┌─────────────────────────────────────────────────┐    │
+│ │ # Esta es una CELDA de código                   │    │
+│ │ # Aquí escribes instrucciones Python            │    │
+│ │ print("Hola Trading Algorítmico")               │    │
+│ └─────────────────────────────────────────────────┘    │
+│                                  ▶️ Ejecutar             │ ← Botón para ejecutar
+├─────────────────────────────────────────────────────────┤
+│ 📤 Resultado: Hola Trading Algorítmico                 │ ← Aquí aparece el resultado
+└─────────────────────────────────────────────────────────┘
 ```
 
-**3.3 Tu primera línea de código**
+**Partes importantes:**
 
-En la celda vacía que aparece, escribe:
+- **Celda de código:** Donde escribes instrucciones Python
+  - Como una "orden de trading" pero en código
+  
+- **Botón ▶️ (Ejecutar):** Cuando le das click, Python ejecuta tus instrucciones
+  - Como presionar "Buy" o "Sell" en tu plataforma de trading
+  
+- **Resultado:** Lo que el programa te responde
+  - Como el "Order Filled" cuando ejecutas una orden
+
+#### **3.3 Tu Primera Línea de Código**
+
+Vamos a probar que todo funciona. En la celda vacía, escribe exactamente esto:
 
 ```python
 print("¡Hola Trading Algorítmico!")
 ```
 
-Luego:
+**Ahora ejecuta:**
 1. Presiona **Shift + Enter** (o click en el botón ▶️)
-2. ✅ Deberías ver: `¡Hola Trading Algorítmico!` abajo de la celda
+2. Espera 1-2 segundos
+3. ✅ Deberías ver abajo: `¡Hola Trading Algorítmico!`
 
-**🎉 Si ves la salida, Colab está funcionando correctamente**
+**🎉 Si ves ese mensaje, ¡Colab está funcionando correctamente!**
 
-**🔍 Verificación:**
-☐ Puedo acceder a colab.research.google.com  
-☐ Puedo crear un nuevo notebook  
-☐ Ejecuté `print("¡Hola Trading Algorítmico!")` exitosamente  
-☐ Veo el resultado en pantalla
+**🎓 ¿Qué acabas de hacer?**
+
+Acabas de darle una instrucción a Python: "muestra este mensaje". Python la ejecutó y te mostró el resultado. Así funciona todo el trading algorítmico: das instrucciones, el programa las ejecuta.
+
+**🔍 Verificación rápida:**
+☐ Puedo entrar a colab.research.google.com  
+☐ Puedo crear un nuevo notebook (cuaderno)  
+☐ Ejecuté `print("¡Hola Trading Algorítmico!")` y vi el resultado  
+☐ Entiendo que las celdas son donde escribo código
 
 ---
 
-### 📦 PASO 4: Instalar Librerías del Workshop (10 min)
+### 📦 PASO 4: Instalar Herramientas Especializadas (10 min)
 
-**🎓 ¿Por qué instalar librerías?**
+**🎓 ¿Qué son las "herramientas" y por qué necesito instalarlas?**
 
-Las librerías son "herramientas" especializadas para diferentes tareas. Por ejemplo:
-- 📊 `pandas` → Manipular tablas de datos
-- 📈 `yfinance` → Descargar datos de mercados
-- 🧮 `vectorbt` → Hacer backtesting de estrategias
+Python por sí solo es como tener TradingView sin indicadores. Las "herramientas" (técnicamente: librerías) son como tus indicadores favoritos - cada una hace algo específico:
 
-Aunque Colab tiene muchas librerías pre-instaladas, necesitamos instalar las específicas del workshop.
+**Analogía del trader:**
+```
+En TradingView:
+├─ Indicador RSI → Mide momentum
+├─ Bandas de Bollinger → Mide volatilidad
+└─ MACD → Detecta tendencias
 
-**💻 Instrucciones:**
+En Python para Trading:
+├─ pandas → Maneja tablas de datos (como Excel)
+├─ yfinance → Descarga datos de mercados
+└─ vectorbt → Hace backtesting de estrategias
+```
 
-**4.1 Script de Instalación Completo**
+Colab ya tiene MUCHAS herramientas instaladas, pero necesitamos agregar las específicas para trading algorítmico profesional.
 
-En tu notebook de Colab, crea una nueva celda (+ Code) y pega este código:
+**💻 Lo que vamos a hacer:**
+
+Vas a copiar y pegar un código que instala automáticamente todas las herramientas. Es como descargar todos tus indicadores favoritos en TradingView - lo haces una vez y listo.
+
+#### **4.1 Código de Instalación Completo**
+
+En tu notebook de Colab, crea una celda nueva (+ Code) y pega este código completo:
 
 ```python
 # ═══════════════════════════════════════════════════════════
-# 📦 INSTALACIÓN DE LIBRERÍAS - WORKSHOP TRADING ALGORÍTMICO
+# 📦 INSTALACIÓN DE HERRAMIENTAS - WORKSHOP TRADING ALGORÍTMICO
 # Versión: 2.1 (Noviembre 2025)
-# Tiempo estimado: 3-5 minutos
+# Tiempo: 3-5 minutos (ve por un café ☕)
 # ═══════════════════════════════════════════════════════════
 
-print("🚀 Iniciando instalación de librerías...")
+print("🚀 Iniciando instalación de herramientas especializadas...")
 print("⏱️  Este proceso toma 3-5 minutos. Por favor espera.\n")
 
 # ──────────────────────────────────────────────────────────
-# 1. CORE: Análisis de Datos
+# 1. HERRAMIENTAS CORE: Manejo de Datos
+# (Como tener Excel y calculadora)
 # ──────────────────────────────────────────────────────────
-print("📊 Instalando librerías CORE...")
+print("📊 Instalando herramientas CORE (datos y cálculos)...")
 !pip install -q pandas==2.2.0 numpy==1.26.3 scipy==1.12.0
 print("✅ Core instalado\n")
 
 # ──────────────────────────────────────────────────────────
-# 2. DATOS: Descarga de Mercados
+# 2. HERRAMIENTAS DE DATOS: Descarga de Mercados
+# (Como tener feed de datos de tu broker)
 # ──────────────────────────────────────────────────────────
-print("📈 Instalando librerías de DATOS...")
+print("📈 Instalando herramientas de DESCARGA DE DATOS...")
 !pip install -q yfinance==0.2.36 alpaca-py==0.25.0
 print("✅ Datos instalado\n")
 
 # ──────────────────────────────────────────────────────────
-# 3. BACKTESTING: Validación de Estrategias
+# 3. HERRAMIENTAS DE BACKTESTING: Validación de Estrategias
+# (Como simulador de trading, pero científico)
 # ──────────────────────────────────────────────────────────
-print("🧪 Instalando librerías de BACKTESTING...")
+print("🧪 Instalando herramientas de BACKTESTING...")
 !pip install -q vectorbt==0.26.1
 print("✅ Backtesting instalado\n")
 
 # ──────────────────────────────────────────────────────────
-# 4. ANÁLISIS TÉCNICO: Indicadores
+# 4. HERRAMIENTAS DE ANÁLISIS TÉCNICO: Indicadores
+# (Como tener RSI, MACD, Bandas de Bollinger programables)
 # ──────────────────────────────────────────────────────────
-print("📉 Instalando librerías de ANÁLISIS TÉCNICO...")
+print("📉 Instalando herramientas de ANÁLISIS TÉCNICO...")
 !pip install -q ta==0.11.0 pandas-ta==0.3.14b
 print("✅ Análisis Técnico instalado\n")
 
 # ──────────────────────────────────────────────────────────
-# 5. VISUALIZACIÓN: Gráficos
+# 5. HERRAMIENTAS DE VISUALIZACIÓN: Gráficos
+# (Como TradingView, pero programable)
 # ──────────────────────────────────────────────────────────
-print("🎨 Instalando librerías de VISUALIZACIÓN...")
+print("🎨 Instalando herramientas de VISUALIZACIÓN...")
 !pip install -q plotly==5.18.0 matplotlib==3.8.2
 print("✅ Visualización instalado\n")
 
@@ -287,47 +483,61 @@ print("✅ Visualización instalado\n")
 print("═" * 60)
 print("🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!")
 print("═" * 60)
-print("\n⚠️ IMPORTANTE: Después de la instalación:")
-print("   1. Ve a 'Runtime' → 'Restart runtime'")
-print("   2. Ejecuta la celda de VALIDACIÓN (siguiente paso)")
+print("\n⚠️ PASO OBLIGATORIO AHORA:")
+print("   1. Ve al menú: Runtime → Restart session")
+print("   2. Click en 'Yes' cuando pregunte")
+print("   3. Luego continúa al Paso 5 (Validación)")
+print("\n💡 ¿Por qué reiniciar? Para que Python 'reconozca' las")
+print("   nuevas herramientas. Como reiniciar TradingView después")
+print("   de instalar un indicador nuevo.")
 ```
 
-**4.2 Ejecutar la Instalación**
+#### **4.2 Ejecutar la Instalación**
 
-1. Click en el botón ▶️ de la celda
-2. Espera 3-5 minutos (verás texto desplazándose)
-3. Cuando termine, verás: `🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!`
+1. Click en el botón ▶️ (o Shift + Enter)
+2. Verás texto desplazándose (es normal)
+3. Espera 3-5 minutos (aprovecha para leer el Paso 5 mientras)
+4. ✅ Cuando termine, verás: `🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!`
 
-**4.3 Reiniciar Runtime (OBLIGATORIO)**
+**🎓 ¿Qué está pasando mientras esperas?**
 
-⚠️ **MUY IMPORTANTE:** Después de instalar, debes reiniciar Colab
+Python está descargando y instalando herramientas especializadas desde internet. Es como cuando instalas un indicador en TradingView - toma tiempo porque está descargando código desde servidores.
 
-1. Ve al menú: **Runtime → Restart runtime**
-2. Aparecerá un diálogo: Click **"Yes"**
-3. ✅ El notebook se reiniciará (perderás variables en memoria, pero las librerías quedan instaladas)
+#### **4.3 Reiniciar tu Sesión de Trabajo (OBLIGATORIO)**
 
-**🎓 ¿Por qué reiniciar?**
+⚠️ **MUY IMPORTANTE:** Después de instalar herramientas, DEBES reiniciar.
 
-Cuando instalas librerías nuevas, Python necesita "recargar" para reconocerlas. El restart asegura que todo funcione correctamente.
+**Por qué:** Python necesita "recargar" para reconocer las nuevas herramientas instaladas.
 
-**🔍 Verificación:**
-☐ Ejecuté el script de instalación completo  
+**Analogía del trader:** Como cerrar y abrir TradingView después de instalar indicadores nuevos.
+
+**Paso a paso:**
+1. Ve al menú principal: **Runtime → Restart session**
+2. Aparecerá un mensaje: **"Restart session?"**
+3. Click en **"Yes"**
+4. Espera 10 segundos
+5. ✅ La sesión se reinició (perderás variables temporales, pero las herramientas quedan instaladas)
+
+**🔍 Verificación rápida:**
+☐ Ejecuté el código de instalación completo  
 ☐ Vi el mensaje "🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!"  
-☐ Reinicié el runtime (Runtime → Restart runtime)
+☐ Reinicié la sesión (Runtime → Restart session)  
+☐ Entiendo que las herramientas ya están instaladas
 
 ---
 
-### ✅ PASO 5: Validar Instalación (5 min)
+### ✅ PASO 5: Validar que Todo Funciona (5 min)
 
 **🎓 ¿Por qué validar?**
 
-La validación asegura que todas las librerías se instalaron correctamente y que puedes usarlas sin errores. Es como un "chequeo médico" antes de empezar el workshop.
+Como trader, sabes que antes de arriesgar capital, pruebas tu setup. Aquí es igual: vamos a verificar que todas las herramientas se instalaron correctamente.
 
-**💻 Instrucciones:**
+**Analogía del trader:**  
+Como hacer un "test de conexión" con tu broker antes de operar. Mejor descubrir problemas ahora que en medio de una operación real.
 
-**5.1 Script de Validación Completo**
+**💻 Lo que vamos a hacer:**
 
-Después de reiniciar el runtime (Paso 4.3), crea una nueva celda y pega:
+Después de reiniciar la sesión (Paso 4.3), crea una celda NUEVA y pega este código:
 
 ```python
 # ═══════════════════════════════════════════════════════════
@@ -338,13 +548,13 @@ Después de reiniciar el runtime (Paso 4.3), crea una nueva celda y pega:
 import sys
 from importlib.metadata import version
 
-print("🔍 VALIDANDO INSTALACIÓN...\n")
+print("🔍 VALIDANDO INSTALACIÓN DE HERRAMIENTAS...\n")
 print("═" * 60)
 
 # ──────────────────────────────────────────────────────────
-# Lista de librerías críticas a validar
+# Lista de herramientas críticas a validar
 # ──────────────────────────────────────────────────────────
-libraries = {
+herramientas = {
     "pandas": "2.2.0",
     "numpy": "1.26.3",
     "yfinance": "0.2.36",
@@ -354,67 +564,70 @@ libraries = {
     "plotly": "5.18.0"
 }
 
-errors = []
-warnings = []
+errores = []
+advertencias = []
 
 # ──────────────────────────────────────────────────────────
-# Validar cada librería
+# Validar cada herramienta
 # ──────────────────────────────────────────────────────────
-for lib, expected_version in libraries.items():
+for nombre, version_esperada in herramientas.items():
     try:
-        installed_version = version(lib)
+        version_instalada = version(nombre)
         
-        # Comparar versión instalada con esperada
-        if installed_version.startswith(expected_version.split('.')[0]):
-            print(f"✅ {lib:<15} v{installed_version}")
+        # Comparar versión (solo primer número importa)
+        if version_instalada.startswith(version_esperada.split('.')[0]):
+            print(f"✅ {nombre:<15} v{version_instalada}")
         else:
-            print(f"⚠️  {lib:<15} v{installed_version} (esperada: {expected_version})")
-            warnings.append(f"{lib}: versión diferente")
+            print(f"⚠️  {nombre:<15} v{version_instalada} (esperada: {version_esperada})")
+            advertencias.append(f"{nombre}: versión diferente")
             
     except Exception as e:
-        print(f"❌ {lib:<15} NO INSTALADA")
-        errors.append(lib)
+        print(f"❌ {nombre:<15} NO INSTALADA")
+        errores.append(nombre)
 
 print("═" * 60)
 
 # ──────────────────────────────────────────────────────────
 # Reporte final
 # ──────────────────────────────────────────────────────────
-if not errors and not warnings:
-    print("\n🎉 ¡TODAS LAS LIBRERÍAS VALIDADAS CORRECTAMENTE!")
+if not errores and not advertencias:
+    print("\n🎉 ¡TODAS LAS HERRAMIENTAS VALIDADAS CORRECTAMENTE!")
     print("✅ Estás listo para empezar el workshop")
+    print("\n📍 Próximo paso: Configurar tus llaves de Alpaca (Paso 6)")
     
-elif errors:
-    print(f"\n❌ ERROR: {len(errors)} librería(s) NO instalada(s):")
-    for lib in errors:
-        print(f"   - {lib}")
+elif errores:
+    print(f"\n❌ ERROR: {len(errores)} herramienta(s) NO instalada(s):")
+    for herr in errores:
+        print(f"   - {herr}")
     print("\n🔧 Solución:")
     print("   1. Regresa al Paso 4")
-    print("   2. Re-ejecuta el script de instalación")
-    print("   3. Reinicia runtime")
-    print("   4. Vuelve a validar")
+    print("   2. Re-ejecuta el código de instalación")
+    print("   3. Reinicia sesión (Runtime → Restart session)")
+    print("   4. Vuelve a ejecutar esta validación")
     
-elif warnings:
-    print(f"\n⚠️  ADVERTENCIA: {len(warnings)} librería(s) con versión diferente:")
-    for warning in warnings:
-        print(f"   - {warning}")
-    print("\n✅ Puedes continuar, pero podría haber incompatibilidades menores")
+elif advertencias:
+    print(f"\n⚠️  ADVERTENCIA: {len(advertencias)} herramienta(s) con versión diferente:")
+    for adv in advertencias:
+        print(f"   - {adv}")
+    print("\n✅ Puedes continuar normalmente")
+    print("   (pequeñas diferencias de versión son normales)")
 
 print("\n" + "═" * 60)
 print(f"📍 Python: {sys.version.split()[0]}")
-print(f"📍 Runtime: Google Colab")
+print(f"📍 Entorno: Google Colab")
 print("═" * 60)
 ```
 
-**5.2 Ejecutar Validación**
+#### **5.2 Ejecutar Validación**
 
 1. Click en ▶️ para ejecutar
 2. Espera 5-10 segundos
-3. Lee el resultado:
+3. Lee el resultado cuidadosamente
 
-**✅ Resultado PERFECTO:**
+**✅ Resultado PERFECTO (lo que quieres ver):**
+
 ```
-🔍 VALIDANDO INSTALACIÓN...
+🔍 VALIDANDO INSTALACIÓN DE HERRAMIENTAS...
 ═══════════════════════════════════════════════════════════
 ✅ pandas          v2.2.0
 ✅ numpy           v1.26.3
@@ -425,89 +638,110 @@ print("═" * 60)
 ✅ plotly          v5.18.0
 ═══════════════════════════════════════════════════════════
 
-🎉 ¡TODAS LAS LIBRERÍAS VALIDADAS CORRECTAMENTE!
+🎉 ¡TODAS LAS HERRAMIENTAS VALIDADAS CORRECTAMENTE!
 ✅ Estás listo para empezar el workshop
 ```
 
-**⚠️ Resultado con ADVERTENCIAS:**
+**⚠️ Resultado con ADVERTENCIAS (no es grave):**
 
 Si ves versiones ligeramente diferentes (ej: 2.2.1 en vez de 2.2.0):
-- ✅ Puedes continuar
-- ⚠️ Podría haber diferencias menores en comportamiento
-- 📧 Reporta al instructor si ves errores específicos
+- ✅ Puedes continuar sin problema
+- Las diferencias mínimas no afectan el workshop
+- Solo reporta si hay errores específicos más adelante
 
-**❌ Resultado con ERRORES:**
+**❌ Resultado con ERRORES (necesita corrección):**
 
 Si ves "❌ NO INSTALADA":
 1. Regresa al Paso 4
-2. Re-ejecuta instalación
-3. Reinicia runtime
+2. Re-ejecuta el código de instalación
+3. Reinicia sesión (Runtime → Restart session)
 4. Vuelve a validar
 
-**🔍 Verificación:**
-☐ Ejecuté script de validación  
-☐ Todas las librerías muestran ✅  
-☐ Vi mensaje: "¡TODAS LAS LIBRERÍAS VALIDADAS CORRECTAMENTE!"
+**🔍 Verificación rápida:**
+☐ Ejecuté el código de validación  
+☐ Todas las herramientas muestran ✅ (o ⚠️ pero no ❌)  
+☐ Vi el mensaje de confirmación  
+☐ Estoy listo para el Paso 6
 
 ---
 
-### 🔗 PASO 6: Configurar Credenciales Alpaca en Colab (5 min)
+### 🔗 PASO 6: Configurar tus Llaves de Acceso (5 min)
 
 **🎓 ¿Por qué este paso?**
 
-Tus credenciales de Alpaca (del Paso 2) deben ser accesibles por tu código Python para poder descargar datos y ejecutar operaciones en paper trading. Aprenderás a guardarlas de forma segura en Colab.
+Tus llaves de Alpaca (del Paso 2) necesitan estar "disponibles" para tu código Python. Es como tener tus credenciales de broker guardadas para no escribirlas cada vez.
 
-**💻 Instrucciones:**
+**Analogía del trader:**  
+Como guardar tus credenciales en TradingView o MetaTrader - lo haces una vez, y la plataforma las recuerda mientras estés conectado.
 
-**6.1 Método Seguro: Variables de Entorno Temporales**
+**⚠️ Seguridad CRÍTICA:**
 
-⚠️ **NUNCA escribas tus credenciales directamente en el código visible**
+NUNCA escribas tus llaves directamente en el código visible. Vamos a usar un método seguro.
 
-Crea una nueva celda y pega:
+**💻 Lo que vamos a hacer:**
+
+Crea una celda nueva y pega este código:
 
 ```python
 # ═══════════════════════════════════════════════════════════
-# 🔐 CONFIGURACIÓN DE CREDENCIALES ALPACA
+# 🔐 CONFIGURACIÓN SEGURA DE LLAVES DE ACCESO
 # ═══════════════════════════════════════════════════════════
 
 import os
 from getpass import getpass
 
-print("🔐 CONFIGURACIÓN DE CREDENCIALES ALPACA")
+print("🔐 CONFIGURACIÓN DE LLAVES ALPACA")
 print("═" * 60)
-print("⚠️  Ingresa tus credenciales de forma segura")
-print("    (no se mostrarán en pantalla)")
+print("⚠️  Vas a ingresar tus llaves de forma segura")
+print("    (NO se mostrarán en pantalla mientras las escribes)")
 print("═" * 60 + "\n")
 
-# Solicitar credenciales de forma segura (input oculto)
-api_key = getpass("🔑 Ingresa tu Alpaca API Key (PK...): ")
-secret_key = getpass("🔐 Ingresa tu Alpaca Secret Key: ")
+# Solicitar llaves de forma segura (input oculto)
+api_key = getpass("🔑 Pega tu Alpaca API Key (PK...) y presiona Enter: ")
+secret_key = getpass("🔐 Pega tu Alpaca Secret Key y presiona Enter: ")
 
-# Guardar en variables de entorno (solo para esta sesión)
+# Guardar temporalmente (solo para esta sesión)
 os.environ['ALPACA_API_KEY'] = api_key
 os.environ['ALPACA_SECRET_KEY'] = secret_key
 
-print("\n✅ Credenciales configuradas correctamente")
-print("⚠️  Estas credenciales son temporales (solo esta sesión)")
-print("⚠️  Deberás repetir este paso cada vez que reinicies Colab")
+print("\n✅ Llaves configuradas correctamente")
+print("\n📋 IMPORTANTE RECORDAR:")
+print("   ⚠️  Estas llaves son temporales (solo esta sesión)")
+print("   ⚠️  Si cierras Colab o reinicias sesión, deberás repetir")
+print("       este paso con tus llaves")
+print("\n💡 CONSEJO: Guarda este código en una celda al inicio")
+print("   de tu notebook. Así solo ejecutas y pegas cada vez.")
 ```
 
-**6.2 Ejecutar Configuración**
+#### **6.2 Ejecutar Configuración**
 
 1. Click en ▶️
 2. Aparecerán dos campos de entrada:
-   - **🔑 Ingresa tu Alpaca API Key:** Pega tu API Key (del Paso 2)
-   - **🔐 Ingresa tu Alpaca Secret Key:** Pega tu Secret Key
-3. Presiona **Enter** después de cada uno
-4. ✅ Verás: "Credenciales configuradas correctamente"
+   
+   **Primer campo:** `🔑 Pega tu Alpaca API Key (PK...) y presiona Enter:`
+   - Abre tu archivo `Alpaca_Keys_Paper.txt` (del Paso 2)
+   - Copia tu API Key (comienza con "PK...")
+   - Pégala aquí (no verás lo que escribes - es SEGURO)
+   - Presiona **Enter**
+   
+   **Segundo campo:** `🔐 Pega tu Alpaca Secret Key y presiona Enter:`
+   - Copia tu Secret Key de tu archivo
+   - Pégala aquí (no verás lo que escribes - es SEGURO)
+   - Presiona **Enter**
 
-**6.3 Validar Conexión con Alpaca**
+3. ✅ Verás: "Llaves configuradas correctamente"
 
-Crea otra celda nueva y pega:
+**🎓 ¿Por qué no veo lo que escribo?**
+
+Por seguridad. Como cuando escribes tu contraseña en cualquier sitio web - no se muestra para que nadie pueda verla.
+
+#### **6.3 Validar Conexión con Alpaca**
+
+Ahora vamos a probar que tus llaves funcionan. Crea otra celda nueva:
 
 ```python
 # ═══════════════════════════════════════════════════════════
-# ✅ VALIDAR CONEXIÓN CON ALPACA
+# ✅ VALIDAR CONEXIÓN CON ALPACA PAPER TRADING
 # ═══════════════════════════════════════════════════════════
 
 from alpaca.trading.client import TradingClient
@@ -516,180 +750,242 @@ import os
 print("🔍 VALIDANDO CONEXIÓN CON ALPACA...\n")
 
 try:
-    # Crear cliente Alpaca usando credenciales del entorno
+    # Obtener llaves del paso anterior
     api_key = os.environ.get('ALPACA_API_KEY')
     secret_key = os.environ.get('ALPACA_SECRET_KEY')
     
+    # Crear conexión con Alpaca (paper = cuenta simulada)
     client = TradingClient(api_key, secret_key, paper=True)
     
-    # Obtener información de cuenta
-    account = client.get_account()
+    # Obtener información de tu cuenta
+    cuenta = client.get_account()
     
     print("═" * 60)
     print("✅ CONEXIÓN EXITOSA CON ALPACA")
     print("═" * 60)
     print(f"📊 Tipo de cuenta: Paper Trading (Simulación)")
-    print(f"💰 Balance: ${float(account.cash):,.2f}")
-    print(f"📈 Buying Power: ${float(account.buying_power):,.2f}")
-    print(f"📍 Status: {account.status}")
+    print(f"💰 Balance disponible: ${float(cuenta.cash):,.2f}")
+    print(f"📈 Poder de compra: ${float(cuenta.buying_power):,.2f}")
+    print(f"📍 Estado de cuenta: {cuenta.status}")
     print("═" * 60)
+    print("\n✅ Todo funciona correctamente")
+    print("🎉 Estás listo para descargar datos y operar en simulación")
     
 except Exception as e:
     print("═" * 60)
     print("❌ ERROR EN CONEXIÓN CON ALPACA")
     print("═" * 60)
-    print(f"Error: {str(e)}\n")
+    print(f"Error técnico: {str(e)}\n")
     print("🔧 Posibles causas:")
-    print("   1. Credenciales incorrectas")
-    print("   2. No copiaste bien API Key o Secret Key")
-    print("   3. Cuenta Alpaca no activada")
+    print("   1. Las llaves están incorrectas (copiaste mal)")
+    print("   2. Usaste llaves de cuenta LIVE en vez de PAPER")
+    print("   3. Cuenta Alpaca no está activada")
     print("\n💡 Solución:")
-    print("   1. Verifica tus credenciales en alpaca.markets")
-    print("   2. Re-ejecuta Paso 6.1 con credenciales correctas")
-    print("   3. Asegúrate de tener Paper Trading habilitado")
+    print("   1. Ve a alpaca.markets y verifica tus llaves PAPER")
+    print("   2. Vuelve al Paso 6.2 y re-ejecuta con llaves correctas")
+    print("   3. Asegúrate de usar Paper Trading, NO Live")
 ```
 
-**6.4 Ejecutar Validación de Conexión**
+#### **6.4 Ejecutar Validación de Conexión**
 
 1. Click en ▶️
-2. ✅ **Si todo está bien, verás:**
+2. Espera 3-5 segundos
+3. ✅ **Si todo está bien, verás:**
 
 ```
 ═══════════════════════════════════════════════════════════
 ✅ CONEXIÓN EXITOSA CON ALPACA
 ═══════════════════════════════════════════════════════════
 📊 Tipo de cuenta: Paper Trading (Simulación)
-💰 Balance: $100,000.00
-📈 Buying Power: $200,000.00
-📍 Status: ACTIVE
+💰 Balance disponible: $100,000.00
+📈 Poder de compra: $200,000.00
+📍 Estado de cuenta: ACTIVE
 ═══════════════════════════════════════════════════════════
+
+✅ Todo funciona correctamente
+🎉 Estás listo para descargar datos y operar en simulación
 ```
 
-**❌ Si ves error:**
-- Verifica que copiaste bien las credenciales
-- Ve a alpaca.markets y confirma que están correctas
-- Re-ejecuta Paso 6.1
+**🎓 ¿Qué significa "Poder de compra $200,000"?**
 
-**🔍 Verificación:**
-☐ Configuré credenciales con getpass (seguras)  
+Alpaca te da 2x leverage (apalancamiento) en paper trading. Tu balance real es $100,000, pero puedes operar hasta $200,000 (como margen en tu broker real).
+
+**❌ Si ves error:**
+- Verifica que copiaste bien las llaves (sin espacios extra)
+- Confirma que usaste llaves PAPER, no LIVE
+- Ve a alpaca.markets y regenera las llaves si es necesario
+
+**🔍 Verificación rápida:**
+☐ Configuré mis llaves de forma segura  
+☐ No vi mis llaves en pantalla (input oculto funcionó)  
 ☐ Ejecuté validación de conexión  
 ☐ Vi mensaje: "✅ CONEXIÓN EXITOSA CON ALPACA"  
 ☐ Vi mi balance paper ($100,000)
 
 ---
 
-### 📘 PASO 7: Acceder al Colab Notebook Maestro (5 min)
+### 📘 PASO 7: Acceder al Notebook Maestro del Workshop (5 min)
 
-**🎓 ¿Qué es el Colab Notebook Maestro?**
+**🎓 ¿Qué es el Notebook Maestro?**
 
-Es el notebook oficial del workshop con TODO el código organizado por sesiones (S1-S9). Ya tiene instalación, ejemplos, ejercicios y validaciones incluidas. Es tu "libro de trabajo" para las 27 horas del workshop.
+Es tu "manual de operaciones" para todo el workshop. Imagina un libro de trading que, en vez de solo leer, ejecutas el código mientras aprendes.
 
-**💻 Instrucciones:**
+**Contiene:**
+- Todo el código de las 9 sesiones (27 horas)
+- Explicaciones paso a paso
+- Ejercicios prácticos
+- Ejemplos con datos reales
 
-**7.1 Obtener el Notebook**
+**Analogía del trader:**  
+Como tener un curso de trading completo, pero en vez de solo videos y PDFs, tienes el código ejecutable. Aprendes haciendo, no solo mirando.
 
-📧 **El link al Colab Notebook Maestro te será enviado por:**
-- Email de bienvenida al workshop
-- Grupo de Telegram Premium
-- Drive compartido del workshop
+**💻 Lo que vamos a hacer:**
 
-**No puedes continuar este paso sin el link.** Si no lo tienes:
-1. Revisa tu email (bandeja de entrada y spam)
-2. Contacta al instructor: yismaryme@gmail.com
+#### **7.1 Obtener el Link al Notebook**
 
-**7.2 Abrir el Notebook**
+📧 **El Notebook Maestro te será enviado por:**
+- Email de bienvenida (busca asunto: "Bienvenido al Workshop")
+- Grupo de Telegram Premium del workshop
+- Drive compartido (link en email)
 
-1. Click en el link que recibiste
-2. El notebook se abrirá en **modo lectura** (no puedes editarlo)
-3. **Obligatorio:** Haz una copia personal:
-   - Ve a **"File" → "Save a copy in Drive"**
-   - Se abrirá una copia en tu Google Drive personal
-   - ✅ Ahora puedes editar y guardar cambios
+**⚠️ Si NO tienes el link:**
+1. Revisa tu email (bandeja de entrada Y spam)
+2. Busca emails de: yismaryme@gmail.com
+3. Si no lo encuentras: contacta yismaryme@gmail.com con asunto "Necesito link a Notebook Maestro"
 
-**7.3 Estructura del Notebook Maestro**
+#### **7.2 Abrir y Hacer Tu Copia Personal**
+
+Una vez que tengas el link:
+
+1. Click en el link del Notebook Maestro
+2. Se abrirá en Colab en **modo solo lectura** (no puedes editar)
+3. **OBLIGATORIO:** Haz tu copia personal:
+   - Ve al menú: **File → Save a copy in Drive**
+   - Se abrirá una copia EN TU Google Drive personal
+   - ✅ Esta copia SÍ puedes editarla y guardar cambios
+
+**🎓 ¿Por qué hacer una copia?**
+
+El Notebook original es compartido con todos los participantes (modo lectura). Tu copia personal es TU espacio de trabajo donde puedes:
+- Agregar notas
+- Modificar código para experimentar
+- Guardar tus ejercicios
+- Practicar sin miedo a romper nada
+
+#### **7.3 Estructura del Notebook Maestro**
 
 ```
-📘 COLAB NOTEBOOK MAESTRO (1,500+ líneas)
+📘 NOTEBOOK MAESTRO DEL WORKSHOP (1,500+ líneas de código)
+│
+├── 🔧 SETUP Y VALIDACIÓN
+│   └─ (Lo que acabas de hacer en Pasos 1-6)
 │
 ├── 🟦 SESIÓN 1: Fundamentos y Mapa del Trading Algorítmico
+│   └─ Componentes de un sistema, expectativas realistas
+│
 ├── 🟦 SESIÓN 2: Datos - La Base de Todo Sistema  
+│   └─ Descarga, limpieza, validación de datos
+│
 ├── 🟦 SESIÓN 3: Ideación de Estrategias con GenAI
+│   └─ Cómo usar IA para generar ideas de estrategias
+│
 ├── 🟦 SESIÓN 4: Implementación Práctica Guiada
+│   └─ Codificar una estrategia completa paso a paso
+│
 ├── 🟦 SESIÓN 5: Validación Rigurosa - Backtesting Profesional
+│   └─ Probar estrategias con datos históricos
+│
 ├── 🟦 SESIÓN 6: Gestión Avanzada de Riesgo
-├── 🟦 SESIÓN 7: Multi-Plataforma - Del Código a la Ejecución
-├── 🟦 SESIÓN 8: Deployment Real - Paper Trading y Monitoreo
+│   └─ Position sizing, stops, portfolio heat
+│
+├── 🟦 SESIÓN 7: Multi-Plataforma - Del Código a la Ejecución ⭐
+│   └─ Convertir Python → Pine Script / MQL5 / IB
+│
+├── 🟦 SESIÓN 8: Poner en Funcionamiento 24/7 - Paper Trading
+│   └─ Deploy real en servidor, monitoreo, alertas
+│
 └── 🟦 SESIÓN 9: Proyecto Final y Documentación Profesional
+    └─ Crear tu portfolio de estrategias documentadas
 ```
 
-**7.4 Primera Exploración**
+#### **7.4 Primera Exploración (NO ejecutes todavía)**
 
-1. Navega a **"🟦 SESIÓN 1"** (scroll hacia abajo)
-2. Lee la introducción de S1
-3. **NO ejecutes celdas todavía** (lo harás en el workshop)
-4. Familiarízate con la estructura
+1. Navega a **"🟦 SESIÓN 1"** (scroll hacia abajo en el notebook)
+2. Lee la introducción
+3. Ve los bloques de código
+4. **NO ejecutes nada todavía** - lo harás en vivo durante las sesiones
+5. Familiarízate con cómo está organizado
 
-**7.5 Leer la Guía de Uso de Colab (OBLIGATORIO)**
+#### **7.5 Leer la Guía de Uso (OBLIGATORIO antes de Sesión 1)**
 
-Antes de la primera sesión, lee esta guía:
+Antes de la primera sesión del workshop, DEBES leer esta guía:
 
 📖 **[Guía de Uso del Colab Notebook Maestro](Guia_Uso_Colab_Notebook.md)**
 
-Aprenderás:
+**Aprenderás:**
 - Cómo navegar por las 9 sesiones
 - Atajos de teclado útiles
-- Cómo ejecutar celdas correctamente
-- Troubleshooting de Colab
+- Cómo ejecutar código correctamente
+- Qué hacer si algo falla
+- Mejores prácticas de trabajo en Colab
 
-**🔍 Verificación:**
-☐ Recibí el link al Colab Notebook Maestro  
+**🔍 Verificación rápida:**
+☐ Recibí el link al Notebook Maestro del workshop  
 ☐ Hice una copia personal en mi Drive ("Save a copy")  
 ☐ Veo las 9 sesiones en el notebook  
-☐ Leí la [Guía de Uso de Colab](Guia_Uso_Colab_Notebook.md)
+☐ Leí (o tengo en mi lista) la [Guía de Uso de Colab](Guia_Uso_Colab_Notebook.md)  
+☐ Entiendo que NO debo ejecutar todo ahora, solo en las sesiones
 
 ---
 
 ## 🔍 Validación del Setup
 
-**Antes de continuar, valida que TODO funciona:**
+**Antes de cerrar, valida que TODO está listo para el workshop:**
 
-### ✅ Checklist Final
+### ✅ Checklist Final de los 7 Pasos
 
-☐ **PASO 1:** Tengo cuenta Google y puedo acceder  
-☐ **PASO 2:** Tengo credenciales Alpaca guardadas de forma segura  
-☐ **PASO 3:** Puedo acceder a Google Colab  
-☐ **PASO 4:** Instalé todas las librerías  
-☐ **PASO 5:** Todas las librerías validaron con ✅  
-☐ **PASO 6:** Conexión con Alpaca exitosa (vi mi balance)  
-☐ **PASO 7:** Tengo copia personal del Colab Notebook Maestro
+☐ **PASO 1:** Tengo cuenta Gmail y puedo acceder  
+☐ **PASO 2:** Tengo mis llaves Alpaca guardadas en archivo seguro  
+☐ **PASO 3:** Puedo entrar a Google Colab y crear notebooks  
+☐ **PASO 4:** Instalé todas las herramientas especializadas  
+☐ **PASO 5:** Todas las herramientas validaron con ✅  
+☐ **PASO 6:** Conexión con Alpaca exitosa (vi mi balance $100,000)  
+☐ **PASO 7:** Tengo copia personal del Notebook Maestro en mi Drive
 
-### 🎯 Test de Integración Final
+### 🎯 Test Final de Integración
 
-Ejecuta este test completo en una celda nueva:
+Ejecuta este test completo en una celda nueva (copia y pega):
 
 ```python
 # ═══════════════════════════════════════════════════════════
-# 🎯 TEST DE INTEGRACIÓN FINAL - SETUP COMPLETO
+# 🎯 TEST FINAL DE INTEGRACIÓN - SETUP COMPLETO
 # ═══════════════════════════════════════════════════════════
 
-print("🧪 EJECUTANDO TEST DE INTEGRACIÓN FINAL...\n")
+print("🧪 EJECUTANDO TEST FINAL DE INTEGRACIÓN...\n")
+print("Validando 5 componentes críticos:\n")
 
-# Test 1: Librerías Core
+resultados = []
+
+# Test 1: Herramientas Core
 try:
     import pandas as pd
     import numpy as np
-    print("✅ Test 1/5: Librerías Core")
+    print("✅ Test 1/5: Herramientas Core (pandas, numpy)")
+    resultados.append(True)
 except:
-    print("❌ Test 1/5: ERROR en librerías Core")
+    print("❌ Test 1/5: ERROR en herramientas Core")
+    resultados.append(False)
 
 # Test 2: Descarga de Datos
 try:
     import yfinance as yf
-    data = yf.download("SPY", period="5d", progress=False)
-    assert len(data) > 0
+    datos = yf.download("SPY", period="5d", progress=False)
+    assert len(datos) > 0
     print("✅ Test 2/5: Descarga de Datos (yfinance)")
+    resultados.append(True)
 except:
     print("❌ Test 2/5: ERROR en descarga de datos")
+    resultados.append(False)
 
 # Test 3: Conexión Alpaca
 try:
@@ -700,127 +996,164 @@ try:
         os.environ['ALPACA_SECRET_KEY'], 
         paper=True
     )
-    account = client.get_account()
-    print("✅ Test 3/5: Conexión Alpaca")
+    cuenta = client.get_account()
+    print("✅ Test 3/5: Conexión Alpaca Paper Trading")
+    resultados.append(True)
 except:
     print("❌ Test 3/5: ERROR en conexión Alpaca")
+    resultados.append(False)
 
 # Test 4: Backtesting
 try:
     import vectorbt as vbt
-    print("✅ Test 4/5: Librería Backtesting (vectorbt)")
+    print("✅ Test 4/5: Herramienta de Backtesting (vectorbt)")
+    resultados.append(True)
 except:
-    print("❌ Test 4/5: ERROR en librería backtesting")
+    print("❌ Test 4/5: ERROR en herramienta backtesting")
+    resultados.append(False)
 
 # Test 5: Visualización
 try:
     import plotly.graph_objects as go
-    print("✅ Test 5/5: Librería Visualización (plotly)")
+    print("✅ Test 5/5: Herramienta de Visualización (plotly)")
+    resultados.append(True)
 except:
-    print("❌ Test 5/5: ERROR en librería visualización")
+    print("❌ Test 5/5: ERROR en herramienta visualización")
+    resultados.append(False)
 
+# Resultado Final
 print("\n" + "═" * 60)
-print("🎉 SETUP COMPLETADO EXITOSAMENTE")
+if all(resultados):
+    print("🎉 ¡SETUP COMPLETADO EXITOSAMENTE!")
+    print("═" * 60)
+    print("✅ Todos los componentes funcionan correctamente")
+    print("✅ Estás 100% listo para la Sesión 1 del workshop")
+    print("\n🎯 Próximos pasos:")
+    print("   1. Lee el documento LEEME_PRIMERO.md")
+    print("   2. Lee la Guía de Uso del Colab Notebook")
+    print("   3. Únete al grupo de Telegram Premium")
+    print("   4. Revisa tu horario de sesiones (email)")
+    print("   5. ¡Nos vemos en la Sesión 1! 🚀")
+else:
+    print("⚠️  ALGUNOS TESTS FALLARON")
+    print("═" * 60)
+    print("Revisa los tests marcados con ❌ arriba")
+    print("Regresa al paso correspondiente y corrige el error")
 print("═" * 60)
-print("✅ Estás listo para empezar la Sesión 1 del workshop")
-print("\n🎯 Próximos pasos:")
-print("   1. Lee LEEME_PRIMERO.md para roadmap completo")
-print("   2. Revisa tu horario de sesiones")
-print("   3. Únete al grupo de Telegram Premium")
-print("   4. ¡Nos vemos en la Sesión 1!")
 ```
 
-**✅ Si ves "🎉 SETUP COMPLETADO EXITOSAMENTE" → ¡Felicidades!**
+**✅ Si ves "🎉 ¡SETUP COMPLETADO EXITOSAMENTE!" → ¡Felicidades! Estás listo.**
 
 ---
 
 ## 🚨 Troubleshooting Específico
 
-**Errores comunes en Setup Colab y sus soluciones:**
+**Soluciones a problemas comunes en Colab:**
 
 ### ❌ Error: "No module named 'yfinance'"
 
-**Causa:** Librería no instalada o runtime no reiniciado
+**Qué significa:** La herramienta yfinance no está instalada (o Python no la reconoce).
 
-**Solución:**
+**Solución paso a paso:**
 ```python
-# 1. Re-instalar la librería específica
+# 1. Re-instalar la herramienta específica
 !pip install yfinance==0.2.36
 
-# 2. Reiniciar runtime: Runtime → Restart runtime
+# 2. Reiniciar sesión: Runtime → Restart session
 
-# 3. Re-ejecutar celda que da error
+# 3. Re-ejecutar la celda que dio error
 ```
 
 ---
 
 ### ❌ Error: "ALPACA_API_KEY not found in environment"
 
-**Causa:** No configuraste credenciales o runtime se reinició
+**Qué significa:** Tus llaves de Alpaca no están configuradas (o se perdieron al reiniciar).
 
 **Solución:**
 - Vuelve al Paso 6
-- Re-ejecuta configuración de credenciales (getpass)
-- ⚠️ Las credenciales se pierden al reiniciar runtime
+- Re-ejecuta el código de configuración de llaves
+- Pega tus llaves nuevamente
+
+**⚠️ Recuerda:** Las llaves se pierden si:
+- Cierras Colab
+- Reinicias la sesión
+- Pasas 12 horas sin actividad
+
+Debes reconfigurarlas cada vez.
 
 ---
 
 ### ❌ Error: "Session crashed" / "Out of Memory"
 
-**Causa:** Colab gratuito tiene límites de RAM (12 GB)
+**Qué significa:** Colab gratuito tiene límite de RAM (12 GB) y se quedó sin memoria.
+
+**Causas comunes:**
+- Descargaste demasiados datos de una vez
+- Ejecutaste muchas celdas sin limpiar memoria
+- El código tiene un "memory leak"
 
 **Solución:**
 ```python
-# 1. Liberar memoria
+# 1. Liberar memoria manualmente
 import gc
 gc.collect()
 
-# 2. Reiniciar runtime: Runtime → Restart runtime
+# 2. Si no funciona: Runtime → Restart session
 
-# 3. Ejecutar solo celdas necesarias (no todas a la vez)
+# 3. Ejecuta solo celdas necesarias (no todas a la vez)
 
-# 4. Upgrade a Colab Pro ($10/mes) si el problema persiste
+# 4. Si el problema persiste, considera Colab Pro ($10/mes)
 ```
 
 ---
 
 ### ❌ Error: "Could not find a version that satisfies alpaca-py"
 
-**Causa:** Versión de Python incompatible o pip desactualizado
+**Qué significa:** El instalador de Python (pip) no encuentra esa versión.
 
 **Solución:**
 ```python
-# 1. Actualizar pip
+# 1. Actualizar pip (el instalador)
 !pip install --upgrade pip
 
 # 2. Instalar alpaca-py nuevamente
 !pip install alpaca-py==0.25.0
 
-# 3. Reiniciar runtime
+# 3. Reiniciar sesión: Runtime → Restart session
 ```
 
 ---
 
 ### ❌ Error: "HTTPError 401: Unauthorized" (Alpaca)
 
-**Causa:** Credenciales incorrectas o mal copiadas
+**Qué significa:** Tus llaves están incorrectas o no tienes permiso.
+
+**Causas comunes:**
+- Copiaste las llaves con espacios extra
+- Usaste llaves de cuenta LIVE en vez de PAPER
+- Las llaves están revocadas en Alpaca
 
 **Solución:**
 1. Ve a [alpaca.markets](https://alpaca.markets)
-2. Verifica tus credenciales (API Key y Secret)
-3. ⚠️ Asegúrate de copiar COMPLETAS (sin espacios extras)
-4. Re-ejecuta Paso 6.1 con credenciales correctas
+2. Verifica tus llaves PAPER (no LIVE)
+3. Si es necesario, genera llaves nuevas
+4. Cópialas CON CUIDADO (sin espacios)
+5. Re-ejecuta Paso 6.1 con las nuevas llaves
 
 ---
 
-### ⚠️ Warning: "Versión diferente de librería esperada"
+### ⚠️ Advertencia: "Versión diferente de herramienta esperada"
 
-**Causa:** pip instaló versión más reciente automáticamente
+**Qué significa:** pip instaló una versión ligeramente diferente.
 
-**Solución:**
-- ✅ Generalmente no es problema
-- Si hay errores específicos, instala versión exacta:
+**¿Es problema?**
+- ✅ Generalmente NO
+- Las diferencias mínimas (2.2.0 vs 2.2.1) no afectan
+
+**Si tienes errores específicos después:**
 ```python
+# Forzar versión exacta
 !pip install pandas==2.2.0 --force-reinstall
 ```
 
@@ -828,14 +1161,18 @@ gc.collect()
 
 ### 🌐 Problema: "Colab muy lento / No carga"
 
-**Causa:** Conexión a internet lenta o problemas de Google
+**Causas comunes:**
+- Conexión a internet lenta
+- Sobrecarga de servidores de Google
+- Caché del navegador lleno
 
 **Solución:**
-1. Verifica tu velocidad de internet (min 3 Mbps)
-2. Prueba con otro navegador
-3. Limpia caché del navegador:
-   - Chrome: Ctrl+Shift+Del → Borrar caché
-4. Intenta en otra hora (menos carga en servidores Google)
+1. Verifica tu velocidad de internet (mínimo 3 Mbps)
+2. Prueba otro navegador (Chrome es el mejor)
+3. Limpia caché:
+   - Chrome: Ctrl+Shift+Del → "Caché" → Borrar
+4. Intenta en otra hora (menos carga en servidores)
+5. Si persiste, prueba conexión móvil (hotspot)
 
 ---
 
@@ -843,100 +1180,149 @@ gc.collect()
 
 **Solución:**
 1. Ve a [drive.google.com](https://drive.google.com)
-2. Busca: "Copy of Colab Notebook Maestro"
-3. Click derecho → "Abrir con" → "Google Colaboratory"
+2. Arriba a la derecha: busca "Copy of Colab Notebook Maestro"
+3. Click derecho sobre el archivo
+4. "Abrir con" → "Google Colaboratory"
 
 ---
 
 **🔧 Troubleshooting Avanzado:**
 
 Si ninguna solución funciona:
-1. Consulta [Troubleshooting Común](Troubleshooting_Comun.md)
-2. Pregunta en grupo Telegram Premium
-3. Contacta soporte: yismaryme@gmail.com
+1. Consulta [Troubleshooting Común](Troubleshooting_Comun.md) (errores cross-platform)
+2. Pregunta en grupo Telegram Premium (otros participantes pueden ayudar)
+3. Contacta soporte: yismaryme@gmail.com (incluye screenshots)
 
 ---
 
 ## 💡 Consejos y Mejores Prácticas
 
-**Para sacar el máximo provecho de Colab:**
+**Saca el máximo provecho de Colab:**
 
-### 🎯 Organización
+### 🎯 Organización en Google Drive
 
-📂 **Estructura de Google Drive:**
+**Crea esta estructura de carpetas en tu Drive:**
+
 ```
 Mi Drive/
-├── Workshop_Trading_Algoritmico/
-│   ├── Colab_Notebook_Maestro.ipynb ← Tu copia personal
-│   ├── Mis_Estrategias/
-│   │   ├── Estrategia_1_Mean_Reversion.ipynb
-│   │   └── Estrategia_2_Momentum.ipynb
-│   └── Datos/
-│       └── SPY_historico.csv
+│
+└── Workshop_Trading_Algoritmico/
+    │
+    ├── Colab_Notebook_Maestro.ipynb ← Tu copia personal
+    │
+    ├── Mis_Estrategias/
+    │   ├── Estrategia_1_Mean_Reversion.ipynb
+    │   ├── Estrategia_2_Momentum.ipynb
+    │   └── Estrategia_3_Breakout.ipynb
+    │
+    ├── Datos/
+    │   ├── SPY_historico.csv
+    │   ├── AAPL_5min.csv
+    │   └── portfolio_data.csv
+    │
+    └── Documentacion/
+        ├── Alpaca_Keys_Paper.txt ← TUS LLAVES (seguro)
+        └── Notas_Workshop.docx
 ```
+
+**Beneficios:**
+- Todo organizado en un solo lugar
+- Fácil de encontrar durante el workshop
+- Respaldo automático en la nube
 
 ---
 
 ### ⚡ Atajos de Teclado Útiles
 
+**Como trader, conoces los atajos de tu plataforma. Aquí los de Colab:**
+
 | Atajo | Acción |
 |-------|--------|
-| **Ctrl + M B** | Agregar celda abajo |
-| **Ctrl + M A** | Agregar celda arriba |
-| **Ctrl + M D** | Eliminar celda |
-| **Shift + Enter** | Ejecutar celda |
+| **Ctrl + M, luego B** | Agregar celda abajo |
+| **Ctrl + M, luego A** | Agregar celda arriba |
+| **Ctrl + M, luego D** | Eliminar celda |
+| **Shift + Enter** | Ejecutar celda y avanzar |
+| **Ctrl + Enter** | Ejecutar celda sin avanzar |
 | **Ctrl + S** | Guardar notebook |
-| **Ctrl + /** | Comentar líneas |
+| **Ctrl + /** | Comentar/descomentar líneas |
+| **Tab** | Autocompletar código |
+
+**💡 Consejo:** Usa **Shift + Enter** todo el tiempo - es el más importante.
 
 ---
 
 ### 💾 Guardado Automático
 
+**Buenas noticias:**
 - ✅ Colab guarda automáticamente cada ~2 minutos
-- ✅ Usa Ctrl+S para forzar guardado inmediato
-- ⚠️ Cambios se guardan en tu Google Drive personal
+- ✅ Los cambios se guardan en tu Google Drive
+- ✅ Puedes ver versiones anteriores (File → Revision history)
+
+**Aún así:**
+- Usa **Ctrl + S** antes de cerrar Colab (por costumbre)
+- Si trabajas en código importante, guarda manualmente cada 5-10 min
 
 ---
 
 ### 🔋 Límites de Colab Gratuito
 
-**Límites importantes:**
-- **RAM:** 12 GB (suficiente para el workshop)
-- **Disco:** 100 GB temporales
-- **GPU:** No necesaria para este workshop
-- **Tiempo:** ~12h de conexión, luego se desconecta
+**Colab GRATIS tiene límites (pero son generosos):**
 
-**⚠️ Si se desconecta:**
+| Límite | Valor | ¿Es problema? |
+|--------|-------|---------------|
+| **RAM** | 12 GB | ✅ Suficiente para el workshop |
+| **Disco temporal** | 100 GB | ✅ Más que suficiente |
+| **GPU** | Gratis limitado | ✅ No necesitamos GPU |
+| **Tiempo de sesión** | ~12 horas máximo | ⚠️ Se desconecta automáticamente |
+| **Sesiones paralelas** | 1 notebook a la vez | ✅ Suficiente |
+
+**⚠️ Si la sesión se desconecta:**
 - Variables en memoria se pierden
-- Librerías siguen instaladas
-- Credenciales debes reconfigurarlas (Paso 6)
+- Herramientas instaladas permanecen
+- Tus llaves Alpaca debes reconfigurarlas (Paso 6)
+
+**💡 Evita desconexiones:**
+- No dejes Colab abierto sin usar por más de 90 minutos
+- Ejecuta una celda cada hora si estás trabajando
 
 ---
 
-### 🚀 Colab Pro ($10/mes)
+### 🚀 ¿Vale la pena Colab Pro?
 
-**Vale la pena si:**
-- Session crashed frecuente (memoria insuficiente)
-- Necesitas sesiones > 12h
+**Colab Pro cuesta $10/mes. ¿Cuándo considerarlo?**
+
+**Vale la pena SI:**
+- Session crashed frecuente (necesitas más RAM)
+- Trabajas sesiones > 12 horas
 - Quieres ejecución más rápida
+- Necesitas prioridad en servidores
 
-**NO es necesario para el workshop estándar**
+**NO es necesario SI:**
+- Sigues el workshop sesión por sesión
+- Trabajas máximo 3-4 horas por día
+- No haces análisis con millones de datos
+
+**Recomendación:** Empieza con Colab GRATIS. Upgrade solo si realmente lo necesitas.
 
 ---
 
 ### 📝 Buenas Prácticas
 
-**DO ✅**
-- Comenta tu código en español
-- Usa nombres de variables descriptivos
-- Guarda versiones de tus estrategias
-- Reinicia runtime si hay errores extraños
+**DO ✅ (Haz esto):**
+- ✅ Comenta tu código en español (para entenderlo después)
+- ✅ Usa nombres descriptivos de variables (no "x", "y", "z")
+- ✅ Guarda versiones de tus estrategias (copia el notebook)
+- ✅ Reinicia sesión si algo se comporta raro
+- ✅ Lee los errores con calma (suelen decir qué está mal)
+- ✅ Prueba con datos pequeños primero (5 días, no 5 años)
 
-**DON'T ❌**
-- No pongas credenciales en código visible
-- No ejecutes todas las celdas a la vez
-- No compartas tu notebook con credenciales
-- No uses credenciales de live trading
+**DON'T ❌ (Evita esto):**
+- ❌ Poner llaves de Alpaca en código visible
+- ❌ Ejecutar todas las celdas a la vez sin leer
+- ❌ Compartir tu notebook con llaves configuradas
+- ❌ Usar llaves de cuenta LIVE (solo PAPER en el workshop)
+- ❌ Descargar 10 años de datos tick-by-tick (muy pesado)
+- ❌ Copiar código sin entenderlo (aprende paso a paso)
 
 ---
 
@@ -944,21 +1330,23 @@ Mi Drive/
 
 **¡Felicidades! Has completado el Setup A: Colab Rápido. 🎉**
 
-**Tu journey continúa:**
+**Estás oficialmente listo para empezar el workshop.**
 
 ### 1️⃣ Volver al Documento Principal
 
 📖 [← Volver a Instrucciones_Setup_Ambiente.md](Instrucciones_Setup_Ambiente.md)
 
+Revisa otras opciones de setup si tienes curiosidad.
+
 ---
 
 ### 2️⃣ Leer Documentos Complementarios
 
-📚 **OBLIGATORIOS:**
-- [Guía de Uso del Colab Notebook](Guia_Uso_Colab_Notebook.md) ⭐ **Crítico**
-- [LEEME_PRIMERO.md](LEEME_PRIMERO.md) - Roadmap del workshop
+📚 **OBLIGATORIOS (antes de Sesión 1):**
+- [Guía de Uso del Colab Notebook Maestro](Guia_Uso_Colab_Notebook.md) ⭐ **CRÍTICO**
+- [LEEME_PRIMERO.md](LEEME_PRIMERO.md) - Roadmap completo del workshop
 
-📖 **OPCIONALES:**
+📖 **OPCIONALES (útiles de referencia):**
 - [Librerías y Dependencias 2025](Librerias_Dependencias_2025.md)
 - [Troubleshooting Común](Troubleshooting_Comun.md)
 
@@ -966,37 +1354,52 @@ Mi Drive/
 
 ### 3️⃣ Unirte al Grupo Premium
 
-💬 **Telegram:** [@workshop_trading_algo](https://t.me/workshop_trading_algo)
+💬 **Telegram:** [Enlace en email de bienvenida]
 
-Recibirás:
+**Beneficios del grupo:**
 - 📢 Anuncios de sesiones
 - 🤝 Soporte entre participantes
 - 📂 Materiales adicionales
 - 💡 Tips y trucos semanales
+- 🎯 Recordatorios de tareas
 
 ---
 
 ### 4️⃣ Preparar Tu Primer Día
 
 ✅ **Checklist "Tu Primer Día":**
-- [ ] Setup Colab completado (este documento)
-- [ ] Leído [Guía de Uso de Colab](Guia_Uso_Colab_Notebook.md)
-- [ ] Credenciales Alpaca guardadas de forma segura
-- [ ] Copia personal del Notebook Maestro en mi Drive
-- [ ] Unido al grupo de Telegram Premium
-- [ ] Revisado horario de sesiones (email de bienvenida)
+
+☐ Setup Colab completado (este documento) ✅  
+☐ Leído [Guía de Uso de Colab](Guia_Uso_Colab_Notebook.md)  
+☐ Llaves Alpaca guardadas en archivo seguro  
+☐ Copia personal del Notebook Maestro en mi Drive  
+☐ Unido al grupo de Telegram Premium  
+☐ Revisado horario de sesiones (email de bienvenida)  
+☐ Preparado mentalmente para aprender (¡lo más importante!)
 
 ---
 
-### 5️⃣ ¡Empezar la Sesión 1!
+### 5️⃣ El Día de la Sesión 1
 
 **Cuando llegue el día:**
-1. Abre tu copia del Colab Notebook Maestro
-2. Navega a "🟦 SESIÓN 1: FUNDAMENTOS"
-3. Sigue las instrucciones del instructor en vivo
-4. Ejecuta celdas paso a paso
 
-**🚀 ¡Estás listo para el viaje algorítmico!**
+**30 minutos ANTES:**
+1. Abre Google Colab
+2. Abre tu copia del Notebook Maestro
+3. Navega a "🟦 SESIÓN 1: FUNDAMENTOS"
+4. Ejecuta las celdas de setup (llaves Alpaca)
+5. Espera a que empiece la sesión en vivo
+
+**DURANTE la sesión:**
+1. Sigue las instrucciones del instructor
+2. Ejecuta celdas paso a paso (no adelantarte)
+3. Pregunta si algo no entiendes
+4. Toma notas en tu notebook
+
+**DESPUÉS de la sesión:**
+1. Completa los ejercicios opcionales
+2. Experimenta con el código (aprende haciendo)
+3. Prepara preguntas para la siguiente sesión
 
 ---
 
@@ -1008,37 +1411,83 @@ Recibirás:
 **yismaryme@gmail.com**  
 Tiempo de respuesta: 24-48h
 
-**Incluye:**
+**Incluye en tu email:**
 - "Setup A: Colab" en el asunto
-- Paso exacto donde falló
-- Error completo (screenshot)
+- Paso exacto donde falló (ej: "Paso 5 - Validación")
+- Error completo (copia y pega el mensaje de error)
+- Screenshot si es posible
+- Qué ya intentaste
 
 ---
 
 ### 💬 Telegram
 **[@yismary](https://t.me/yismary)**  
-Consultas rápidas pre-workshop
+Para consultas rápidas pre-workshop
 
 ---
 
 ### 🔒 Grupo Premium
-Soporte comunitario + troubleshooting en vivo
+Soporte comunitario + troubleshooting en vivo  
+(Enlace en email de bienvenida)
+
+---
+
+### 🚨 Antes de Contactar
+
+**Revisa primero (soluciona 80% de problemas):**
+1. Troubleshooting de este documento (arriba)
+2. [Troubleshooting Común](Troubleshooting_Comun.md)
+3. FAQ en [LEEME_PRIMERO.md](LEEME_PRIMERO.md#-faq---preguntas-frecuentes)
 
 ---
 
 ## 🔖 Versión y Actualizaciones
 
 **Versión:** 2.1 (Noviembre 2025)  
-**Última actualización:** 13 de noviembre de 2025  
+**Última actualización:** 14 de noviembre de 2025  
 **Mantenido por:** [@yismafx](https://github.com/yismafx)
 
 **Changelog:**
-- v2.1 (Nov 2025): Setup modular independiente
-- v2.0 (Nov 2025): alpaca-py 0.25.0 (nueva API)
+- v2.1 (Nov 14, 2025): Lenguaje para traders no programadores, clarificación Python → Multi-plataforma
+- v2.0 (Nov 13, 2025): Arquitectura modular - setup independiente
 - v1.0 (Nov 2025): Versión inicial
 
 ---
 
-**🎯 Recuerda: GenAI = Copiloto, NO Piloto Automático.**
+## ⚠️ Disclaimer
+
+**Este es material educativo del Workshop Trading Algorítmico Aumentado con IA Generativa.**
+
+**Importante recordar:**
+- ✅ Todas las herramientas son gratuitas para paper trading
+- ⚠️ NUNCA uses credenciales de cuenta LIVE en el workshop
+- 📊 Practica con cuentas simuladas (paper) antes de arriesgar capital real
+- 💰 Trading algorítmico tiene riesgo de pérdida de capital
+- 🎓 Este workshop NO garantiza ganancias - es educativo
+
+**Como todo trading:**
+- El rendimiento pasado no garantiza resultados futuros
+- Toda estrategia puede fallar
+- La gestión de riesgo es crítica
+
+---
+
+## 🎉 ¡Estás Listo!
+
+Has completado exitosamente el Setup A: Colab Rápido.
+
+**Recuerda el hilo conductor:**
+
+> **"GenAI = Copiloto, NO Piloto Automático"**
+
+El journey de 9 sesiones empieza con Python (lenguaje universal), y en Sesión 7 aprenderás a convertir ese código a cualquier plataforma (TradingView, MetaTrader, Interactive Brokers).
+
+**Confía en el proceso. Miles de traders profesionales han seguido este camino.**
 
 **¡Nos vemos en la Sesión 1!** 🚀
+
+---
+
+**🎯 ¿Listo para empezar?**
+
+[← Volver a Instrucciones Setup](Instrucciones_Setup_Ambiente.md) | [Siguiente: Guía de Uso Colab →](Guia_Uso_Colab_Notebook.md)
