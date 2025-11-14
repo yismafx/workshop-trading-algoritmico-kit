@@ -91,17 +91,24 @@ GUIA_INICIO.md
 
 ## 📚 ÍNDICE ALFABÉTICO DE DOCUMENTOS
 
-| Documento | Ubicación | Propósito |
-|-----------|-----------|-----------|
-| **GUIA_INICIO.md** | `00_GUIA_DE_USO/` | ⭐ Guía maestra - Punto de partida |
-| **GLOSARIO_NAVEGACION.md** | `00_GUIA_DE_USO/` | Índice de nombres de archivos |
-| **Guia_Setup_Completa.md** | `00_GUIA_DE_USO/` | Instrucciones completas de setup |
-| **Mapa_Sistema_Trading.html** | `00_GUIA_DE_USO/` | Diagrama interactivo del sistema |
-| **Programa_Detallado_Workshop.md** | `00_GUIA_DE_USO/` | Estructura de 9 sesiones |
-| **README.md** | Raíz del repo | Descripción general del workshop |
-| **Setup_Colab_Rapido.md** | `00_GUIA_DE_USO/` | Setup rápido para Google Colab |
-| **Setup_y_Practica_Trading.ipynb** | `00_GUIA_DE_USO/` | Notebook de práctica |
-| **SITEMAP.md** | `00_GUIA_DE_USO/` | Este archivo - Mapa de navegación |
+| Documento | Ubicación | Propósito | Estado |
+|-----------|-----------|-----------|--------|
+| **GUIA_INICIO.md** | `00_GUIA_DE_USO/` | ⭐ Guía maestra - Punto de partida | ✅ |
+| **GLOSARIO_NAVEGACION.md** | `00_GUIA_DE_USO/` | Índice de nombres de archivos | ✅ |
+| **Guia_Setup_Completa.md** | `00_GUIA_DE_USO/` | Instrucciones completas de setup | ✅ |
+| **Guia_Uso_Colab_Notebook.md** | `00_GUIA_DE_USO/` | Guía del Colab Notebook Maestro | 🟡 |
+| **Librerias_Dependencias_2025.md** | `00_GUIA_DE_USO/` | Lista completa de librerías | 🟡 |
+| **Librerias_Minimas_vs_Completas.md** | `00_GUIA_DE_USO/` | Comparación de setups | 🟡 |
+| **Mapa_Sistema_Trading.html** | `00_GUIA_DE_USO/` | Diagrama interactivo del sistema | ✅ |
+| **Programa_Detallado_Workshop.md** | `00_GUIA_DE_USO/` | Estructura de 9 sesiones | ✅ |
+| **README.md** | Raíz del repo | Descripción general del workshop | ✅ |
+| **Setup_B_Python_Local.md** | `00_GUIA_DE_USO/` | Setup con Python local | 🟡 |
+| **Setup_C_MetaTrader5.md** | `00_GUIA_DE_USO/` | Integración con MetaTrader 5 | 🟡 |
+| **Setup_Colab_Rapido.md** | `00_GUIA_DE_USO/` | Setup rápido para Google Colab | ✅ |
+| **Setup_D_Interactive_Brokers.md** | `00_GUIA_DE_USO/` | Integración con Interactive Brokers | 🟡 |
+| **Setup_y_Practica_Trading.ipynb** | `00_GUIA_DE_USO/` | Notebook de práctica | ✅ |
+| **SITEMAP.md** | `00_GUIA_DE_USO/` | Este archivo - Mapa de navegación | ✅ |
+| **Troubleshooting_Comun.md** | `00_GUIA_DE_USO/` | Guía de resolución de problemas | 🟡 |
 
 ---
 
@@ -122,20 +129,24 @@ GUIA_INICIO.md
 
 ## ⚠️ ARCHIVOS EN DESARROLLO (v2.2)
 
-Los siguientes archivos están referenciados en la documentación pero **aún no están disponibles**:
+Los siguientes archivos están disponibles como **placeholders** en v2.1, pero su contenido completo estará disponible en v2.2:
 
 ### Setup Alternativos
-- `Setup_B_Python_Local.md` - Setup con Python local (no Colab)
-- `Setup_C_MetaTrader5.md` - Integración con MetaTrader 5
-- `Setup_D_Interactive_Brokers.md` - Integración con Interactive Brokers
+- `Setup_B_Python_Local.md` - 🟡 Placeholder disponible
+- `Setup_C_MetaTrader5.md` - 🟡 Placeholder disponible
+- `Setup_D_Interactive_Brokers.md` - 🟡 Placeholder disponible
 
 ### Documentación Adicional
-- `Guia_Uso_Colab_Notebook.md` - Guía detallada del Colab Notebook Maestro
-- `Troubleshooting_Comun.md` - Errores comunes y soluciones
-- `Librerias_Dependencias_2025.md` - Lista completa de librerías
-- `Librerias_Minimas_vs_Completas.md` - Comparación de instalaciones
+- `Guia_Uso_Colab_Notebook.md` - 🟡 Placeholder disponible
+- `Troubleshooting_Comun.md` - 🟡 Placeholder disponible
+- `Librerias_Dependencias_2025.md` - 🟡 Placeholder disponible
+- `Librerias_Minimas_vs_Completas.md` - 🟡 Placeholder disponible
 
-**Nota:** Estos documentos estarán disponibles en la próxima actualización del kit (v2.2).
+**Nota:** Los placeholders incluyen:
+- ✅ Navegación funcional (breadcrumbs y links)
+- ✅ Descripción de contenido futuro
+- ✅ Alternativas disponibles ahora
+- ✅ Roadmap y estimación de disponibilidad
 
 ---
 
@@ -155,21 +166,22 @@ Si no sabes por dónde empezar o a dónde ir:
 
 **Versión actual:** 2.1  
 **Última actualización:** Noviembre 2025  
-**Documentos disponibles:** 9/16 (56%)  
-**Completitud:** En desarrollo activo
+**Documentos disponibles:** 16/16 (100%)  
+**Completitud:** ✅ Navegación completa, 🟡 Contenido en desarrollo
 
 ### ✅ Completado (v2.1)
 - [x] Documentación central (GUIA_INICIO, Guia_Setup_Completa, Programa_Detallado)
 - [x] Setup básico (Colab Rápido)
 - [x] Mapa mental interactivo
-- [x] Navegación estandarizada
-- [x] SITEMAP y Glosario
+- [x] Navegación estandarizada (SITEMAP, GLOSARIO, breadcrumbs)
+- [x] Placeholders profesionales (7 documentos)
+- [x] **0 links rotos** ✅
 
 ### 🟡 En Desarrollo (v2.2)
-- [ ] Setups alternativos (B, C, D)
+- [ ] Contenido completo de setups alternativos (B, C, D)
 - [ ] Guía completa del Colab Notebook Maestro
 - [ ] Troubleshooting detallado
-- [ ] Documentación de librerías
+- [ ] Documentación exhaustiva de librerías
 
 ### 🟢 Futuro (v3.0)
 - [ ] Templates profesionales
@@ -182,6 +194,12 @@ Si no sabes por dónde empezar o a dónde ir:
 ## 🔄 CHANGELOG
 
 ### v2.1 (Noviembre 2025)
+**Fase 2:** Eliminación completa de links rotos
+- Creación de 7 placeholders profesionales
+- Actualización de SITEMAP y GLOSARIO
+- 0 links rotos (100% navegación funcional)
+
+**Fase 1:** Correcciones críticas de navegación
 - Estandarización de nombres de archivo
 - Creación de SITEMAP.md y GLOSARIO_NAVEGACION.md
 - Corrección de 29 links rotos (TIPO 1)

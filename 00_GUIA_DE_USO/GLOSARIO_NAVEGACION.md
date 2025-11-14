@@ -21,29 +21,43 @@ Este documento te ayuda a:
 |----------------|--------------|-----------|--------|
 | **Guía de Inicio** | `GUIA_INICIO.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
 | **Guía de Setup Completa** | `Guia_Setup_Completa.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
-| **Setup Rápido Colab** | `Setup_Colab_Rapido.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
-| **Programa Detallado** | `Programa_Detallado_Workshop.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
+| **Guía Uso Colab Notebook** | `Guia_Uso_Colab_Notebook.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
+| **Librerías y Dependencias** | `Librerias_Dependencias_2025.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
+| **Librerías Mínimas vs Completas** | `Librerias_Minimas_vs_Completas.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
 | **Mapa Mental** | `Mapa_Sistema_Trading.html` | `00_GUIA_DE_USO/` | ✅ Disponible |
+| **Programa Detallado** | `Programa_Detallado_Workshop.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
+| **Setup Python Local** | `Setup_B_Python_Local.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
+| **Setup MetaTrader 5** | `Setup_C_MetaTrader5.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
+| **Setup Rápido Colab** | `Setup_Colab_Rapido.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
+| **Setup Interactive Brokers** | `Setup_D_Interactive_Brokers.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
 | **Notebook de Práctica** | `Setup_y_Practica_Trading.ipynb` | `00_GUIA_DE_USO/` | ✅ Disponible |
 | **Sitemap** | `SITEMAP.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
+| **Troubleshooting** | `Troubleshooting_Comun.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
 | **Glosario** | `GLOSARIO_NAVEGACION.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
 | **README Principal** | `README.md` | Raíz | ✅ Disponible |
 
 ---
 
-## 🟡 ARCHIVOS EN DESARROLLO (v2.2)
+## 🟡 ARCHIVOS DISPONIBLES COMO PLACEHOLDERS (v2.1)
 
-Estos archivos están mencionados en la documentación pero **aún no están disponibles**:
+Estos archivos están disponibles con navegación funcional y contenido básico. El contenido completo estará en **v2.2**:
 
-| Nombre Visible | Archivo Planeado | Estado |
-|----------------|------------------|--------|
-| **Setup Python Local** | `Setup_B_Python_Local.md` | 🟡 En desarrollo |
-| **Setup MetaTrader 5** | `Setup_C_MetaTrader5.md` | 🟡 En desarrollo |
-| **Setup Interactive Brokers** | `Setup_D_Interactive_Brokers.md` | 🟡 En desarrollo |
-| **Guía del Colab Notebook** | `Guia_Uso_Colab_Notebook.md` | 🟡 En desarrollo |
-| **Troubleshooting Común** | `Troubleshooting_Comun.md` | 🟡 En desarrollo |
-| **Librerías y Dependencias** | `Librerias_Dependencias_2025.md` | 🟡 En desarrollo |
-| **Librerías Mínimas vs Completas** | `Librerias_Minimas_vs_Completas.md` | 🟡 En desarrollo |
+| Nombre Visible | Archivo Disponible | Estado |
+|----------------|-------------------|--------|
+| **Setup Python Local** | `Setup_B_Python_Local.md` | 🟡 Placeholder |
+| **Setup MetaTrader 5** | `Setup_C_MetaTrader5.md` | 🟡 Placeholder |
+| **Setup Interactive Brokers** | `Setup_D_Interactive_Brokers.md` | 🟡 Placeholder |
+| **Guía del Colab Notebook** | `Guia_Uso_Colab_Notebook.md` | 🟡 Placeholder |
+| **Troubleshooting Común** | `Troubleshooting_Comun.md` | 🟡 Placeholder |
+| **Librerías y Dependencias** | `Librerias_Dependencias_2025.md` | 🟡 Placeholder |
+| **Librerías Mínimas vs Completas** | `Librerias_Minimas_vs_Completas.md` | 🟡 Placeholder |
+
+**¿Qué incluyen los placeholders?**
+- ✅ Navegación funcional (sin links rotos)
+- ✅ Descripción de contenido futuro
+- ✅ Alternativas disponibles ahora
+- ✅ Enlaces a documentación relacionada
+- ✅ Roadmap de disponibilidad
 
 ---
 
@@ -160,10 +174,12 @@ Si un archivo que necesitas **no está** en este glosario:
 ## 📊 ESTADÍSTICAS DEL REPOSITORIO
 
 **Versión:** 2.1  
-**Documentos disponibles:** 9  
-**Documentos en desarrollo:** 7  
+**Documentos disponibles:** 16  
+**Documentos completos:** 9  
+**Documentos placeholder:** 7  
 **Total planeado:** 16+  
-**Completitud:** 56%
+**Completitud navegación:** 100% (0 links rotos) ✅  
+**Completitud contenido:** 56% (9/16 completos)
 
 ---
 
