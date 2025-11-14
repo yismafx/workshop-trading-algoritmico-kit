@@ -7,10 +7,10 @@
 ## 📋 METADATOS DEL DOCUMENTO
 
 **Workshop:** Trading Algorítmico Aumentado con IA Generativa  
-**Versión:** 5.0 (Refinado - Noviembre 2025)  
-**Autor:** [@yismafx](https://github.com/yismafx)  
+**Versión:** 5.1 (Correcciones Críticas - Noviembre 2025)  
+**Autor:** Yismary Quintero [@yismafx](https://github.com/yismafx)  
 **Dificultad:** ⭐ Fácil (No requiere experiencia en programación)  
-**Tiempo Estimado:** 30-60 minutos (depende del broker elegido)  
+**Tiempo Estimado:** 10-15 minutos (basado en tiempos reales medidos)  
 **Última Actualización:** 14 de Noviembre de 2025
 
 ---
@@ -33,7 +33,7 @@ Al completar esta guía, tendrás:
 ## 📑 TABLA DE CONTENIDOS (Clickeable)
 
 ### 🚀 Quick Navigation
-- [⚡ Ruta Express (5-10 min)](#-ruta-express-5-10-min)
+- [⚡ Ruta Express (10 min)](#-ruta-express-10-minutos)
 - [📖 Ruta Guiada (30-60 min)](#-ruta-guiada-completa-30-60-min)
 - [🚨 Troubleshooting](#-troubleshooting-por-paso)
 - [📞 Soporte](#-soporte-y-contacto)
@@ -42,7 +42,7 @@ Al completar esta guía, tendrás:
 1. [¿Es Este Setup Para Ti?](#-es-este-setup-para-ti)
 2. [El Camino del Aprendizaje](#-el-camino-de-aprendizaje-python-primero)
 3. [Requisitos Mínimos](#-requisitos-mínimos)
-4. [Ruta Express](#-ruta-express-5-10-min)
+4. [Ruta Express](#-ruta-express-10-minutos)
 5. [Ruta Guiada Completa](#-ruta-guiada-completa-30-60-min)
    - [Paso 1: Acceder a Google Colab](#paso-1-acceder-a-google-colab-5-min)
    - [Paso 2: Crear Tu Notebook Personal](#paso-2-crear-tu-notebook-personal-5-min)
@@ -208,16 +208,18 @@ En Trading Algorítmico:
 
 ---
 
-## ⚡ RUTA EXPRESS (5-10 min)
+## ⚡ RUTA EXPRESS (10 minutos)
 
 **🎯 Para traders con experiencia en notebooks o con prisa**
 
 ### ✅ Usa Esta Ruta Si:
 
-- ⏱️ Tienes poco tiempo antes del workshop
-- ✅ Ya usaste Google Colab o Jupyter notebooks antes
-- 🎯 Solo quieres validar que todo funcione
-- 🚀 Prefieres explorar por ti mismo
+- ⏱️ Tienes poco tiempo antes del workshop  
+- ✅ Ya usaste Google Colab o Jupyter notebooks antes  
+- 🎯 Solo quieres validar que todo funcione  
+- 🚀 Prefieres seguir instrucciones directas
+
+---
 
 ### 📥 PASO 1: Descargar Notebook Pre-Configurado
 
@@ -227,10 +229,12 @@ En Trading Algorítmico:
 
 **Opción B - Desde GitHub:**
 
-1. Ve a: https://github.com/yismafx/workshop-trading-algoritmico-kit
-2. Navega a: `00_GUIA_DE_USO/Setup_y_Practica_Trading.ipynb`
-3. Click en "Raw" (esquina superior derecha)
+1. Ve a: https://github.com/yismafx/workshop-trading-algoritmico-kit  
+2. Navega a: `00_GUIA_DE_USO/Setup_y_Practica_Trading.ipynb`  
+3. Click en "Raw" (esquina superior derecha)  
 4. Ctrl+S (o Cmd+S en Mac) para guardar
+
+---
 
 ### 🚀 PASO 2: Subir a Google Colab
 
@@ -242,42 +246,247 @@ En Trading Algorítmico:
    - Selecciona el archivo `.ipynb` que descargaste
    - Espera 5-10 segundos a que cargue
 
-3. **Ejecuta todas las celdas:**
-   - `Runtime` → `Run all`
-   - O presiona `Shift + Enter` en cada celda
+---
 
-### ✅ PASO 3: Configurar Broker (Elige UNO)
+### 📖 PASO 3: Seguir el Notebook Paso a Paso
 
-**Opción A: Alpaca (Más rápido - 5 min)**
-1. Crea cuenta paper: https://app.alpaca.markets/signup
-2. Obtén API keys en Dashboard
-3. Pega en celda de configuración del notebook
+**💡 El notebook está MUY BIEN organizado con instrucciones en español**
 
-**Opción B: Interactive Brokers (Más completo - 15 min)**
-1. Crea cuenta paper: https://www.interactivebrokers.com/en/home.php
-2. Descarga TWS o Gateway
-3. Configura API en TWS settings
-4. Ejecuta celda de conexión IB en notebook
+El archivo `Setup_y_Practica_Trading.ipynb` tiene toda la información necesaria:
 
-### 🔍 PASO 4: Validación Automática
+✅ **Instrucciones en español** en cada sección  
+✅ **Código pre-escrito** listo para ejecutar  
+✅ **Orden lógico** de pasos numerados  
+✅ **Validación automática** al final
 
-Ejecuta la última celda del notebook que dice:
+**🎯 Solo necesitas:**
+
+1. **Leer cada celda** - Las instrucciones están claras en español
+2. **Ejecutar el código** - Dos formas de hacerlo:
+   - **Opción A:** Presiona **`Shift + Enter`** en cada celda
+   - **Opción B:** Click en el símbolo **▶ (play)** a la izquierda de la celda
+3. **Seguir el orden** - El notebook te guía automáticamente
+
+**⏱️ Tiempo de ejecución del notebook:** 5 minutos
+
+---
+
+### 🔑 PASO 4: Configurar Alpaca (5 minutos)
+
+**Mientras el notebook instala las librerías, configura tu cuenta Alpaca:**
+
+#### 4.1 - Crear Cuenta Paper Trading
+
+**⚠️ Si tienes problemas con la página de Alpaca:**
+
+1. **Abre una ventana privada/incógnito:**
+   - **Chrome:** `Ctrl + Shift + N` (Windows) o `Cmd + Shift + N` (Mac)
+   - **Firefox:** `Ctrl + Shift + P` (Windows) o `Cmd + Shift + P` (Mac)
+   - **Safari:** `Cmd + Shift + N` (Mac)
+   - **Edge:** `Ctrl + Shift + N` (Windows)
+
+2. **Ve a:** https://app.alpaca.markets/signup
+
+3. **Sigue las instrucciones de Alpaca** para completar el registro:
+   - Email
+   - Contraseña segura
+   - Información básica
+   - Verifica tu email
+
+#### 4.2 - Activar Autenticación de 2 Factores (2FA)
+
+**🔴 CRÍTICO - OBLIGATORIO ANTES DE GENERAR API KEYS:**
+
+Alpaca **REQUIERE** que actives 2FA antes de poder generar API Keys para operar.
+
+**Pasos:**
+
+1. **Inicia sesión** en tu cuenta de Alpaca
+
+2. **Ve a Settings:**
+   - Click en tu nombre (esquina superior derecha)
+   - Selecciona "Settings" o "Configuración"
+
+3. **Activa 2FA:**
+   - Busca sección "Security" o "Seguridad"
+   - Click en "Enable Two-Factor Authentication"
+   - Sigue las instrucciones para configurar con:
+     - **Google Authenticator** (recomendado)
+     - **Authy**
+     - O cualquier app de autenticación
+
+4. **Guarda los códigos de recuperación** en lugar seguro
+
+**⚠️ Sin 2FA activado, NO podrás generar API Keys**
+
+#### 4.3 - Generar API Keys
+
+**Una vez activado el 2FA:**
+
+1. **Ve al dashboard de Alpaca**
+
+2. **Menú lateral izquierdo:**
+   - Click en "API Keys" o "Claves API"
+
+3. **Genera nuevas keys:**
+   - Click en "Generate New Key" o "Generar Nueva Clave"
+   - Dale un nombre descriptivo (ej: "Workshop Trading")
+
+4. **Verás dos códigos:**
+   - **API Key** (empieza con `PK` o `AK`)
+   - **Secret Key** (empieza con `PS` o `AS`)
+
+---
+
+**🔴 ADVERTENCIA CRÍTICA - LEE ESTO COMPLETO:**
 
 ```
-🔍 VALIDACIÓN COMPLETA DEL SETUP
+⚠️ La Secret Key SOLO se muestra UNA VEZ
+
+IMPORTANTE:
+1. Si cierras esta ventana sin copiarla, NO podrás recuperarla
+2. Deberás generar nuevas keys desde cero
+3. Las keys anteriores se invalidarán automáticamente
+4. NO hay forma de ver la Secret Key de nuevo
+
+ACCIÓN INMEDIATA:
+→ Copia ambas keys AHORA MISMO antes de cerrar la ventana
 ```
 
-**Si ves:**  
-✅ `🎉 ¡TODO PERFECTO! SETUP COMPLETADO AL 100%`  
-→ **¡Felicidades! Estás listo para el workshop**
+---
 
-**Si ves algún ❌:**  
-→ Ve a [Troubleshooting](#-troubleshooting-por-paso)
+#### 4.4 - Guardar Keys de Forma Segura
 
-### ⏱️ Tiempo Total Estimado:
+**INMEDIATAMENTE después de generar las keys:**
 
-- Con Alpaca: **5-10 minutos**
-- Con Interactive Brokers: **15-20 minutos**
+1. **Abre el Bloc de Notas:**
+   - **Windows:** Busca "Notepad" o "Bloc de notas"
+   - **Mac:** Busca "TextEdit"
+   - **Linux:** Usa "gedit" o "nano"
+
+2. **Copia y pega ambas keys:**
+   ```
+   ALPACA_API_KEY=PKXXXXXXXXXXXXXXXXXX
+   ALPACA_SECRET_KEY=PSYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+   ```
+
+3. **Guarda el archivo:**
+   - **Nombre:** `alpaca_keys.txt`
+   - **Ubicación:** **Escritorio** (para encontrarlo fácilmente)
+   - En Windows: Click derecho → Guardar como → Escritorio
+   - En Mac: Cmd+S → Selecciona Escritorio
+
+4. **Seguridad del archivo:**
+   - ❌ NO lo compartas con nadie
+   - ❌ NO lo subas a internet o GitHub
+   - ❌ NO lo envíes por email o chat
+   - ✅ Solo úsalo para copiar/pegar en el notebook
+   - ✅ Bórralo después del workshop si quieres mayor seguridad
+
+**💡 Tip:** Si necesitas volver a usar estas keys más adelante, tendrás el archivo. Si lo pierdes, tendrás que generar nuevas keys.
+
+**⏱️ Tiempo real medido:** 5 minutos (creación + 2FA + keys + guardar)
+
+---
+
+### 📋 PASO 5: Pegar Keys en el Notebook
+
+1. **Vuelve a tu notebook** `Setup_y_Practica_Trading.ipynb` en Colab
+
+2. **Busca la sección de configuración de Alpaca** (está claramente marcada en español)
+
+3. **Abre tu archivo** `alpaca_keys.txt` del escritorio
+
+4. **Copia las keys:**
+   - Selecciona el API Key completo
+   - Copia (Ctrl+C o Cmd+C)
+   - Pega en la celda del notebook donde dice `API_KEY =`
+   - Repite con Secret Key
+
+5. **Ejecuta la celda:**
+   - **Opción A:** `Shift + Enter`
+   - **Opción B:** Click en ▶ (play)
+
+6. **Verifica la conexión:**
+   - El notebook tiene una celda de validación
+   - Si todo está correcto, verás: ✅ "Conexión exitosa a Alpaca"
+
+---
+
+### 🔍 PASO 6: Validación Final Automática
+
+El notebook incluye una última sección de validación que verifica:
+
+✅ Librerías instaladas correctamente  
+✅ Conexión a Alpaca funcionando  
+✅ Capacidad de descargar datos históricos  
+✅ Sistema listo para el workshop
+
+**Ejecuta la última celda del notebook** (está marcada claramente)
+
+**Resultado esperado:**
+
+```
+🎉 ¡TODO PERFECTO! SETUP COMPLETADO AL 100%
+============================================================
+
+✅ Librerías: OK
+✅ Alpaca: Conectado
+✅ Datos: Descargados
+✅ Sistema: Listo
+
+============================================================
+```
+
+**Si ves esto:** ¡Felicidades! Completaste el setup exitosamente.
+
+**Si ves algún ❌:** Ve a la sección de [Troubleshooting](#-troubleshooting-por-paso).
+
+---
+
+### ⏱️ RESUMEN DE TIEMPOS REALES
+
+**Basado en mediciones reales de Yismary Quintero:**
+
+| Paso | Actividad | Tiempo |
+|------|-----------|--------|
+| 1-2 | Descargar y subir notebook | 2 min |
+| 3 | Ejecución del notebook | 5 min |
+| 4 | Configurar Alpaca (cuenta + 2FA + keys) | 5 min |
+| 5-6 | Pegar keys y validación | 1 min |
+| **TOTAL** | **Setup completo** | **10-15 min** |
+
+**💡 Multitasking:** Puedes crear la cuenta de Alpaca mientras el notebook instala las librerías (Paso 3), ahorrando tiempo.
+
+---
+
+### ✅ CHECKLIST FINAL - RUTA EXPRESS
+
+**Antes de cerrar, verifica que completaste:**
+
+- [ ] Descargaste `Setup_y_Practica_Trading.ipynb`
+- [ ] Subiste el notebook a Google Colab
+- [ ] Ejecutaste todas las celdas del notebook
+- [ ] Creaste cuenta paper trading en Alpaca
+- [ ] Activaste 2FA en Alpaca (CRÍTICO)
+- [ ] Generaste y copiaste ambas API Keys
+- [ ] Guardaste las keys en `alpaca_keys.txt` en tu escritorio
+- [ ] Pegaste las keys en el notebook
+- [ ] La validación final mostró: ✅ TODO PERFECTO
+
+**Si marcaste todos ✅:**
+
+🎉 **¡Perfecto! Estás 100% listo para el workshop**
+
+**Próximos pasos:**
+1. Guarda el notebook (Colab lo hace automáticamente)
+2. Cierra esta guía
+3. Espera el inicio del workshop
+
+**El día del workshop:**
+- Solo abre el notebook
+- Ejecuta las primeras celdas para reconectar
+- ¡Listo para aprender!
 
 ---
 
@@ -1851,6 +2060,94 @@ ALPACA_BASE_URL = "https://api.alpaca.markets"  # Esta es para live
 3. Contacta a tu IT si es red corporativa
 ```
 
+#### ❌ Síntoma: Botón "Generate New Key" está deshabilitado o no aparece
+
+**Causa más común:** NO has activado 2FA (autenticación de 2 factores)
+
+**✅ Solución:**
+
+1. Ve a Settings → Security en Alpaca
+2. Busca "Two-Factor Authentication" o "2FA"
+3. Click en "Enable" o "Activar"
+4. Sigue las instrucciones para configurar con Google Authenticator o Authy
+5. Una vez activado, vuelve a la sección de API Keys
+6. Ahora el botón "Generate New Key" estará habilitado
+
+**⚠️ Alpaca requiere 2FA obligatoriamente para generar API Keys de trading**
+
+#### ❌ Síntoma: "No puedo ver mi Secret Key"
+
+**Causa:** Cerraste la ventana sin copiar la Secret Key
+
+**✅ Solución:**
+
+La Secret Key SOLO se muestra una vez. No hay forma de recuperarla.
+
+**Pasos:**
+1. Ve a API Keys en Alpaca
+2. Elimina las keys anteriores (ya no sirven si perdiste la Secret)
+3. Click en "Generate New Key"
+4. ESTA VEZ, antes de hacer cualquier otra cosa:
+   - Abre Bloc de Notas (Windows) o TextEdit (Mac)
+   - Copia y pega AMBAS keys (API Key + Secret Key)
+   - Guarda como `alpaca_keys.txt` en tu escritorio
+   - VERIFICA que el archivo se guardó correctamente
+   - Recién entonces cierra la ventana de Alpaca
+
+**💡 Tip:** No cierres la ventana de Alpaca hasta confirmar que guardaste el archivo.
+
+#### ❌ Síntoma: Página de Alpaca no carga o da error 403/404
+
+**✅ Solución:**
+
+1. **Abre ventana privada/incógnito:**
+   - Chrome: Ctrl+Shift+N (Windows) o Cmd+Shift+N (Mac)
+   - Firefox: Ctrl+Shift+P (Windows) o Cmd+Shift+P (Mac)
+   - Safari: Cmd+Shift+N (Mac)
+   - Edge: Ctrl+Shift+N (Windows)
+
+2. **Intenta acceder a Alpaca de nuevo:** https://app.alpaca.markets
+
+3. **Si persiste:**
+   - Verifica tu conexión a internet
+   - Intenta desde otro navegador
+   - Borra caché y cookies del navegador
+   - Espera 10 minutos y vuelve a intentar
+
+4. **Problemas con firewall corporativo:**
+   - Intenta desde tu red móvil (datos del celular)
+   - Contacta al equipo de IT si es red corporativa
+
+#### ❌ Síntoma: "Invalid credentials" o "Authentication failed" en el notebook
+
+**Causa:** Keys incorrectas o incompletas
+
+**✅ Solución:**
+
+1. **Abre** `alpaca_keys.txt` de tu escritorio
+
+2. **Verifica que las keys están completas:**
+   - API Key debe tener 20 caracteres aprox (PKXXXXXXXXXXXXXXXXXX)
+   - Secret Key debe tener 40 caracteres aprox (PSYYYYYYYY...)
+   - NO deben estar cortadas
+
+3. **En el notebook, asegúrate de:**
+   - Copiar TODA la key (sin espacios al inicio o final)
+   - Pegar entre comillas: `"PKXXXX..."`
+   - NO agregar espacios extra
+
+4. **Vuelve a ejecutar la celda de configuración:**
+   - Shift + Enter o click en ▶ (play)
+
+5. **Si persiste:**
+   - Genera nuevas keys en Alpaca
+   - Guárdalas de nuevo en `alpaca_keys.txt`
+   - Pégalas de nuevo en el notebook
+
+**💡 Tip del Instructor:** El error más común es copiar las keys con espacios extra o incompletas.
+
+
+
 ---
 
 ### Error Paso 4B: No Puedo Conectar con Interactive Brokers
@@ -2188,6 +2485,30 @@ R: No completo. Solo ejecuta la celda de instalación y configuración si pasó 
 **Mantenido por:** [@yismafx](https://github.com/yismafx)
 
 ### Changelog:
+
+**v5.1 (Nov 14, 2025):** Correcciones basadas en tiempos reales medidos por Yismary Quintero
+- ✨ Autor actualizado: Yismary Quintero (no solo @yismafx)
+- ✨ Tiempos actualizados: 10-15 min total (no 30-60 min)
+- ✨ Ruta Express completamente reescrita:
+  - Notebook con instrucciones en español destacado
+  - Formas de ejecutar código: Shift+Enter O play ▶
+  - Tiempo de ejecución notebook: 5 min (medido)
+- ✨ Sección Alpaca exhaustivamente actualizada:
+  - Ventana incógnito como primera solución para problemas de carga
+  - 2FA obligatorio explicado ANTES de generar API Keys
+  - Advertencia CRÍTICA sobre Secret Key (solo se muestra una vez)
+  - Instrucciones para guardar keys en alpaca_keys.txt en escritorio
+  - Tiempo real medido: 5 min (cuenta + 2FA + keys)
+- ✨ Resumen de tiempos reales en tabla (basado en mediciones)
+- ✨ Checklist final de Ruta Express agregado
+- ✨ Troubleshooting de Alpaca expandido:
+  - Botón Generate Key deshabilitado (falta 2FA)
+  - No puedo ver Secret Key (cerró ventana)
+  - Página no carga (ventana incógnito)
+  - Invalid credentials (keys incorrectas)
+- 🔧 Links actualizados en tabla de contenidos
+- 🔧 Referencias a tiempos corregidas en todo el documento
+
 
 **v5.0 (Nov 14, 2025):** Refinamiento completo del Setup A
 - ✨ Reestructuración modular para mejor navegación
