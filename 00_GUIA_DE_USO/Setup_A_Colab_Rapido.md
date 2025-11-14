@@ -1,7 +1,7 @@
 # ⚡ SETUP A: COLAB RÁPIDO (30-45 min)
 
 **Workshop: Trading Algorítmico Aumentado con IA Generativa**  
-**Versión:** 3.0 (Noviembre 2025)  
+**Versión:** 3.1 (Noviembre 2025)  
 **Dificultad:** ⭐ Fácil (No requiere experiencia en programación)
 
 ---
@@ -398,6 +398,113 @@ Acabas de darle una instrucción a Python: "muestra este mensaje". Python la eje
 
 ---
 
+### 📝 PASO 3.4: Nombrar tu Notebook (2 min)
+
+**🎓 ¿Por qué nombrar mi notebook ahora?**
+
+Cuando creaste el notebook en el Paso 3.1, se llamó automáticamente `Untitled0.ipynb` (Sin título 0). Es como tener un archivo de Excel llamado "Libro1.xlsx" - funciona, pero es difícil encontrarlo después.
+
+**Analogía del trader:**  
+Como nombrar tus setups de TradingView o tus plantillas de MetaTrader. Un buen nombre te ayuda a encontrarlo rápido y saber qué contiene.
+
+**💻 Lo que vamos a hacer:**
+
+#### **3.4.1 Renombrar el Notebook**
+
+1. En la esquina superior izquierda verás: **"Untitled0.ipynb"**
+2. Haz click directo sobre ese texto
+3. Se abrirá un cuadro de texto (ahora puedes editarlo)
+4. Borra todo y escribe exactamente: **`Setup_y_Practica_Trading`**
+5. Presiona **Enter** o click fuera del cuadro
+6. ✅ El nombre cambió a: **"Setup_y_Practica_Trading.ipynb"**
+
+**🎓 ¿Por qué este nombre específico?**
+
+Este notebook será tu **"Notebook Maestro"** que usarás durante TODO el workshop:
+
+```
+Setup_y_Practica_Trading.ipynb
+│
+├─ 🔧 SECCIÓN 1: SETUP (inicio del notebook)
+│   ├─ Instalación de librerías (ejecutas cada vez)
+│   └─ Configuración de llaves Alpaca (ejecutas cada vez)
+│
+├─ 📚 SECCIÓN 2: SESIONES DEL WORKSHOP
+│   ├─ Sesión 1: Fundamentos
+│   ├─ Sesión 2: Pipeline de datos
+│   └─ ...hasta Sesión 9
+│
+└─ 🔬 SECCIÓN 3: EXPERIMENTACIÓN PERSONAL
+    └─ Tus pruebas y estrategias propias
+```
+
+**⚠️ CONCEPTO CRÍTICO - Lee esto con atención:**
+
+**Notebook vs Sesión (esto confunde a muchos principiantes):**
+
+| Concepto | ¿Qué es? | ¿Persiste? |
+|----------|----------|------------|
+| **Notebook** | Tu archivo con código (este archivo) | ✅ SÍ - Se guarda en Drive permanentemente |
+| **Sesión** | La "computadora virtual" ejecutando el código | ❌ NO - Se borra al cerrar Colab |
+
+**Analogía del trader:**
+```
+Notebook = Tu "Plan de Trading" escrito
+├─ Se guarda en Google Drive (permanente)
+├─ Tiene todas tus estrategias y código
+└─ ✅ Lo abres cada vez que trabajas
+
+Sesión = Tu "Terminal de Trading" abierta
+├─ Es temporal (mientras Colab está abierto)
+├─ Tiene las herramientas cargadas en memoria
+└─ ❌ Se cierra y borra todo al cerrar Colab
+```
+
+**📋 Implicaciones prácticas:**
+
+**✅ Qué SÍ persiste (una vez es suficiente):**
+- El código del notebook (guardado en Drive)
+- Tus anotaciones y celdas
+- La estructura del notebook
+
+**❌ Qué NO persiste (debes hacer cada vez):**
+- Las librerías instaladas (yfinance, vectorbt, etc.)
+- Las variables en memoria (datos descargados)
+- Las llaves de Alpaca configuradas
+
+**🔄 Flujo de trabajo correcto:**
+
+**Primera vez (Setup completo - hoy):**
+```
+1. Crear notebook "Setup_y_Practica_Trading.ipynb" ✅
+2. Ejecutar instalación de librerías (5-8 min)
+3. Configurar llaves Alpaca
+4. Trabajar en Sesión 1
+5. Guardar (Ctrl+S) y cerrar
+```
+
+**Cada vez que vuelves al workshop (todas las demás veces):**
+```
+1. Abrir "Setup_y_Practica_Trading.ipynb" (ya existe en Drive)
+2. Ejecutar SOLO celdas de instalación (2-3 min) ← OBLIGATORIO
+3. Configurar llaves Alpaca (30 seg)
+4. Ir a la sección de la sesión del día
+5. Trabajar normalmente
+6. Guardar y cerrar
+```
+
+**💡 Consejo clave:**
+Cada vez que abras este notebook para trabajar, deberás ejecutar las celdas de instalación del PASO 4 (toma 2-3 minutos). Es rápido y asegura que todo funcione siempre.
+
+**🔍 Verificación rápida:**
+☐ Mi notebook ya NO se llama "Untitled0"  
+☐ Mi notebook se llama "Setup_y_Practica_Trading.ipynb"  
+☐ Entiendo que este notebook lo usaré durante TODO el workshop  
+☐ Entiendo que debo ejecutar instalación cada vez que lo abra  
+☐ Entiendo que el notebook persiste, pero la sesión no
+
+---
+
 ### 📦 PASO 4: Instalar Herramientas Especializadas (5-10 min)
 
 **🎓 ¿Qué son las "herramientas" y por qué necesito instalarlas?**
@@ -509,8 +616,15 @@ print("\n📉 [4/6] Instalando ta (indicadores técnicos)...")
 print("   ✅ ta instalado")
 
 print("\n📊 [5/6] Instalando pandas-ta (más indicadores)...")
-!pip install -q pandas-ta
-print("   ✅ pandas-ta instalado")
+try:
+    # Instalar sin actualizar dependencias para evitar conflictos
+    !pip install -q pandas-ta --no-deps
+    import pandas_ta
+    print("   ✅ pandas-ta instalado correctamente")
+except Exception as e:
+    print("   ⚠️  pandas-ta opcional - continuando sin ella")
+    print("      (Usaremos la librería 'ta' que es suficiente para el workshop)")
+    print(f"      Razón técnica: {str(e)[:100]}")
 
 # ──────────────────────────────────────────────────────────
 # 4. VISUALIZACIÓN
@@ -1305,6 +1419,78 @@ Si ninguna solución funciona:
 
 **Saca el máximo provecho de Colab:**
 
+### ⚠️ CONCEPTO CRÍTICO: Notebook vs Sesión
+
+**🎯 Este es el error #1 de principiantes - Léelo bien:**
+
+Muchos participantes confunden qué persiste y qué no en Colab. Esto genera frustración cuando vuelven al notebook y "nada funciona".
+
+**📘 Entendiendo la diferencia:**
+
+| Concepto | ¿Qué es? | ¿Cuándo se borra? | ¿Debo recrearlo cada vez? |
+|----------|----------|-------------------|---------------------------|
+| **Notebook** | Tu archivo .ipynb con código | NUNCA (está en Drive) | ❌ NO - abre el mismo archivo |
+| **Sesión** | Computadora virtual ejecutando | Al cerrar Colab / 90 min inactivo | ✅ SÍ - reinstala librerías |
+
+**🔄 Flujo de trabajo CORRECTO:**
+
+**Día 1 (Sesión 1 del workshop):**
+```python
+1. Crear "Setup_y_Practica_Trading.ipynb" ✅
+2. Ejecutar instalación completa (5-8 min)
+3. Configurar llaves Alpaca
+4. Trabajar en Sesión 1
+5. Guardar (Ctrl+S) y cerrar navegador
+   ├─ ✅ Notebook guardado en Drive (persiste)
+   └─ ❌ Sesión terminada (librerías borradas)
+```
+
+**Día 2 (Sesión 2 del workshop):**
+```python
+1. Abrir "Setup_y_Practica_Trading.ipynb" (ya existe)
+   └─ ✅ Todo tu código está ahí (persiste)
+2. Ejecutar celdas de instalación (2-3 min) ← OBLIGATORIO
+   └─ ⚠️  Nueva sesión = nueva computadora = sin librerías
+3. Configurar llaves Alpaca (30 seg)
+4. Ir a sección "Sesión 2"
+5. Trabajar normalmente
+6. Guardar y cerrar
+```
+
+**Día 3, 4, 5... (siguientes sesiones):**
+```python
+1. Abrir notebook (mismo archivo)
+2. Ejecutar instalación (2-3 min) ← SIEMPRE
+3. Configurar llaves
+4. Trabajar
+5. Guardar y cerrar
+```
+
+**💡 Regla de oro:**
+> **"Si cierras Colab, la próxima vez ejecuta las celdas de instalación del PASO 4"**
+
+**🚫 Errores comunes:**
+
+❌ **ERROR:** "Abrí el notebook y me da error al ejecutar código"
+✅ **SOLUCIÓN:** Ejecutaste la instalación del PASO 4?
+
+❌ **ERROR:** "Ayer funcionaba, hoy no reconoce yfinance"
+✅ **SOLUCIÓN:** Cerraste Colab = sesión terminada. Reinstala.
+
+❌ **ERROR:** "Tengo que hacer TODO el setup de nuevo?"
+✅ **SOLUCIÓN:** NO. Solo ejecutar celdas de instalación (2 min).
+
+**🎯 Tip pro:**
+Agrega una celda al inicio de tu notebook que diga:
+```python
+# ⚠️ EJECUTAR CADA VEZ QUE ABRAS ESTE NOTEBOOK
+# 1. Celdas de instalación (PASO 4)
+# 2. Configurar llaves Alpaca (PASO 6)
+# 3. Luego ir a la sección de tu sesión
+```
+
+---
+
 ### 🎯 Organización en Google Drive
 
 **Crea esta estructura de carpetas en tu Drive:**
@@ -1549,11 +1735,17 @@ Soporte comunitario + troubleshooting en vivo
 
 ## 🔖 Versión y Actualizaciones
 
-**Versión:** 3.0 (Noviembre 2025)  
+**Versión:** 3.1 (Noviembre 2025)  
 **Última actualización:** 14 de noviembre de 2025  
 **Mantenido por:** [@yismafx](https://github.com/yismafx)
 
 **Changelog:**
+- v3.1 (Nov 14, 2025): 
+  - ✅ **CRÍTICO:** Agregado Paso 3.4 "Nombrar tu Notebook" con nombre `Setup_y_Practica_Trading.ipynb`
+  - ✅ **FIX:** Instalación de pandas-ta con `--no-deps` y try-catch para evitar conflictos de dependencias
+  - ✅ **EDUCATIVO:** Explicación clara del concepto "Notebook vs Sesión" (persiste vs no persiste)
+  - ✅ **MEJORA:** Nueva subsección en "Consejos y Mejores Prácticas" sobre flujo de trabajo correcto
+  - ✅ **CLARIFICACIÓN:** Instrucciones explícitas de que instalación debe ejecutarse cada vez
 - v3.0 (Nov 14, 2025): Código de instalación compatible con Colab 2025 (sin conflictos de dependencias)
 - v2.1 (Nov 14, 2025): Lenguaje para traders no programadores, clarificación Python → Multi-plataforma
 - v2.0 (Nov 13, 2025): Arquitectura modular - setup independiente
