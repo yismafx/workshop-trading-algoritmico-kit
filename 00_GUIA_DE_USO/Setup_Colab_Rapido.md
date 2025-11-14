@@ -1339,10 +1339,12 @@ Antes de continuar al Paso 5, verifica:
 ```python
 # ============================================================
 # 📥 DESCARGAR DATOS HISTÓRICOS DE SPY (ALPACA)
+# Versión Profesional con Validación de Restricciones
 # ============================================================
-
-print("📥 Descargando datos de SPY...")
-print("=" * 60)
+# 🎓 TEORÍA (López de Prado, 2018):
+# "La calidad del backtesting depende de la calidad de los datos.
+#  Validar fechas ANTES de solicitar datos evita errores silenciosos."
+# ============================================================
 
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
@@ -1350,39 +1352,90 @@ from alpaca.data.timeframe import TimeFrame
 from datetime import datetime, timedelta
 import pandas as pd
 
-# ⚠️ CORRECCIÓN CRÍTICA: Alpaca gratuito no permite datos muy recientes
-# Solución: Usar datos hasta AYER (no hasta HOY)
-
-end_date = datetime.now() - timedelta(days=1)  # ✅ HASTA AYER
-start_date = end_date - timedelta(days=365*5)  # 5 años atrás desde ayer
-
-print(f"⏰ Nota: Descargando hasta AYER ({end_date.date()}) porque Alpaca gratuito")
-print(f"   no permite datos de las últimas ~15 minutos")
-print(f"   (Esto es normal en cuentas gratuitas de brokers)")
+print("📥 Descargando datos de SPY...")
 print("=" * 60)
 
-# Crear request
-request_params = StockBarsRequest(
-    symbol_or_symbols=["SPY"],
-    timeframe=TimeFrame.Day,  # Barras diarias (no intraday)
-    start=start_date,
-    end=end_date
-)
+# ============================================================
+# VALIDACIÓN 1: Fechas por defecto con restricción de Alpaca
+# ============================================================
 
-# Descargar datos
+# ⚠️ RESTRICCIÓN CRÍTICA DE ALPACA (Plan Basic)
+# Según documentación oficial: https://docs.alpaca.markets/docs/about-market-data-api
+# - Plan Basic: Retraso de 15 minutos para datos históricos
+# - Plan Algo Trader Plus ($99/mes): Sin restricción
+
+end_date = datetime.now() - timedelta(days=1)  # ✅ Usar AYER (más seguro)
+start_date = end_date - timedelta(days=365*5)  # 5 años atrás desde ayer
+
+print(f"📅 Fecha inicio: {start_date.date()} (5 años atrás)")
+print(f"📅 Fecha fin: {end_date.date()} (ayer)")
+
+# ============================================================
+# VALIDACIÓN 2: Verificar restricción de 15 minutos
+# ============================================================
+
+ahora = datetime.now()
+diferencia_minutos = (ahora - end_date).total_seconds() / 60
+
+if diferencia_minutos < 15:
+    print("\n⚠️ ADVERTENCIA: Restricción de plan gratuito detectada")
+    print(f"   Intentas datos de hace {diferencia_minutos:.0f} minutos")
+    print(f"   Plan gratuito requiere al menos 15 minutos de antigüedad")
+    print(f"   Ajustando automáticamente a: {(ahora - timedelta(minutes=20)).date()}")
+    end_date = ahora - timedelta(minutes=20)  # 20 min para estar seguros
+
+print("=" * 60)
+
+# ============================================================
+# DESCARGA CON MANEJO DE ERRORES
+# ============================================================
+
 try:
+    # Crear cliente
     data_client = StockHistoricalDataClient(ALPACA_API_KEY, ALPACA_SECRET_KEY)
+    
+    # Crear request
+    request_params = StockBarsRequest(
+        symbol_or_symbols=["SPY"],
+        timeframe=TimeFrame.Day,
+        start=start_date,
+        end=end_date
+    )
+    
+    # Ejecutar descarga
+    print(f"\n🔄 Solicitando datos a Alpaca...")
     bars = data_client.get_stock_bars(request_params)
     
     # Convertir a DataFrame
     df = bars.df
     
-    print(f"✅ Descarga completada exitosamente")
+    # ============================================================
+    # VALIDACIÓN 3: Verificar calidad de datos
+    # ============================================================
+    
+    if df.empty:
+        raise ValueError(
+            f"❌ No se encontraron datos para SPY en el período especificado"
+        )
+    
+    # Verificar valores nulos
+    nulos_por_columna = df.isnull().sum()
+    if nulos_por_columna.any():
+        print(f"\n⚠️ Advertencia: Datos con valores nulos detectados:")
+        print(nulos_por_columna[nulos_por_columna > 0])
+    
+    # ============================================================
+    # RESUMEN DE DESCARGA
+    # ============================================================
+    
+    print(f"\n✅ Descarga completada exitosamente")
     print("=" * 60)
     print(f"📊 Símbolo: SPY")
-    print(f"📅 Período: {start_date.date()} a {end_date.date()}")
-    print(f"📈 Total de días: {len(df)}")
-    print(f"💰 Precio de cierre más reciente: ${df['close'].iloc[-1]:.2f}")
+    print(f"📅 Período: {df.index[0].date()} a {df.index[-1].date()}")
+    print(f"📈 Total de registros: {len(df)}")
+    print(f"💰 Precio más reciente: ${df['close'].iloc[-1]:.2f}")
+    print(f"💰 Precio más antiguo: ${df['close'].iloc[0]:.2f}")
+    print(f"📈 Retorno total: {((df['close'].iloc[-1] / df['close'].iloc[0]) - 1) * 100:.2f}%")
     print("=" * 60)
     
     # Mostrar primeras y últimas filas
@@ -1392,18 +1445,39 @@ try:
     print("\n📋 Últimas 3 filas (más recientes):")
     print(df.tail(3))
     
-    # Estadísticas básicas
-    print("\n📊 Estadísticas básicas del precio de cierre:")
-    print(df['close'].describe())
-    
     print("\n🎉 ¡Datos descargados exitosamente!")
     
 except Exception as e:
-    print(f"❌ Error al descargar datos: {e}")
-    print("\n🔧 Posibles soluciones:")
-    print("   1. Verifica que tus API Keys sean correctas")
-    print("   2. Verifica tu conexión a internet")
-    print("   3. Si el error persiste, prueba la Solución 3 (yfinance)")
+    error_msg = str(e)
+    
+    # ============================================================
+    # DIAGNÓSTICO DE ERRORES COMUNES
+    # ============================================================
+    
+    if "subscription does not permit" in error_msg.lower():
+        print(f"\n❌ ERROR: Restricción de suscripción gratuita")
+        print(f"   Causa: Intentaste acceder a datos muy recientes (<15 min)")
+        print(f"\n🔧 Solución:")
+        print(f"   1. El código ya ajustó end_date a 1 día atrás")
+        print(f"   2. Si persiste, espera 5 minutos y ejecuta nuevamente")
+        print(f"   3. O considera actualizar a Algo Trader Plus ($99/mes)")
+    
+    elif "invalid credentials" in error_msg.lower():
+        print(f"\n❌ ERROR: Credenciales inválidas")
+        print(f"   Verifica que API_KEY y SECRET_KEY sean correctos")
+        print(f"   Revisa el archivo alpaca_keys.txt en tu escritorio")
+    
+    elif "connection" in error_msg.lower() or "timeout" in error_msg.lower():
+        print(f"\n❌ ERROR: Problema de conexión")
+        print(f"   Verifica tu conexión a internet")
+        print(f"   Intenta ejecutar la celda nuevamente en 30 segundos")
+    
+    else:
+        print(f"\n❌ ERROR DESCONOCIDO:")
+        print(f"   {error_msg}")
+        print(f"\n📞 Contacta al instructor si persiste")
+    
+    raise  # Re-lanzar el error para debugging
 
 3. **Ejecuta la celda** (Shift + Enter)
 
