@@ -1350,42 +1350,60 @@ from alpaca.data.timeframe import TimeFrame
 from datetime import datetime, timedelta
 import pandas as pd
 
-# Configurar fechas
-end_date = datetime.now()
-start_date = end_date - timedelta(days=365*5)  # 5 años de datos
+# ⚠️ CORRECCIÓN CRÍTICA: Alpaca gratuito no permite datos muy recientes
+# Solución: Usar datos hasta AYER (no hasta HOY)
+
+end_date = datetime.now() - timedelta(days=1)  # ✅ HASTA AYER
+start_date = end_date - timedelta(days=365*5)  # 5 años atrás desde ayer
+
+print(f"⏰ Nota: Descargando hasta AYER ({end_date.date()}) porque Alpaca gratuito")
+print(f"   no permite datos de las últimas ~15 minutos")
+print(f"   (Esto es normal en cuentas gratuitas de brokers)")
+print("=" * 60)
 
 # Crear request
 request_params = StockBarsRequest(
     symbol_or_symbols=["SPY"],
-    timeframe=TimeFrame.Day,
+    timeframe=TimeFrame.Day,  # Barras diarias (no intraday)
     start=start_date,
     end=end_date
 )
 
 # Descargar datos
-data_client = StockHistoricalDataClient(ALPACA_API_KEY, ALPACA_SECRET_KEY)
-bars = data_client.get_stock_bars(request_params)
-
-# Convertir a DataFrame
-df = bars.df
-
-print(f"✅ Descarga completada")
-print("=" * 60)
-print(f"📊 Símbolo: SPY")
-print(f"📅 Período: {start_date.date()} a {end_date.date()}")
-print(f"📈 Total de días: {len(df)}")
-print("=" * 60)
-
-# Mostrar primeras filas
-print("\n📋 Primeras 5 filas de datos:")
-print(df.head())
-
-# Estadísticas básicas
-print("\n📊 Estadísticas básicas:")
-print(df.describe())
-
-print("\n🎉 ¡Datos descargados exitosamente!")
-```
+try:
+    data_client = StockHistoricalDataClient(ALPACA_API_KEY, ALPACA_SECRET_KEY)
+    bars = data_client.get_stock_bars(request_params)
+    
+    # Convertir a DataFrame
+    df = bars.df
+    
+    print(f"✅ Descarga completada exitosamente")
+    print("=" * 60)
+    print(f"📊 Símbolo: SPY")
+    print(f"📅 Período: {start_date.date()} a {end_date.date()}")
+    print(f"📈 Total de días: {len(df)}")
+    print(f"💰 Precio de cierre más reciente: ${df['close'].iloc[-1]:.2f}")
+    print("=" * 60)
+    
+    # Mostrar primeras y últimas filas
+    print("\n📋 Primeras 3 filas:")
+    print(df.head(3))
+    
+    print("\n📋 Últimas 3 filas (más recientes):")
+    print(df.tail(3))
+    
+    # Estadísticas básicas
+    print("\n📊 Estadísticas básicas del precio de cierre:")
+    print(df['close'].describe())
+    
+    print("\n🎉 ¡Datos descargados exitosamente!")
+    
+except Exception as e:
+    print(f"❌ Error al descargar datos: {e}")
+    print("\n🔧 Posibles soluciones:")
+    print("   1. Verifica que tus API Keys sean correctas")
+    print("   2. Verifica tu conexión a internet")
+    print("   3. Si el error persiste, prueba la Solución 3 (yfinance)")
 
 3. **Ejecuta la celda** (Shift + Enter)
 
