@@ -1,5 +1,10 @@
 # ⚡ SETUP A: COLAB RÁPIDO (30-45 min)
 
+
+🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > ⚙️ [Setup](Guia_Setup_Completa.md) > 📄 **Setup Colab Rápido**
+
+---
+
 **Workshop: Trading Algorítmico Aumentado con IA Generativa**  
 **Versión:** 3.3 (Noviembre 2025)  
 **Dificultad:** ⭐ Fácil (No requiere experiencia en programación)
@@ -1346,7 +1351,7 @@ if all(resultados):
     print("✅ Todos los componentes funcionan correctamente")
     print("✅ Estás 100% listo para la Sesión 1 del workshop")
     print("\n🎯 Próximos pasos:")
-    print("   1. Lee el documento LEEME_PRIMERO.md")
+    print("   1. Lee el documento GUIA_INICIO.md")
     print("   2. Lee la Guía de Uso del Colab Notebook")
     print("   3. Únete al grupo de Telegram Premium")
     print("   4. Revisa tu horario de sesiones (email)")
@@ -1722,7 +1727,7 @@ Mi Drive/
 
 ### 1️⃣ Volver al Documento Principal
 
-📖 [← Volver a Instrucciones_Setup_Ambiente.md](Instrucciones_Setup_Ambiente.md)
+📖 [← Volver a Guia_Setup_Completa.md](Guia_Setup_Completa.md)
 
 Revisa otras opciones de setup si tienes curiosidad.
 
@@ -1732,7 +1737,7 @@ Revisa otras opciones de setup si tienes curiosidad.
 
 📚 **OBLIGATORIOS (antes de Sesión 1):**
 - [Guía de Uso del Colab Notebook Maestro](Guia_Uso_Colab_Notebook.md) ⭐ **CRÍTICO**
-- [LEEME_PRIMERO.md](LEEME_PRIMERO.md) - Roadmap completo del workshop
+- [GUIA_INICIO.md](GUIA_INICIO.md) - Roadmap completo del workshop
 
 📖 **OPCIONALES (útiles de referencia):**
 - [Librerías Mínimas vs Completas](Librerias_Minimas_vs_Completas.md) - Qué instalamos y por qué
@@ -1825,7 +1830,7 @@ Soporte comunitario + troubleshooting en vivo
 **Revisa primero (soluciona 80% de problemas):**
 1. Troubleshooting de este documento (arriba)
 2. [Troubleshooting Común](Troubleshooting_Comun.md)
-3. FAQ en [LEEME_PRIMERO.md](LEEME_PRIMERO.md#-faq---preguntas-frecuentes)
+3. FAQ en [GUIA_INICIO.md](GUIA_INICIO.md#-faq---preguntas-frecuentes)
 
 ---
 
@@ -1896,4 +1901,4 @@ El journey de 9 sesiones empieza con Python (lenguaje universal), y en Sesión 7
 
 **🎯 ¿Listo para empezar?**
 
-[← Volver a Instrucciones Setup](Instrucciones_Setup_Ambiente.md) | [Siguiente: Guía de Uso Colab →](Guia_Uso_Colab_Notebook.md)
+[← Volver a Instrucciones Setup](Guia_Setup_Completa.md) | [Siguiente: Guía de Uso Colab →](Guia_Uso_Colab_Notebook.md)

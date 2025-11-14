@@ -1,5 +1,10 @@
 # Workshop: Trading Algorítmico Aumentado con IA Generativa
 
+
+🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > 📄 **Programa Detallado**
+
+---
+
 ---
 
 ## Información General

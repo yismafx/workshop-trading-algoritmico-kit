@@ -1,5 +1,10 @@
 # 🎯 BIENVENIDO AL KIT DE TRADING ALGORÍTMICO AUMENTADO CON IA GENERATIVA
 
+
+🏠 [Inicio](../README.md) > 📂 Guía de Uso > 📄 **Guía de Inicio**
+
+---
+
 ![Version](https://img.shields.io/badge/version-2.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Language](https://img.shields.io/badge/language-ES-yellow)
 
 ---
@@ -93,9 +98,9 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 📦 workshop-trading-algoritmico-kit/
 │
 ├── 📂 00_GUIA_DE_USO/           → 🔓 PÚBLICO (Este documento + setup)
-│   ├── LEEME_PRIMERO.md         ← Estás aquí
-│   ├── ESTRUCTURA_COMPLETA.md   → Programa Detallado (9 sesiones)
-│   ├── Instrucciones_Setup_Ambiente.md → Configuración paso a paso
+│   ├── GUIA_INICIO.md         ← Estás aquí
+│   ├── Programa_Detallado_Workshop.md   → Programa Detallado (9 sesiones)
+│   ├── Guia_Setup_Completa.md → Configuración paso a paso
 │   └── MAPA_MENTAL_SISTEMA_TRADING_PNG.html → Arquitectura visual
 │
 ├── 📂 02_TEMPLATE_PACK/         → 🔓 PÚBLICO (Templates profesionales)
@@ -164,7 +169,7 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 **Checkpoint S7-S9:** ¿Está tu bot en paper trading por al menos 8 semanas antes de live? ✅
 
 **📖 Para detalles completos de cada sesión:**  
-Ver [Programa Detallado](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y tiempos detallados.
+Ver [Programa Detallado](Programa_Detallado_Workshop.md) con objetivos, entregables y tiempos detallados.
 
 **Ver también:**
 - [Timeline del Journey](#-tu-journey-completo-timeline) para visualizar el progreso completo
@@ -274,7 +279,7 @@ Ver [Programa Detallado](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y ti
 **Tareas:**
 1. Leer este documento completo (15-20 min)
 2. Revisar el [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) (5 min)
-3. Leer [Programa Detallado](ESTRUCTURA_COMPLETA.md) para entender el roadmap (20 min)
+3. Leer [Programa Detallado](Programa_Detallado_Workshop.md) para entender el roadmap (20 min)
 4. Completar [Checklist "Tu Primer Día"](#-checklist-tu-primer-día) (15 min)
 
 **Resultado esperado:**  
@@ -287,7 +292,7 @@ Ver [Programa Detallado](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y ti
 2. Configurar Google Colab con API keys
 3. Ejecutar celda de validación en Colab Notebook Maestro
 
-**Guía detallada:** Ver [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md)
+**Guía detallada:** Ver [Instrucciones de Setup](Guia_Setup_Completa.md)
 
 **Resultado esperado:**  
 ✅ Ambiente listo, primera celda ejecuta sin errores
@@ -297,7 +302,7 @@ Ver [Programa Detallado](ESTRUCTURA_COMPLETA.md) con objetivos, entregables y ti
 **Patrón por sesión:**
 
 1. **Pre-trabajo (15 min):**
-   - Leer objetivos en [Programa Detallado](ESTRUCTURA_COMPLETA.md)
+   - Leer objetivos en [Programa Detallado](Programa_Detallado_Workshop.md)
    - Preparar materiales y herramientas
 
 2. **Sesión en vivo (3h):**
@@ -413,14 +418,14 @@ Ver `03_PROMPTS_LIBRARY/` para 4 prompts básicos optimizados
 | ☐ | **Instalar extensión Markdown viewer** en navegador (opcional) | 3 min |
 | ☐ | **Configurar cuentas GenAI:** ChatGPT (gratis) o Claude (gratis) | 5 min |
 
-**Guía completa:** [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md)
+**Guía completa:** [Instrucciones de Setup](Guia_Setup_Completa.md)
 
 ### 📚 Lectura Esencial (30 min)
 
 | Estado | Documento | Tiempo |
 |:------:|-----------|:------:|
-| ☐ | **Este documento completo** (LEEME_PRIMERO.md) | 15 min |
-| ☐ | **[Programa Detallado](ESTRUCTURA_COMPLETA.md)** (roadmap sesiones) | 10 min |
+| ☐ | **Este documento completo** (GUIA_INICIO.md) | 15 min |
+| ☐ | **[Programa Detallado](Programa_Detallado_Workshop.md)** (roadmap sesiones) | 10 min |
 | ☐ | **Revisar FAQ** (sección siguiente) si tienes dudas | 5 min |
 
 ### ✅ Validación Pre-S1 (15 min)
@@ -850,12 +855,12 @@ pip install yfinance
 |:------:|--------|
 | ☐ | **Leer esta guía completa** (acabas de hacerlo) |
 | ☐ | **Revisar el** [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) |
-| ☐ | **Configurar ambiente** siguiendo: [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md) |
+| ☐ | **Configurar ambiente** siguiendo: [Instrucciones de Setup](Guia_Setup_Completa.md) |
 | ☐ | **Completar el** [checklist "Tu Primer Día"](#-checklist-tu-primer-día) |
 | ☐ | **Abrir el Colab Notebook Maestro** (🔒 Premium) |
-| ☐ | **Revisar** [Programa Detallado](ESTRUCTURA_COMPLETA.md) para entender el roadmap |
+| ☐ | **Revisar** [Programa Detallado](Programa_Detallado_Workshop.md) para entender el roadmap |
 
-**👉 Siguiente paso:** Leer [Instrucciones de Setup](Instrucciones_Setup_Ambiente.md)
+**👉 Siguiente paso:** Leer [Instrucciones de Setup](Guia_Setup_Completa.md)
 
 ---
 

@@ -93,7 +93,8 @@
 - **S8:** Deployment Real - Paper Trading y Monitoreo
 - **S9:** Proyecto Final y Documentación Profesional
 
-**[📋 Ver estructura completa del workshop →](00_GUIA_DE_USO/ESTRUCTURA_COMPLETA.md)**
+**[📋 Ver estructura completa del workshop →](00_GUIA_DE_USO/Programa_Detallado_Workshop.md)**
+
 ---
 
 ## Expectativas Realistas
@@ -172,9 +173,13 @@ Claude (recomendado), ChatGPT, GitHub Copilot
 ## Documentación
 
 ### 🚀 Inicio Rápido
-1. [📖 LEEME_PRIMERO.md](00_GUIA_DE_USO/LEEME_PRIMERO.md) - Guía completa
-2. [🗺️ Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) - Arquitectura del sistema
-3. [⚙️ Instrucciones de Setup](00_GUIA_DE_USO/Instrucciones_Setup_Ambiente.md) - Configuración paso a paso
+1. [📖 GUIA_INICIO.md](00_GUIA_DE_USO/GUIA_INICIO.md) - Guía completa
+2. [🗺️ Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/Mapa_Sistema_Trading.html) - Arquitectura del sistema
+3. [⚙️ Guia_Setup_Completa.md](00_GUIA_DE_USO/Guia_Setup_Completa.md) - Configuración paso a paso
+
+### 🧭 Navegación
+- [🗺️ SITEMAP.md](00_GUIA_DE_USO/SITEMAP.md) - Mapa completo del repositorio
+- [📖 GLOSARIO_NAVEGACION.md](00_GUIA_DE_USO/GLOSARIO_NAVEGACION.md) - Índice de nombres de archivos
 
 ### 📂 Contenido Público (Este Repo)
 ```
@@ -201,7 +206,7 @@ Claude (recomendado), ChatGPT, GitHub Copilot
 🤖 **IA Generativa (Capa Transversal)**  
 Aumenta cada componente: Adaptar código, Depurar errores, Traducir plataformas, Documentar sistemas
 
-**[Ver Diagrama Completo →](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)**
+**[Ver Diagrama Completo →](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/Mapa_Sistema_Trading.html)**
 
 ---
 

@@ -1,5 +1,10 @@
 # 🛠️ INSTRUCCIONES DE SETUP DEL AMBIENTE
 
+
+🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > 📄 **Guía de Setup Completa**
+
+---
+
 **Workshop: Trading Algorítmico Aumentado con IA Generativa**  
 **Versión:** 2.1 (Noviembre 2025)  
 **Tiempo estimado:** 30 min a 3h (según opción elegida)
@@ -56,7 +61,7 @@ Responde estas preguntas para ser dirigido al setup correcto:
 
 **Respuestas directas:**
 
-- **❌ NO tengo experiencia con Python** → [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md) ⭐ **Recomendado**
+- **❌ NO tengo experiencia con Python** → [Setup A: Colab Rápido](Setup_Colab_Rapido.md) ⭐ **Recomendado**
 - **✅ SÍ tengo experiencia** → Continúa a Pregunta 2
 
 ---
@@ -65,7 +70,7 @@ Responde estas preguntas para ser dirigido al setup correcto:
 
 **Solo si respondiste SÍ en Pregunta 1:**
 
-- **❌ NO** → [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md)
+- **❌ NO** → [Setup A: Colab Rápido](Setup_Colab_Rapido.md)
 - **✅ SÍ** → [Setup B: Python Local](Setup_B_Python_Local.md)
 
 ---
@@ -84,7 +89,7 @@ Responde estas preguntas para ser dirigido al setup correcto:
 **Solo si no elegiste MT5:**
 
 - **✅ SÍ** → [Setup D: Interactive Brokers](Setup_D_Interactive_Brokers.md)
-- **❌ NO** → [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md)
+- **❌ NO** → [Setup A: Colab Rápido](Setup_Colab_Rapido.md)
 
 ---
 
@@ -92,7 +97,7 @@ Responde estas preguntas para ser dirigido al setup correcto:
 
 **Compara todas las opciones lado a lado:**
 
-| Característica | [Setup A: Colab](Setup_A_Colab_Rapido.md) | [Setup B: Python Local](Setup_B_Python_Local.md) | [Setup C: MT5](Setup_C_MetaTrader5.md) | [Setup D: IB](Setup_D_Interactive_Brokers.md) |
+| Característica | [Setup A: Colab](Setup_Colab_Rapido.md) | [Setup B: Python Local](Setup_B_Python_Local.md) | [Setup C: MT5](Setup_C_MetaTrader5.md) | [Setup D: IB](Setup_D_Interactive_Brokers.md) |
 |----------------|-------------------|---------------------|-----------------|----------------------|
 | **⏱️ Tiempo setup** | 30-45 min | 2-3h | 1-2h | 2-3h |
 | **💻 Experiencia Python** | No necesaria | Intermedia | Básica | Avanzada |
@@ -128,7 +133,7 @@ Responde estas preguntas para ser dirigido al setup correcto:
 - Navegador web moderno
 - Conexión a internet
 
-**🔵 [IR A SETUP A: COLAB RÁPIDO →](Setup_A_Colab_Rapido.md)**
+**🔵 [IR A SETUP A: COLAB RÁPIDO →](Setup_Colab_Rapido.md)**
 
 ---
 
@@ -283,7 +288,7 @@ Responde estas preguntas para ser dirigido al setup correcto:
 
 ### 1️⃣ Volver al Documento Principal
 
-📖 [Volver a LEEME_PRIMERO.md](LEEME_PRIMERO.md)
+📖 [Volver a GUIA_INICIO.md](GUIA_INICIO.md)
 
 Lee el roadmap completo del workshop (9 sesiones, 27 horas)
 
@@ -291,7 +296,7 @@ Lee el roadmap completo del workshop (9 sesiones, 27 horas)
 
 ### 2️⃣ Completar el Checklist "Tu Primer Día"
 
-📋 [Ver Checklist "Tu Primer Día"](LEEME_PRIMERO.md#-checklist-tu-primer-día)
+📋 [Ver Checklist "Tu Primer Día"](GUIA_INICIO.md#-checklist-tu-primer-día)
 
 Valida que tienes todo listo para empezar
 
@@ -299,7 +304,7 @@ Valida que tienes todo listo para empezar
 
 ### 3️⃣ Revisar el Programa Detallado
 
-📚 [Ver Programa Detallado (ESTRUCTURA_COMPLETA.md)](ESTRUCTURA_COMPLETA.md)
+📚 [Ver Programa Detallado (Programa_Detallado_Workshop.md)](Programa_Detallado_Workshop.md)
 
 Entiende qué aprenderás en cada sesión
 
@@ -355,7 +360,7 @@ Soporte comunitario + sesiones de troubleshooting en vivo
 Antes de contactar, revisa:
 1. Troubleshooting de tu setup específico
 2. [Troubleshooting Común](Troubleshooting_Comun.md)
-3. FAQ en [LEEME_PRIMERO.md](LEEME_PRIMERO.md#-faq---preguntas-frecuentes)
+3. FAQ en [GUIA_INICIO.md](GUIA_INICIO.md#-faq---preguntas-frecuentes)
 
 En 80% de los casos, la solución ya está documentada.
 
