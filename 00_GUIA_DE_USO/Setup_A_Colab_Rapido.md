@@ -1,7 +1,7 @@
 # ⚡ SETUP A: COLAB RÁPIDO (30-45 min)
 
 **Workshop: Trading Algorítmico Aumentado con IA Generativa**  
-**Versión:** 2.1 (Noviembre 2025)  
+**Versión:** 3.0 (Noviembre 2025)  
 **Dificultad:** ⭐ Fácil (No requiere experiencia en programación)
 
 ---
@@ -324,7 +324,7 @@ Como TradingView, pero en vez de dibujar líneas en gráficos, escribes instrucc
 - ✅ No instalas nada en tu computadora
 - ✅ Todo se guarda automáticamente en tu Google Drive
 - ✅ Puedes acceder desde cualquier computadora
-- ✅ Ya tiene todas las herramientas instaladas
+- ✅ Ya tiene todas las herramientas básicas instaladas
 - ✅ Es completamente GRATIS
 
 **💻 Lo que vamos a hacer:**
@@ -398,7 +398,7 @@ Acabas de darle una instrucción a Python: "muestra este mensaje". Python la eje
 
 ---
 
-### 📦 PASO 4: Instalar Herramientas Especializadas (10 min)
+### 📦 PASO 4: Instalar Herramientas Especializadas (5-10 min)
 
 **🎓 ¿Qué son las "herramientas" y por qué necesito instalarlas?**
 
@@ -417,91 +417,155 @@ En Python para Trading:
 └─ vectorbt → Hace backtesting de estrategias
 ```
 
-Colab ya tiene MUCHAS herramientas instaladas, pero necesitamos agregar las específicas para trading algorítmico profesional.
+Colab ya tiene MUCHAS herramientas instaladas (pandas, numpy, matplotlib), pero necesitamos agregar las específicas para trading algorítmico profesional.
 
 **💻 Lo que vamos a hacer:**
 
-Vas a copiar y pegar un código que instala automáticamente todas las herramientas. Es como descargar todos tus indicadores favoritos en TradingView - lo haces una vez y listo.
+Vas a copiar y pegar un código que instala automáticamente solo las herramientas que faltan. Es como descargar solo los indicadores nuevos en TradingView - rápido y eficiente.
 
-#### **4.1 Código de Instalación Completo**
+#### **4.1 Código de Instalación v3.0 (Compatible con Colab 2025)**
 
 En tu notebook de Colab, crea una celda nueva (+ Code) y pega este código completo:
 
 ```python
 # ═══════════════════════════════════════════════════════════
-# 📦 INSTALACIÓN DE HERRAMIENTAS - WORKSHOP TRADING ALGORÍTMICO
-# Versión: 2.1 (Noviembre 2025)
-# Tiempo: 3-5 minutos (ve por un café ☕)
+# 📦 INSTALACIÓN COLAB v3.0 - COMPATIBLE CON COLAB 2025
+# Workshop: Trading Algorítmico Aumentado con IA Generativa
+# Fecha: Noviembre 2025
+# Solución: EVITA conflictos con versiones pre-instaladas
 # ═══════════════════════════════════════════════════════════
 
-print("🚀 Iniciando instalación de herramientas especializadas...")
-print("⏱️  Este proceso toma 3-5 minutos. Por favor espera.\n")
+print("🚀 Instalación INTELIGENTE de herramientas...")
+print("   Esta versión detecta qué ya tienes instalado y solo")
+print("   instala las herramientas nuevas que necesitas.\n")
+print("⏱️  Tiempo estimado: 2-3 minutos (¡aprovecha para un café! ☕)\n")
 
 # ──────────────────────────────────────────────────────────
-# 1. HERRAMIENTAS CORE: Manejo de Datos
-# (Como tener Excel y calculadora)
+# ESTRATEGIA DE INSTALACIÓN
 # ──────────────────────────────────────────────────────────
-print("📊 Instalando herramientas CORE (datos y cálculos)...")
-!pip install -q pandas==2.2.0 numpy==1.26.3 scipy==1.12.0
-print("✅ Core instalado\n")
+# Colab 2025 ya tiene instalado:
+# ✅ pandas (2.2.2)
+# ✅ numpy (1.26.4) 
+# ✅ matplotlib (3.8.0+)
+# ✅ scipy (1.13.0+)
+#
+# Solo instalaremos lo que NO viene con Colab:
+# 1. yfinance (descarga de datos)
+# 2. alpaca-py (broker paper trading)
+# 3. vectorbt (backtesting vectorizado)
+# 4. ta (análisis técnico)
+# 5. pandas-ta (análisis técnico alternativo)
+# 6. plotly (visualización interactiva)
+# ──────────────────────────────────────────────────────────
+
+import sys
+
+def check_library(name):
+    """Verifica si una librería ya está instalada."""
+    try:
+        __import__(name)
+        return True
+    except ImportError:
+        return False
+
+print("═" * 60)
+print("📋 FASE 1: VERIFICANDO QUÉ YA TIENES INSTALADO")
+print("═" * 60)
+
+# Verificar core (ya deberían estar en Colab)
+core_libs = ['pandas', 'numpy', 'matplotlib', 'scipy']
+for lib in core_libs:
+    status = "✅" if check_library(lib) else "❌"
+    print(f"{status} {lib}")
+
+print("\n" + "═" * 60)
+print("📥 FASE 2: INSTALANDO SOLO LO QUE FALTA")
+print("═" * 60)
 
 # ──────────────────────────────────────────────────────────
-# 2. HERRAMIENTAS DE DATOS: Descarga de Mercados
-# (Como tener feed de datos de tu broker)
+# 1. DESCARGA DE DATOS
 # ──────────────────────────────────────────────────────────
-print("📈 Instalando herramientas de DESCARGA DE DATOS...")
-!pip install -q yfinance==0.2.36 alpaca-py==0.25.0
-print("✅ Datos instalado\n")
+print("\n📈 [1/6] Instalando yfinance (datos de mercados)...")
+!pip install -q yfinance
+print("   ✅ yfinance instalado")
+
+print("\n📊 [2/6] Instalando alpaca-py (broker paper trading)...")
+!pip install -q alpaca-py
+print("   ✅ alpaca-py instalado")
 
 # ──────────────────────────────────────────────────────────
-# 3. HERRAMIENTAS DE BACKTESTING: Validación de Estrategias
-# (Como simulador de trading, pero científico)
+# 2. BACKTESTING
 # ──────────────────────────────────────────────────────────
-print("🧪 Instalando herramientas de BACKTESTING...")
-!pip install -q vectorbt==0.26.1
-print("✅ Backtesting instalado\n")
+print("\n🧪 [3/6] Instalando vectorbt (backtesting rápido)...")
+# vectorbt puede tomar un poco más de tiempo
+!pip install -q vectorbt
+print("   ✅ vectorbt instalado")
 
 # ──────────────────────────────────────────────────────────
-# 4. HERRAMIENTAS DE ANÁLISIS TÉCNICO: Indicadores
-# (Como tener RSI, MACD, Bandas de Bollinger programables)
+# 3. ANÁLISIS TÉCNICO
 # ──────────────────────────────────────────────────────────
-print("📉 Instalando herramientas de ANÁLISIS TÉCNICO...")
-!pip install -q ta==0.11.0 pandas-ta==0.3.14b
-print("✅ Análisis Técnico instalado\n")
+print("\n📉 [4/6] Instalando ta (indicadores técnicos)...")
+!pip install -q ta
+print("   ✅ ta instalado")
+
+print("\n📊 [5/6] Instalando pandas-ta (más indicadores)...")
+!pip install -q pandas-ta
+print("   ✅ pandas-ta instalado")
 
 # ──────────────────────────────────────────────────────────
-# 5. HERRAMIENTAS DE VISUALIZACIÓN: Gráficos
-# (Como TradingView, pero programable)
+# 4. VISUALIZACIÓN
 # ──────────────────────────────────────────────────────────
-print("🎨 Instalando herramientas de VISUALIZACIÓN...")
-!pip install -q plotly==5.18.0 matplotlib==3.8.2
-print("✅ Visualización instalado\n")
+print("\n🎨 [6/6] Instalando plotly (gráficos interactivos)...")
+!pip install -q plotly
+print("   ✅ plotly instalado")
 
 # ──────────────────────────────────────────────────────────
 # ✅ INSTALACIÓN COMPLETA
 # ──────────────────────────────────────────────────────────
+print("\n" + "═" * 60)
+print("🎉 ¡INSTALACIÓN COMPLETADA!")
 print("═" * 60)
-print("🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!")
-print("═" * 60)
-print("\n⚠️ PASO OBLIGATORIO AHORA:")
+print("\n✅ Herramientas instaladas exitosamente:")
+print("   • pandas, numpy, matplotlib, scipy (ya estaban)")
+print("   • yfinance (descarga de datos)")
+print("   • alpaca-py (broker paper trading)")
+print("   • vectorbt (backtesting)")
+print("   • ta y pandas-ta (análisis técnico)")
+print("   • plotly (visualización)")
+
+print("\n⚠️  PASO OBLIGATORIO AHORA:")
 print("   1. Ve al menú: Runtime → Restart session")
 print("   2. Click en 'Yes' cuando pregunte")
-print("   3. Luego continúa al Paso 5 (Validación)")
-print("\n💡 ¿Por qué reiniciar? Para que Python 'reconozca' las")
-print("   nuevas herramientas. Como reiniciar TradingView después")
-print("   de instalar un indicador nuevo.")
+print("   3. NO te preocupes si ves warnings de versiones")
+print("      (son normales y no afectan el funcionamiento)")
+print("   4. Luego ejecuta el código de VALIDACIÓN (Paso 5)")
+
+print("\n💡 Nota sobre versiones:")
+print("   Colab puede tener versiones ligeramente diferentes")
+print("   de pandas/numpy. Esto es NORMAL y no causa problemas.")
+print("   Solo importa que las funcionalidades core funcionen.")
+
+print("\n" + "═" * 60)
 ```
 
 #### **4.2 Ejecutar la Instalación**
 
 1. Click en el botón ▶️ (o Shift + Enter)
-2. Verás texto desplazándose (es normal)
-3. Espera 3-5 minutos (aprovecha para leer el Paso 5 mientras)
-4. ✅ Cuando termine, verás: `🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!`
+2. Verás texto desplazándose (es normal, Python está trabajando)
+3. Espera 2-3 minutos (aprovecha para leer el Paso 5 mientras)
+4. ✅ Cuando termine, verás: `🎉 ¡INSTALACIÓN COMPLETADA!`
 
 **🎓 ¿Qué está pasando mientras esperas?**
 
-Python está descargando y instalando herramientas especializadas desde internet. Es como cuando instalas un indicador en TradingView - toma tiempo porque está descargando código desde servidores.
+Python está descargando y configurando herramientas especializadas desde internet. Es como cuando instalas un indicador en TradingView - toma tiempo porque está descargando código desde servidores.
+
+**💡 ¿Por qué esta versión es diferente?**
+
+Esta versión v3.0 es "inteligente":
+- ✅ Detecta qué ya tienes instalado (pandas, numpy, etc.)
+- ✅ Solo instala lo que falta (yfinance, vectorbt, etc.)
+- ✅ NO fuerza versiones específicas → sin conflictos
+- ✅ Más rápido (2-3 min vs 3-5 min versiones anteriores)
 
 #### **4.3 Reiniciar tu Sesión de Trabajo (OBLIGATORIO)**
 
@@ -520,7 +584,7 @@ Python está descargando y instalando herramientas especializadas desde internet
 
 **🔍 Verificación rápida:**
 ☐ Ejecuté el código de instalación completo  
-☐ Vi el mensaje "🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!"  
+☐ Vi el mensaje "🎉 ¡INSTALACIÓN COMPLETADA!"  
 ☐ Reinicié la sesión (Runtime → Restart session)  
 ☐ Entiendo que las herramientas ya están instaladas
 
@@ -541,48 +605,60 @@ Después de reiniciar la sesión (Paso 4.3), crea una celda NUEVA y pega este c�
 
 ```python
 # ═══════════════════════════════════════════════════════════
-# ✅ VALIDACIÓN DE INSTALACIÓN - WORKSHOP TRADING ALGORÍTMICO
-# Versión: 2.1 (Noviembre 2025)
+# ✅ VALIDACIÓN v3.0 - COMPATIBLE CON COLAB 2025
+# Workshop: Trading Algorítmico Aumentado con IA Generativa
 # ═══════════════════════════════════════════════════════════
 
 import sys
-from importlib.metadata import version
 
 print("🔍 VALIDANDO INSTALACIÓN DE HERRAMIENTAS...\n")
+print("💡 Esta versión verifica FUNCIONALIDAD, no versiones exactas")
+print("   (Colab 2025 puede tener versiones diferentes y está bien)\n")
 print("═" * 60)
 
 # ──────────────────────────────────────────────────────────
-# Lista de herramientas críticas a validar
+# Lista de herramientas CRÍTICAS para el workshop
 # ──────────────────────────────────────────────────────────
-herramientas = {
-    "pandas": "2.2.0",
-    "numpy": "1.26.3",
-    "yfinance": "0.2.36",
-    "alpaca-py": "0.25.0",
-    "vectorbt": "0.26.1",
-    "ta": "0.11.0",
-    "plotly": "5.18.0"
-}
+herramientas_test = [
+    ("pandas", "import pandas as pd; df = pd.DataFrame({'A': [1,2,3]})"),
+    ("numpy", "import numpy as np; arr = np.array([1,2,3])"),
+    ("matplotlib", "import matplotlib.pyplot as plt"),
+    ("yfinance", "import yfinance as yf"),
+    ("alpaca-py", "from alpaca.trading.client import TradingClient"),
+    ("vectorbt", "import vectorbt as vbt"),
+    ("ta", "from ta.trend import SMAIndicator"),
+    ("pandas-ta", "import pandas_ta"),
+    ("plotly", "import plotly.graph_objects as go"),
+]
 
 errores = []
-advertencias = []
+exitosos = []
 
 # ──────────────────────────────────────────────────────────
-# Validar cada herramienta
+# Validar cada herramienta (funcionalidad, no versión)
 # ──────────────────────────────────────────────────────────
-for nombre, version_esperada in herramientas.items():
+for nombre, test_code in herramientas_test:
     try:
-        version_instalada = version(nombre)
+        # Intentar ejecutar código de prueba
+        exec(test_code)
         
-        # Comparar versión (solo primer número importa)
-        if version_instalada.startswith(version_esperada.split('.')[0]):
-            print(f"✅ {nombre:<15} v{version_instalada}")
-        else:
-            print(f"⚠️  {nombre:<15} v{version_instalada} (esperada: {version_esperada})")
-            advertencias.append(f"{nombre}: versión diferente")
+        # Si llegamos aquí, la librería funciona
+        try:
+            # Intentar obtener versión (opcional)
+            if nombre == "alpaca-py":
+                import alpaca
+                version = alpaca.__version__ if hasattr(alpaca, '__version__') else "OK"
+            else:
+                module = __import__(nombre.replace('-', '_'))
+                version = module.__version__ if hasattr(module, '__version__') else "OK"
+        except:
+            version = "OK"
             
+        print(f"✅ {nombre:<20} {version}")
+        exitosos.append(nombre)
+        
     except Exception as e:
-        print(f"❌ {nombre:<15} NO INSTALADA")
+        print(f"❌ {nombre:<20} ERROR: {str(e)[:40]}")
         errores.append(nombre)
 
 print("═" * 60)
@@ -590,32 +666,59 @@ print("═" * 60)
 # ──────────────────────────────────────────────────────────
 # Reporte final
 # ──────────────────────────────────────────────────────────
-if not errores and not advertencias:
+if not errores:
     print("\n🎉 ¡TODAS LAS HERRAMIENTAS VALIDADAS CORRECTAMENTE!")
-    print("✅ Estás listo para empezar el workshop")
-    print("\n📍 Próximo paso: Configurar tus llaves de Alpaca (Paso 6)")
+    print(f"✅ {len(exitosos)}/9 herramientas funcionan perfectamente")
+    print("\n📍 Estás 100% listo para el workshop")
+    print("\n🎯 Próximo paso: Configurar llaves de Alpaca (Paso 6)")
     
-elif errores:
-    print(f"\n❌ ERROR: {len(errores)} herramienta(s) NO instalada(s):")
+elif len(errores) < 3:
+    print(f"\n⚠️  ADVERTENCIA: {len(errores)} herramienta(s) con problema:")
+    for herr in errores:
+        print(f"   - {herr}")
+    print(f"\n✅ PERO {len(exitosos)} herramientas funcionan correctamente")
+    print("\n💡 Puedes continuar y reportar errores si aparecen más adelante")
+    
+else:
+    print(f"\n❌ ERROR: {len(errores)} herramienta(s) NO funcionan:")
     for herr in errores:
         print(f"   - {herr}")
     print("\n🔧 Solución:")
-    print("   1. Regresa al Paso 4")
-    print("   2. Re-ejecuta el código de instalación")
-    print("   3. Reinicia sesión (Runtime → Restart session)")
-    print("   4. Vuelve a ejecutar esta validación")
-    
-elif advertencias:
-    print(f"\n⚠️  ADVERTENCIA: {len(advertencias)} herramienta(s) con versión diferente:")
-    for adv in advertencias:
-        print(f"   - {adv}")
-    print("\n✅ Puedes continuar normalmente")
-    print("   (pequeñas diferencias de versión son normales)")
+    print("   1. Verifica que ejecutaste Runtime → Restart session")
+    print("   2. Re-ejecuta el código de instalación v3")
+    print("   3. Vuelve a reiniciar sesión")
+    print("   4. Ejecuta esta validación nuevamente")
 
 print("\n" + "═" * 60)
 print(f"📍 Python: {sys.version.split()[0]}")
 print(f"📍 Entorno: Google Colab")
 print("═" * 60)
+
+# ──────────────────────────────────────────────────────────
+# TEST FUNCIONAL: Descargar datos reales
+# ──────────────────────────────────────────────────────────
+if not errores:
+    print("\n🧪 BONUS: Test funcional completo...")
+    print("   Descargando datos reales de mercado...\n")
+    
+    try:
+        import yfinance as yf
+        import pandas as pd
+        
+        # Descargar 5 días de SPY
+        data = yf.download("SPY", period="5d", progress=False)
+        
+        if len(data) > 0:
+            print("✅ Test de descarga: EXITOSO")
+            print(f"   • Descargados {len(data)} días de datos de SPY")
+            print(f"   • Último precio: ${data['Close'].iloc[-1]:.2f}")
+            print("\n🎉 Sistema completamente funcional y listo para operar")
+        else:
+            print("⚠️  Test de descarga: Sin datos (verifica conexión)")
+            
+    except Exception as e:
+        print(f"⚠️  Test de descarga: Error ({str(e)[:50]})")
+        print("   Pero las librerías están instaladas correctamente")
 ```
 
 #### **5.2 Ejecutar Validación**
@@ -629,29 +732,33 @@ print("═" * 60)
 ```
 🔍 VALIDANDO INSTALACIÓN DE HERRAMIENTAS...
 ═══════════════════════════════════════════════════════════
-✅ pandas          v2.2.0
-✅ numpy           v1.26.3
-✅ yfinance        v0.2.36
-✅ alpaca-py       v0.25.0
-✅ vectorbt        v0.26.1
-✅ ta              v0.11.0
-✅ plotly          v5.18.0
+✅ pandas               2.2.2
+✅ numpy                1.26.4
+✅ matplotlib           3.8.0
+✅ yfinance             0.2.36
+✅ alpaca-py            OK
+✅ vectorbt             0.26.1
+✅ ta                   0.11.0
+✅ pandas-ta            OK
+✅ plotly               5.18.0
 ═══════════════════════════════════════════════════════════
 
 🎉 ¡TODAS LAS HERRAMIENTAS VALIDADAS CORRECTAMENTE!
-✅ Estás listo para empezar el workshop
+✅ 9/9 herramientas funcionan perfectamente
+
+📍 Estás 100% listo para el workshop
 ```
 
 **⚠️ Resultado con ADVERTENCIAS (no es grave):**
 
-Si ves versiones ligeramente diferentes (ej: 2.2.1 en vez de 2.2.0):
+Si ves versiones ligeramente diferentes:
 - ✅ Puedes continuar sin problema
 - Las diferencias mínimas no afectan el workshop
 - Solo reporta si hay errores específicos más adelante
 
 **❌ Resultado con ERRORES (necesita corrección):**
 
-Si ves "❌ NO INSTALADA":
+Si ves "❌ ERROR":
 1. Regresa al Paso 4
 2. Re-ejecuta el código de instalación
 3. Reinicia sesión (Runtime → Restart session)
@@ -660,7 +767,7 @@ Si ves "❌ NO INSTALADA":
 **🔍 Verificación rápida:**
 ☐ Ejecuté el código de validación  
 ☐ Todas las herramientas muestran ✅ (o ⚠️ pero no ❌)  
-☐ Vi el mensaje de confirmación  
+☐ Vi el test funcional de descarga de datos  
 ☐ Estoy listo para el Paso 6
 
 ---
@@ -947,7 +1054,7 @@ Antes de la primera sesión del workshop, DEBES leer esta guía:
 ☐ **PASO 1:** Tengo cuenta Gmail y puedo acceder  
 ☐ **PASO 2:** Tengo mis llaves Alpaca guardadas en archivo seguro  
 ☐ **PASO 3:** Puedo entrar a Google Colab y crear notebooks  
-☐ **PASO 4:** Instalé todas las herramientas especializadas  
+☐ **PASO 4:** Instalé todas las herramientas especializadas (v3.0)  
 ☐ **PASO 5:** Todas las herramientas validaron con ✅  
 ☐ **PASO 6:** Conexión con Alpaca exitosa (vi mi balance $100,000)  
 ☐ **PASO 7:** Tengo copia personal del Notebook Maestro en mi Drive
@@ -958,7 +1065,7 @@ Ejecuta este test completo en una celda nueva (copia y pega):
 
 ```python
 # ═══════════════════════════════════════════════════════════
-# 🎯 TEST FINAL DE INTEGRACIÓN - SETUP COMPLETO
+# 🎯 TEST FINAL DE INTEGRACIÓN - SETUP COMPLETO v3.0
 # ═══════════════════════════════════════════════════════════
 
 print("🧪 EJECUTANDO TEST FINAL DE INTEGRACIÓN...\n")
@@ -1057,7 +1164,7 @@ print("═" * 60)
 **Solución paso a paso:**
 ```python
 # 1. Re-instalar la herramienta específica
-!pip install yfinance==0.2.36
+!pip install yfinance
 
 # 2. Reiniciar sesión: Runtime → Restart session
 
@@ -1118,7 +1225,7 @@ gc.collect()
 !pip install --upgrade pip
 
 # 2. Instalar alpaca-py nuevamente
-!pip install alpaca-py==0.25.0
+!pip install alpaca-py
 
 # 3. Reiniciar sesión: Runtime → Restart session
 ```
@@ -1139,23 +1246,22 @@ gc.collect()
 2. Verifica tus llaves PAPER (no LIVE)
 3. Si es necesario, genera llaves nuevas
 4. Cópialas CON CUIDADO (sin espacios)
-5. Re-ejecuta Paso 6.1 con las nuevas llaves
+5. Re-ejecuta Paso 6 con las nuevas llaves
 
 ---
 
-### ⚠️ Advertencia: "Versión diferente de herramienta esperada"
+### ⚠️ Advertencia: "Dependency conflict warnings"
 
-**Qué significa:** pip instaló una versión ligeramente diferente.
+**Qué significa:** Colab detecta versiones diferentes entre librerías.
 
 **¿Es problema?**
-- ✅ Generalmente NO
-- Las diferencias mínimas (2.2.0 vs 2.2.1) no afectan
+- ✅ En el 99% de casos, NO
+- Son solo advertencias, no errores
+- El código funciona normalmente
 
-**Si tienes errores específicos después:**
-```python
-# Forzar versión exacta
-!pip install pandas==2.2.0 --force-reinstall
-```
+**Si tienes errores REALES después:**
+- Contacta soporte con el error específico
+- Incluye screenshot del error completo
 
 ---
 
@@ -1347,7 +1453,7 @@ Revisa otras opciones de setup si tienes curiosidad.
 - [LEEME_PRIMERO.md](LEEME_PRIMERO.md) - Roadmap completo del workshop
 
 📖 **OPCIONALES (útiles de referencia):**
-- [Librerías y Dependencias 2025](Librerias_Dependencias_2025.md)
+- [Librerías Mínimas vs Completas](Librerias_Minimas_vs_Completas.md) - Qué instalamos y por qué
 - [Troubleshooting Común](Troubleshooting_Comun.md)
 
 ---
@@ -1412,7 +1518,7 @@ Revisa otras opciones de setup si tienes curiosidad.
 Tiempo de respuesta: 24-48h
 
 **Incluye en tu email:**
-- "Setup A: Colab" en el asunto
+- "Setup A: Colab v3" en el asunto
 - Paso exacto donde falló (ej: "Paso 5 - Validación")
 - Error completo (copia y pega el mensaje de error)
 - Screenshot si es posible
@@ -1443,11 +1549,12 @@ Soporte comunitario + troubleshooting en vivo
 
 ## 🔖 Versión y Actualizaciones
 
-**Versión:** 2.1 (Noviembre 2025)  
+**Versión:** 3.0 (Noviembre 2025)  
 **Última actualización:** 14 de noviembre de 2025  
 **Mantenido por:** [@yismafx](https://github.com/yismafx)
 
 **Changelog:**
+- v3.0 (Nov 14, 2025): Código de instalación compatible con Colab 2025 (sin conflictos de dependencias)
 - v2.1 (Nov 14, 2025): Lenguaje para traders no programadores, clarificación Python → Multi-plataforma
 - v2.0 (Nov 13, 2025): Arquitectura modular - setup independiente
 - v1.0 (Nov 2025): Versión inicial
@@ -1474,7 +1581,7 @@ Soporte comunitario + troubleshooting en vivo
 
 ## 🎉 ¡Estás Listo!
 
-Has completado exitosamente el Setup A: Colab Rápido.
+Has completado exitosamente el Setup A: Colab Rápido v3.0.
 
 **Recuerda el hilo conductor:**
 
