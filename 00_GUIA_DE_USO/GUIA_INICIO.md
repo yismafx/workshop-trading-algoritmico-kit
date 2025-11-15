@@ -1,5 +1,10 @@
 # 🎯 BIENVENIDO AL KIT DE TRADING ALGORÍTMICO AUMENTADO CON IA GENERATIVA
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 
 🏠 [Inicio](../README.md) > 📂 Guía de Uso > 📄 **Guía de Inicio**
 
@@ -54,7 +59,7 @@ Este kit es para ti **SOLO SI**:
 ### 🚀 3 Pasos Para Comenzar YA
 
 1. **📊 Ver la Arquitectura (2 min)**  
-   → [Mapa Mental Interactivo del Sistema](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)  
+   → [Mapa Mental Interactivo del Sistema](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/Mapa_Sistema_Trading.html)  
    Visualiza cómo los 5 componentes se conectan
 
 2. **⚙️ Setup Mínimo (2 min)**  
@@ -101,7 +106,7 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 │   ├── GUIA_INICIO.md         ← Estás aquí
 │   ├── Programa_Detallado_Workshop.md   → Programa Detallado (9 sesiones)
 │   ├── Guia_Setup_Completa.md → Configuración paso a paso
-│   └── MAPA_MENTAL_SISTEMA_TRADING_PNG.html → Arquitectura visual
+│   └── Mapa_Sistema_Trading.html → Arquitectura visual
 │
 ├── 📂 02_TEMPLATE_PACK/         → 🔓 PÚBLICO (Templates profesionales)
 │   ├── Strategy_Memo_Template.md
@@ -128,7 +133,7 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 ```
 
 **🗺️ Visualiza la Arquitectura Completa:**  
-👉 [Mapa Mental Interactivo del Sistema](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html)
+👉 [Mapa Mental Interactivo del Sistema](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/Mapa_Sistema_Trading.html)
 
 **Ver también:**
 - [Instrucciones de Setup](#-checklist-tu-primer-día) para configurar tu ambiente
@@ -278,7 +283,7 @@ Ver [Programa Detallado](Programa_Detallado_Workshop.md) con objetivos, entregab
 
 **Tareas:**
 1. Leer este documento completo (15-20 min)
-2. Revisar el [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) (5 min)
+2. Revisar el [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/Mapa_Sistema_Trading.html) (5 min)
 3. Leer [Programa Detallado](Programa_Detallado_Workshop.md) para entender el roadmap (20 min)
 4. Completar [Checklist "Tu Primer Día"](#-checklist-tu-primer-día) (15 min)
 
@@ -727,8 +732,6 @@ R: **El riesgo es tuyo**. El workshop enseña el proceso, no garantiza rentabili
 2. Empezar con 1-5% capital máximo
 3. Nunca operar con dinero que no puedas perder
 
-**Disclaimer:** Material educativo, no asesoría de inversión.
-
 **🔍 ¿No encontraste tu pregunta?**
 - Revisa [Troubleshooting Común](#-troubleshooting-común) para errores técnicos
 - Consulta el [Stack Tecnológico](#️-stack-tecnológico-del-workshop) para dudas de herramientas
@@ -854,7 +857,7 @@ pip install yfinance
 | Estado | Acción |
 |:------:|--------|
 | ☐ | **Leer esta guía completa** (acabas de hacerlo) |
-| ☐ | **Revisar el** [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/MAPA_MENTAL_SISTEMA_TRADING_PNG.html) |
+| ☐ | **Revisar el** [Mapa Mental Interactivo](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/Mapa_Sistema_Trading.html) |
 | ☐ | **Configurar ambiente** siguiendo: [Instrucciones de Setup](Guia_Setup_Completa.md) |
 | ☐ | **Completar el** [checklist "Tu Primer Día"](#-checklist-tu-primer-día) |
 | ☐ | **Abrir el Colab Notebook Maestro** (🔒 Premium) |
@@ -869,17 +872,6 @@ pip install yfinance
 **Versión del Kit:** 2.0 (Noviembre 2025)  
 **Mantenido por:** [@yismafx](https://github.com/yismafx)  
 **Comunidad:** Fractals Market
-
----
-
-## ⚠️ Disclaimer Legal
-
-**Material para fines educativos únicamente.**
-
-❌ NO constituye asesoría de inversión  
-⚠️ Trading algorítmico implica riesgo de pérdida de capital  
-📊 Resultados pasados NO garantizan resultados futuros  
-💰 Nunca operes con dinero que no puedas perder
 
 ---
 

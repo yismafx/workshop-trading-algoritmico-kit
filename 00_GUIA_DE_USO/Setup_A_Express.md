@@ -1,5 +1,10 @@
 # ⚡ SETUP A EXPRESS: GUÍA DETALLADA (10-15 MIN)
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 **🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > ⚙️ [Setup](Setup_Colab_Rapido.md) > 📄 Setup Express**
 
 ---
@@ -36,7 +41,7 @@
 - 📚 Quieres entender cada paso en detalle
 - ❓ Necesitas ayuda con conceptos básicos
 
-**→ En ese caso, usa la [Guía Paso a Paso Completa](Setup_A_Guiado.md)**
+**→ En ese caso, usa la [Guía Paso a Paso Completa](Setup_Colab_Rapido.md)**
 
 ---
 
@@ -361,7 +366,7 @@
 
 3. **Opcional - Profundiza:**
    - 📚 [Mejores Prácticas del Setup A](Mejores_Practicas_Setup_A.md)
-   - 🔍 [¿Necesitas más detalles? Guía Completa](Setup_A_Guiado.md)
+   - 🔍 [¿Necesitas más detalles? Guía Completa](Setup_Colab_Rapido.md)
 
 ---
 
@@ -397,17 +402,6 @@
 
 ---
 
-## ⚠️ DISCLAIMER
-
-Material educativo. Trading implica riesgo de pérdida de capital.  
-Nunca operes con dinero que no puedas perder.
-
----
-
 **🎉 ¡Felicitaciones por completar el Setup Express!**
 
 **Tiempo récord: 10-15 minutos. Ahora estás listo para el workshop. 🚀**
-
----
-
-[Fin del documento - Setup A Express v1.0]

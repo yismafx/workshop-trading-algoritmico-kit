@@ -1,5 +1,10 @@
 # 🗺️ MAPA DE RECURSOS DEL WORKSHOP
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 **Hub Central: Trading Algorítmico Aumentado con IA Generativa**
 
 **🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > 📄 Mapa de Recursos**
@@ -622,7 +627,7 @@ from data_pipeline import download_historical_data
 - **Dificultad:** ⭐⭐⭐ Media
 - **Para:** Deployment 24/7
 
-**📘 [Ir a Setup B ⚠️ v2.2](Setup_B_Python_Local.md)**
+**📘 [Ir a Setup B](Setup_B_Python_Local.md)**
 
 ---
 
@@ -631,7 +636,7 @@ from data_pipeline import download_historical_data
 - **Dificultad:** ⭐⭐ Media-Fácil
 - **Para:** Traders de Forex/CFDs
 
-**📘 [Ir a Setup C ⚠️ v2.3](Setup_C_MetaTrader5.md)**
+**📘 [Ir a Setup C](Setup_C_MetaTrader5.md)**
 
 ---
 
@@ -640,7 +645,7 @@ from data_pipeline import download_historical_data
 - **Dificultad:** ⭐⭐⭐⭐ Alta
 - **Para:** Profesionales con IB
 
-**📘 [Ir a Setup D ⚠️ v2.4](Setup_D_Interactive_Brokers.md)**
+**📘 [Ir a Setup D](Setup_D_Interactive_Brokers.md)**
 
 ---
 
@@ -915,17 +920,6 @@ workshop-trading-algoritmico-kit/
 
 ---
 
-## ⚠️ DISCLAIMER
-
-Material educativo. Algunos recursos son premium (solo participantes del workshop).  
-Trading implica riesgo de pérdida de capital.
-
----
-
 **🗺️ ¡Con este mapa, nunca te perderás en el workshop!**
 
 **Marca esta página como favorita para referencia rápida. 🎯**
-
----
-
-[Fin del documento - Mapa de Recursos v1.0]

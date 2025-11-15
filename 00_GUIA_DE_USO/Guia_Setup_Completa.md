@@ -1,5 +1,10 @@
 # 🛠️ INSTRUCCIONES DE SETUP DEL AMBIENTE
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 
 🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > 📄 **Guía de Setup Completa**
 
@@ -376,17 +381,6 @@ En 80% de los casos, la solución ya está documentada.
 - v2.1 (Nov 2025): Arquitectura modular - 8 archivos separados
 - v2.0 (Nov 2025): Guía de uso de Colab agregada
 - v1.0 (Nov 2025): Versión inicial con 4 opciones de setup
-
----
-
-## ⚠️ Disclaimer
-
-**Este es material educativo.**
-
-- ✅ Todas las herramientas son gratuitas para paper trading
-- ⚠️ Nunca uses credenciales de live trading en el workshop
-- 📊 Practica con cuentas demo/paper antes de arriesgar capital real
-- 💰 Trading algorítmico tiene riesgo de pérdida de capital
 
 ---
 
