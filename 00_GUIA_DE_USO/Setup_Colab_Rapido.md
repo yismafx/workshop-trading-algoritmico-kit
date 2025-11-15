@@ -1384,14 +1384,14 @@ Antes de continuar al Paso 5, verifica:
 2. **Copia y pega este código:**
 
 ```python
-# ============================================================
-# 📥 DESCARGAR DATOS HISTÓRICOS DE SPY (ALPACA)
+# ═══════════════════════════════════════════════════════════
+# 📥 DESCARGAR DATOS HISTÓRICOS DE SPY (ALPACA) v3.5 CORREGIDA
 # Versión Profesional con Validación de Restricciones
-# ============================================================
+# ═══════════════════════════════════════════════════════════
 # 🎓 TEORÍA (López de Prado, 2018):
 # "La calidad del backtesting depende de la calidad de los datos.
 #  Validar fechas ANTES de solicitar datos evita errores silenciosos."
-# ============================================================
+# ═══════════════════════════════════════════════════════════
 
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
@@ -1402,9 +1402,9 @@ import pandas as pd
 print("📥 Descargando datos de SPY...")
 print("=" * 60)
 
-# ============================================================
+# ════════════════════════════════════════════════════════════
 # VALIDACIÓN 1: Fechas por defecto con restricción de Alpaca
-# ============================================================
+# ════════════════════════════════════════════════════════════
 
 # ⚠️ RESTRICCIÓN CRÍTICA DE ALPACA (Plan Basic)
 # Según documentación oficial: https://docs.alpaca.markets/docs/about-market-data-api
@@ -1417,9 +1417,9 @@ start_date = end_date - timedelta(days=365*5)  # 5 años atrás desde ayer
 print(f"📅 Fecha inicio: {start_date.date()} (5 años atrás)")
 print(f"📅 Fecha fin: {end_date.date()} (ayer)")
 
-# ============================================================
+# ════════════════════════════════════════════════════════════
 # VALIDACIÓN 2: Verificar restricción de 15 minutos
-# ============================================================
+# ════════════════════════════════════════════════════════════
 
 ahora = datetime.now()
 diferencia_minutos = (ahora - end_date).total_seconds() / 60
@@ -1433,13 +1433,13 @@ if diferencia_minutos < 15:
 
 print("=" * 60)
 
-# ============================================================
+# ════════════════════════════════════════════════════════════
 # DESCARGA CON MANEJO DE ERRORES
-# ============================================================
+# ════════════════════════════════════════════════════════════
 
 try:
     # Crear cliente
-    data_client = StockHistoricalDataClient(ALPACA_API_KEY, ALPACA_SECRET_KEY)
+    data_client = StockHistoricalDataClient(API_KEY, SECRET_KEY)
     
     # Crear request
     request_params = StockBarsRequest(
@@ -1456,9 +1456,20 @@ try:
     # Convertir a DataFrame
     df = bars.df
     
-    # ============================================================
+    # ════════════════════════════════════════════════════════════
+    # CORRECCIÓN: Manejar MultiIndex de Alpaca
+    # ════════════════════════════════════════════════════════════
+    
+    # Alpaca devuelve MultiIndex (symbol, timestamp)
+    # Necesitamos acceder solo al nivel de timestamp
+    if isinstance(df.index, pd.MultiIndex):
+        # Eliminar el nivel de símbolo, quedarnos solo con timestamp
+        df.index = df.index.droplevel(0)
+        print("\n✅ MultiIndex corregido - usando solo timestamp")
+    
+    # ════════════════════════════════════════════════════════════
     # VALIDACIÓN 3: Verificar calidad de datos
-    # ============================================================
+    # ════════════════════════════════════════════════════════════
     
     if df.empty:
         raise ValueError(
@@ -1471,9 +1482,9 @@ try:
         print(f"\n⚠️ Advertencia: Datos con valores nulos detectados:")
         print(nulos_por_columna[nulos_por_columna > 0])
     
-    # ============================================================
+    # ════════════════════════════════════════════════════════════
     # RESUMEN DE DESCARGA
-    # ============================================================
+    # ════════════════════════════════════════════════════════════
     
     print(f"\n✅ Descarga completada exitosamente")
     print("=" * 60)
@@ -1493,13 +1504,14 @@ try:
     print(df.tail(3))
     
     print("\n🎉 ¡Datos descargados exitosamente!")
+    print("\n📍 Próximo paso: Validación final completa (Paso 7)")
     
 except Exception as e:
     error_msg = str(e)
     
-    # ============================================================
+    # ════════════════════════════════════════════════════════════
     # DIAGNÓSTICO DE ERRORES COMUNES
-    # ============================================================
+    # ════════════════════════════════════════════════════════════
     
     if "subscription does not permit" in error_msg.lower():
         print(f"\n❌ ERROR: Restricción de suscripción gratuita")
@@ -1512,7 +1524,7 @@ except Exception as e:
     elif "invalid credentials" in error_msg.lower():
         print(f"\n❌ ERROR: Credenciales inválidas")
         print(f"   Verifica que API_KEY y SECRET_KEY sean correctos")
-        print(f"   Revisa el archivo alpaca_keys.txt en tu escritorio")
+        print(f"   Vuelve al Paso 5 para verificar tus credenciales")
     
     elif "connection" in error_msg.lower() or "timeout" in error_msg.lower():
         print(f"\n❌ ERROR: Problema de conexión")
@@ -1525,6 +1537,7 @@ except Exception as e:
         print(f"\n📞 Contacta al instructor si persiste")
     
     raise  # Re-lanzar el error para debugging
+```
 
 3. **Ejecuta la celda** (Shift + Enter)
 
