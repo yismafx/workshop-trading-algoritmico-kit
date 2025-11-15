@@ -4,14 +4,8 @@
 
 ---
 
-## 📋 METADATOS DEL DOCUMENTO
-
-**Workshop:** Trading Algorítmico Aumentado con IA Generativa  
-**Versión:** 5.2 (Screenshots y Videos Actualizados - Noviembre 2025)  
-**Autor:** Yismary Quintero [@yismafx](https://github.com/yismafx)  
-**Dificultad:** ⭐ Fácil (No requiere experiencia en programación)  
-**Tiempo Estimado:** 10-15 minutos (basado en tiempos reales medidos)  
-**Última Actualización:** 15 de Noviembre de 2025
+**⏱️ Tiempo estimado:** 10-15 minutos  
+**📅 Última actualización:** Noviembre 2025
 
 ---
 
@@ -25,8 +19,6 @@ Al completar esta guía, tendrás:
 ✅ **Conexión a broker** (Alpaca o Interactive Brokers) configurada  
 ✅ **Primer dataset histórico** descargado (SPY 2020-2024)  
 ✅ **Entorno 100% funcional** para el workshop
-
-⏱️ **Tiempo real:** Lo mediremos juntos cuando ejecutes este setup
 
 ---
 
@@ -248,7 +240,7 @@ En Trading Algorítmico:
 
 **📸 Verás esta interfaz de Google Colab:**
 
-![Interfaz de Google Colab - Open Notebook](../screenshots/Colab_Screen1.png)
+![Interfaz de Google Colab - Open Notebook](https://raw.githubusercontent.com/yismafx/workshop-trading-algoritmico-kit/main/screenshots/Colab_Screen1.png)
 
 *La interfaz te permite abrir notebooks desde diferentes fuentes: Recent, Google Drive, GitHub o Upload (recomendado para este setup)*
 
@@ -391,8 +383,6 @@ ACCIÓN INMEDIATA:
 
 **💡 Tip:** Si necesitas volver a usar estas keys más adelante, tendrás el archivo. Si lo pierdes, tendrás que generar nuevas keys.
 
-**⏱️ Tiempo real medido:** 5 minutos (creación + 2FA + keys + guardar)
-
 ---
 
 ### 📋 PASO 5: Pegar Keys en el Notebook
@@ -447,22 +437,6 @@ El notebook incluye una última sección de validación que verifica:
 **Si ves esto:** ¡Felicidades! Completaste el setup exitosamente.
 
 **Si ves algún ❌:** Ve a la sección de [Troubleshooting](#-troubleshooting-por-paso).
-
----
-
-### ⏱️ RESUMEN DE TIEMPOS REALES
-
-**Basado en mediciones reales de Yismary Quintero:**
-
-| Paso | Actividad | Tiempo |
-|------|-----------|--------|
-| 1-2 | Descargar y subir notebook | 2 min |
-| 3 | Ejecución del notebook | 5 min |
-| 4 | Configurar Alpaca (cuenta + 2FA + keys) | 5 min |
-| 5-6 | Pegar keys y validación | 1 min |
-| **TOTAL** | **Setup completo** | **10-15 min** |
-
-**💡 Multitasking:** Puedes crear la cuenta de Alpaca mientras el notebook instala las librerías (Paso 3), ahorrando tiempo.
 
 ---
 
@@ -2658,69 +2632,10 @@ R: No completo. Solo ejecuta la celda de instalación y configuración si pasó 
 
 ---
 
-## 🔖 VERSIÓN Y CHANGELOG
+## 📌 VERSIÓN
 
-**Versión:** 5.2 (Screenshots y Videos Actualizados)  
-**Última actualización:** 15 de Noviembre de 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx)
-
-### Changelog:
-
-**v5.2 (Nov 15, 2025):** Screenshots y Videos Actualizados
-- 📸 **Screenshot agregado:** Interfaz "Open Notebook" de Google Colab en Paso 2 de Ruta Express
-- 🎥 **Videos actualizados a 2024-2025:**
-  - Tutorial Google Colab en español (Platzi, Dialéktico, Neoland)
-  - Recursos de Alpaca API oficiales y en español (Medium, Toolify)
-  - Guías actualizadas de Interactive Brokers API
-- 📖 **Recursos escritos mejorados:**
-  - Artículos técnicos de 2024-2025 agregados
-  - Links a documentación oficial actualizada
-  - Tutoriales paso a paso en español e inglés
-- ✨ **Mejoras de navegación:**
-  - Referencias más específicas a recursos externos
-  - Mejor organización de materiales de apoyo
-
-**v5.1 (Nov 14, 2025):** Correcciones basadas en tiempos reales medidos por Yismary Quintero
-- ✨ Autor actualizado: Yismary Quintero (no solo @yismafx)
-- ✨ Tiempos actualizados: 10-15 min total (no 30-60 min)
-- ✨ Ruta Express completamente reescrita:
-  - Notebook con instrucciones en español destacado
-  - Formas de ejecutar código: Shift+Enter O play ▶
-  - Tiempo de ejecución notebook: 5 min (medido)
-- ✨ Sección Alpaca exhaustivamente actualizada:
-  - Ventana incógnito como primera solución para problemas de carga
-  - 2FA obligatorio explicado ANTES de generar API Keys
-  - Advertencia CRÍTICA sobre Secret Key (solo se muestra una vez)
-  - Instrucciones para guardar keys en alpaca_keys.txt en escritorio
-  - Tiempo real medido: 5 min (cuenta + 2FA + keys)
-- ✨ Resumen de tiempos reales en tabla (basado en mediciones)
-- ✨ Checklist final de Ruta Express agregado
-- ✨ Troubleshooting de Alpaca expandido:
-  - Botón Generate Key deshabilitado (falta 2FA)
-  - No puedo ver Secret Key (cerró ventana)
-  - Página no carga (ventana incógnito)
-  - Invalid credentials (keys incorrectas)
-- 🔧 Links actualizados en tabla de contenidos
-- 🔧 Referencias a tiempos corregidas en todo el documento
-
-
-**v5.0 (Nov 14, 2025):** Refinamiento completo del Setup A
-- ✨ Reestructuración modular para mejor navegación
-- ✨ Dual broker setup (Alpaca + Interactive Brokers)
-- ✨ Placeholders para screenshots (solo 2 esenciales)
-- ✨ Links a videos de YouTube para profundizar
-- ✨ Referencias al Notebook Maestro (en desarrollo)
-- ✨ Checkpoints de validación después de cada paso
-- ✨ Troubleshooting exhaustivo por paso
-- ✨ Mejoras en claridad y fluidez del documento
-- 🔧 Corrección de link de descarga roto
-- 🔧 Eliminación de referencias personales hardcodeadas
-
-**v4.0 (Nov 10, 2025):** Setup funcional completo
-- Versión anterior funcional pero necesitaba refinamiento
-
-**v3.0 (Oct 2025):** Primera versión pública
-- Setup básico con Alpaca únicamente
+**v5.3 (Noviembre 2025)** - Versión limpia y enfocada  
+**Última actualización:** Noviembre 2025
 
 ---
 
@@ -2756,4 +2671,4 @@ R: No completo. Solo ejecuta la celda de instalación y configuración si pasó 
 
 ---
 
-[Fin del documento - Setup A v5.0]
+[Fin del documento - Setup A v5.3 Limpia]
