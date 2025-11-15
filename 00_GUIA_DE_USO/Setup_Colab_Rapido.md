@@ -1439,7 +1439,7 @@ print("=" * 60)
 
 try:
     # Crear cliente
-    data_client = StockHistoricalDataClient(API_KEY, SECRET_KEY)
+    data_client = StockHistoricalDataClient(ALPACA_API_KEY, ALPACA_SECRET_KEY)
     
     # Crear request
     request_params = StockBarsRequest(
