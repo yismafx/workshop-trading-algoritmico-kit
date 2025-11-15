@@ -716,38 +716,85 @@ Antes de continuar, verifica:
 Copia y pega este código exacto en la celda:
 
 ```python
-# ============================================================
-# 📦 INSTALACIÓN DE LIBRERÍAS PARA TRADING ALGORÍTMICO
-# ============================================================
-# IMPORTANTE: Este código solo se ejecuta UNA VEZ al inicio
-# Tiempo estimado: 2-3 minutos
-# ============================================================
+# ═══════════════════════════════════════════════════════════
+# 📦 INSTALACIÓN AUTOMÁTICA v3.5 CORREGIDA
+# Workshop: Trading Algorítmico Aumentado con IA Generativa
+# ═══════════════════════════════════════════════════════════
+# 
+# ⚠️ IMPORTANTE: Este código YA ESTÁ ESCRITO
+# Tú NO necesitas entender cada línea
+# Solo ejecuta y espera
+#
+# ═══════════════════════════════════════════════════════════
 
-print("🚀 Iniciando instalación de librerías...")
-print("⏱️ Tiempo estimado: 2-3 minutos")
-print("=" * 60)
+print("🚀 Instalando herramientas de trading automáticamente...")
+print("   No necesitas hacer nada más que esperar.\n")
+print("⏱️  Tiempo estimado: 2-3 minutos\n")
 
-# 1. Librerías de conexión a brokers
-print("\n📡 Instalando conexiones a brokers...")
-!pip install -q alpaca-py          # Para Alpaca
-!pip install -q ib_insync          # Para Interactive Brokers
+print("═" * 60)
+print("📥 INSTALANDO HERRAMIENTAS")
+print("═" * 60)
 
-# 2. Librerías de análisis de datos
-print("📊 Instalando herramientas de análisis...")
-!pip install -q pandas numpy matplotlib seaborn
+# Herramienta 1: Descargar datos de mercados
+print("\n📈 [1/6] Instalando yfinance (datos de mercados)...")
+!pip install -q yfinance
+print("   ✅ yfinance instalado")
 
-# 3. Librerías de indicadores técnicos
-print("📈 Instalando indicadores técnicos...")
-!pip install -q pandas-ta ta-lib
+# Herramienta 2: Conectar con broker
+print("\n📊 [2/6] Instalando alpaca-py (broker paper trading)...")
+!pip install -q alpaca-py
+print("   ✅ alpaca-py instalado")
 
-# 4. Librerías de backtesting
-print("🔄 Instalando herramientas de backtesting...")
-!pip install -q vectorbt backtrader
+# Herramienta 3: Backtesting
+print("\n🧪 [3/6] Instalando vectorbt (backtesting)...")
+!pip install -q vectorbt
+print("   ✅ vectorbt instalado")
 
-print("\n" + "=" * 60)
-print("✅ ¡Instalación completada!")
-print("=" * 60)
-print("\n💡 Ahora puedes ejecutar la siguiente celda para validar")
+# Herramienta 4: Análisis técnico
+print("\n📉 [4/6] Instalando ta (indicadores técnicos)...")
+!pip install -q ta
+print("   ✅ ta instalado")
+
+# Herramienta 5: Indicadores adicionales (opcional)
+print("\n📊 [5/6] Instalando pandas-ta (más indicadores)...")
+try:
+    !pip install -q pandas-ta --no-deps
+    print("   ✅ pandas-ta instalado")
+except:
+    print("   ⚠️  pandas-ta opcional - no disponible (no es problema)")
+
+# Herramienta 6: Gráficos
+print("\n🎨 [6/6] Instalando plotly (gráficos)...")
+!pip install -q plotly
+print("   ✅ plotly instalado")
+
+print("\n" + "═" * 60)
+print("🎉 ¡INSTALACIÓN COMPLETADA!")
+print("═" * 60)
+
+print("\n✅ Herramientas instaladas:")
+print("   • yfinance (descarga datos)")
+print("   • alpaca-py (broker)")
+print("   • vectorbt (backtesting)")
+print("   • ta (análisis técnico)")
+print("   • plotly (gráficos)")
+
+print("\n" + "🔴" * 20)
+print("⚠️  PASO OBLIGATORIO AHORA")
+print("🔴" * 20)
+
+print("\n🔄 DEBES REINICIAR LA SESIÓN:")
+print("   1. Ve al menú: Runtime → Restart session")
+print("   2. Click 'Yes'")
+print("   3. Espera 10 segundos")
+print("   4. NO ejecutes nada más hasta reiniciar")
+
+print("\n💡 ¿Por qué?")
+print("   Python necesita 'recargar' las nuevas herramientas.")
+print("   Es como reiniciar TradingView después de instalar indicadores.")
+
+print("\n⚠️  NO continúes sin antes hacer: Runtime → Restart session")
+print("\n" + "═" * 60)
 ```
 
 **Paso 3.3 - Ejecutar la Instalación:**
