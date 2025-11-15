@@ -1504,7 +1504,7 @@ try:
     print(df.tail(3))
     
     print("\n🎉 ¡Datos descargados exitosamente!")
-    print("\n📍 Próximo paso: Validación final completa (Paso 7)")
+    
     
 except Exception as e:
     error_msg = str(e)
