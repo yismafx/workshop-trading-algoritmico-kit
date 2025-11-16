@@ -25,8 +25,7 @@
 5. [🔗 Configurar Broker](#-configurar-broker)
 6. [🗺️ Recursos del Workshop](#️-recursos-del-workshop)
 7. [🚨 Troubleshooting Crítico](#-troubleshooting-crítico)
-8. [✅ Mejores Prácticas](#-mejores-prácticas-críticas)
-9. [🎯 Próximos Pasos](#-próximos-pasos)
+8. [🎯 Próximos Pasos](#-próximos-pasos)
 
 ### 🔗 Guías Complementarias
 - [📘 Setup Express Completo](Setup_A_Express.md) - Versión detallada 10-15 min
