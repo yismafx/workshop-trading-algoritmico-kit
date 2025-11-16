@@ -41,7 +41,7 @@
 - 📚 Quieres entender cada paso en detalle
 - ❓ Necesitas ayuda con conceptos básicos
 
-**→ En ese caso, usa la [Guía Paso a Paso Completa](Setup_Colab_Rapido.md)**
+**→ En ese caso, usa la [Guía Paso a Paso Completa](Setup_A_Guiado.md)**
 
 ---
 

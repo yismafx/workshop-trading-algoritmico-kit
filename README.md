@@ -54,6 +54,67 @@
 
 ---
 
+## 🧭 Filosofía Python Primero
+
+### 🤔 "¿Por qué voy a aprender Python si yo opero en TradingView/MetaTrader?"
+
+Esta es una pregunta frecuente y válida. Aquí está la respuesta honesta:
+
+**Python es el "Lenguaje Universal" del Trading Algorítmico**
+
+En Trading Manual, aprendes análisis técnico (RSI, MACD, Bandas Bollinger) **una vez** y lo aplicas en **cualquier plataforma** (TradingView, MetaTrader, ThinkOrSwim, Interactive Brokers).
+
+**En Trading Algorítmico es igual:**
+- Aprendes Python **una vez**
+- Lo usas en **todas las plataformas**
+- Desarrollas en Python (riguroso)
+- Validas en Python (profesional)
+- Luego (Sesión 7 del workshop):
+  - IA traduce a Pine Script (TradingView)
+  - IA traduce a MQL5 (MetaTrader)
+  - IA traduce a cualquier plataforma
+
+### 🎯 El Journey del Workshop (9 Sesiones)
+
+**Sesiones 1-6: Fundamentos en Python** (18 horas)
+- Descargas datos de mercado
+- Diseñas estrategias con IA Generativa
+- Haces backtesting riguroso
+- Gestionas riesgo profesionalmente
+
+**→ Sesión 7: Multi-Plataforma** (3 horas) ⭐ **AQUÍ ES LA MAGIA**
+- Conviertes tu código Python → Pine Script (TradingView)
+- Conviertes tu código Python → MQL5 (MetaTrader)
+- IA Generativa hace la traducción automática
+- Un solo sistema, múltiples plataformas
+
+**Sesiones 8-9: Producción** (6 horas)
+- Pones tu sistema 24/7
+- Documentas profesionalmente
+- Monitoreas en tiempo real
+
+### ⚠️ "Pero yo solo quiero usar TradingView/MetaTrader..."
+
+**Puedes hacerlo, PERO vas a encontrar estas limitaciones:**
+
+❌ **Pine Script y MQL5 son "cerrados"** (solo funcionan en su plataforma)  
+❌ **No tienen validación profesional** (Walk-Forward, Monte Carlo)  
+❌ **Limitaciones técnicas importantes** (memoria, API calls, librerías)  
+❌ **Difícil debugging y testing riguroso**
+
+✅ **Con Python + GenAI obtienes lo MEJOR de ambos mundos:**
+- Desarrollo riguroso en Python
+- Validación profesional
+- Ejecución en la plataforma que prefieras
+- Portabilidad total de tu código
+
+**📌 Mensaje del Instructor:**
+
+> **Confía en el proceso.** Miles de traders profesionales han seguido este camino.  
+> En Sesión 7, verás por qué Python primero es la ruta correcta.
+
+---
+
 ## El Kit Completo
 
 ### 📓 Colab Notebook Maestro
@@ -161,7 +222,7 @@ Claude (recomendado), ChatGPT, GitHub Copilot
 ### 📅 Próxima Cohorte
 - **Inicio:** Consultar fechas disponibles
 - **Formato:** Virtual (Google Meet)
-- **Cupo:** Limitado (máximo 6 participantes)
+- **Cupo:** Consultar disponibilidad
 
 ### 📞 Contacto
 📧 [yismaryme@gmail.com](mailto:yismaryme@gmail.com)  

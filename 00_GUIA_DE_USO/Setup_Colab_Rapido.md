@@ -5,7 +5,6 @@
 ---
 
 **⏱️ Tiempo:** 10-15 min | **Dificultad:** ⭐ Fácil | **Requiere:** Navegador + Gmail  
-**📊 Satisfacción:** ⭐⭐⭐⭐⭐ 4.7/5 | **Uso:** 8 de cada 10 participantes  
 **📅 Última actualización:** Noviembre 2025 | **Versión:** 6.0
 
 ---
@@ -34,7 +33,7 @@
 - [📚 Setup Guiado Paso a Paso](Setup_A_Guiado.md) - Versión exhaustiva 30-60 min
 - [🔑 Configurar Alpaca](Setup_A_Broker_Alpaca.md) - Guía especializada broker
 - [🏦 Configurar Interactive Brokers](Setup_A_Broker_IB.md) - Guía especializada broker
-- [✅ Mejores Prácticas Completas](Mejores_Practicas_Setup_A.md) - Tips de uso continuo
+- [✅ Mejores Prácticas](Mejores_Practicas_Setup_A.md) - Tips de uso continuo
 - [🚨 Troubleshooting Completo](Troubleshooting_Setup_A.md) - 50+ errores resueltos
 - [🗺️ Mapa de Recursos](Mapa_Recursos_Workshop.md) - Hub central del workshop
 
@@ -90,7 +89,6 @@ Al completar esta guía, tendrás:
   
 - ❌ **NO tienes** experiencia programando
   - **¿Qué significa?** Nunca has escrito código en ningún lenguaje
-  - **¿Es normal?** ✅ Sí, 7 de cada 10 participantes están en esta situación
   - **¿Puedo hacer el workshop igual?** ✅ Absolutamente, está diseñado para ti
 
 - ✅ Prefieres **aprender primero, automatizar después**
@@ -125,12 +123,6 @@ Al completar esta guía, tendrás:
   → Ve a [Setup D: Interactive Brokers ⚠️ v2.4](Setup_D_Interactive_Brokers.md)
   - **Estado:** 🟡 En desarrollo (disponible en v2.4 - Febrero 2026)
   - **Mientras tanto:** Usa Setup A + [Guía IB](Setup_A_Broker_IB.md)
-
-### 📊 Estadística del Workshop:
-
-> 🎯 **8 de cada 10 participantes** usan este setup exitosamente  
-> ⭐ **Satisfacción:** 4.7/5.0 según feedback de cohortes anteriores  
-> ⏱️ **Tiempo promedio real:** 12 minutos (no los 30-60 que toma la guiada)
 
 ---
 
