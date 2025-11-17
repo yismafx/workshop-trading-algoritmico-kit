@@ -25,7 +25,9 @@
 5. [📈 Backtesting](#-backtesting)
 6. [🔗 Integración con Brokers](#-integración-con-brokers)
 7. [🤖 IA Generativa](#-ia-generativa)
-8. [📞 Contacto para Soporte](#-contacto-para-soporte)
+8. [📞 Soporte](#-soporte)
+9. [💡 Mejores Prácticas](#-mejores-prácticas-para-evitar-errores)
+10. [📊 Roadmap](#-roadmap-de-troubleshooting)
 
 ---
 
@@ -37,14 +39,26 @@
 ```
 Troubleshooting_Maestro.md (ESTE ARCHIVO)
     ├─ Hub central de navegación
-    ├─ Quick Fixes para problemas comunes
-    └─ Referencias a troubleshooting específico:
-         ├─ Troubleshooting_Comun.md (errores cross-platform)
+    ├─ Quick Fixes para problemas comunes (6 errores más frecuentes)
+    ├─ Troubleshooting por categoría (Setup, Datos, Código, etc.)
+    └─ Referencias a guías específicas:
          ├─ Setup_A_Colab_Rapido.md (problemas de Colab)
-         ├─ Setup_B_Python_Local.md (problemas de instalación local)
-         ├─ Setup_C_MetaTrader5.md (problemas de MT5)
-         └─ Cada sesión S1-S9 tiene su propia sección
+         ├─ Setup_B_Python_Local.md (instalación local)
+         └─ Setup_C_MetaTrader5.md (integración MT5)
 ```
+
+**⚠️ Nota sobre contenido del workshop:**
+
+Este documento contiene troubleshooting **público y general** para el kit de trading algorítmico.
+
+El troubleshooting específico de:
+- Ejercicios de sesiones S1-S9
+- Estrategias privadas del workshop
+- Código de casos de estudio avanzados
+
+...está disponible dentro del **material privado del workshop** para participantes registrados.
+
+Si eres participante y tienes problemas con contenido específico de una sesión, contacta soporte directamente.
 
 ---
 
@@ -107,7 +121,7 @@ print(f"Símbolo: {df.attrs.get('symbol', 'N/A')}")
 ```
 
 **Referencias:**
-- [Troubleshooting Común - Sección Datos](Troubleshooting_Comun.md#-datos-y-apis)
+- Ver sección [📊 Datos y APIs](#-datos-y-apis) más abajo en este documento
 - [Setup Colab Rápido - Paso 5 Validación](Setup_A_Colab_Rapido.md#paso-5-validación-completa)
 
 ---
@@ -187,8 +201,10 @@ for chunk in pd.read_csv('datos_grandes.csv', chunksize=1000):
 **Si estás usando:**
 
 - **Google Colab:** Ver [Setup Colab Rápido - Troubleshooting](Setup_A_Colab_Rapido.md#-troubleshooting)
-- **Python Local:** Ver [Setup B Python Local - Troubleshooting](#) *(Fase 1B)*
-- **MetaTrader 5:** Ver [Setup C MetaTrader5 - Troubleshooting](#) *(Fase 1B)*
+- **Python Local:** Ver [Setup B: Python Local](Setup_B_Python_Local.md) - Sección Troubleshooting
+- **MetaTrader 5:** Ver [Setup C: MetaTrader 5](Setup_C_MetaTrader5.md) - Sección Troubleshooting
+
+**Nota:** Los Setups B y C incluyen troubleshooting específico en sus respectivas guías.
 
 ### 🔧 Errores de Dependencias
 
@@ -209,7 +225,9 @@ for chunk in pd.read_csv('datos_grandes.csv', chunksize=1000):
 
 ### 🔌 Problemas con Alpaca API
 
-**Ver guía completa:** [Troubleshooting Común - APIs](Troubleshooting_Comun.md#-rate-limit-exceeded-apis)
+📚 **Más información:**
+- Ver sección [🔴 ERROR #4: Rate limit exceeded](#-error-4-rate-limit-exceeded-apis) más arriba
+- Consulta [FAQ - Problemas con APIs](FAQ_COMPLETO.md#-preguntas-técnicas)
 
 **Errores comunes:**
 - ❌ "Forbidden" → API keys incorrectas
@@ -258,7 +276,9 @@ print(f"Días sin volumen: {len(low_volume)}")
 
 ### 🐍 Errores de Sintaxis Python
 
-**Ver guía completa:** [Troubleshooting Común - Código](Troubleshooting_Comun.md#-código-se-cuelga--no-termina)
+📚 **Más información:**
+- Ver sección [🔴 ERROR #5: Código se cuelga / No termina](#-error-5-código-se-cuelga--no-termina) más arriba
+- Consulta [FAQ Completo](FAQ_COMPLETO.md) para dudas generales
 
 **Errores comunes para traders sin experiencia en código:**
 
@@ -360,10 +380,12 @@ slippage = 0.0005   # 0.05% de slippage
 
 ### 🔌 Conexión Fallida
 
-**Ver troubleshooting específico:**
-- **Alpaca:** [Setup Colab Rápido - Paso 4](Setup_A_Colab_Rapido.md#paso-4-conectar-con-alpaca-api)
-- **Interactive Brokers:** *(Fase 1B)*
-- **MetaTrader 5:** *(Fase 1B)*
+**Ver troubleshooting específico por broker:**
+- **Alpaca:** [Setup A - Conexión Alpaca](Setup_A_Colab_Rapido.md#paso-4-conectar-con-alpaca-api)
+- **Interactive Brokers:** Contacta soporte para integración personalizada
+- **MetaTrader 5:** Ver [Setup C: MetaTrader 5](Setup_C_MetaTrader5.md)
+
+**Nota:** IB requiere configuración avanzada. Consulta con soporte antes de intentar integración.
 
 ---
 
@@ -502,35 +524,23 @@ print(dir(yf))  # Lista todas las funciones disponibles
 
 ---
 
-## 🔗 NAVEGACIÓN
-
-**← Volver a:**
-- [README Principal](../README.md)
-- [Guía de Inicio](GUIA_INICIO.md)
-- [Setup Colab Rápido](Setup_A_Colab_Rapido.md)
-
-**Ver también:**
-- [Troubleshooting Común](Troubleshooting_Comun.md) - Soluciones cross-platform
-- [SITEMAP.md](SITEMAP.md) - Mapa completo del repositorio
-- [GLOSARIO_NAVEGACION.md](GLOSARIO_NAVEGACION.md) - Índice de archivos
-
----
-
 ## 📊 ROADMAP DE TROUBLESHOOTING
 
 ```
-✅ v2.1 (Actual) - Troubleshooting Maestro básico
-    ├─ Quick Fixes centralizados
-    ├─ Referencias a docs específicos
-    └─ Estructura modular
-🟡 v2.2 (Próxima) - Expansión de contenido
-    ├─ 50+ errores documentados
-    ├─ Videos de soluciones
-    └─ Base de conocimiento searchable
-🟡 v3.0 (Futura) - Troubleshooting Interactivo
-    ├─ Diagnóstico automático
-    ├─ Chatbot con soluciones
-    └─ FAQ dinámico
+✅ v3.0 (Actual) - Troubleshooting Maestro estandarizado
+    ├─ Quick Fixes para 6 errores más comunes
+    ├─ Troubleshooting por categorías (8 secciones)
+    ├─ Referencias actualizadas a Setup A, B, C
+    ├─ Mejores prácticas documentadas
+    └─ Navegación completa
+🟡 v3.1 (Próxima) - Expansión de casos
+    ├─ 20+ errores adicionales documentados
+    ├─ Sección de debugging avanzado
+    └─ Troubleshooting para APIs adicionales
+🟡 v4.0 (Futura) - Troubleshooting Interactivo
+    ├─ Diagnóstico automático de errores
+    ├─ Base de conocimiento searchable
+    └─ Integración con FAQ dinámico
 ```
 
 ---
