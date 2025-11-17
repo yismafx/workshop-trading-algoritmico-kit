@@ -1,4 +1,9 @@
-﻿# 📖 SETUP C: METATRADER 5 - GUÍA PASO A PASO
+# 📖 SETUP C: METATRADER 5 - GUÍA PASO A PASO
+
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
 
 **🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > ⚙️ [Setup](Guia_Setup_Completa.md) > 📊 Setup MetaTrader 5**
 
@@ -6,8 +11,9 @@
 
 **⏱️ Tiempo estimado:** 60-90 minutos  
 **🎯 Nivel de detalle:** Paso a paso para traders MT5  
-**📅 Última actualización:** Noviembre 2025  
-**🎓 Dificultad:** ⭐⭐⭐ (3/5 estrellas)
+**📅 Última actualización:** 17 de noviembre de 2025  
+**🎓 Dificultad:** ⭐⭐⭐ (3/5 estrellas)  
+**📌 Versión:** 3.0
 
 ---
 
@@ -2269,53 +2275,35 @@ print(f"Cruce bajista: {cruce_bajista}")
 
 ---
 
-## 🧭 NAVEGACIÓN
+## 🔗 NAVEGACIÓN
 
-**🏠 Inicio:** [README Principal](../README.md)  
-**⬅️ Anterior:** [Setup B - Python Local](Setup_B_Python_Local.md)  
-**➡️ Siguiente:** [Programa del Workshop](Programa_Detallado_Workshop.md)  
-**⬆️ Categoría:** [Guía de Uso](GUIA_INICIO.md)
+**◀️ Anterior:** [Setup B: Python Local](Setup_B_Python_Local.md)  
+**▶️ Siguiente:** [Programa del Workshop](Programa_Detallado_Workshop.md)
 
----
+**🏠 Volver a:**
+- [Guía de Setup Completa](Guia_Setup_Completa.md)
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
 
-## 📞 SOPORTE Y CONTACTO
-
-### 🆘 Si Necesitas Ayuda
-
-**Antes de contactar:**
-
-1. ✅ Revisa el [Troubleshooting](#-troubleshooting-por-paso)
-2. ✅ Verifica que MT5 esté abierto y conectado
-3. ✅ Asegúrate de estar en cuenta DEMO
-4. ✅ Busca error en Google (muchos ya resueltos)
-
-**Si el problema persiste:**
-
-### 📧 Email
-
-**Asunto:** `[Setup C - MT5] - [Tu problema]`
-
-**Email:** yismaryme@gmail.com
-
-**Tiempo de respuesta:** 24-48 horas
-
-**Incluye:**
-1. Descripción del problema
-2. Paso que estabas siguiendo
-3. Screenshot del error (si aplica)
-4. Versión de MT5 y Python
-5. Qué soluciones ya probaste
+**📖 Ver también:**
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
-### 💬 Telegram
+## 📞 SOPORTE
 
-**Para:** Consultas rápidas
+**¿Necesitas ayuda?**
 
-**Usuario:** [@yismafx](https://t.me/yismafx)
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismafx](https://t.me/yismafx)
 
-**Horarios:**
-- Lunes a Viernes: 9:00 AM - 6:00 PM (GMT-3)
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
+
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
 ---
 
@@ -2341,24 +2329,6 @@ R: Depende. Python es más fácil. MQL5 es más rápido. Ver [comparativa](#-dif
 
 **P: ¿Puedo optimizar parámetros automáticamente?**  
 R: En Python debes hacerlo manualmente (grid search). MQL5 tiene optimizador integrado.
-
----
-
-## 📌 VERSIÓN
-
-**v1.0 (Noviembre 2025)** - Setup MT5 + Python  
-**Última actualización:** Noviembre 15, 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx)
-
-**Changelog:**
-- **v1.0 (Nov 15, 2025):** Guía inicial Setup C
-  - Instalación MetaTrader 5
-  - Configuración cuenta demo AvaTrade
-  - Integración Python + MT5
-  - Envío de órdenes desde Python
-  - Creación de Expert Advisor SMA Crossover
-  - Backtesting completo
-  - Troubleshooting exhaustivo
 
 ---
 
@@ -2394,4 +2364,5 @@ R: En Python debes hacerlo manualmente (grid search). MQL5 tiene optimizador int
 
 ---
 
-[Fin del documento - Setup C MetaTrader 5 v1.0]
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso
