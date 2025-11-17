@@ -1,4 +1,9 @@
-﻿# 📖 SETUP B: PYTHON LOCAL - GUÍA PASO A PASO
+# 📖 SETUP B: PYTHON LOCAL - GUÍA PASO A PASO
+
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
 
 **🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > ⚙️ [Setup](Guia_Setup_Completa.md) > 💻 Setup Python Local**
 
@@ -6,8 +11,9 @@
 
 **⏱️ Tiempo estimado:** 45-90 minutos  
 **🎯 Nivel de detalle:** Paso a paso para Windows  
-**📅 Última actualización:** Noviembre 2025  
-**🎓 Dificultad:** ⭐⭐⭐ (3/5 estrellas)
+**📅 Última actualización:** 17 de noviembre de 2025  
+**🎓 Dificultad:** ⭐⭐⭐ (3/5 estrellas)  
+**📌 Versión:** 3.0
 
 ---
 
@@ -1462,48 +1468,6 @@ C:\TradingAlgo\
 
 ---
 
-## 📞 SOPORTE Y CONTACTO
-
-### 🆘 Si Necesitas Ayuda
-
-**Antes de contactar, intenta:**
-
-1. ✅ Revisar el [Troubleshooting](#-troubleshooting-por-paso) de este documento
-2. ✅ Buscar en el grupo de Telegram
-3. ✅ Reiniciar CMD y Jupyter
-4. ✅ Desactivar y reactivar virtual environment
-
-**Si el problema persiste:**
-
-### 📧 Email
-
-**Asunto:** `[Setup B - Python Local] - [Tu problema]`
-
-**Email:** yismaryme@gmail.com
-
-**Tiempo de respuesta:** 24-48 horas
-
-**Incluye:**
-1. Descripción del problema
-2. Qué paso estabas siguiendo
-3. Screenshot del error
-4. Versión de Python (`python --version`)
-5. Qué soluciones ya probaste
-
----
-
-### 💬 Telegram
-
-**Para:** Consultas rápidas
-
-**Usuario:** [@yismafx](https://t.me/yismafx)
-
-**Horarios:**
-- Lunes a Viernes: 9:00 AM - 6:00 PM (GMT-3)
-- Fines de semana: Respuestas limitadas
-
----
-
 ## ❓ FAQ - Preguntas Frecuentes
 
 **P: ¿Puedo tener Colab Y Python Local al mismo tiempo?**  
@@ -1532,21 +1496,35 @@ R:
 
 ---
 
-## 📌 VERSIÓN
+## 🔗 NAVEGACIÓN
 
-**v1.0 (Noviembre 2025)** - Setup Python Local para Windows  
-**Última actualización:** Noviembre 15, 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx)
+**◀️ Anterior:** [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md)  
+**▶️ Siguiente:** [Setup C: MetaTrader 5](Setup_C_MetaTrader5.md)
 
-**Changelog:**
-- **v1.0 (Nov 15, 2025):** Guía inicial Setup B
-  - Instalación Python 3.11+ en Windows
-  - Configuración Jupyter Notebook
-  - Virtual environments
-  - Migración desde Colab
-  - Instalación librerías de trading
-  - Validación completa
-  - Troubleshooting exhaustivo
+**🏠 Volver a:**
+- [Guía de Setup Completa](Guia_Setup_Completa.md)
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
+
+**📖 Ver también:**
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [SITEMAP](SITEMAP.md)
+
+---
+
+## 📞 SOPORTE
+
+**¿Necesitas ayuda?**
+
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismafx](https://t.me/yismafx)
+
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
+
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
 ---
 
@@ -1577,8 +1555,9 @@ R:
 
 **Ahora tienes el poder de desarrollar y deployar estrategias localmente.**
 
-**Próximo paso: Setup C (MetaTrader 5) si quieres operar en MT5. 🚀**
+**Próximo paso: [Setup C (MetaTrader 5)](Setup_C_MetaTrader5.md) si quieres operar en MT5. 🚀**
 
 ---
 
-[Fin del documento - Setup B Python Local v1.0]
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso
