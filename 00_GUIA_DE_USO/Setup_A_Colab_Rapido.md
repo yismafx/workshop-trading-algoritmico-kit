@@ -10,7 +10,8 @@
 ---
 
 **⏱️ Tiempo:** 30-45 min | **Dificultad:** ⭐⭐ | **Detalle:** Completo con explicaciones  
-**📅 Última actualización:** Noviembre 2025 | **Versión:** 2.0
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 
@@ -686,43 +687,39 @@ print(f"\n🚀 ¡Estás listo para empezar el workshop!")
 
 ---
 
-## 🧭 NAVEGACIÓN
+## 🔗 NAVEGACIÓN
 
-**🏠 Inicio:** [README Principal](../README.md)  
-**⬅️ Anterior:** [Guía de Inicio](GUIA_INICIO.md)  
-**➡️ Siguiente:** [Programa Detallado](Programa_Detallado_Workshop.md)  
-**⬆️ Hub:** [Guía Setup Completa](Guia_Setup_Completa.md)
+**◀️ Anterior:** [Guía de Inicio](GUIA_INICIO.md)  
+**▶️ Siguiente:** [Setup B: Python Local](Setup_B_Python_Local.md)
+
+**🏠 Volver a:**
+- [Guía de Setup Completa](Guia_Setup_Completa.md)
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
+
+**📖 Ver también:**
+- [Setup A Express](Setup_A_Express.md) - Versión rápida (10-15 min)
+- [Setup A Guiado](Setup_A_Guiado.md) - Versión exhaustiva (60-90 min)
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
 ## 📞 SOPORTE
 
-**Si algo no funcionó:**
+**¿Necesitas ayuda?**
 
-📧 **Email:** yismaryme@gmail.com (Asunto: `[Setup A Colab] - [Tu error]`)  
-💬 **Telegram:** [@yismafx](https://t.me/yismafx)  
-📚 **Troubleshooting:** [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
----
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
 
-## 📌 VERSIÓN
-
-**v2.0 (Noviembre 2025)** - Reescritura completa según Manual de Estilo v2.0  
-**Última actualización:** 16 de Noviembre de 2025
-
-**Changelog:**
-- v2.0: Reescritura completa (Fase 2)
-  - Header actualizado con disclaimer
-  - Navegación cruzada agregada (Express/Guiado)
-  - Referencias troubleshooting simplificadas (solo Maestro)
-  - Estructura modularizada
-  - Pasos clarificados con ejemplos de código
-  - Eliminados enlaces a archivos inexistentes
-  - Sección "Ver También" agregada
-- v6.0: [Versión anterior - deprecada]
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
 ---
 
-**🎉 ¡Felicitaciones por completar el Setup A!**
-
-**Tiempo invertido:** 30-45 minutos. Ahora estás listo para el workshop. 🚀
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

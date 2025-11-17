@@ -1518,7 +1518,7 @@ R:
 **¿Necesitas ayuda?**
 
 - 📧 **Email:** yismaryme@gmail.com
-- 💬 **Telegram:** [@yismafx](https://t.me/yismafx)
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
 **Horario de soporte:**
 - Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)

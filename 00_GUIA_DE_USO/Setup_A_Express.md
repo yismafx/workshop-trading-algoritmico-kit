@@ -10,7 +10,8 @@
 ---
 
 **⏱️ Tiempo:** 10-15 min | **Dificultad:** ⭐ Fácil | **Audiencia:** Usuarios experimentados con notebooks  
-**📅 Última actualización:** Noviembre 2025 | **Versión:** 3.1
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.1
 
 ---
 
@@ -396,39 +397,39 @@
 
 ---
 
-## 🧭 NAVEGACIÓN
+## 🔗 NAVEGACIÓN
 
-**🏠 Inicio:** [README Principal](../README.md)  
-**⬅️ Anterior:** [Setup A: Colab Completo](Setup_A_Colab_Rapido.md)  
-**➡️ Siguiente:** [Programa Detallado](Programa_Detallado_Workshop.md)  
-**⬆️ Categoría:** [Guía de Uso](GUIA_INICIO.md)
+**◀️ Anterior:** [Setup A: Colab Completo](Setup_A_Colab_Rapido.md)  
+**▶️ Siguiente:** [Setup A: Guiado](Setup_A_Guiado.md)
+
+**🏠 Volver a:**
+- [Guía de Setup Completa](Guia_Setup_Completa.md)
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
+
+**📖 Ver también:**
+- [Setup A Colab Completo](Setup_A_Colab_Rapido.md) - Versión con explicaciones (30-45 min)
+- [Setup A Guiado](Setup_A_Guiado.md) - Versión exhaustiva (60-90 min)
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
 ## 📞 SOPORTE
 
-**Si algo no funcionó:**
+**¿Necesitas ayuda?**
 
-📧 **Email:** yismaryme@gmail.com (Asunto: `[Setup A Express] - [Tu error]`)  
-💬 **Telegram:** [@yismafx](https://t.me/yismafx)  
-📚 **Troubleshooting:** [Troubleshooting Maestro](Troubleshooting_Maestro.md) - Hub central de soluciones
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
----
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
 
-## 📌 VERSIÓN
-
-**v3.1 (Noviembre 2025)** - Hotfix: Paths corregidos  
-**Última actualización:** 16 de Noviembre de 2025
-
-**Changelog:**
-- v3.1: Hotfix paths Troubleshooting_Maestro (estaba apuntando a carpeta inexistente)
-- v3.0: Simplificación de referencias troubleshooting (solo interno + Maestro)
-- v2.1: Fix enlaces rotos (404)
-- v2.0: Navegación cruzada Setup A
-- v1.0: Versión inicial
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
 ---
 
-**🎉 ¡Felicitaciones por completar el Setup Express!**
-
-**Tiempo récord: 10-15 minutos. Ahora estás listo para el workshop. 🚀**
+**Versión:** 3.1 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

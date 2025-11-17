@@ -9,11 +9,10 @@
 
 ---
 
-**Workshop: Trading Algorítmico Aumentado con IA Generativa**  
-**Versión:** 2.0 (Noviembre 2025)  
-**Tiempo estimado:** 60-90 minutos  
-**Dificultad:** ⭐ Principiante (0 experiencia Python requerida)  
-**Última actualización:** 16 de noviembre de 2025
+**⏱️ Tiempo estimado:** 60-90 minutos  
+**🎓 Dificultad:** ⭐ Principiante (0 experiencia Python requerida)  
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 
@@ -2196,175 +2195,41 @@ Contenido sesión por sesión con tiempos y objetivos
 
 ---
 
-## 🧭 Navegación
+## 🔗 NAVEGACIÓN
 
-### 🏠 Documentos Principales
+**◀️ Anterior:** [Setup A: Express](Setup_A_Express.md)  
+**▶️ Siguiente:** [Setup B: Python Local](Setup_B_Python_Local.md)
 
-- **[README Principal](../README.md)** - Página de inicio del proyecto
-- **[GUIA_INICIO.md](GUIA_INICIO.md)** - Tu punto de partida para el workshop
-- **[Programa_Detallado_Workshop.md](Programa_Detallado_Workshop.md)** - Contenido detallado de las 9 sesiones
+**🏠 Volver a:**
+- [Guía de Setup Completa](Guia_Setup_Completa.md)
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
 
-### 📂 Guías de Setup
-
-- **[Guía de Setup Completa](Guia_Setup_Completa.md)** - Elige tu setup (A/B/C/D)
-- **[Setup A: Express](Setup_A_Express.md)** - 10-15 min
-- **[Setup A: Colab Completo](Setup_A_Colab_Rapido.md)** - 30-45 min ⭐ Recomendado
-- **[Setup A: Guiado](Setup_A_Guiado.md)** - 60-90 min (ESTÁS AQUÍ)
-
-### 🛠️ Recursos de Soporte
-
-- **[Troubleshooting Maestro](Troubleshooting_Maestro.md)** - Base de conocimiento completa
-- **[FAQ](GUIA_INICIO.md#-faq---preguntas-frecuentes)** - Preguntas frecuentes
+**📖 Ver también:**
+- [Setup A Express](Setup_A_Express.md) - Versión rápida (10-15 min)
+- [Setup A Colab Completo](Setup_A_Colab_Rapido.md) - Versión estándar (30-45 min)
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
-## 📞 Soporte
+## 📞 SOPORTE
 
-**Si completaste el setup pero tienes dudas:**
+**¿Necesitas ayuda?**
 
-### 📧 Email
-**yismaryme@gmail.com**  
-Tiempo de respuesta: 24-48h
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
-**Incluye en tu email:**
-- ✅ Asunto: "Setup A Guiado - [Tu duda breve]"
-- ✅ Paso donde te quedaste (ej: "Paso 3.2")
-- ✅ Error completo (screenshot o texto)
-- ✅ Qué ya intentaste
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
 
----
-
-### 💬 Telegram
-**[@yismary](https://t.me/yismary)**  
-Para consultas rápidas pre-workshop
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
 ---
 
-### 🔒 Grupo Premium
-**Solo participantes pagos**  
-Acceso a:
-- Soporte comunitario 24/7
-- Sesiones de troubleshooting en vivo
-- Canal de anuncios de updates
-
 ---
 
-### 🚨 Antes de Contactar
-
-**Revisa primero:**
-
-1. ✅ Troubleshooting de este documento (arriba)
-2. ✅ [Troubleshooting Maestro](Troubleshooting_Maestro.md)
-3. ✅ [FAQ en GUIA_INICIO.md](GUIA_INICIO.md#-faq---preguntas-frecuentes)
-
-**80% de las consultas ya están respondidas en la documentación.**
-
----
-
-## 📌 Versión y Changelog
-
-**Versión:** 2.0 (Noviembre 2025)  
-**Última actualización:** 16 de noviembre de 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx)
-
----
-
-### 📝 Changelog
-
-**v2.0 (16 Nov 2025):**
-- ✨ **NUEVO:** Sección "Conceptos Fundamentales" (10 min de lectura)
-- ✨ **NUEVO:** Paso 5 "Primeros Pasos en Colab" (navegación, atajos)
-- ✨ **NUEVO:** Troubleshooting expandido (20+ casos)
-- 🔧 Mejorada claridad de instrucciones paso a paso
-- 🔧 Agregadas 15+ referencias a screenshots
-- 🔧 Expandidas explicaciones de errores comunes
-- 🔧 Agregado tiempo estimado por paso
-- 📚 Estandarizada navegación cruzada con otros Setup A
-- ♻️ Eliminadas referencias a archivos inexistentes
-
-**v1.0 (Nov 2025):**
-- 🚀 Versión inicial del Setup A Guiado
-- Basado en Setup A Express con 3x más detalle
-
----
-
-### 🔄 Próximas Actualizaciones
-
-**v2.1 (planeada):**
-- Integración de screenshots reales (vs. referencias)
-- Video tutorial complementario
-- Sección "Casos de uso" con ejemplos
-
----
-
-**¿Feedback sobre esta guía?**
-
-Envía sugerencias a: yismaryme@gmail.com  
-Asunto: "Feedback Setup A Guiado v2.0"
-
----
-
-## 🎉 ¡Felicidades!
-
-**Si llegaste hasta aquí, tu setup está 100% completo.**
-
-**Recapitulación de lo que lograste:**
-
-✅ Cuenta Alpaca Paper Trading creada  
-✅ Google Colab configurado  
-✅ API Keys conectadas de forma segura  
-✅ Validación completa exitosa  
-✅ Conocimientos básicos de uso de Colab  
-
-**Tiempo total invertido:** 60-90 minutos
-
----
-
-### 🚀 Próximos Pasos
-
-**1. Volver a la Guía de Inicio:**
-
-📖 [GUIA_INICIO.md](GUIA_INICIO.md)
-
-Lee el roadmap completo del workshop
-
----
-
-**2. Revisar el Programa Detallado:**
-
-📚 [Programa_Detallado_Workshop.md](Programa_Detallado_Workshop.md)
-
-Entiende qué aprenderás en cada sesión
-
----
-
-**3. ¡Empezar la Sesión 1!**
-
-**Abre tu notebook de Colab:**
-
-- Navega a la sección "🟦 SESIÓN 1: FUNDAMENTOS"
-- Ejecuta las celdas una por una
-- Sigue las instrucciones inline
-
----
-
-### 💡 Recuerda
-
-**Filosofía del workshop:**
-
-> **"GenAI = Copiloto, NO Piloto Automático"**
-
-- Tú mantienes el control
-- IA aumenta tus capacidades
-- Trading algorítmico requiere rigor
-
-**No hay atajos.**  
-**Hay procesos reproducibles y validables.**
-
----
-
-**¡Nos vemos en el workshop! 🎓**
-
----
-
-**📌 Este es el final del Setup A: Guiado v2.0**
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso
