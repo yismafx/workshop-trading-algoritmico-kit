@@ -96,9 +96,6 @@ GUIA_INICIO.md
 | **GUIA_INICIO.md** | `00_GUIA_DE_USO/` | ⭐ Guía maestra - Punto de partida | ✅ |
 | **GLOSARIO_NAVEGACION.md** | `00_GUIA_DE_USO/` | Índice de nombres de archivos | ✅ |
 | **Guia_Setup_Completa.md** | `00_GUIA_DE_USO/` | Instrucciones completas de setup | ✅ |
-| **Guia_Uso_Colab_Notebook.md** | `00_GUIA_DE_USO/` | Guía del Colab Notebook Maestro | 🟡 |
-| **Librerias_Dependencias_2025.md** | `00_GUIA_DE_USO/` | Lista completa de librerías | 🟡 |
-| **Librerias_Minimas_vs_Completas.md** | `00_GUIA_DE_USO/` | Comparación de setups | 🟡 |
 | **Mapa_Sistema_Trading.html** | `00_GUIA_DE_USO/` | Diagrama interactivo del sistema | ✅ |
 | **Programa_Detallado_Workshop.md** | `00_GUIA_DE_USO/` | Estructura de 9 sesiones | ✅ |
 | **README.md** | Raíz del repo | Descripción general del workshop | ✅ |
@@ -135,10 +132,7 @@ Los siguientes archivos están disponibles como **placeholders** en v2.1, pero s
 - `Setup_C_MetaTrader5.md` - 🟡 Placeholder disponible
 
 ### Documentación Adicional
-- `Guia_Uso_Colab_Notebook.md` - 🟡 Placeholder disponible
 - `Troubleshooting_Comun.md` - 🟡 Placeholder disponible
-- `Librerias_Dependencias_2025.md` - 🟡 Placeholder disponible
-- `Librerias_Minimas_vs_Completas.md` - 🟡 Placeholder disponible
 
 **Nota:** Los placeholders incluyen:
 - ✅ Navegación funcional (breadcrumbs y links)

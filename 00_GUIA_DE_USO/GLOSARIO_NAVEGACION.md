@@ -26,9 +26,6 @@ Este documento te ayuda a:
 |----------------|--------------|-----------|--------|
 | **Guía de Inicio** | `GUIA_INICIO.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
 | **Guía de Setup Completa** | `Guia_Setup_Completa.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
-| **Guía Uso Colab Notebook** | `Guia_Uso_Colab_Notebook.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
-| **Librerías y Dependencias** | `Librerias_Dependencias_2025.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
-| **Librerías Mínimas vs Completas** | `Librerias_Minimas_vs_Completas.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
 | **Mapa Mental** | `Mapa_Sistema_Trading.html` | `00_GUIA_DE_USO/` | ✅ Disponible |
 | **Programa Detallado** | `Programa_Detallado_Workshop.md` | `00_GUIA_DE_USO/` | ✅ Disponible |
 | **Setup Python Local** | `Setup_B_Python_Local.md` | `00_GUIA_DE_USO/` | 🟡 Placeholder |
@@ -50,10 +47,7 @@ Estos archivos están disponibles con navegación funcional y contenido básico.
 |----------------|-------------------|--------|
 | **Setup Python Local** | `Setup_B_Python_Local.md` | 🟡 Placeholder |
 | **Setup MetaTrader 5** | `Setup_C_MetaTrader5.md` | 🟡 Placeholder |
-| **Guía del Colab Notebook** | `Guia_Uso_Colab_Notebook.md` | 🟡 Placeholder |
 | **Troubleshooting Común** | `Troubleshooting_Comun.md` | 🟡 Placeholder |
-| **Librerías y Dependencias** | `Librerias_Dependencias_2025.md` | 🟡 Placeholder |
-| **Librerías Mínimas vs Completas** | `Librerias_Minimas_vs_Completas.md` | 🟡 Placeholder |
 
 **¿Qué incluyen los placeholders?**
 - ✅ Navegación funcional (sin links rotos)

@@ -144,20 +144,6 @@
 
 ---
 
-### 📚 Guía de Uso Completa
-
-**Para referencia detallada:**
-
-📘 **[Guía de Uso del Colab Notebook Maestro](Guia_Uso_Colab_Notebook.md)**
-
-**Incluye:**
-- Cómo navegar por el notebook
-- Atajos de teclado
-- Troubleshooting específico de Colab
-- Tips de rendimiento
-
----
-
 ## 📦 TEMPLATE PACK
 
 ### 🎯 ¿Qué Es?
@@ -728,9 +714,7 @@ from data_pipeline import download_historical_data
 
 ### Librerías Python 2025
 
-**Referencia completa de todas las librerías usadas:**
-
-📘 **[Librerías y Dependencias 2025](Librerias_Dependencias_2025.md)**
+**Librerías principales usadas en el workshop:**
 
 **Categorías:**
 - **Core:** pandas, numpy, scipy
