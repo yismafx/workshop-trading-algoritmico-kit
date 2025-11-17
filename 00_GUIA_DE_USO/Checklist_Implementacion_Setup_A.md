@@ -1,7 +1,16 @@
 ﻿# ✅ CHECKLIST DE IMPLEMENTACIÓN: REFACTORIZACIÓN SETUP A
 
-**Workshop Trading Algorítmico Aumentado con IA Generativa**  
-**Fecha:** 15 de Noviembre de 2025  
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
+🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > 📄 **Checklist Implementación Setup A**
+
+---
+
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0  
 **Responsable:** Mary López (yismafx)  
 **Equipo:** Testing team disponible
 
@@ -559,9 +568,33 @@
 
 ---
 
-**Versión:** 1.0 (15 de Noviembre de 2025)  
-**Auditor:** Claude (Senior Algorithmic Trading & Education Expert)
+## 🔗 NAVEGACIÓN
+
+**🏠 Volver a:**
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
+
+**📖 Ver también:**
+- [Setup A: Guiado](Setup_A_Guiado.md)
+- [Mejores Prácticas Setup A](Mejores_Practicas_Setup_A.md)
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
 
 ---
 
-[Fin del Checklist de Implementación]
+## 📞 SOPORTE
+
+**¿Necesitas ayuda?**
+
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
+
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
+
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
+
+---
+
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

@@ -118,7 +118,6 @@ Si en el futuro necesitas cambiar el disclaimer:
 
 ---
 
-**Versión:** 1.0  
-**Fecha:** 15 Nov 2025  
-**Status:** ✅ Aprobado  
-**Mantenedor:** Mary López (@yismafx)
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso  
+**Mantenedor:** Mary López (@yismary)

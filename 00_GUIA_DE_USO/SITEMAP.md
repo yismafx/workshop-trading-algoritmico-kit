@@ -1,6 +1,7 @@
 ﻿# 🗺️ SITEMAP - Mapa de Navegación del Kit
 
-**Última actualización:** Noviembre 2025 • **Versión:** 2.1
+**Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 

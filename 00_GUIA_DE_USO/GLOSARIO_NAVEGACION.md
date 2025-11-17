@@ -7,7 +7,8 @@
 
 **Guía rápida:** Nombre que ves en links → Archivo real
 
-**Última actualización:** Noviembre 2025 • **Versión:** 2.1
+**Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 

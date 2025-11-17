@@ -1,12 +1,18 @@
 ﻿# ✅ MEJORES PRÁCTICAS: SETUP A (GOOGLE COLAB)
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 **🏠 [Inicio](../README.md) > 📂 [Guía de Uso](GUIA_INICIO.md) > ⚙️ [Setup](Setup_A_Colab_Rapido.md) > 📄 Mejores Prácticas**
 
 ---
 
 **🎯 Objetivo:** Maximizar tu experiencia con Google Colab  
 **👥 Para:** Participantes usando Setup A durante y después del workshop  
-**📅 Última actualización:** Noviembre 2025 | **Versión:** 1.0
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 
@@ -667,43 +673,38 @@ else:
 
 ---
 
-## 🧭 NAVEGACIÓN
+## 🔗 NAVEGACIÓN
 
-**🏠 Inicio:** [README Principal](../README.md)  
-**⬅️ Anterior:** [Setup Colab Rápido](Setup_A_Colab_Rapido.md)  
-**➡️ Siguiente:** [Troubleshooting Completo](Troubleshooting_Maestro.md)  
-**⬆️ Categoría:** [Guía de Uso](GUIA_INICIO.md)
+**◀️ Anterior:** [Setup A: Colab Rápido](Setup_A_Colab_Rapido.md)  
+**▶️ Siguiente:** [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+
+**🏠 Volver a:**
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
+
+**📖 Ver también:**
+- [Setup A: Express](Setup_A_Express.md)
+- [Setup A: Guiado](Setup_A_Guiado.md)
+- [Checklist Implementación](Checklist_Implementacion_Setup_A.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
 ## 📞 SOPORTE
 
-**¿Necesitas ayuda con algo específico?**
+**¿Necesitas ayuda?**
 
-📧 **Email:** yismaryme@gmail.com  
-💬 **Telegram:** [@yismafx](https://t.me/yismafx)  
-📚 **Troubleshooting:** [Guía completa](Troubleshooting_Maestro.md)
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
----
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
 
-## 📌 VERSIÓN
-
-**v1.0 (Noviembre 2025)** - Mejores prácticas Setup A  
-**Última actualización:** 15 de Noviembre de 2025
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
 ---
 
-## ⚠️ DISCLAIMER
-
-Estas son recomendaciones basadas en experiencia de cohortes anteriores.  
-Tu experiencia puede variar. Siempre haz backups de tu trabajo.
-
----
-
-**✅ ¡Con estas prácticas, maximizarás tu experiencia en el workshop!**
-
-**Imprime el checklist y úsalo antes de cada sesión. 🎯**
-
----
-
-[Fin del documento - Mejores Prácticas Setup A v1.0]
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

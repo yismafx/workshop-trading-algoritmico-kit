@@ -1,5 +1,10 @@
 ﻿# 📚 GUÍA DE USO - Workshop Trading Algorítmico Aumentado con IA Generativa
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 **Directorio central de documentación para participantes**
 
 🏠 [Inicio](../README.md) > 📂 **Guía de Uso**
@@ -174,9 +179,9 @@ Esta carpeta contiene **todos los documentos de guía y soporte** que necesitar�
 
 ## ⚙️ MANTENIMIENTO
 
-**Mantenido por:** [@yismafx](https://github.com/yismafx)  
-**Última revisión general:** 16 de Noviembre de 2025  
-**Versión carpeta:** 1.0
+**Mantenido por:** [@yismary](https://github.com/yismary)  
+**Última revisión general:** 17 de noviembre de 2025  
+**Versión carpeta:** 3.0
 
 **Reportar problemas:**
 - Enlace roto → [Issues en GitHub](https://github.com/yismafx/workshop-trading-algoritmico-kit/issues)
@@ -185,22 +190,5 @@ Esta carpeta contiene **todos los documentos de guía y soporte** que necesitar�
 
 ---
 
-## 📊 CHANGELOG DE LA CARPETA
-
-**v1.0 (16-Nov-2025):**
-- ✅ README.md creado (este archivo)
-- ✅ GUIA_INICIO.md refactorizado a v2.1
-- ✅ FAQ_COMPLETO.md extraído como documento maestro
-- ✅ Troubleshooting_Maestro.md centralizado
-- ✅ Breadcrumbs corregidos en todos los docs
-
----
-
-**¿Nuevo en el workshop?** 🚀  
-👉 **[Comienza con GUIA_INICIO.md →](GUIA_INICIO.md)**
-
-**¿Tienes dudas?** 🤔  
-👉 **[Busca en FAQ_COMPLETO.md →](FAQ_COMPLETO.md)**
-
-**¿Algo no funciona?** 🚨  
-👉 **[Consulta Troubleshooting_Maestro.md →](Troubleshooting_Maestro.md)**
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

@@ -13,7 +13,8 @@
 
 **🎯 Propósito:** Directorio completo de todos los recursos del workshop  
 **👥 Para:** Participantes del workshop (público + premium)  
-**📅 Última actualización:** Noviembre 2025 | **Versión:** 1.0
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 
