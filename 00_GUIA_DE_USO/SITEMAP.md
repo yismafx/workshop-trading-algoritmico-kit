@@ -124,25 +124,6 @@ GUIA_INICIO.md
 
 ---
 
-## ⚠️ ARCHIVOS EN DESARROLLO (v2.2)
-
-Los siguientes archivos están disponibles como **placeholders** en v2.1, pero su contenido completo estará disponible en v2.2:
-
-### Setup Alternativos
-- `Setup_B_Python_Local.md` - 🟡 Placeholder disponible
-- `Setup_C_MetaTrader5.md` - 🟡 Placeholder disponible
-
-### Documentación Adicional
-- `Troubleshooting_Comun.md` - 🟡 Placeholder disponible
-
-**Nota:** Los placeholders incluyen:
-- ✅ Navegación funcional (breadcrumbs y links)
-- ✅ Descripción de contenido futuro
-- ✅ Alternativas disponibles ahora
-- ✅ Roadmap y estimación de disponibilidad
-
----
-
 ## 🆘 ¿ESTÁS PERDIDO?
 
 Si no sabes por dónde empezar o a dónde ir:
