@@ -1,6 +1,16 @@
 ﻿# 🚨 TROUBLESHOOTING MAESTRO
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 🏠 [Inicio](../README.md) > 📄 **Troubleshooting Maestro**
+
+---
+
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 
@@ -428,64 +438,45 @@ print(dir(yf))  # Lista todas las funciones disponibles
 
 ---
 
-## 📞 CONTACTO PARA SOPORTE
+## 📞 SOPORTE
 
-### 🆘 ¿Cuándo Contactar?
+**¿Necesitas ayuda?**
 
-**Contacta si:**
-- ✅ Leíste esta guía completa
-- ✅ Probaste las soluciones sugeridas
-- ✅ El problema persiste después de 30+ minutos
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
-**NO contactes para:**
-- ❌ Errores que están en esta guía
-- ❌ Preguntas respondidas en FAQ
-- ❌ Solicitudes de "hacer el trabajo por ti"
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
 
----
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
-### 📧 Formato de Consulta Recomendado
+**Antes de contactar:**
+1. ✅ Leíste esta guía completa
+2. ✅ Probaste las soluciones sugeridas
+3. ✅ El problema persiste después de 30+ minutos
 
-```
-Asunto: [ERROR] Descripción breve (max 10 palabras)
-
-1. ¿Qué estabas intentando hacer?
-   [Describe la tarea específica]
-
-2. ¿Qué error obtuviste? (copia el mensaje COMPLETO)
-   [Pega el error con traceback completo]
-
-3. ¿Qué pasos ya intentaste?
-   - Intento 1: [Describe]
-   - Intento 2: [Describe]
-
-4. Screenshots (si es posible)
-   [Adjunta imagen del error]
-
-5. Contexto adicional:
-   - Sesión: S[X]
-   - Archivo: [nombre.ipynb]
-   - Línea de código: [número]
-```
+**Formato recomendado para tu consulta:**
+- Asunto: [ERROR] Descripción breve
+- Qué intentabas hacer
+- Mensaje de error completo
+- Qué pasos ya intentaste
+- Screenshots (si aplica)
 
 ---
 
-### 📱 Canales de Soporte
+## 🔗 NAVEGACIÓN
 
-**Opción 1: Email**
-- 📧 yismaryme@gmail.com
-- ⏱️ Tiempo de respuesta: 24-48h
-- 🎯 Para: Errores complejos, dudas conceptuales
+**🏠 Volver a:**
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
 
-**Opción 2: Telegram**
-- 💬 [@yismary](https://t.me/yismary)
-- ⏱️ Tiempo de respuesta: Variable (consultas rápidas)
-- 🎯 Para: Preguntas urgentes, clarificaciones
-
-**Opción 3: Grupo Premium**
-- 🔒 [Enlace en email de bienvenida]
-- ⏱️ Tiempo de respuesta: Comunitario (otros participantes ayudan)
-- 🎯 Para: Soporte peer-to-peer, networking
+**📖 Ver también:**
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [Setup A: Guiado](Setup_A_Guiado.md)
+- [Setup B: Python Local](Setup_B_Python_Local.md)
+- [Setup C: MetaTrader 5](Setup_C_MetaTrader5.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
@@ -544,51 +535,5 @@ Asunto: [ERROR] Descripción breve (max 10 palabras)
 
 ---
 
-## 📖 VERSIÓN Y CHANGELOG
-
-**Versión:** 2.1  
-**Última actualización:** 16 de Noviembre de 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx)
-
-**Changelog:**
-- **v2.1 (Nov 16, 2025):** Troubleshooting Maestro inicial
-  - Hub centralizado de troubleshooting
-  - Quick Fixes para top 6 errores
-  - Referencias a troubleshooting específico
-  - Estructura modular para expansión futura
-  - Guías de validación y debugging
-  - Mejores prácticas documentadas
-
----
-
-## ⚠️ DISCLAIMER
-
-**Material para fines educativos únicamente.**
-
-❌ NO constituye asesoría de inversión  
-⚠️ Trading algorítmico implica riesgo de pérdida de capital  
-📊 Resultados pasados NO garantizan resultados futuros  
-💰 Nunca operes con dinero que no puedas perder
-
-**Troubleshooting no garantiza:**
-- Que tu estrategia sea rentable
-- Que todos los problemas tengan solución inmediata
-- Que el workshop sea plug-and-play sin esfuerzo
-
-**Troubleshooting SÍ te ayuda a:**
-- Resolver problemas técnicos comunes
-- Aprender a debuggear de forma sistemática
-- Evitar errores costosos en producción
-
----
-
-**¿No encontraste tu problema?**  
-💬 [Contacta soporte](#-contacto-para-soporte) con el formato recomendado
-
-**¿Resolviste un problema no documentado?**  
-🙏 [Compártelo](https://github.com/yismafx/workshop-trading-algoritmico-kit/issues) para ayudar a otros
-
----
-
-**Última actualización:** Noviembre 16, 2025 • **Versión:** 2.1  
-**Estado:** ✅ Operativo (Placeholder mejorado, expansión continua)
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

@@ -8,7 +8,7 @@
 
 ---
 
-![Version](https://img.shields.io/badge/version-1.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Questions](https://img.shields.io/badge/preguntas-35-green)
+![Version](https://img.shields.io/badge/version-3.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Questions](https://img.shields.io/badge/preguntas-35-green)
 
 ---
 
@@ -286,17 +286,19 @@ Optimizas en un periodo (training) y pruebas en otro periodo (testing) que la es
 
 ---
 
-## 📗 NAVEGACIÓN
+## 🔗 NAVEGACIÓN
 
-**← Volver a:**
-- [README Principal](../README.md)
+**🏠 Volver a:**
 - [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
 
-**📚 Recursos Relacionados:**
+**📖 Ver también:**
 - [Troubleshooting Maestro](Troubleshooting_Maestro.md)
 - [Programa Detallado](Programa_Detallado_Workshop.md)
+- [Setup Completo](Guia_Setup_Completa.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
-**Versión:** 1.0 • **Actualizado:** 16 de Noviembre de 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx)
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

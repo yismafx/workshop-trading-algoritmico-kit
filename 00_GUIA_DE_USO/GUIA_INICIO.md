@@ -9,7 +9,7 @@
 
 ---
 
-![Version](https://img.shields.io/badge/version-2.1-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Language](https://img.shields.io/badge/language-ES-yellow)
+![Version](https://img.shields.io/badge/version-3.0-blue) ![Status](https://img.shields.io/badge/status-active-success) ![Language](https://img.shields.io/badge/language-ES-yellow)
 
 ---
 
@@ -429,40 +429,25 @@ import ta  # Technical Analysis library
 
 ---
 
-## 📞 Soporte y Comunidad
+## 📞 SOPORTE
 
-### **Canales de Soporte:**
+**¿Necesitas ayuda?**
 
-📧 **Email:** yismaryme@gmail.com  
-- Tiempo de respuesta: 24-48h
-- Para: Dudas técnicas, problemas de acceso
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
-💬 **Telegram:** [@yismary](https://t.me/yismary)  
-- Para: Dudas generales, consultas pre-workshop
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
 
-🔒 **Grupo Privado (Solo Participantes Pagos):**  
-- Soporte comunitario
-- Sesiones de Q&A en vivo
-- Actualizaciones del material
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
-📺 **Canal Público:** Fractals Market  
-- Contenido educativo gratuito
-- Anuncios de nuevos workshops
-
-### **Antes de Contactar:**
-
+**Antes de contactar:**
 1. ✅ Revisa [FAQ Completo](FAQ_COMPLETO.md)
 2. ✅ Consulta [Troubleshooting Maestro](Troubleshooting_Maestro.md)
-3. ✅ Busca en el grupo Telegram (si eres participante)
 
-### **Libros de Referencia (Recomendados):**
-
-📚 **[Ver bibliografía completa en README](../README.md#-referencias-bibliográficas)**
-
-1. **Chan, E. (2013)** — *Algorithmic Trading*
-2. **Carver, R. (2015)** — *Systematic Trading*
-3. **López de Prado, M. (2018)** — *Advances in Financial Machine Learning*
-4. **Strimpe, J. (2024)** — *Python for Algorithmic Trading Cookbook*
+**Libros de referencia recomendados:**
+📚 [Ver bibliografía completa en README](../README.md#-referencias-bibliográficas)
 
 ---
 
@@ -490,70 +475,19 @@ import ta  # Technical Analysis library
 
 ---
 
-## 📗 NAVEGACIÓN
+## 🔗 NAVEGACIÓN
 
-**← Volver a:**
+**🏠 Volver a:**
 - [README Principal](../README.md)
-- [Carpeta Guía de Uso](.)
 
-**→ Continuar con:**
+**📖 Ver también:**
 - [Setup Completo](Guia_Setup_Completa.md) - Configuración paso a paso
-- [Programa Detallado](Programa_Detallado_Workshop.md) - 9 sesiones detalladas
-
-**📚 Recursos Relacionados:**
-- [FAQ Completo](FAQ_COMPLETO.md) - 35 preguntas frecuentes
-- [Troubleshooting Maestro](Troubleshooting_Maestro.md) - Hub de soluciones
-- [Mapa del Sistema](https://yismafx.github.io/workshop-trading-algoritmico-kit/00_GUIA_DE_USO/Mapa_Sistema_Trading.html) - Arquitectura visual
+- [Programa Detallado](Programa_Detallado_Workshop.md) - 9 sesiones del workshop
+- [FAQ Completo](FAQ_COMPLETO.md) - Preguntas frecuentes
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md) - Soluciones a problemas
+- [SITEMAP](SITEMAP.md) - Mapa completo del sitio
 
 ---
 
-## 📖 VERSIÓN Y CHANGELOG
-
-**Versión:** 2.1  
-**Última actualización:** 16 de Noviembre de 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx)
-
-**Changelog:**
-
-- **v2.1 (Nov 16, 2025):** 🎉 Refactor mayor basado en Manual de Estilo v2.0
-  - ✅ Quick Links implementados (4 links estratégicos)
-  - ✅ FAQ extraído a documento maestro (FAQ_COMPLETO.md)
-  - ✅ Troubleshooting reducido, enlazado a Maestro
-  - ✅ Expectativas optimizadas (470→100 líneas)
-  - ✅ Checklist reubicado después de Quick Start
-  - ✅ CTA principal mejorado ("Tu Plan de Acción")
-  - ✅ Navegación completa agregada
-  - ✅ Referencias cruzadas sistemáticas
-  - 📉 Reducción: 883→580 líneas (-34%)
-  - ⏱️ Tiempo lectura: 30→17 min (-43%)
-
-- **v2.0 (Nov 14, 2025):** Primera versión completa
-  - Contenido inicial estructurado
-  - FAQ embebido (35 preguntas)
-  - Troubleshooting inline
-  - 883 líneas totales
-
----
-
-## ⚠️ DISCLAIMER LEGAL
-
-**Material educativo únicamente.**
-
-- NO constituye asesoría de inversión
-- Trading implica riesgo de pérdida de capital
-- Resultados pasados NO garantizan resultados futuros
-- Opera solo con capital que puedas perder
-
-**Como todo trading:**
-- El rendimiento pasado no garantiza resultados futuros
-- Toda estrategia puede fallar
-- La gestión de riesgo es crítica
-
----
-
-**¿Listo para comenzar?** 🚀
-
-Recuerda: **GenAI = Copiloto, NO Piloto Automático.**  
-Tú eres el responsable final de todas las decisiones de trading.
-
-¡Nos vemos en la Sesión 1! 🎓
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

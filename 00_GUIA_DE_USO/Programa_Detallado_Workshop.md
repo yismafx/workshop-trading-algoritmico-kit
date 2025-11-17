@@ -1,9 +1,16 @@
 ﻿# Workshop: Trading Algorítmico Aumentado con IA Generativa
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
 
 🏠 [Inicio](../README.md) > 📄 **Programa Detallado**
 
 ---
+
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 
@@ -129,4 +136,34 @@ Este workshop se basa en:
 
 ---
 
-[← Volver al README principal](../README.md)
+## 🔗 NAVEGACIÓN
+
+**🏠 Volver a:**
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
+
+**📖 Ver también:**
+- [Setup Completo](Guia_Setup_Completa.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- [SITEMAP](SITEMAP.md)
+
+---
+
+## 📞 SOPORTE
+
+**¿Necesitas ayuda?**
+
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
+
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
+
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
+
+---
+
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso

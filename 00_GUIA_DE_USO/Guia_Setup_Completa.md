@@ -9,10 +9,9 @@
 
 ---
 
-**Workshop: Trading Algorítmico Aumentado con IA Generativa**  
-**Versión:** 2.4 (Noviembre 2025)  
-**Tiempo de lectura:** 5 minutos  
-**Última actualización:** 16 de noviembre de 2025
+**⏱️ Tiempo de lectura:** 5 minutos  
+**📅 Última actualización:** 17 de noviembre de 2025  
+**📌 Versión:** 3.0
 
 ---
 
@@ -221,62 +220,43 @@ Base de conocimiento de errores y soluciones
 
 ---
 
-## 🧭 Navegación
+## 🔗 NAVEGACIÓN
 
-### 🏠 Documentos Principales
+**🏠 Volver a:**
+- [Guía de Inicio](GUIA_INICIO.md)
+- [README Principal](../README.md)
 
-- **[README Principal](../README.md)** - Página de inicio del proyecto
-- **[GUIA_INICIO](GUIA_INICIO.md)** - Tu punto de partida para el workshop
-- **[Programa_Detallado_Workshop.md](Programa_Detallado_Workshop.md)** - Contenido detallado
-
-### 📂 Guías de Setup
-
-- **[Guía de Setup Completa](Guia_Setup_Completa.md)** - Hub de navegación (ESTÁS AQUÍ)
-- **[Setup A: Express](Setup_A_Express.md)** - 10-15 min
-- **[Setup A: Colab Completo](Setup_A_Colab_Rapido.md)** - 30-45 min ⭐ Recomendado
-- **[Setup A: Guiado](Setup_A_Guiado.md)** - 60-90 min
-- **[Setup B: Python Local](Setup_B_Python_Local.md)** - 2-3h
-- **[Setup C: MetaTrader 5](Setup_C_MetaTrader5.md)** - 1-2h
-
-### 🛠️ Recursos de Soporte
-
-- **[Troubleshooting Maestro](Troubleshooting_Maestro.md)** - Base de conocimiento completa
-- **[FAQ](GUIA_INICIO.md#-faq-mini-5-preguntas-top)** - Preguntas frecuentes
+**📖 Ver también:**
+- [Setup A: Express](Setup_A_Express.md) - 10-15 min
+- [Setup A: Colab Completo](Setup_A_Colab_Rapido.md) - 30-45 min ⭐
+- [Setup A: Guiado](Setup_A_Guiado.md) - 60-90 min
+- [Setup B: Python Local](Setup_B_Python_Local.md) - 2-3h
+- [Setup C: MetaTrader 5](Setup_C_MetaTrader5.md) - 1-2h
+- [Troubleshooting Maestro](Troubleshooting_Maestro.md)
+- [FAQ Completo](FAQ_COMPLETO.md)
+- [SITEMAP](SITEMAP.md)
 
 ---
 
-## 📞 Soporte
+## 📞 SOPORTE
 
-**Si necesitas ayuda para elegir tu setup:**
+**¿Necesitas ayuda?**
 
-### 📧 Email
-**yismaryme@gmail.com**  
-Tiempo de respuesta: 24-48h
+- 📧 **Email:** yismaryme@gmail.com
+- 💬 **Telegram:** [@yismary](https://t.me/yismary)
 
-**Incluye:**
-- Tu perfil (experiencia Python, objetivos)
-- Dudas específicas sobre cada setup
+**Horario de soporte:**
+- Lun-Vie: 9:00 AM - 6:00 PM (GMT-5)
+- Respuesta promedio: 24-48 horas
 
----
+**Nota:** Soporte técnico solo para participantes registrados del workshop.
 
-### 💬 Telegram
-**[@yismary](https://t.me/yismary)**  
-Para consultas rápidas pre-workshop
-
----
-
-### 🚨 Antes de Contactar
-
-**Revisa primero:**
-
-1. ✅ Tabla comparativa (arriba)
-2. ✅ Descripción de cada setup (arriba)
-3. ✅ [FAQ en GUIA_INICIO](GUIA_INICIO.md#-faq-mini-5-preguntas-top)
-
-La mayoría de las dudas se resuelven con la tabla comparativa.
+**Antes de contactar:**
+1. ✅ Revisa tabla comparativa
+2. ✅ Lee descripción de cada setup
+3. ✅ Consulta [FAQ en GUIA_INICIO](GUIA_INICIO.md)
 
 ---
 
-**🎓 ¡Elige tu setup y comienza tu journey en trading algorítmico! 🚀**
-
----
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso
