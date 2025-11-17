@@ -182,30 +182,6 @@ Si no sabes por dónde empezar o a dónde ir:
 - [ ] Scripts auxiliares
 - [ ] Casos de estudio
 
----
-
-## 🔄 CHANGELOG
-
-### v2.1 (Noviembre 2025)
-**Fase 2:** Eliminación completa de links rotos
-- Creación de 7 placeholders profesionales
-- Actualización de SITEMAP y GLOSARIO
-- 0 links rotos (100% navegación funcional)
-
-**Fase 1:** Correcciones críticas de navegación
-- Estandarización de nombres de archivo
-- Creación de SITEMAP.md y GLOSARIO_NAVEGACION.md
-- Corrección de 29 links rotos (TIPO 1)
-- Actualización de README.md
-
-### v2.0 (Octubre 2025)
-- Estructura inicial del repositorio
-- Documentación central
-- Mapa mental interactivo
-
----
-
-**Fin del Sitemap**
 
 ---
 
