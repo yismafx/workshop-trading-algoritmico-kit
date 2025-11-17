@@ -1,0 +1,13 @@
+Alpaca:
+https://broker-app.alpaca.markets/sign-up
+
+API Keys
+
+Endpoint:
+https://paper-api.alpaca.markets/v2
+
+Key:
+PKIKJ7YOYTJQ4IP2C77I6IOQBT
+
+Secret:
+25qTcMh52qE4k46zpYuXUiJiYcCDS3tqtftsZVoBeuki

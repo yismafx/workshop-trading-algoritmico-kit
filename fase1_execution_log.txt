@@ -1,0 +1,69 @@
+Inicio de ejecución: Mon Nov 17 00:16:29 UTC 2025
+═══════════════════════════════════════════════════════════════
+✅ Carpeta eliminada correctamente
+✅ Archivo backup eliminado
+✅ Backup creado en: ./00_GUIA_DE_USO_BACKUP_20251117_001629
+    Ocurrencias encontradas: 45
+✅ Corrección aplicada: 45 ocurrencias corregidas
+    Ocurrencias encontradas: 9
+✅ Corrección aplicada: 9 ocurrencias corregidas
+    ✓ GLOSARIO_NAVEGACION.md
+    ✓ Mapa_Recursos_Workshop.md
+    ✓ SITEMAP.md
+✅ Todas las referencias a Setup D eliminadas
+✅ Todas las referencias a Setup_A_Broker_*.md eliminadas
+    Ocurrencias encontradas: 1
+⚠️  Aún quedan 0
+0 referencias
+⚠️  Archivo Troubleshooting_Comun.md existe
+    Requiere revisión manual para verificar contenido único
+    Acción: Marcar para revisión en Tarea 3.1
+    Generando reporte de diferencias...
+    Reporte guardado en: troubleshooting_diff.txt
+    Total de archivos .md referenciados: 23
+
+    ✓ README.md
+    ✓ FAQ_COMPLETO.md
+    ✓ GLOSARIO_NAVEGACION.md
+    ✓ GUIA_INICIO.md
+    ✓ Guia_Setup_Completa.md
+    ✓ Guia_Uso_Colab_Notebook.md
+    ✓ Librerias_Dependencias_2025.md
+    ✓ Librerias_Minimas_vs_Completas.md
+    ✓ Mapa_Recursos_Workshop.md
+    ✓ Mejores_Practicas_Setup_A.md
+    ✓ Programa_Detallado_Workshop.md
+    ✓ SITEMAP.md
+    ✓ Setup_A_Colab_Rapido.md
+    ✓ Setup_A_Express.md
+    ✓ Setup_A_Guiado.md
+    ✓ Setup_B_Python_Local.md
+    ✓ Setup_C_MetaTrader5.md
+    ✓ Troubleshooting_Comun.md
+    ✓ Troubleshooting_Maestro.md
+    ❌ LINK ROTO: https://github.com/yismafx/workshop-trading-algoritmico-kit/blob/main/02_TEMPLATE_PACK/Backtesting_Report_Template.md
+    ❌ LINK ROTO: https://github.com/yismafx/workshop-trading-algoritmico-kit/blob/main/02_TEMPLATE_PACK/README_Tecnico_Template.md
+    ❌ LINK ROTO: https://github.com/yismafx/workshop-trading-algoritmico-kit/blob/main/02_TEMPLATE_PACK/Risk_Management_Plan_Template.md
+    ❌ LINK ROTO: https://github.com/yismafx/workshop-trading-algoritmico-kit/blob/main/02_TEMPLATE_PACK/Strategy_Memo_Template.md
+
+❌ VALIDACIÓN FALLIDA: 4 links rotos detectados
+Fin de ejecución: Mon Nov 17 00:16:30 UTC 2025
+
+Etapa 1: ELIMINACIÓN DE DUPLICACIÓN
+  ✅ Carpeta duplicada eliminada
+  ✅ Archivo backup eliminado
+
+Etapa 2: CORRECCIÓN DE LINKS ROTOS
+  ✅ Setup_Colab_Rapido.md corregido
+  ✅ Troubleshooting_Setup_A.md corregido
+  ✅ Referencias a Setup D eliminadas
+  ✅ Referencias a Setup_A_Broker_*.md eliminadas
+  ✅ Referencia a MANUAL_DE_ESTILO eliminada (doc interno)
+
+Etapa 3: CONSOLIDACIÓN DE CONTENIDO
+  ⚠️  Requiere revisión manual (Troubleshooting_Comun.md)
+
+Etapa 5: VALIDACIÓN
+  ❌ Links rotos = 4
+
+

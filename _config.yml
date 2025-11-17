@@ -1,0 +1,16 @@
+# Configuración del sitio
+title: "Workshop Trading Algorítmico con IA"
+description: "Transforma tu trading manual en sistemas algorítmicos potenciados por IA Generativa"
+author: "Yismary Quintero"
+email: yismaryme@gmail.com
+
+# Tema (elige uno)
+theme: jekyll-theme-cayman
+
+# Configuración adicional
+markdown: kramdown
+plugins:
+  - jekyll-relative-links
+
+# SEO
+lang: es
