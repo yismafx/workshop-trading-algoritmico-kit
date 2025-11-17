@@ -1,5 +1,10 @@
 # Workshop: Trading Algorítmico Aumentado con IA Generativa
 
+> ⚠️ **DISCLAIMER IMPORTANTE**  
+> Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
+> El contenido es exclusivamente educativo. NO constituye asesoría financiera.  
+> El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
+
 **Transforma tu trading manual en sistemas algorítmicos potenciados por IA**
 
 > 🎯 **Principio Fundamental:** GenAI = Copiloto, NO Piloto Automático
@@ -250,8 +255,9 @@ Semanas 1-2: Fundamentos en Python
 
 ---
 
-**Versión:** 2.3 UX • **Actualizado:** Noviembre 2025  
-**Mantenido por:** [@yismafx](https://github.com/yismafx) | **Comunidad:** Fractals Market
+**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Estado:** ✅ Validado y listo para uso  
+**Mantenido por:** [@yismary](https://github.com/yismary) | **Comunidad:** Fractals Market
 
 ---
 
