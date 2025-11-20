@@ -2,7 +2,9 @@
 
 > **Workshop:** Trading Algorítmico Aumentado con IA Generativa  
 > **Versión:** 1.0 (Público)  
-> **Última actualización:** 20 de noviembre de 2025
+> **Última actualización:** Noviembre de 2025
+
+**🏠 [← Volver al Inicio](../README.md)** | **📋 [Ver Templates](../02_TEMPLATE_PACK/)** | **🐍 [Ver Scripts](../04_SCRIPTS_AUXILIARES/)**
 
 ---
 
@@ -16,17 +18,17 @@ Biblioteca de **prompts probados y optimizados** para usar IA Generativa (Claude
 
 ## 📂 Contenido Disponible (5 Prompts Públicos)
 
-| # | Prompt | Categoría | Sesión | Nivel |
-|---|--------|-----------|--------|-------|
-| 01 | **Generar Ideas de Estrategia** | Ideación | S3 | Básico |
-| 02 | **Adaptar Código Existente** | Implementación | S4 | Básico-Intermedio |
-| 03 | **Explicar Código Complejo** | Comprensión | Todas | Básico |
-| 04 | **Debugging Asistido** | Resolución | S4-S5 | Básico-Intermedio |
-| 05 | **Interpretar Métricas Backtest** | Análisis | S5 | Intermedio |
+| # | Prompt | Categoría | Sesión | Nivel | Archivo |
+|---|--------|-----------|--------|-------|---------|
+| 01 | **Generar Ideas de Estrategia** | Ideación | S3 | Básico | [Ver →](01_Generar_Ideas_Estrategias.md) |
+| 04 | **Adaptar Código Existente** | Implementación | S4 | Intermedio | [Ver →](04_Adaptar_Codigo_Existente.md) |
+| 05 | **Explicar Código Complejo** | Comprensión | Todas | Básico | [Ver →](05_Explicar_Codigo_Complejo.md) |
+| 06 | **Depurar Errores** | Debugging | S4-S5 | Intermedio | [Ver →](06_Depurar_Errores.md) |
+| 10 | **Detectar Overfitting** | Validación | S5 | Avanzado | [Ver →](10_Detectar_Overfitting.md) |
 
 ### 📋 Descripción de Cada Prompt
 
-#### 01 - Generar Ideas de Estrategia
+#### 01 - [Generar Ideas de Estrategia](01_Generar_Ideas_Estrategias.md)
 
 **¿Para qué?**  
 Generar hipótesis de estrategias cuantitativas basadas en tus observaciones del mercado.
@@ -41,7 +43,7 @@ Generar hipótesis de estrategias cuantitativas basadas en tus observaciones del
 
 ---
 
-#### 02 - Adaptar Código Existente
+#### 04 - [Adaptar Código Existente](04_Adaptar_Codigo_Existente.md)
 
 **¿Para qué?**  
 Modificar código de estrategias encontradas en libros/GitHub a tus necesidades.
@@ -56,7 +58,7 @@ Modificar código de estrategias encontradas en libros/GitHub a tus necesidades.
 
 ---
 
-#### 03 - Explicar Código Complejo
+#### 05 - [Explicar Código Complejo](05_Explicar_Codigo_Complejo.md)
 
 **¿Para qué?**  
 Entender código de trading que te parece confuso línea por línea.
@@ -71,7 +73,7 @@ Entender código de trading que te parece confuso línea por línea.
 
 ---
 
-#### 04 - Debugging Asistido
+#### 06 - [Depurar Errores](06_Depurar_Errores.md)
 
 **¿Para qué?**  
 Resolver errores de código de forma sistemática con ayuda de IA.
@@ -86,17 +88,17 @@ Resolver errores de código de forma sistemática con ayuda de IA.
 
 ---
 
-#### 05 - Interpretar Métricas de Backtesting
+#### 10 - [Detectar Overfitting](10_Detectar_Overfitting.md)
 
 **¿Para qué?**  
-Entender si resultados de backtest son buenos, sospechosos o malos.
+Identificar si resultados de backtest son overfitting o reales.
 
-**Input típico:** Sharpe 1.5, Max DD -28%, Win Rate 48%, etc.  
-**Output:** Análisis métrica por métrica, red flags, comparación con benchmark
+**Input típico:** Sharpe 4.2, Max DD -6%, Win Rate 78%, etc.  
+**Output:** Análisis de riesgo, scoring, red flags, recomendaciones
 
 **Cuándo usar:**
-- Sesión 5 (Backtesting)
-- Después de ejecutar backtest
+- Sesión 5 (Validación Rigurosa)
+- Después de ejecutar backtest con resultados "muy buenos"
 - Antes de decidir si continuar con paper trading
 
 ---
