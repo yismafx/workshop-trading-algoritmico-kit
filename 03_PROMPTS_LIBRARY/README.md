@@ -20,11 +20,11 @@ Biblioteca de **prompts probados y optimizados** para usar IA Generativa (Claude
 
 | # | Prompt | Categoría | Sesión | Nivel | Archivo |
 |---|--------|-----------|--------|-------|---------|
-| 01 | **Generar Ideas de Estrategia** (01_Generar_Ideas_Estrategias.md)| Ideación | S3 | Básico | [Ver →](01_Generar_Ideas_Estrategias.md) |
-| 04 | **Adaptar Código Existente** (04_Adaptar_Codigo_Existente.md)| Implementación | S4 | Intermedio | [Ver →](04_Adaptar_Codigo_Existente.md) |
-| 05 | **Explicar Código Complejo** (05_Explicar_Codigo_Complejo.md)| Comprensión | Todas | Básico | [Ver →](05_Explicar_Codigo_Complejo.md) |
-| 06 | **Depurar Errores** (06_Depurar_Errores.md)| Debugging | S4-S5 | Intermedio | [Ver →](06_Depurar_Errores.md) |
-| 10 | **Detectar Overfitting** (10_Detectar_Overfitting.md)| Validación | S5 | Avanzado | [Ver →](10_Detectar_Overfitting.md) |
+| 01 | **Generar Ideas de Estrategia**| Ideación | S3 | Básico | [Ver →](01_Generar_Ideas_Estrategias.md) |
+| 04 | **Adaptar Código Existente**| Implementación | S4 | Intermedio | [Ver →](04_Adaptar_Codigo_Existente.md) |
+| 05 | **Explicar Código Complejo**| Comprensión | Todas | Básico | [Ver →](05_Explicar_Codigo_Complejo.md) |
+| 06 | **Depurar Errores**| Debugging | S4-S5 | Intermedio | [Ver →](06_Depurar_Errores.md) |
+| 10 | **Detectar Overfitting**| Validación | S5 | Avanzado | [Ver →](10_Detectar_Overfitting.md) |
 
 ### 📋 Descripción de Cada Prompt
 
