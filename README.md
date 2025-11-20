@@ -47,7 +47,6 @@
 
 **Documentación:**
 - 📖 [Guía de Inicio](00_GUIA_DE_USO/GUIA_INICIO.md) - Onboarding completo
-- 🗺️ [Mapa del Sitio](00_GUIA_DE_USO/SITEMAP.md) - Estructura
 - 📚 [Programa Detallado](00_GUIA_DE_USO/Programa_Detallado_Workshop.md) - 9 sesiones
 
 **Recursos:**
