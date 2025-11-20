@@ -54,7 +54,8 @@
 - 📂 [Setup Completo](00_GUIA_DE_USO/Guia_Setup_Completa.md) - Config avanzada
 - 🚨 [Troubleshooting](00_GUIA_DE_USO/Troubleshooting_Maestro.md) - Soluciones
 - 📝 [Templates](02_TEMPLATE_PACK/) - Documentos profesionales
-- 🤖 [Prompts](03_PROMPTS_LIBRARY/) - Biblioteca
+- 🤖 [Prompts](03_PROMPTS_LIBRARY/) - Biblioteca de prompts
+- 💻 [Scripts](04_SCRIPTS_AUXILIARES/) - Código Python reutilizable
 
 ---
 
@@ -262,9 +263,9 @@ Semanas 1-2: Fundamentos en Python
 
 ---
 
-**Versión:** 3.1 | **Última actualización:** 20 de noviembre de 2025  
+**Versión:** 3.1 | **Última actualización:** Noviembre de 2025  
 **Estado:** ✅ Validado y listo para uso  
-**Mantenido por:** [@yismary](https://github.com/yismary) | **Comunidad:** Fractals Market
+**Mantenido por:** [@yismafx](https://github.com/yismafx) | **Comunidad:** Fractals Market
 
 ---
 
