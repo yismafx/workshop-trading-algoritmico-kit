@@ -1,4 +1,4 @@
-﻿# 🎯 BIENVENIDO AL KIT DE TRADING ALGORÍTMICO AUMENTADO CON IA GENERATIVA
+# 🎯 BIENVENIDO AL KIT DE TRADING ALGORÍTMICO AUMENTADO CON IA GENERATIVA
 
 > ⚠️ **DISCLAIMER IMPORTANTE**  
 > Este material es parte del Workshop "Trading Algorítmico Aumentado con IA Generativa".  
@@ -6,6 +6,11 @@
 > El trading implica riesgo de pérdida de capital. Opera solo con capital que puedas perder.
 
 🏠 [Inicio](../README.md) > 📄 **Guía de Inicio**
+
+**🏠 [← Volver al Inicio](../README.md)** | 
+**📋 [Ver Templates](../02_TEMPLATE_PACK/)** | 
+**🤖 [Ver Prompts](../03_PROMPTS_LIBRARY/)** | 
+**🐍 [Ver Scripts](../04_SCRIPTS_AUXILIARES/)**
 
 ---
 
@@ -29,6 +34,7 @@
 - [✅ Checklist "Tu Primer Día"](#-checklist-tu-primer-día)
 - [🎓 ¿Qué es Este Kit?](#-qué-es-este-kit)
 - [📦 Contenido del Kit](#-contenido-del-kit-estructura-visual)
+- [📘 Cómo Usar el Contenido Público](#-cómo-usar-el-contenido-público)
 - [🛤️ Roadmap del Workshop](#️-roadmap-del-workshop-9-sesiones-27-horas)
 - [📅 Tu Journey Completo](#-tu-journey-completo-timeline)
 - [⚖️ Expectativas Realistas](#️-expectativas-realistas-anti-hype)
@@ -88,6 +94,26 @@ Este kit es para ti **SOLO SI**:
 
 ---
 
+**🆓 ¿No tienes acceso premium todavía?**
+
+**Empieza con el contenido público AHORA:**
+
+1. **📋 Descarga el Template (1 min)**  
+   → [Strategy_Memo_Template.md](../02_TEMPLATE_PACK/Strategy_Memo_Template.md)  
+   Úsalo para documentar tus estrategias actuales
+
+2. **🤖 Prueba un Prompt de IA (5 min)**  
+   → [01_Generar_Ideas_Estrategias.md](../03_PROMPTS_LIBRARY/01_Generar_Ideas_Estrategias.md)  
+   Copia en Claude/ChatGPT y genera 3 hipótesis
+
+3. **🐍 Ejecuta el Script Python (2 min)**  
+   → [data_pipeline_simple.py](../04_SCRIPTS_AUXILIARES/data_pipeline_simple.py)  
+   Descarga y limpia datos de SPY en Google Colab
+
+**💡 Objetivo:** Evaluar la calidad del workshop antes de inscribirte.
+
+---
+
 ## ✅ Checklist "Tu Primer Día"
 
 ### ⚙️ Setup Técnico (30 min)
@@ -127,6 +153,23 @@ Este kit es para ti **SOLO SI**:
 
 ---
 
+### 📦 Exploración Contenido Público (15 min)
+
+**Para usuarios evaluando el workshop:**
+
+| Estado | Tarea | Tiempo | Link |
+|:------:|-------|:------:|------|
+| ☐ | **Descargar** Strategy_Memo_Template.md | 1 min | [→ Descargar](../02_TEMPLATE_PACK/Strategy_Memo_Template.md) |
+| ☐ | **Leer** un prompt completo (ej: 01_Generar_Ideas) | 3 min | [→ Ver Prompts](../03_PROMPTS_LIBRARY/) |
+| ☐ | **Probar** prompt con ChatGPT/Claude | 5 min | - |
+| ☐ | **Revisar** código de data_pipeline_simple.py | 3 min | [→ Ver Script](../04_SCRIPTS_AUXILIARES/data_pipeline_simple.py) |
+| ☐ | **Comparar** público vs premium en README | 3 min | [→ Comparar](../README.md) |
+
+**🎯 Si te gusta la calidad:** Considera inscribirte al workshop.  
+**📧 Contacto:** yismaryme@gmail.com
+
+---
+
 ## 🎓 ¿Qué es Este Kit?
 
 Este kit contiene **todas las herramientas** necesarias para completar el Workshop de Trading Algorítmico Aumentado con IA Generativa.
@@ -152,28 +195,36 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 ├── 📂 00_GUIA_DE_USO/           → 🔓 PÚBLICO
 │   ├── GUIA_INICIO.md         ← Estás aquí
 │   ├── FAQ_COMPLETO.md        → 35 preguntas frecuentes
-│   ├── Troubleshooting_Maestro.md → Hub de soluciones
+│   ├── Troubleshooting_Maestro.md
 │   ├── Programa_Detallado_Workshop.md
-│   ├── Guia_Setup_Completa.md
-│   └── Mapa_Sistema_Trading.html
+│   └── Guia_Setup_Completa.md
 │
-├── 📂 02_TEMPLATE_PACK/         → 🔓 PÚBLICO
-│   ├── Strategy_Memo_Template.md
-│   ├── Backtest_Report_Template.md
-│   └── README_Technical_Template.md
+├── 📂 02_TEMPLATE_PACK/         → 🔓 PÚBLICO (1 template)
+│   ├── README.md              → [Ver instrucciones →](../02_TEMPLATE_PACK/)
+│   └── Strategy_Memo_Template.md → [Descargar →](../02_TEMPLATE_PACK/Strategy_Memo_Template.md)
+│       ├── 13 secciones profesionales
+│       ├── Checklist anti-overfitting
+│       ├── Plan implementación paper → live
+│       └── 9 KB, formato markdown editable
 │
-├── 📂 03_PROMPTS_LIBRARY/       → 🔓 PÚBLICO
-│   ├── 01_Adaptacion_Codigo.md
-│   ├── 02_Debugging.md
-│   ├── 03_Traduccion_Plataformas.md
-│   └── 04_Documentacion.md
+├── 📂 03_PROMPTS_LIBRARY/       → 🔓 PÚBLICO (5 prompts)
+│   ├── README.md              → [Ver catálogo →](../03_PROMPTS_LIBRARY/)
+│   ├── 01_Generar_Ideas_Estrategias.md (9.5 KB)
+│   ├── 04_Adaptar_Codigo_Existente.md (13 KB)
+│   ├── 05_Explicar_Codigo_Complejo.md (16 KB)
+│   ├── 06_Depurar_Errores.md (11 KB)
+│   └── 10_Detectar_Overfitting.md (11 KB)
+│       └── Estructura ROL-CONTEXTO-TAREA-FORMATO
 │
-├── 📂 04_SCRIPTS_AUXILIARES/    → 🔓 PÚBLICO
-│   ├── data_pipeline.py
-│   ├── risk_management.py
-│   └── backtesting_helpers.py
+├── 📂 04_SCRIPTS_AUXILIARES/    → 🔓 PÚBLICO (1 script)
+│   ├── README.md              → [Ver documentación →](../04_SCRIPTS_AUXILIARES/)
+│   └── data_pipeline_simple.py → [Descargar →](../04_SCRIPTS_AUXILIARES/data_pipeline_simple.py)
+│       ├── 6 funciones: download, clean, validate, features, save, pipeline
+│       ├── Type hints Python 3.7+
+│       ├── Error handling robusto
+│       └── 16 KB, ~300 líneas, ejecutable standalone
 │
-└── 🔒 CONTENIDO PREMIUM
+└── 🔒 CONTENIDO PREMIUM (Participantes del Workshop)
     ├── Colab_Notebook_Maestro.ipynb
     ├── Videos_Grabados/ (27h)
     ├── Estrategias_Backtestadas/
@@ -216,63 +267,218 @@ Este kit contiene **todas las herramientas** necesarias para completar el Worksh
 
 | Sesión | Tema | Entregable | Dificultad |
 |--------|------|------------|------------|
-| **S7** | Multi-Plataforma - Del Código a la Ejecución | Estrategia en Pine + Webhook + API conectada | ⭐⭐⭐⭐ |
-| **S8** | Deployment Real - Paper Trading y Monitoreo | Sistema en VPS + Monitoreo activo + Reporte semanal | ⭐⭐⭐⭐⭐ |
-| **S9** | Proyecto Final y Documentación Profesional | Documento profesional + Repositorio + Presentación | ⭐⭐⭐ |
+| **S7** | Multi-Plataforma - Del Código a la Ejecución | Estrategia portada a Pine/MQL5 + Webhook configurado | ⭐⭐⭐⭐ |
+| **S8** | Deployment Real - Paper Trading y Monitoreo | Bot en paper trading + Dashboard monitoreo | ⭐⭐⭐⭐ |
+| **S9** | Proyecto Final y Documentación Profesional | Strategy Memo + GitHub Repo + Plan Paper-to-Live | ⭐⭐⭐ |
 
-**Checkpoint S7-S9:** ¿Está tu bot en paper trading por al menos 8 semanas antes de live? ✅
-
-**👉 Para detalles completos:** [Ver Programa Detallado →](Programa_Detallado_Workshop.md)
+**Checkpoint S7-S9:** ¿Tienes tu sistema corriendo en paper con documentación profesional? ✅
 
 **🔗 Ver también:**
-- [Timeline del Journey](#-tu-journey-completo-timeline) para visualizar progreso completo
-- [Expectativas Realistas](#️-expectativas-realistas-anti-hype) sobre tasas de éxito
+- [Programa Detallado Completo](Programa_Detallado_Workshop.md) para detalles por sesión
+- [Tu Journey Completo](#-tu-journey-completo-timeline) para timeline visual
+
+---
+
+## 📘 Cómo Usar el Contenido Público
+
+> 💡 **Objetivo:** Estos recursos están diseñados para que puedas evaluar la calidad del workshop y empezar a trabajar con IA ANTES de inscribirte.
+
+---
+
+### 📋 Templates (02_TEMPLATE_PACK/)
+
+#### Strategy_Memo_Template.md
+
+**¿Para qué sirve?**  
+Documentar profesionalmente cada estrategia que desarrolles, desde la hipótesis inicial hasta los resultados de backtesting.
+
+**¿Cómo usarlo?**
+
+1. **Descarga el template:**  
+   👉 [Strategy_Memo_Template.md](../02_TEMPLATE_PACK/Strategy_Memo_Template.md)
+
+2. **Abre con tu editor favorito:**
+   - Markdown: Obsidian, Notion, VSCode
+   - Texto plano: Notepad++, Sublime
+
+3. **Rellena cada sección mientras desarrollas tu estrategia:**
+   - Hipótesis de trading
+   - Reglas de entrada/salida
+   - Gestión de riesgo
+   - Resultados de backtesting
+
+4. **Usa GenAI para ayudarte:**
+   ```
+   Prompt: "Tengo una estrategia de mean reversion. 
+   Ayúdame a completar la sección 'Hipótesis' del Strategy Memo Template."
+   ```
+
+**[🔗 Ver documentación completa del template →](../02_TEMPLATE_PACK/)**
+
+---
+
+### 🤖 Prompts (03_PROMPTS_LIBRARY/)
+
+#### ¿Para qué sirven?
+
+Los prompts son **instrucciones estructuradas** para obtener mejores respuestas de herramientas como Claude, ChatGPT o Gemini en tareas específicas de trading algorítmico.
+
+#### Prompts Disponibles (5)
+
+| Prompt | Propósito | Tamaño |
+|--------|-----------|--------|
+| **01_Generar_Ideas_Estrategias.md** | Brainstorming de nuevas hipótesis de trading | 9.5 KB |
+| **04_Adaptar_Codigo_Existente.md** | Modificar código existente a tus necesidades | 13 KB |
+| **05_Explicar_Codigo_Complejo.md** | Entender código de terceros línea por línea | 16 KB |
+| **06_Depurar_Errores.md** | Resolver bugs en tu código | 11 KB |
+| **10_Detectar_Overfitting.md** | Validar si tus resultados son realistas | 11 KB |
+
+#### ¿Cómo usarlos?
+
+1. **Identifica tu necesidad:**  
+   Ejemplo: "Necesito generar ideas de estrategias"
+
+2. **Abre el prompt correspondiente:**  
+   → [01_Generar_Ideas_Estrategias.md](../03_PROMPTS_LIBRARY/01_Generar_Ideas_Estrategias.md)
+
+3. **Lee la estructura completa:**  
+   - ROL: Quién debe actuar la IA
+   - CONTEXTO: Tu situación específica
+   - TAREA: Qué debe hacer
+   - FORMATO: Cómo debe responder
+
+4. **Personaliza con TU contexto:**  
+   Reemplaza los placeholders con tus datos reales
+
+5. **Copia y pega en Claude/ChatGPT:**  
+   Ejecuta y evalúa los resultados
+
+**[🔗 Ver catálogo completo de prompts →](../03_PROMPTS_LIBRARY/)**
+
+---
+
+### 🐍 Scripts (04_SCRIPTS_AUXILIARES/)
+
+#### data_pipeline_simple.py
+
+**¿Para qué sirve?**  
+Script Python completo para descargar, limpiar, validar y preparar datos históricos para backtesting.
+
+**¿Cómo usarlo?**
+
+1. **Descarga el script:**  
+   👉 [data_pipeline_simple.py](../04_SCRIPTS_AUXILIARES/data_pipeline_simple.py)
+
+2. **Abre Google Colab:**  
+   - Sube el archivo
+   - O copia/pega el código
+
+3. **Ejecuta el pipeline completo:**
+   ```python
+   from data_pipeline_simple import pipeline_completo
+   
+   # Descargar y procesar SPY
+   df = pipeline_completo(
+       ticker="SPY",
+       start_date="2020-01-01",
+       end_date="2024-01-01",
+       output_path="data/spy_clean.csv"
+   )
+   
+   print(f"✅ Descargados {len(df)} días de datos limpios")
+   ```
+
+4. **Resultado esperado:**
+   ```
+   ✅ SPY: 1008 días de datos procesados
+   ✅ Archivo guardado: data/spy_clean.csv
+   ```
+
+**Funciones Incluidas:**
+
+| Función | Propósito | Ejemplo |
+|---------|-----------|---------|
+| `download_data()` | Descargar datos de yfinance | `download_data("SPY", "2023-01-01", "2024-01-01")` |
+| `clean_data()` | Limpiar NaN, duplicados, outliers | `clean_data(df)` |
+| `validate_data()` | 6 validaciones automáticas | `validate_data(df, "SPY")` |
+| `add_basic_features()` | Returns, SMA, Volatilidad | `add_basic_features(df)` |
+| `save_data()` | Exportar CSV/Parquet | `save_data(df, "spy_data.csv")` |
+| `pipeline_completo()` | Todo en una línea | `pipeline_completo("SPY")` |
+
+**[🔗 Ver documentación completa del script →](../04_SCRIPTS_AUXILIARES/)**
+
+---
+
+### 🎯 Siguientes Pasos
+
+**¿Probaste los recursos públicos?**
+
+**Opción 1: Inscríbete al Workshop**  
+Si te gustó la calidad del contenido:  
+📧 [yismaryme@gmail.com](mailto:yismaryme@gmail.com)
+
+**Opción 2: Sigue Explorando**  
+- [📖 Programa Detallado del Workshop](Programa_Detallado_Workshop.md)
+- [🤔 FAQ Completo](FAQ_COMPLETO.md) (35+ preguntas)
+- [🚨 Troubleshooting](Troubleshooting_Maestro.md)
 
 ---
 
 ## 📅 Tu Journey Completo (Timeline)
 
-**De la idea al sistema en producción:**
+### 🎯 Timeline Realista: 3-6 Meses
 
-| Fase | Duración | Actividades | Checkpoint |
-|------|----------|-------------|------------|
-| **🎯 DÍA 1** | 3.5-4h | • Setup ambiente (30-45 min)<br>• S1: Fundamentos (3h) | ✅ Ambiente + Dataset SPY |
-| **🟦 SEMANA 1** | 9h | • S2: Data Pipeline (3h)<br>• S3: Ideación con GenAI (3h) | ✅ Dataset limpio + 3 hipótesis |
-| **🟨 SEMANA 2** | 9h | • S4: Implementación (3h)<br>• S5: Backtesting + WFO (3h) ⚠️<br>• S6: Risk Management (3h) | ✅ ¿Estrategia sobrevivió WFO?<br>• SÍ → Continúa S7<br>• NO → Vuelta S3 (NORMAL) |
-| **🟩 SEMANA 3** | 9h | • S7: Multi-Plataforma (3h)<br>• S8: Deployment (3h)<br>• S9: Documentación (3h) | ✅ Bot en paper trading activo |
-| **📈 POST-WORKSHOP** | 8-12 sem | **Semanas 1-4:** Monitoreo + ajustes<br>**Semanas 5-8:** Validación consistencia<br>**Semanas 9-12:** Análisis performance | 🎯 **DECISIÓN LIVE TRADING**<br>✅ Sharpe >1.0 + DD <25% → SÍ (1-5%)<br>❌ Performance decae → Reoptimizar |
+```
+Mes 1: Fundamentos + Setup + Primera Estrategia
+├── Semana 1-2: S1-S3 (Fundamentos, Datos, Ideación)
+├── Semana 3: S4 (Implementación)
+└── Semana 4: Buffer para refactorización
 
-**⏱️ Tiempo total del journey:**
-- **Workshop:** 27 horas (3 semanas)
-- **Paper trading:** 8-12 semanas  
-- **Total hasta live:** 3-4 meses mínimo
+Mes 2: Validación + Riesgo
+├── Semana 1-2: S5 (Backtesting riguroso + WFO)
+├── Semana 3: S6 (Gestión de riesgo)
+└── Semana 4: Iteraciones (si falla WFO → vuelta a S3)
 
-> **⚠️ Nota Crítica:** El 80% de participantes necesita reoptimizar al menos 1 estrategia (vuelta a S3). Esto es NORMAL y parte del proceso.
+Mes 3: Producción + Deployment
+├── Semana 1: S7 (Multi-plataforma)
+├── Semana 2: S8 (Paper trading)
+├── Semana 3: S9 (Documentación)
+└── Semana 4: Presentación + Revisión final
+
+Meses 4-6: Paper Trading Obligatorio
+├── Monitoreo 24/7
+├── Ajustes basados en datos reales
+└── Decisión: ¿Live o rediseño?
+```
+
+**📊 Tasa de Progreso Esperada:**
+- **30%** de participantes: Completan en 3 meses
+- **50%** de participantes: Completan en 4-5 meses
+- **20%** de participantes: Requieren 6+ meses (normal si trabajan full-time)
+
+**🔗 Ver también:**
+- [Roadmap del Workshop](#️-roadmap-del-workshop-9-sesiones-27-horas) para detalles de cada sesión
+- [FAQ P5: ¿Cuánto tiempo toma?](FAQ_COMPLETO.md#p5-cuánto-tiempo-toma-dominar-esto)
 
 ---
 
 ## ⚖️ Expectativas Realistas (Anti-Hype)
 
-> ⚠️ Este workshop NO te hará millonario. Te dará un PROCESO robusto y repetible.
+### ❌ Lo que NO lograrás
 
-### 📊 Métricas Objetivo Realistas
+- ❌ "Hacerte rico rápido"
+- ❌ Retornos del 100%+ anuales de forma consistente
+- ❌ Cero drawdowns
+- ❌ Un sistema 100% automatizado que no requiera supervisión
 
-| Métrica | Objetivo Realista | ❌ Expectativa Irreal |
-|---------|-------------------|----------------------|
-| **Sharpe Ratio** | 1.0 - 1.5 | 3.0+ |
-| **Max Drawdown** | 20% - 30% | < 5% |
-| **Tasa de éxito** | 2 de 10 estrategias | Todas funcionan |
-| **Tiempo desarrollo** | 3-6 meses | 1 semana |
+### ✅ Lo que SÍ lograrás (si sigues el proceso)
 
-### 📈 Caso de Éxito Real
-
-**Estrategia Mean Reversion en SPY:**
-- Sharpe Ratio: 1.2
-- Max Drawdown: 24%
-- Retorno anual: 18%
-- Win rate: 52%
-
-**Por qué es exitosa:** Superó WFO, opera 8 semanas en paper consistentemente, gestión de riesgo sólida.
+- ✅ **Sharpe Ratio 1.0-1.5** → Rendimiento ajustado por riesgo superior al S&P 500
+- ✅ **Retorno anual 15-30%** → Consistente, no especulativo
+- ✅ **Max Drawdown 20-30%** → Manejable psicológicamente
+- ✅ **Win Rate 45-55%** → Realista, con R:R favorable
+- ✅ **Sistema validado con WFO** → No sobreajustado al pasado
+- ✅ **Documentación profesional** → Reproducible y auditable
 
 ### 📉 Caso de Fracaso Real
 
@@ -489,5 +695,5 @@ import ta  # Technical Analysis library
 
 ---
 
-**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Versión:** 3.0 | **Última actualización:** 20 de noviembre de 2025  
 **Estado:** ✅ Validado y listo para uso
