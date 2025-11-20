@@ -13,6 +13,12 @@
 
 ## 🚀 ACCESO RÁPIDO
 
+> 🎯 **¿Listo para transformar tu trading?**  
+> 👉 **[CONSULTAR DISPONIBILIDAD Y PRÓXIMAS FECHAS →](mailto:yismaryme@gmail.com?subject=Consulta%20Disponibilidad%20Workshop%20Trading%20Algorítmico)**  
+> O agenda una [📞 llamada de evaluación gratuita](mailto:yismaryme@gmail.com?subject=Solicitud%20Llamada%20Evaluación%20Workshop)
+
+---
+
 ### 👤 **Ya soy participante del workshop**
 
 **Accede directamente al kit:**
@@ -150,13 +156,14 @@ Claude (recomendado), ChatGPT, GitHub Copilot
 
 ## 💰 Inversión
 
-**Precio:** $950 USD (Descuento para miembros Fractals Market)  
+**Precio:** $950 USD (Descuento disponible para miembros Fractals Market)  
 **Incluye:** 27h formación + Colab Notebook + Templates + Prompts + Soporte
 
-**Opciones de pago:** Consultar disponibles  
-**Próxima cohorte:** Consultar fechas  
+**📅 Próxima cohorte:** Consultar disponibilidad - [Solicitar información →](mailto:yismaryme@gmail.com?subject=Consulta%20Fechas%20Workshop)  
 **Formato:** Virtual (Google Meet)  
-**Cupo:** Consultar disponibilidad
+**Cupo limitado:** Grupos reducidos para atención personalizada
+
+**Opciones de pago:** Consultar al solicitar información
 
 ---
 
@@ -255,7 +262,7 @@ Semanas 1-2: Fundamentos en Python
 
 ---
 
-**Versión:** 3.0 | **Última actualización:** 17 de noviembre de 2025  
+**Versión:** 3.1 | **Última actualización:** 20 de noviembre de 2025  
 **Estado:** ✅ Validado y listo para uso  
 **Mantenido por:** [@yismary](https://github.com/yismary) | **Comunidad:** Fractals Market
 
