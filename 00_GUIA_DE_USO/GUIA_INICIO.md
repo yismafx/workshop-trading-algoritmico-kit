@@ -7,7 +7,6 @@
 
 🏠 [Inicio](../README.md) > 📄 **Guía de Inicio**
 
-**🏠 [← Volver al Inicio](../README.md)** | 
 **📋 [Ver Templates](../02_TEMPLATE_PACK/)** | 
 **🤖 [Ver Prompts](../03_PROMPTS_LIBRARY/)** | 
 **🐍 [Ver Scripts](../04_SCRIPTS_AUXILIARES/)**
@@ -451,11 +450,6 @@ Meses 4-6: Paper Trading Obligatorio
 └── Decisión: ¿Live o rediseño?
 ```
 
-**📊 Tasa de Progreso Esperada:**
-- **30%** de participantes: Completan en 3 meses
-- **50%** de participantes: Completan en 4-5 meses
-- **20%** de participantes: Requieren 6+ meses (normal si trabajan full-time)
-
 **🔗 Ver también:**
 - [Roadmap del Workshop](#️-roadmap-del-workshop-9-sesiones-27-horas) para detalles de cada sesión
 - [FAQ P5: ¿Cuánto tiempo toma?](FAQ_COMPLETO.md#p5-cuánto-tiempo-toma-dominar-esto)
@@ -691,9 +685,8 @@ import ta  # Technical Analysis library
 - [Programa Detallado](Programa_Detallado_Workshop.md) - 9 sesiones del workshop
 - [FAQ Completo](FAQ_COMPLETO.md) - Preguntas frecuentes
 - [Troubleshooting Maestro](Troubleshooting_Maestro.md) - Soluciones a problemas
-- [SITEMAP](SITEMAP.md) - Mapa completo del sitio
 
 ---
 
-**Versión:** 3.0 | **Última actualización:** 20 de noviembre de 2025  
+**Versión:** 3.0 | **Última actualización:** Noviembre de 2025  
 **Estado:** ✅ Validado y listo para uso
