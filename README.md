@@ -36,7 +36,7 @@
 **Información clave para decidir:**
 
 - 🎓 **[¿Es para mí?](#-para-quién-es-este-workshop)** - Perfil y pre-requisitos
-- 📋 **[Programa](#-estructura-del-workshop)** - 9 sesiones, 27 horas
+- 📋 **[Programa](#️-estructura-del-workshop)** - 9 sesiones, 27 horas
 - ⚖️ **[Expectativas](#️-expectativas-realistas-anti-hype)** - Anti-hype transparente
 - 💰 **[Inversión](#-inversión)** - Precio y opciones
 - 📞 **[Contacto](#-contacto-e-inscripciones)** - Inscríbete
@@ -262,7 +262,7 @@ Semanas 1-2: Fundamentos en Python
 
 ---
 
-**Versión:** 3.1 | **Última actualización:** Noviembre de 2025  
+**Versión:** 3.1.1 | **Última actualización:** 20 de noviembre de 2025  
 **Estado:** ✅ Validado y listo para uso  
 **Mantenido por:** [@yismafx](https://github.com/yismafx) | **Comunidad:** Fractals Market
 
