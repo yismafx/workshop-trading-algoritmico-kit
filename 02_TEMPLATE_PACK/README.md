@@ -2,7 +2,9 @@
 
 > **Workshop:** Trading Algorítmico Aumentado con IA Generativa  
 > **Versión:** 1.0 (Público)  
-> **Última actualización:** 20 de noviembre de 2025
+> **Última actualización:** Noviembre de 2025
+
+**🏠 [← Volver al Inicio](../README.md)** | **📂 [Ver Prompts](../03_PROMPTS_LIBRARY/)** | **🐍 [Ver Scripts](../04_SCRIPTS_AUXILIARES/)**
 
 ---
 
@@ -16,10 +18,12 @@ Esta carpeta contiene **templates profesionales** en formato Markdown para docum
 
 ## 📂 Contenido Disponible (Público)
 
-### ✅ Strategy_Memo_Template.md
+### ✅ [Strategy_Memo_Template.md](Strategy_Memo_Template.md)
 
 **¿Para qué?**  
 Documentar estrategias de trading de forma profesional antes de implementarlas.
+
+**👉 [Ver Template →](Strategy_Memo_Template.md)**
 
 **Cuándo usar:**
 - Cuando tienes una hipótesis de estrategia (ej: "Mean reversion en SPY")

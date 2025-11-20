@@ -2,7 +2,9 @@
 
 > **Workshop:** Trading Algorítmico Aumentado con IA Generativa  
 > **Versión:** 1.0 (Público)  
-> **Última actualización:** 20 de noviembre de 2025
+> **Última actualización:** Noviembre de 2025
+
+**🏠 [← Volver al Inicio](../README.md)** | **📋 [Ver Templates](../02_TEMPLATE_PACK/)** | **🤖 [Ver Prompts](../03_PROMPTS_LIBRARY/)**
 
 ---
 
@@ -16,7 +18,9 @@ Colección de **scripts Python reutilizables** para tareas comunes en trading al
 
 ## 📂 Contenido Disponible (1 Script Público)
 
-### ✅ data_pipeline_simple.py
+### ✅ [data_pipeline_simple.py](data_pipeline_simple.py)
+
+**👉 [Ver Script →](data_pipeline_simple.py)**
 
 **¿Para qué?**  
 Descargar, limpiar y validar datos históricos de mercado.
